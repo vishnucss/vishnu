@@ -1,5 +1,10 @@
 <h1 align="center">Vishnu</h1>
 <p align="center">A simple and minimalist toolkit with modern css</p>
+<p align="center"><a href="http://vishnucss.gihub.io" target="_blank">Get Started</a> / <a href="http://vishnucss.gihub.io/docs/" target="_blank">Docs</a> / <a href="http://vishnucss.gihub.io/examples" target="_blank">Examples</a></p>
+
+## What is this and why should I use it?
+
+A simple style guide provides a setup of styles using Modern CSS for a fast and clean starting point. Everything you need to create a basic project is included, all in a 2kb file (minified + gzipped).
 
 ## Install
 
@@ -15,9 +20,7 @@ $ npm install --save vishnucss
 <link rel="stylesheet" href="https://unpkg.com/vishnucss"/>
 ```
 
-## [Docs](http://vishnucss.gihub.io/docs/)
-
-## Bug
+## Bug?
 
 Submit it in the [issues](https://github.com/vishnucss/vishnucss/issues)
 
