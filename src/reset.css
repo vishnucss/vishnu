@@ -1,0 +1,22 @@
+/* 
+ * Reset
+*/
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  line-height: var(--base-line-height);
+  font-size: var(--base-font-size);
+  font-family: var(--base-font-family);
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}

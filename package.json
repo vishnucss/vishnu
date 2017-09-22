@@ -1,0 +1,64 @@
+{
+  "name": "vishnucss",
+  "filename": "vishnu.min.css",
+  "version": "1.0.0-alpha.1",
+  "description": "A simple and minimalist toolkit with modern css",
+  "main": "./dist/vishnu.min.css",
+  "keywords": [
+		"bootstrap",
+		"css",
+		"css3",
+    "flexbox",
+    "front-end",
+    "framework",
+    "postcss",
+    "responsive",
+    "mobile",
+    "mobile-first"
+  ],
+  "ignore": [
+		".editorconfig",
+		".gitignore",
+		"package.json",
+		"src"
+	],
+  "scripts": {
+    "test": "echo \"Testing\"",
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vishnucss/vishnucss.git"
+  },
+  "author": "Allan Alexandre",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vishnucss/vishnucss/issues"
+  },
+  "homepage": "https://vishnucss.github.io",
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/vishnucss/vishnucss.git",
+    "basePath": "dist",
+    "files": [
+      "vishnu.min.css",
+      "vishnu.css"
+    ]
+  },
+  "devDependencies": {
+    "cssnano": "^3.10.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "latest",
+    "gulp-cli": "^1.2.1",
+    "gulp-concat": "latest",
+    "gulp-git": "^1.9.0",
+    "gulp-header": "^1.8.2",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-postcss": "^7.0.0",
+    "gulp-size": "^2.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-util": "~2.2.9",
+    "owl-tool": "0.0.3",
+    "postcss-cssnext": "^3.0.2"
+  }
+}

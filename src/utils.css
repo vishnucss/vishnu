@@ -1,0 +1,101 @@
+/* 
+ * Utils
+*/
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.txt-left {
+  text-align: left;
+}
+
+.txt-right {
+  text-align: right;
+}
+
+.full-screen {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  height: 100%;
+  min-height: 100%;
+}
+
+.v-align {
+  display: flex;
+  align-items: center;
+}
+
+.h-align {
+  display: flex;
+  justify-content: center;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.relative {
+  position: relative;
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Phone */
+@media only screen and (max-width: 25em) {
+  .hide-phone {
+    display: none;
+  }
+}
+
+/* Tablet */
+@media only screen and (max-width: 48em) {
+  .hide-tablet {
+    display: none;
+  }
+}
+
+/* Desktop */
+@media only screen and (max-width: 62em) {
+  .hide-desktop {
+    display: none;
+  }
+}
