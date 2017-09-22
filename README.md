@@ -1,6 +1,7 @@
+<p align="center"><a href="https://vishnucss.github.io/" target="_blank"><img src="https://github.com/vishnucss/vishnucss/blob/master/arts/logo.png" width="185" height="185" /></a></p>
 <h1 align="center">Vishnu</h1>
 <p align="center">A simple and minimalist toolkit with modern css</p>
-<p align="center"><a href="http://vishnucss.gihub.io" target="_blank">Get Started</a> / <a href="http://vishnucss.gihub.io/docs/" target="_blank">Docs</a> / <a href="http://vishnucss.gihub.io/examples" target="_blank">Examples</a></p>
+<p align="center"><a href="http://vishnucss.gihub.io/docs/" target="_blank">Docs</a> / <a href="http://vishnucss.gihub.io/examples" target="_blank">Examples</a></p>
 
 ## What is this and why should I use it?
 
