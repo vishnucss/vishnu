@@ -1,7 +1,7 @@
 <p align="center"><a href="https://vishnucss.github.io/" target="_blank"><img src="https://github.com/vishnucss/vishnucss/blob/master/arts/logo.png" width="185" height="185" /></a></p>
 <h1 align="center">Vishnu</h1>
 <p align="center">A simple and minimalist toolkit with modern css</p>
-<p align="center"><a href="http://vishnucss.gihub.io/#docs" target="_blank">Docs</a> / <a href="http://vishnucss.gihub.io/#examples" target="_blank">Examples</a></p>
+<p align="center"><a href="http://vishnucss.gihub.io/vishnu#docs" target="_blank">Docs</a> / <a href="http://vishnucss.gihub.io/vishnu#examples" target="_blank">Examples</a></p>
 
 ## Why should I use it?
 
@@ -27,6 +27,6 @@ Submit it in the [issues](https://github.com/vishnucss/vishnu/issues)
 
 ## Get Involved
 
-We'd love for you to help us build Vishnu. If you'd like to be a contributor, check out our [https://github.com/vishnucss/vishnucss/blob/master/.github/CONTRIBUTING.md](Contributing guide)
+We'd love for you to help us build Vishnu. If you'd like to be a contributor, check out our <a href="https://github.com/vishnucss/vishnucss/blob/master/.github/CONTRIBUTING.md" target="_blank">Contributing guide</a>
 
 <p>Designed with ♥ by <a target="_blank" href="http://alexandesigner.com.br" title="Allan Alexandre">Allan Alexandre</a>. Licensed under the <a target="_blank" href="https://github.com/vishnucss/vishnu#license" title="MIT License">MIT License</a>.</p>
