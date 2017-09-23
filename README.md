@@ -1,11 +1,11 @@
 <p align="center"><a href="https://vishnucss.github.io/" target="_blank"><img src="https://github.com/vishnucss/vishnucss/blob/master/arts/logo.png" width="185" height="185" /></a></p>
 <h1 align="center">Vishnu</h1>
 <p align="center">A simple and minimalist toolkit with modern css</p>
-<p align="center"><a href="http://vishnucss.gihub.io/docs/" target="_blank">Docs</a> / <a href="http://vishnucss.gihub.io/examples" target="_blank">Examples</a></p>
+<p align="center"><a href="http://vishnucss.gihub.io/#docs" target="_blank">Docs</a> / <a href="http://vishnucss.gihub.io/#examples" target="_blank">Examples</a></p>
 
-## What is this and why should I use it?
+## Why should I use it?
 
-A simple style guide provides a setup of styles using Modern CSS for a fast and clean starting point. Everything you need to create a basic project is included, all in a 2kb file (minified + gzipped).
+A simple style guide provides a setup of styles using Modern CSS for a fast and clean starting point. Everything you need to create a basic project is included.
 
 ## Install
 
@@ -23,6 +23,10 @@ $ npm install --save vishnucss
 
 ## Bug?
 
-Submit it in the [issues](https://github.com/vishnucss/vishnucss/issues)
+Submit it in the [issues](https://github.com/vishnucss/vishnu/issues)
 
-<p>Designed with ♥ by <a target="_blank" href="http://alexandesigner.com.br" title="Allan Alexandre">Allan Alexandre</a>. Licensed under the <a target="_blank" href="https://github.com/vishnucss/vishnucss#license" title="MIT License">MIT License</a>.</p>
+## Get Involved
+
+We'd love for you to help us build Vishnu. If you'd like to be a contributor, check out our [https://github.com/vishnucss/vishnucss/blob/master/.github/CONTRIBUTING.md](Contributing guide)
+
+<p>Designed with ♥ by <a target="_blank" href="http://alexandesigner.com.br" title="Allan Alexandre">Allan Alexandre</a>. Licensed under the <a target="_blank" href="https://github.com/vishnucss/vishnu#license" title="MIT License">MIT License</a>.</p>
