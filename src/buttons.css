@@ -9,6 +9,8 @@
 @custom-selector :--button-rounded button.rounded, .button.rounded, [type='submit'].rounded;
 @custom-selector :--enter :hover;
 @custom-selector :--press :focus, :active;
+@custom-selector :--large .large, [type='submit'].large;
+@custom-selector :--small .small, [type='submit'].small;
 
 /* Default */
 :--button {
@@ -31,6 +33,16 @@
   outline: none;
   transform: scale(0.99);
   background: color(var(--base-color) alpha(-20%));
+}
+
+/* Size */
+:--button:--small {
+  font-size: 1.2rem;
+  padding: 0.6rem 1.6rem;
+}
+:--button:--large {
+  font-size: 1.8rem;
+  padding: 1.8rem 4.2rem;
 }
 
 /* Outline */
