@@ -5,18 +5,15 @@
 a {
   color: var(--primary-color);
   transition: color 0.1s ease;
-}
-
-a:hover {
-  cursor: pointer;
-  color: var(--base-color);
-}
-
-a:focus {
-  outline: thin dotted;
-}
-
-a:active,
-a:hover {
-  outline: 0;
+  &:hover {
+    cursor: pointer;
+    color: color(var(--primary-color) alpha(80%));
+    text-decoration: none;
+  }
+  &:focus {
+    outline: thin dotted;
+  }
+  &:active,&:hover {
+    outline: 0;
+  }
 }
