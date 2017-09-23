@@ -24,17 +24,17 @@ gulp.task('build', function () {
   return gulp.src([
       './src/variables.css', 
       './src/reset.css', 
-      './src/responsive.css',
       './src/typography.css', 
       './src/links.css', 
       './src/buttons.css', 
       './src/forms.css', 
-      './src/grid.css', 
       './src/lists.css', 
       './src/tables.css', 
       './src/images.css', 
       './src/utils.css', 
-      './src/misc.css'
+      './src/misc.css',
+      './src/grid.css', 
+      './src/responsive.css'
     ])
     .pipe($.sourcemaps.init())
     .pipe($.concat('vishnu.css'))
