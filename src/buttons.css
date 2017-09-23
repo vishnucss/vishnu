@@ -2,59 +2,85 @@
  * Buttons
 */
 
-button,
-.button,
-[type='submit'] {
+@custom-selector :--button button, .button, [type='submit'];
+@custom-selector :--button-outline button.outline, .button.outline, [type='submit'].outline;
+@custom-selector :--button-flat button.flat, .button.flat, [type='submit'].flat;
+@custom-selector :--button-primary button.primary, .button.primary, [type='submit'].primary;
+@custom-selector :--button-rounded button.rounded, .button.rounded, [type='submit'].rounded;
+@custom-selector :--enter :hover;
+@custom-selector :--press :focus, :active;
+
+/* Default */
+:--button {
   padding: 1.1rem 3.5rem;
   margin-top: 0;
   margin-bottom: 2rem;
   font-size: 1.5rem;
   color: var(--base-text-color);
-  background: var(--base-light-color);
+  background: var(--base-color);
   border-radius: var(--base-radius);
   transition: var(--transition-ease-in-out);
   border: 1.5px solid transparent;
+  cursor: pointer;
+}
+:--button:--enter {
+  color: var(--primary-color);
+  background: color(var(--base-color) alpha(-50%));
+}
+:--button:--press {
+  outline: none;
+  transform: scale(0.99);
+  background: color(var(--base-color) alpha(-20%));
 }
 
-button.outline,
-.button.outline,
-[type='submit'].outline {
-  color: var(--base-color);
+/* Outline */
+:--button-outline {
+  color: var(--primary-color);
+  background: none;
+  border: 1.5px solid var(--base-color);
+}
+:--button-outline:--enter {
+  background: none;
+  border: 1.5px solid color(var(--primary-color) alpha(-50%));
+  color: color(var(--primary-color) alpha(-50%));
+}
+:--button-outline:--press {
+  transform: scale(0.99);
+  border-color: color(var(--primary-color) alpha(-20%));
+  color: color(var(--primary-color) alpha(-20%));
+}
+
+/* Flat */
+:--button-flat {
+  color: var(--primary-color);
   background: none;
   border: 1.5px solid transparent;
 }
-
-button:hover,
-.button:hover,
-[type='submit']:hover {
-  color: var(--base-light-text-color);
-  background: var(--base-color);
-}
-
-button.outline:hover,
-.button.outline:hover,
-[type='submit'].outline:hover {
+:--button-flat:--enter {
   background: none;
-  border: 1.5px solid var(--base-color);
-  color: var(--base-color);
+  color: color(var(--primary-color) alpha(-20%));
 }
-
-button:focus,
-.button:focus,
-[type='submit']:focus {
-  outline: none;
-}
-
-button:active,
-.button:active,
-[type='submit']:active {
+:--button-flat:--press {
   transform: scale(0.99);
+  color: color(var(--primary-color) alpha(-10%));
 }
 
-button:disabled,
-.button:disabled,
-.button.disabled,
-[type='submit']:disabled {
-  opacity: 0.8;
-  cursor: not-allowed;
+/* Primary */
+:--button-primary {
+  color: #fff;
+  background: var(--primary-color);
+  border: 1.5px solid transparent;
+}
+:--button-primary:--enter {
+  background: color(var(--primary-color) alpha(-20%));
+  color: #fff;
+}
+:--button-primary:--press {
+  transform: scale(0.99);
+  background: color(var(--primary-color) alpha(-10%));
+}
+
+/* Rounded */
+:--button-rounded {
+  border-radius: 28px;
 }

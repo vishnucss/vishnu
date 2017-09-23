@@ -1,20 +1,30 @@
 'use strict'
 
-var gulp = require('gulp'),
-    pkg = require('./package.json'),
-    postcss = require('gulp-postcss'),
-    cssnano = require('cssnano'),
-    autoprefixer = require('autoprefixer'),
-    copyright = `/**
-    * vishnucss v${pkg.version}
-    * https://vishnucss.github.io
-    */\r\n`,
-    $ = require('gulp-load-plugins')();
+const gulp = require('gulp')
+, pkg = require('./package.json')
+, postcss = require('gulp-postcss')
+, cssnano = require('cssnano')
+, cssnext = require('postcss-cssnext')
+, selector = require('postcss-custom-selectors')
+, nesting = require('postcss-nesting')
+, customMedia = require("postcss-custom-media")
+, copyright = `/**
+* vishnucss v${pkg.version}
+* https://vishnucss.github.io
+*/\r\n`
+, $ = require('gulp-load-plugins')();
 
 gulp.task('build', function () {
+  let plugins = [
+    selector(),
+    nesting(),
+    customMedia(),
+    cssnext({browsers: ['last 1 version']})
+  ]
   return gulp.src([
       './src/variables.css', 
       './src/reset.css', 
+      './src/responsive.css',
       './src/typography.css', 
       './src/links.css', 
       './src/buttons.css', 
@@ -28,6 +38,7 @@ gulp.task('build', function () {
     ])
     .pipe($.sourcemaps.init())
     .pipe($.concat('vishnu.css'))
+    .pipe(postcss(plugins))
     .pipe($.header(copyright + '\n'))
     .pipe($.size())
     .pipe($.sourcemaps.write('.'))
@@ -35,8 +46,12 @@ gulp.task('build', function () {
 })
 
 gulp.task('minify', ['build'], function() {
-  var plugins = [
-    cssnano()
+  let plugins = [
+    selector(),
+    cssnano(),
+    nesting(),
+    customMedia(),
+    cssnext({browsers: ['last 1 version']})
   ]
   return gulp.src(['./dist/vishnu.css'])
     .pipe($.sourcemaps.init())

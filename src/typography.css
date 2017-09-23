@@ -50,7 +50,7 @@ p {
   font-size: var(--base-font-size);
 }
 
-@media (max-width: 400px) {
+@media (--phone-viewport) {
   h1 {
     font-size: 4rem;
   }

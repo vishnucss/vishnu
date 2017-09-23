@@ -1,13 +1,13 @@
 {
   "name": "vishnucss",
   "filename": "vishnu.min.css",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-beta.0",
   "description": "A simple and minimalist toolkit with modern css",
   "main": "./dist/vishnu.min.css",
   "keywords": [
-		"bootstrap",
-		"css",
-		"css3",
+    "bootstrap",
+    "cssnext",
+    "css3",
     "flexbox",
     "front-end",
     "framework",
@@ -17,18 +17,18 @@
     "mobile-first"
   ],
   "ignore": [
-		".editorconfig",
-		".gitignore",
-		"package.json",
-		"src"
-	],
+    ".editorconfig",
+    ".gitignore",
+    "package.json",
+    "src"
+  ],
   "scripts": {
     "test": "echo \"Testing\"",
     "build": "gulp"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vishnucss/vishnucss.git"
+    "url": "git+https://github.com/vishnucss/vishnu.git"
   },
   "author": "Allan Alexandre",
   "license": "MIT",
@@ -38,7 +38,7 @@
   "homepage": "https://vishnucss.github.io",
   "autoupdate": {
     "source": "git",
-    "target": "git://github.com/vishnucss/vishnucss.git",
+    "target": "git://github.com/vishnucss/vishnu.git",
     "basePath": "dist",
     "files": [
       "vishnu.min.css",
@@ -59,6 +59,11 @@
     "gulp-sourcemaps": "^2.6.1",
     "gulp-util": "~2.2.9",
     "owl-tool": "0.0.3",
-    "postcss-cssnext": "^3.0.2"
+    "postcss-cssnext": "^3.0.2",
+    "postcss-custom-selectors": "^4.0.1",
+    "postcss-nesting": "^4.2.1"
+  },
+  "dependencies": {
+    "postcss-custom-media": "^6.0.0"
   }
 }
