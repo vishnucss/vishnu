@@ -3,6 +3,11 @@
 <p align="center">A simple and minimalist toolkit with modern css</p>
 <p align="center"><a href="https://vishnucss.github.io/vishnu/#docs" target="_blank">Docs</a> / <a href="https://vishnucss.github.io/vishnu/#examples" target="_blank">Examples</a></p>
 
+<p align="center">
+<a href="https://circleci.com/gh/alexandesigner/vishnu/tree/master"><img src="https://circleci.com/gh/alexandesigner/vishnu/tree/master.svg?&style=shield" alt="circle ci" height="24"></a>
+<a href="https://badge.fury.io/js/vishnucss"><img src="https://badge.fury.io/js/vishnucss.svg" alt="npm version" height="24"></a>
+</p>
+
 ## Why should I use it?
 
 A simple style guide provides a setup of styles using Modern CSS for a fast and clean starting point. Everything you need to create a basic project is included.
