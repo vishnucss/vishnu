@@ -10,9 +10,11 @@ const gulp = require('gulp')
 , customMedia = require("postcss-custom-media")
 , copyright = `/**
 * vishnucss v${pkg.version}
-* https://vishnucss.github.io
+* ${pkg.description}
+* https://vishnucss.github.io/vishnu
 */\r\n`
-, $ = require('gulp-load-plugins')();
+, $ = require('gulp-load-plugins')()
+, browserSync = require('browser-sync').create(); // create a browser sync instance.
 
 gulp.task('build', function () {
   let plugins = [
@@ -64,10 +66,21 @@ gulp.task('minify', ['build'], function() {
     .pipe($.concat('vishnu.min.css'))
     .pipe($.sourcemaps.write('.'))
     .pipe(gulp.dest('./dist/'))
+    .pipe(browserSync.reload({stream: true}))
+})
+
+gulp.task('browserSync', function() {
+  browserSync.init({
+    server: {
+      baseDir: "./docs"
+    }
+  })
 })
 
 gulp.task('watch', function() {
-  gulp.watch(['src/*.css', 'postcss.config.js'], ['default'])
+  gulp.watch(['src/*.css'], ['default'])
+  gulp.watch("./docs/*.html").on('change', browserSync.reload)
 })
 
+gulp.task('serve', ['browserSync', 'watch'])
 gulp.task('default', ['build', 'minify'])
