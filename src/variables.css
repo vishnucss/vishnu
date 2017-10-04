@@ -3,9 +3,15 @@
 */
 
 :root {
+
+  /* Typhography */
   --base-font-family: -apple-system, BlinkMacSystemFont, Avenir, 'Avenir Next',
   'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
   'Droid Sans', 'Helvetica Neue', sans-serif;
+  --base-font-size: 1.6rem;
+  --base-line-height: 1.5;
+
+  /* Colours */
   --primary-color: #667eea;
   --secondary-color: #764ba2;
   --base-color: #E6ECF0;
@@ -14,9 +20,19 @@
   --base-border-color: #e5e5e5;
   --base-text-color: #444;
   --base-light-text-color: #ccc;
-  --base-line-height: 1.5;
-  --base-font-size: 1.6rem;
+
+  /* Transitions */
   --transition-ease-in-out: all 0.2s ease-in-out;
+
+  /* Utils */
   --base-radius: 4px;
+  --base-rounded-radius: 50%;
+
 }
 
+
+/* Extras */
+::selection {
+  color: var(--primary-color); 
+  background: var(--base-color);
+}
