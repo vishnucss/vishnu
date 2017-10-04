@@ -10,15 +10,15 @@
   float: left;
 }
 
-.txt-center {
+.text-center {
   text-align: center;
 }
 
-.txt-left {
+.text-left {
   text-align: left;
 }
 
-.txt-right {
+.text-right {
   text-align: right;
 }
 
@@ -36,12 +36,12 @@
   min-height: 100%;
 }
 
-.v-align {
+.vertical-align {
   display: flex;
   align-items: center;
 }
 
-.h-align {
+.horizontal-align {
   display: flex;
   justify-content: center;
 }
