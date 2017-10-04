@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Allan Alexandre">
   <meta name="description" content="vishnucss provides a minimal setup of styles for a fast and clean starting point.">
-  <title>Vishnu | A simple and minimalist toolkit with modern css.</title>
+  <title>Vishnu - A simple and minimalist toolkit with modern css.</title>
   <link rel="icon" href="./logo.png">
-  <link rel="stylesheet" href="./dist/vishnu.min.css">
+  <link rel="stylesheet" href="./vishnu.min.css">
   <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -16,23 +16,21 @@
 
   <main class="wrapper">
     <a href="https://github.com/vishnucss/vishnu"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
-    <section class="hero container flex center">
-      <div class="txt-center">
+    <section class="hero flex center">
+      <div class="text-center">
         <img src="./logo.png" alt="Vishnu Logo" height="180">
         <h1>Vishnu</h1>
         <h5>A simple and minimalist toolkit with modern css</h5>
-        <a class="github-button" href="https://github.com/vishnucss/vishnu" data-icon="octicon-star" data-size="large" aria-label="Star vishnucss/vishnu on GitHub">Star</a>
-        <small class="full-width">Currently v1.0.0-beta.5</small>
+        <!-- <a class="github-button" href="https://github.com/vishnucss/vishnu" data-icon="octicon-star" data-size="large" aria-label="Star vishnucss/vishnu on GitHub">Star</a> -->
+        <small class="full-width">Currently v1.0.0-beta.6</small>
       </div>
     </section>
 
-    <hr>
-
-    <section id="installation" class="container center">
+    <section id="installation" class="section">
       <div>
         <h2>Why should I use it?</h2>
         <p class="description">A simple style guide provides a setup of styles using Modern CSS for a fast and clean starting point. Everything you need to create a basic project is included.</p>
-        <h3 class="title">Install</h3>
+        <h3 class="title"># Install</h3>
         <p class="description">You can install Vishnu in multiple ways, but it's as simple as adding a single <code>link</code> tag to your project.</p>
 
         <h5>CDN</h5>
@@ -42,17 +40,15 @@
         <pre><code>$ npm install vishnucss</code></pre>
       </div>
 		</section>
-		
-		<hr>
 
-    <section id="docs" class="container center">
+    <section id="docs" class="section">
       <div>
         <h2 id="docs">Documentation</h2>
         <p class="description">Here is a docs of all the things styled by Vishnu, how to use the grid, tables, utils and how to use some components.</p>
 				
 				<!-- Typhography -->	
 				<div class="section" id="section-typhography">
-          <h3 class="title">Typhography</h3>
+          <h3 class="title"># Typhography</h3>
           <p class="description">Based on <code>rem</code> units. All <code>rem</code> units are converted to base 10, so <code>1rem</code> is equal
             to <code>10px</code>. By default, all headings, paragraphs, and code use system fonts, using the most modern
             one available on a user's operating system.</p>
@@ -76,7 +72,7 @@
 				
 				<!-- Button -->
 				<div class="section" id="section-button">
-					<h3 class="title">Buttons</h3>
+					<h3 class="title"># Buttons</h3>
 					<p class="description">The Button, an essential part of any user experience. Buttons come in some basic styles: The <code>&lt;button&gt;&lt;/button&gt;</code> element has default color, whereas <code>.outline</code> has a simple outline around, <code>.flat</code> is entirely clear., and <code>.rounded</code> is rounded border radius.</p>
 					<div class="row">
 						<div class="col-xs-4 col-sm-12">
@@ -131,13 +127,13 @@
 							<button class="rounded">Rounded Button</button>
 						</div>
 						<div class="col-xs-8 col-sm-12">
-							<p>This button is available with a single class</p><code>&lt;button class='primary'&gt;Content&lt;/button&gt;</code>
+							<p>This button is available with a single class</p><code>&lt;button class='rounded'&gt;content&lt;/button&gt;</code>
 						</div>
 					</div>
 				</div>
 				
 				<div class="section" id="section-list">
-					<h3 class="title">Lists</h3>
+					<h3 class="title"># Lists</h3>
 					<p class="description">The List is a very versatile and common way to display items. Milligram has three types of lists: The unordered list use ul element will be marked with a outline circles, the ordered list use ol element and your items will be marked with numbers, the description list use dl element and your items will not be marking, only spacings.</p>
 					
 					<div class="row">
@@ -172,7 +168,7 @@
 				</div>
 				
 				<div class="section" id="section-tables">
-					<h3 class="title">Tables</h3>
+					<h3 class="title"># Tables</h3>
 					<p class="description">The Table element represents data in two dimensions or more. We encourage the use of proper formatting with <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> to create a <code>&lt;table&gt;</code>. The code becomes cleaner without disturbing understanding.</p>
 					<p class="description">Add the class <code>.table</code> to any <code>&lt;table&gt;</code> element and <code>.responsive</code> to table responsive.</p>
 					
@@ -250,7 +246,7 @@
 
 				<!-- Grid -->		
         <div class="section" id="section-grid">
-          <h3 class="title">Grid</h3>
+          <h3 class="title"># Grid</h3>
           <p class="description">Grid based on the flex display property.</p>
             <div class="row">
               <h5>Responsive</h5>
@@ -627,9 +623,32 @@
 
         </div>
 
-				<!-- Forms -->	
+				<!-- Card -->	
+        <div class="section" id="section-card">
+          <h3 class="title"># Card</h3>
+          <p class="description">Basic and Complet card to your widgets or components.</p>
+          <div class="card">
+            <div class="card-content">
+              Basic card
+            </div>
+          </div>
+          <hr /> 
+          <section class="card">
+            <header class="card-header">
+              <h4 class="card-title">
+                Title your content
+              </h4>
+            </header>
+            <div class="card-content">
+              Text
+            </div>
+            <footer class="card-footer">
+              Card Footer
+            </footer>
+          </section>
+        </div>
         <div class="section" id="section-forms">
-          <h3 class="title">Forms</h3>
+          <h3 class="title"># Forms</h3>
           <p class="description">All common form elements with basic, clean styles.</p>
           <div class="row">
             <div class="col-xs-7">
@@ -680,18 +699,23 @@
 
 				<!-- Utilities -->	
         <div class="section" id="utilities">
-          <h3 class="title">Utilities</h3>
+          <h3 class="title"># Utilities</h3>
           <p class="description">Vishnu provides some basic utility classes to speed up and improve your development.</p>
           <ul>
-            <li><code>txt-center</code> - center align text</li>
-            <li><code>txt-left</code> - left align text</li>
-            <li><code>txt-right</code> - right align text</li>
+            <li><code>pull-left</code> - float left</li>
+            <li><code>pull-right</code> - float right</li>
+            <li><code>text-center</code> - center align text</li>
+            <li><code>text-left</code> - left align text</li>
+            <li><code>text-right</code> - right align text</li>
             <li><code>center</code> - align items within element in the center</li>
             <li><code>h-align</code> - horizontally align an element</li>
             <li><code>v-align</code> - vertical align an element</li>
             <li><code>left</code> - align children to the left</li>
             <li><code>right</code> - align children to the right</li>
+            <li><code>center</code> - align children to the center</li>
             <li><code>full-screen</code> - make element full screen</li>
+            <li><code>full-width</code> - make element full width size</li>
+            <li><code>full-height</code> - make element full height size</li>
             <li><code>fixed</code> - make element full width and fixed</li>
             <li><code>relative</code> - make element relative</li>
             <li><code>truncate</code> - make a single straight line with ellipsis</li>
@@ -724,5 +748,5 @@
 
 </body>
 <!-- Place this tag in your head or just before your close body tag. -->
-<script async defer src="https://buttons.github.io/buttons.js"></script>
+<!-- <script async defer src="https://buttons.github.io/buttons.js"></script> -->
 </html>
