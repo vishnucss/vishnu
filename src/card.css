@@ -1,0 +1,31 @@
+/*
+* Card
+*/
+
+@custom-selector :--card .card;
+
+:--card {
+  border: 1px solid var(--base-light-color);
+  background: #fff;
+  border-radius: var(--base-radius);
+  & .card-header,
+  & .card-footer {
+    position: relative;
+    background: color(var(--base-color) alpha(30%));
+    padding: 10px;
+    display: flex;
+  }
+  & .card-header {
+    border-bottom: 1px solid var(--base-light-color);
+  }
+  & .card-footer {
+    border-top: 1px solid var(--base-light-color);
+  }
+  & .card-title {
+    line-height: 42px;
+    margin: 0;
+  }
+  & .card-content {
+    padding: 15px 10px;
+  }
+}
