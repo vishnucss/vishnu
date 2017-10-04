@@ -2,7 +2,7 @@
  * Links
 */
 
-a {
+:any-link {
   color: var(--primary-color);
   transition: color 0.1s ease;
   &:hover {
@@ -13,7 +13,7 @@ a {
   &:focus {
     outline: thin dotted;
   }
-  &:active,&:hover {
+  &:active, &:hover {
     outline: 0;
   }
 }

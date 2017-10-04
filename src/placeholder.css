@@ -1,0 +1,11 @@
+/* 
+ * Placeholder
+*/
+
+.placeholder {
+  padding: 10px;
+  border: 1px dashed var(--base-light-color);
+  background: var(--base-color);
+  color: var(--base-text-color);
+  border-radius: var(--base-radius);
+}
