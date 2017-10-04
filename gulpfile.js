@@ -1,7 +1,12 @@
+/* 
+* Config Gulpfile
+*/
+
 'use strict'
 
 const gulp = require('gulp')
 , pkg = require('./package.json')
+, symdest = require('gulp-symdest')
 , postcss = require('gulp-postcss')
 , cssnano = require('cssnano')
 , cssnext = require('postcss-cssnext')
@@ -16,6 +21,9 @@ const gulp = require('gulp')
 , $ = require('gulp-load-plugins')()
 , browserSync = require('browser-sync').create(); // create a browser sync instance.
 
+/* 
+* Build task
+*/
 gulp.task('build', function () {
   let plugins = [
     selector(),
@@ -31,11 +39,13 @@ gulp.task('build', function () {
       './src/buttons.css', 
       './src/forms.css', 
       './src/lists.css', 
+      './src/placeholder.css', 
       './src/tables.css', 
       './src/images.css', 
       './src/utils.css', 
       './src/misc.css',
-      './src/grid.css', 
+      './src/card.css',
+      './src/grid.css',
       './src/responsive.css'
     ])
     .pipe($.sourcemaps.init())
@@ -47,6 +57,9 @@ gulp.task('build', function () {
     .pipe(gulp.dest('./dist/'))
 })
 
+/* 
+* Minify in build
+*/
 gulp.task('minify', ['build'], function() {
   let plugins = [
     selector(),
@@ -66,9 +79,13 @@ gulp.task('minify', ['build'], function() {
     .pipe($.concat('vishnu.min.css'))
     .pipe($.sourcemaps.write('.'))
     .pipe(gulp.dest('./dist/'))
+    .pipe(symdest('./docs/'))
     .pipe(browserSync.reload({stream: true}))
 })
 
+/* 
+* Dev to docs web browser
+*/
 gulp.task('browserSync', function() {
   browserSync.init({
     server: {
@@ -77,10 +94,16 @@ gulp.task('browserSync', function() {
   })
 })
 
+/* 
+* Watch tasks
+*/
 gulp.task('watch', function() {
   gulp.watch(['src/*.css'], ['default'])
   gulp.watch("./docs/*.html").on('change', browserSync.reload)
 })
 
+/* 
+* Running commands to development and build
+*/
 gulp.task('serve', ['browserSync', 'watch'])
 gulp.task('default', ['build', 'minify'])
