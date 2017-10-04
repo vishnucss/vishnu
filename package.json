@@ -1,7 +1,7 @@
 {
   "name": "vishnucss",
   "filename": "vishnu.min.css",
-  "version": "1.0.0-beta.5",
+  "version": "1.0.0-beta.6",
   "description": "A simple and minimalist toolkit with modern css",
   "main": "./dist/vishnu.min.css",
   "keywords": [
@@ -58,6 +58,7 @@
     "gulp-load-plugins": "^1.2.4",
     "gulp-postcss": "^7.0.0",
     "gulp-size": "^2.1.0",
+    "gulp-symdest": "^1.1.0",
     "gulp-sourcemaps": "^2.6.1",
     "gulp-util": "~2.2.9",
     "postcss-cssnext": "^3.0.2",

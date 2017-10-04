@@ -1,5 +1,5 @@
 /**
-* vishnucss v1.0.0-beta.5
+* vishnucss v1.0.0-beta.6
 * A simple and minimalist toolkit with modern css
 * https://vishnucss.github.io/vishnu
 */
@@ -8,6 +8,28 @@
 * Variables
 */
 
+:root {
+
+  /* Typhography */
+
+  /* Colours */
+
+  /* Transitions */
+
+  /* Utils */
+
+}
+
+
+/* Extras */
+::-moz-selection {
+  color: #667eea; 
+  background: #E6ECF0;
+}
+::selection {
+  color: #667eea; 
+  background: #E6ECF0;
+}
 
 /* 
  * Reset
@@ -118,23 +140,26 @@ p {
  * Links
 */
 
-a {
+:link,:visited {
   color: #667eea;
   transition: color 0.1s ease
 }
 
-a:hover {
+:link:hover,:visited:hover {
   cursor: pointer;
   color: rgba(102, 126, 234, 0.8);
   text-decoration: none;
+
 }
 
-a:focus {
+:link:focus,:visited:focus {
   outline: thin dotted;
+
 }
 
-a:active,a:hover {
+:link:active,:visited:active, :link:hover, :visited:hover {
   outline: 0;
+
 }
 /* 
  * Buttons
@@ -306,12 +331,14 @@ textarea[type='text'] {
 
 input[type='text']:hover, input[type='password']:hover, input[type='email']:hover, input[type='search']:hover, input[type='number']:hover, input[type='file']:hover, input[type='tel']:hover, input[type='url']:hover, select:hover, textarea:hover, textarea[type='text']:hover {
   border: 1px solid rgba(102, 126, 234, 0.8);
+
 }
 
 input[type='text']:focus, input[type='password']:focus, input[type='email']:focus, input[type='search']:focus, input[type='number']:focus, input[type='file']:focus, input[type='tel']:focus, input[type='url']:focus, select:focus, textarea:focus, textarea[type='text']:focus {
   outline: none;
   border: 1px solid rgb(102, 121, 204);
   box-shadow: rgba(102, 126, 234, 0.6) 0px 0px 4px -1px;
+
 }
 
 textarea,
@@ -344,6 +371,18 @@ li {
 }
 
 /* 
+ * Placeholder
+*/
+
+.placeholder {
+  padding: 10px;
+  border: 1px dashed #f1f1f1;
+  background: #E6ECF0;
+  color: #444;
+  border-radius: 4px;
+}
+
+/* 
  * Tables
 */
 
@@ -359,53 +398,65 @@ table,
 table th, table td, .table th, .table td {
   vertical-align: middle;
   padding: 12px 4px;
+
 }
 
 table thead, .table thead {
   border-bottom: 1px solid #e5e5e5;
+
 }
 
-/* responsive tables */
+/* responsive table */
 @media only screen and (max-width: 48em) {
   table.responsive, .table.responsive {
     position: relative;
     display: block;
+
   }
   table.responsive th, table.responsive td, .table.responsive th, .table.responsive td {
     margin: 0;
+
   }
   table.responsive thead, .table.responsive thead {
     display: block;
     float: left;
     border: 0;
+
   }
   table.responsive thead tr, .table.responsive thead tr {
     display: block;
     padding: 0 10px 0 0;
     border-right: 1px solid #e5e5e5;
+
   }
   table.responsive thead th, .table.responsive thead th {
     text-align: left;
+
   }
   table.responsive th, .table.responsive th {
     display: block;
     text-align: right;
+
   }
   table.responsive tbody, .table.responsive tbody {
     display: block;
     overflow-x: auto;
     white-space: nowrap;
+
   }
   table.responsive tbody tr, .table.responsive tbody tr {
     display: inline-block;
+
   }
   table.responsive td, .table.responsive td {
     display: block;
     min-height: 16px;
     text-align: left;
+
   }
   table.responsive tr, .table.responsive tr {
     padding: 0 10px;
+
   }
 }
 
@@ -429,15 +480,15 @@ img {
   float: left;
 }
 
-.txt-center {
+.text-center {
   text-align: center;
 }
 
-.txt-left {
+.text-left {
   text-align: left;
 }
 
-.txt-right {
+.text-right {
   text-align: right;
 }
 
@@ -455,14 +506,14 @@ img {
   min-height: 100%;
 }
 
-.v-align {
+.vertical-align {
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
           align-items: center;
 }
 
-.h-align {
+.horizontal-align {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
@@ -512,13 +563,14 @@ img {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 /* 
  * Misc
 */
 
 hr {
   height: 0;
-  margin: 15px 0;
+  margin: 20px 0;
   border: 0;
   border-top: 1px solid #e5e5e5;
 }
@@ -546,6 +598,46 @@ pre > code {
   word-wrap: break-word;
 }
 
+/*
+* Card
+*/
+
+.card {
+  border: 1px solid #f1f1f1;
+  background: #fff;
+  border-radius: 4px
+}
+
+.card .card-header,
+  .card .card-footer {
+  position: relative;
+  background: rgba(230, 236, 240, 0.3);
+  padding: 10px;
+  display: -webkit-box;
+  display: flex;
+
+}
+
+.card .card-header {
+  border-bottom: 1px solid #f1f1f1;
+
+}
+
+.card .card-footer {
+  border-top: 1px solid #f1f1f1;
+
+}
+
+.card .card-title {
+  line-height: 42px;
+  margin: 0;
+
+}
+
+.card .card-content {
+  padding: 15px 10px;
+
+}
 /* 
  * Grid
 */
