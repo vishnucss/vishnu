@@ -19,7 +19,7 @@
   }
 }
 
-/* responsive tables */
+/* responsive table */
 @media (--tablet-viewport) {
   :--table {
     &.responsive {
