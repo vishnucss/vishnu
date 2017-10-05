@@ -11,7 +11,7 @@
 * Table
 */
 
-@custom-media :--table table, .table;
+@custom-selector :--table table, .table;
 
 /*
 * Buttons
