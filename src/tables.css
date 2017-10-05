@@ -2,7 +2,12 @@
  * Tables
 */
 
-@custom-selector :--table table, .table;
+/*
+*
+* @ custom-properties
+* :--table table, .table
+*
+*/
 
 :--table {
   width: 100%;

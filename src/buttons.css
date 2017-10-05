@@ -2,15 +2,20 @@
  * Buttons
 */
 
-@custom-selector :--button button, .button, [type='submit'];
-@custom-selector :--button-outline button.outline, .button.outline, [type='submit'].outline;
-@custom-selector :--button-flat button.flat, .button.flat, [type='submit'].flat;
-@custom-selector :--button-primary button.primary, .button.primary, [type='submit'].primary;
-@custom-selector :--button-rounded button.rounded, .button.rounded, [type='submit'].rounded;
-@custom-selector :--enter :hover;
-@custom-selector :--press :focus, :active;
-@custom-selector :--large .large, [type='submit'].large;
-@custom-selector :--small .small, [type='submit'].small;
+/*
+*
+* @ custom-properties
+* :--button button, .button, [type='submit'];
+* :--button-outline button.outline, .button.outline, [type='submit'].outline;
+* :--button-flat button.flat, .button.flat, [type='submit'].flat;
+* :--button-primary button.primary, .button.primary, [type='submit'].primary;
+* :--button-rounded button.rounded, .button.rounded, [type='submit'].rounded;
+* :--hovered :hover;
+* :--pressed :focus;
+* :--large .large;
+* :--small .small;
+*
+*/
 
 /* Default */
 :--button {
@@ -25,11 +30,11 @@
   border: 1.5px solid transparent;
   cursor: pointer;
 }
-:--button:--enter {
+:--button:--hovered {
   color: var(--primary-color);
   background: color(var(--base-color) alpha(-50%));
 }
-:--button:--press {
+:--button:--pressed {
   outline: none;
   transform: scale(0.99);
   background: color(var(--base-color) alpha(-20%));
@@ -51,12 +56,12 @@
   background: none;
   border: 1.5px solid var(--base-color);
 }
-:--button-outline:--enter {
+:--button-outline:--hovered {
   background: none;
   border: 1.5px solid color(var(--primary-color) alpha(-50%));
   color: color(var(--primary-color) alpha(-50%));
 }
-:--button-outline:--press {
+:--button-outline:--pressed {
   transform: scale(0.99);
   border-color: color(var(--primary-color) alpha(-20%));
   color: color(var(--primary-color) alpha(-20%));
@@ -68,11 +73,11 @@
   background: none;
   border: 1.5px solid transparent;
 }
-:--button-flat:--enter {
+:--button-flat:--hovered {
   background: none;
   color: color(var(--primary-color) alpha(-20%));
 }
-:--button-flat:--press {
+:--button-flat:--pressed {
   transform: scale(0.99);
   color: color(var(--primary-color) alpha(-10%));
 }
@@ -83,11 +88,11 @@
   background: var(--primary-color);
   border: 1.5px solid transparent;
 }
-:--button-primary:--enter {
+:--button-primary:--hovered {
   background: color(var(--primary-color) alpha(-20%));
   color: #fff;
 }
-:--button-primary:--press {
+:--button-primary:--pressed {
   transform: scale(0.99);
   background: color(var(--primary-color) alpha(-10%));
 }

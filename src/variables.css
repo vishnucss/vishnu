@@ -16,6 +16,9 @@
   --secondary-color: #764ba2;
   --base-color: #E6ECF0;
   --base-dark-color: #282828;
+  --base-info-color: #2C80FF;
+  --base-danger-color: #F93838;
+  --base-success-color: #0DC222;
   --base-light-color: #f1f1f1;
   --base-border-color: #e5e5e5;
   --base-text-color: #444;
@@ -28,11 +31,4 @@
   --base-radius: 4px;
   --base-rounded-radius: 50%;
 
-}
-
-
-/* Extras */
-::selection {
-  color: var(--primary-color); 
-  background: var(--base-color);
 }

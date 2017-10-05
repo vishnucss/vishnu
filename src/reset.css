@@ -2,6 +2,11 @@
  * Reset
 */
 
+::selection {
+  color: var(--primary-color); 
+  background: var(--base-color);
+}
+
 html,
 body {
   margin: 0;
