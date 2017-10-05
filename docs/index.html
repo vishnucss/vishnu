@@ -9,12 +9,13 @@
   <title>Vishnu - A simple and minimalist toolkit with modern css.</title>
   <link rel="icon" href="./logo.png">
   <link rel="stylesheet" href="./vishnu.min.css">
+  <link rel="stylesheet" href="./vishnu.extensions.min.css">
   <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
-  <main class="wrapper">
+  <main id="docs-app" class="wrapper">
     <a href="https://github.com/vishnucss/vishnu"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
     <section class="hero flex center">
       <div class="text-center">
@@ -22,14 +23,15 @@
         <h1>Vishnu</h1>
         <h5>A simple and minimalist toolkit with modern css</h5>
         <a class="github-button" href="https://github.com/vishnucss/vishnu" data-icon="octicon-star" data-size="large" aria-label="Star vishnucss/vishnu on GitHub">Star</a>
-        <small class="full-width">Currently v1.0.0-beta.6</small>
+        <small class="full-width">Currently v1.0.0-beta.7</small>
       </div>
     </section>
 
     <section id="installation" class="section">
       <div>
         <h2>Why should I use it?</h2>
-        <p class="description">A simple style guide provides a setup of styles using Modern CSS for a fast and clean starting point. Everything you need to create a basic project is included.</p>
+        <p class="description">A simple style guide provides a setup of styles using Modern CSS for a fast and clean starting point. Everything
+          you need to create a basic project is included.</p>
         <h3 class="title"># Install</h3>
         <p class="description">You can install Vishnu in multiple ways, but it's as simple as adding a single <code>link</code> tag to your project.</p>
 
@@ -39,15 +41,15 @@
         <h5>NPM</h5>
         <pre><code>$ npm install vishnucss</code></pre>
       </div>
-		</section>
+    </section>
 
     <section id="docs" class="section">
       <div>
         <h2 id="docs">Documentation</h2>
-        <p class="description">Here is a docs of all the things styled by Vishnu, how to use the grid, tables, utils and how to use some components.</p>
-				
-				<!-- Typhography -->	
-				<div class="section" id="section-typhography">
+        <p class="description">Here is a docs of all the things styled, how to use the buttons, tables, utils and how to use some components.</p>
+
+        <!-- Typhography -->
+        <div class="section" id="section-typhography">
           <h3 class="title"># Typhography</h3>
           <p class="description">Based on <code>rem</code> units. All <code>rem</code> units are converted to base 10, so <code>1rem</code> is equal
             to <code>10px</code>. By default, all headings, paragraphs, and code use system fonts, using the most modern
@@ -68,19 +70,20 @@
               <a href="#">Links</a>
             </div>
           </div>
-				</div>
-				
-				<!-- Button -->
-				<div class="section" id="section-button">
-					<h3 class="title"># Buttons</h3>
-					<p class="description">The Button, an essential part of any user experience. Buttons come in some basic styles: The <code>&lt;button&gt;&lt;/button&gt;</code> element has default color, whereas <code>.outline</code> has a simple outline around, <code>.flat</code> is entirely clear., and <code>.rounded</code> is rounded border radius.</p>
-					<div class="row">
-						<div class="col-xs-4 col-sm-12">
-							<button>Default Button</button>
-						</div>
-						<div class="col-xs-8 col-sm-12">
-							<p>This button is available by default</p><code>&lt;button&gt;Content&lt;/button&gt;</code>
-						</div>
+        </div>
+
+        <!-- Button -->
+        <div class="section" id="section-button">
+          <h3 class="title"># Buttons</h3>
+          <p class="description">The Button, an essential part of any user experience. Buttons come in some basic styles: The <code>&lt;button&gt;Content&lt;/button&gt;</code>            element has default color, whereas <code>.outline</code> has a simple outline around, <code>.flat</code> is entirely
+            clear and <code>.rounded</code> is rounded border radius.</p>
+          <div class="row">
+            <div class="col-xs-4 col-sm-12">
+              <button>Default Button</button>
+            </div>
+            <div class="col-xs-8 col-sm-12">
+              <p>This button is available by default</p><code>&lt;button&gt;Content&lt;/button&gt;</code>
+            </div>
           </div>
           <div class="row">
             <div class="col-xs-4 col-sm-12">
@@ -98,566 +101,170 @@
               <p>This button is available by class <code>.small</code></p><code>&lt;button class='small'&gt;Content&lt;/button&gt;</code>
             </div>
           </div>
-					<div class="row">
-						<div class="col-xs-4 col-sm-12">
-							<button class="outline">Outlined Button</button>
-						</div>
-						<div class="col-xs-8 col-sm-12">
-							<p>This button is available with a single class</p><code>&lt;button class='outline'&gt;Content&lt;/button&gt;</code>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-4 col-sm-12">
-							<button class="flat">Flat Button</button>
-						</div>
-						<div class="col-xs-8 col-sm-12">
-							<p>This button is available by flat</p><code>&lt;button class="flat"&gt;Content&lt;/button&gt;</code>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-4 col-sm-12">
-							<button class="primary">Primary Button</button>
-						</div>
-						<div class="col-xs-8 col-sm-12">
-							<p>This button is available with a single class</p><code>&lt;button class='primary'&gt;Content&lt;/button&gt;</code>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-4 col-sm-12">
-							<button class="rounded">Rounded Button</button>
-						</div>
-						<div class="col-xs-8 col-sm-12">
-							<p>This button is available with a single class</p><code>&lt;button class='rounded'&gt;content&lt;/button&gt;</code>
-						</div>
-					</div>
-				</div>
-				
-				<div class="section" id="section-list">
-					<h3 class="title"># Lists</h3>
-					<p class="description">The List is a very versatile and common way to display items. Milligram has three types of lists: The unordered list use ul element will be marked with a outline circles, the ordered list use ol element and your items will be marked with numbers, the description list use dl element and your items will not be marking, only spacings.</p>
-					
-					<div class="row">
-						<div class="col-xs-4">
-							<!-- Unordered list -->
-							<h5>Unordered</h5>
-							<ul>
-								<li>Unordered list item 1</li>
-								<li>Unordered list item 2</li>
-							</ul>
-						</div>
-	
-						<div class="col-xs-4">
-							<!-- Ordered list -->
-							<h5>Ordered</h5>
-							<ol>
-								<li>Ordered list item 1</li>
-								<li>Ordered list item 2</li>
-							</ol>
-						</div>
-	
-						<div class="col-xs-4">
-							<!-- Description list -->
-							<h5>Description</h5>
-							<dl>
-								<dt>Description list item 1</dt>
-								<dd>Description list item 1.1</dd>
-							</dl>
-						</div>
-					</div>
-					
-				</div>
-				
-				<div class="section" id="section-tables">
-					<h3 class="title"># Tables</h3>
-					<p class="description">The Table element represents data in two dimensions or more. We encourage the use of proper formatting with <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> to create a <code>&lt;table&gt;</code>. The code becomes cleaner without disturbing understanding.</p>
-					<p class="description">Add the class <code>.table</code> to any <code>&lt;table&gt;</code> element and <code>.responsive</code> to table responsive.</p>
-					
-					<!-- Basic -->
-					<h5>Basic</h5>
-
-					<table class="table">
-						<thead>
-							<tr>
-								<th>Name</th>
-								<th>Age</th>
-								<th>Height</th>
-								<th>Location</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Neymar Jr</td>
-								<td>25</td>
-								<td>1,75</td>
-								<td>Brazil, BR</td>
-							</tr>
-							<tr>
-								<td>Cristiano Ronaldo</td>
-								<td>32</td>
-								<td>1,85</td>
-								<td>Portugal, PT</td>
-							</tr>
-							<tr>
-								<td>Lionel Messi</td>
-								<td>30</td>
-								<td>1,70</td>
-								<td>Argentina, ARG</td>
-							</tr>
-						</tbody>
-					</table>
-
-					<hr>
-					
-					<!-- Responsive -->
-					<h5>Responsive</h5>
-
-					<table class="table responsive">
-							<thead>
-								<tr>
-									<th>Name</th>
-									<th>Age</th>
-									<th>Height</th>
-									<th>Location</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Neymar Jr</td>
-									<td>25</td>
-									<td>1,75</td>
-									<td>Brazil, BR</td>
-								</tr>
-								<tr>
-									<td>Cristiano Ronaldo</td>
-									<td>32</td>
-									<td>1,85</td>
-									<td>Portugal, PT</td>
-								</tr>
-								<tr>
-									<td>Lionel Messi</td>
-									<td>30</td>
-									<td>1,70</td>
-									<td>Argentina, ARG</td>
-								</tr>
-							</tbody>
-						</table>
-
-				</div>
-
-				<!-- Grid -->		
-        <div class="section" id="section-grid">
-          <h3 class="title"># Grid</h3>
-          <p class="description">Grid based on the flex display property.</p>
-            <div class="row">
-              <h5>Responsive</h5>
-              <p class="description">Responsive modifiers enable specifying different column sizes, offsets, alignment and distribution at xs, sm,
-                md & lg viewport widths.</p>
-              <div class="col-xs-12 col-sm-3 col-md-2 col-lg-1">
-                <div class="box-row"></div>
-              </div>
-              <div class="col-xs-6 col-sm-6 col-md-8 col-lg-10">
-                <div class="box-row"></div>
-              </div>
-              <div class="col-xs-6 col-sm-3 col-md-2 col-lg-1">
-                <div class="box-row"></div>
-              </div>
+          <div class="row">
+            <div class="col-xs-4 col-sm-12">
+              <button class="outline">Outlined Button</button>
             </div>
-            <div class="row">
-              <div class="col-xs-12 col-sm-3 col-md-2 col-lg-1">
-                <div class="box-row"></div>
-              </div>
-              <div class="col-xs-12 col-sm-9 col-md-10 col-lg-11">
-                <div class="box-row"></div>
-              </div>
-            </div>
-
-            <h5>Fluid</h5>
-            <p class="description">Percent based widths allow fluid resizing of columns and rows.</p>
-
-            <div class="row">
-              <div class="col-xs-12">
-                <div class="box-row"></div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-1">
-                <div class="box-row"></div>
-              </div>
-              <div class="col-xs-11">
-                <div class="box-row"></div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-2">
-                <div class="box-row"></div>
-              </div>
-              <div class="col-xs-10">
-                <div class="box-row"></div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-3">
-                <div class="box-row"></div>
-              </div>
-              <div class="col-xs-9">
-                <div class="box-row"></div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-4">
-                <div class="box-row"></div>
-              </div>
-              <div class="col-xs-8">
-                <div class="box-row"></div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-5">
-                <div class="box-row"></div>
-              </div>
-              <div class="col-xs-7">
-                <div class="box-row"></div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-6">
-                <div class="box-row"></div>
-              </div>
-              <div class="col-xs-6">
-                <div class="box-row"></div>
-              </div>
-            </div>
-
-            <h5>Offsets</h5>
-            <p class="description">Offset a column</p>
-            <div class="row">
-              <div class="col-xs-offset-11 col-xs-1">
-                <div class="box-row"></div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-offset-10 col-xs-2">
-                <div class="box-row"></div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-offset-9 col-xs-3">
-                <div class="box-row"></div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-offset-8 col-xs-4">
-                <div class="box-row"></div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-offset-7 col-xs-5">
-                <div class="box-row"></div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-offset-6 col-xs-6">
-                <div class="box-row"></div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-offset-5 col-xs-7">
-                <div class="box-row"></div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-offset-4 col-xs-8">
-                <div class="box-row"></div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-offset-3 col-xs-9">
-                <div class="box-row"></div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-offset-2 col-xs-10">
-                <div class="box-row"></div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-offset-1 col-xs-11">
-                <div class="box-row"></div>
-              </div>
-            </div>
-
-            <h5>Auto Width</h5>
-            <p class="description">Add any number of auto sizing columns to a row. Let the grid figure it out.</p>
-            <div class="row">
-              <div class="col-xs-7">
-                <div class="box container-grid">
-                  <div class="row">
-                    <div class="col-xs-9">
-                      <div class="box-first container-grid">
-                        <div class="row">
-                          <div class="col-xs-4">
-                            <div class="box-nested"></div>
-                          </div>
-                          <div class="col-xs-8">
-                            <div class="box-nested"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xs-3">
-                      <div class="box-first container-grid">
-                        <div class="row">
-                          <div class="col-xs">
-                            <div class="box-nested"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xs-5">
-                <div class="box container-grid">
-                  <div class="row">
-                    <div class="col-xs-12">
-                      <div class="box-first container-grid">
-                        <div class="row">
-                          <div class="col-xs-6">
-                            <div class="box-nested"></div>
-                          </div>
-                          <div class="col-xs-6">
-                            <div class="box-nested"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <h5>Alignment</h5>
-            <p class="description">Add classes to align elements to the start or end of a row as well as the top, bottom, or center of a column</p>
-
-            <code>.start-</code>
-            <div class="row">
-              <div class="col-xs-12">
-                <div class="box container-grid">
-                  <div class="row start-xs">
-                    <div class="col-xs-6">
-                      <div class="box-nested"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <code>.center-</code>
-            <div class="row">
-              <div class="col-xs-12">
-                <div class="box container-grid">
-                  <div class="row center-xs">
-                    <div class="col-xs-6">
-                      <div class="box-nested"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <code>.end-</code>
-            <div class="row">
-              <div class="col-xs-12">
-                <div class="box container-grid">
-                  <div class="row end-xs">
-                    <div class="col-xs-6">
-                      <div class="box-nested"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-						</div>
-						
-						<p class="margin">Here is an example of using the modifiers in conjunction to acheive different alignment at different viewport sizes.</p>
-						<div class="row">
-							<div class="col-xs-12">
-								<div class="box container-grid">
-									<div class="row center-xs end-sm start-lg">
-										<div class="col-xs-6">
-											<div class="box-nested"></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-            <code>.top-</code>
-            <div class="row top-xs size">
-              <div class="col-xs-6">
-                <div class="box-large"></div>
-              </div>
-              <div class="col-xs-6">
-                <div class="box"></div>
-              </div>
-            </div>
-
-            <code>.middle-</code>
-            <div class="row middle-xs size">
-              <div class="col-xs-6">
-                <div class="box-large"></div>
-              </div>
-              <div class="col-xs-6">
-                <div class="box"></div>
-              </div>
-            </div>
-
-            <code>.bottom-</code>
-            <div class="row bottom-xs size">
-              <div class="col-xs-6">
-                <div class="box-large"></div>
-              </div>
-              <div class="col-xs-6">
-                <div class="box"></div>
-              </div>
-            </div>
-
-            <h5>Distribution</h5>
-            <p class="description">Add classes to distribute the contents of a row or column.</p>
-
-            <code>.around-</code>
-            <div class="row">
-              <div class="col-xs-12">
-                <div class="box container-grid">
-                  <div class="row around-xs">
-                    <div class="col-xs-2">
-                      <div class="box-nested"></div>
-                    </div>
-                    <div class="col-xs-2">
-                      <div class="box-nested"></div>
-                    </div>
-                    <div class="col-xs-2">
-                      <div class="box-nested"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <code>.between-</code>
-            <div class="row">
-              <div class="col-xs-12">
-                <div class="box container-grid">
-                  <div class="row between-xs">
-                    <div class="col-xs-2">
-                      <div class="box-nested"></div>
-                    </div>
-                    <div class="col-xs-2">
-                      <div class="box-nested"></div>
-                    </div>
-                    <div class="col-xs-2">
-                      <div class="box-nested"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <h5>Reordering</h5>
-            <p class="description">Add classes to distribute the contents of a row or column.</p>
-
-            <code>.first-</code>
-            <div class="row reorder">
-              <div class="col-xs-12">
-                <div class="box container-grid">
-                  <div class="row">
-                    <div class="col-xs-2 first-xs">
-                      <div class="box-nested">1</div>
-                    </div>
-                    <div class="col-xs-2">
-                      <div class="box-last">2</div>
-                    </div>
-                    <div class="col-xs-2">
-                      <div class="box-last">3</div>
-                    </div>
-                    <div class="col-xs-2">
-                      <div class="box-last">4</div>
-                    </div>
-                    <div class="col-xs-2">
-                      <div class="box-last">5</div>
-                    </div>
-                    <div class="col-xs-2">
-                      <div class="box-last">6</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <code>.last-</code>
-            <div class="row reorder">
-              <div class="col-xs-12">
-                <div class="box container-grid">
-                  <div class="row">
-                    <div class="col-xs-2 last-xs">
-                      <div class="box-nested">1</div>
-                    </div>
-                    <div class="col-xs-2">
-                      <div class="box-first">2</div>
-                    </div>
-                    <div class="col-xs-2">
-                      <div class="box-first">3</div>
-                    </div>
-                    <div class="col-xs-2">
-                      <div class="box-first">4</div>
-                    </div>
-                    <div class="col-xs-2">
-                      <div class="box-first">5</div>
-                    </div>
-                    <div class="col-xs-2">
-                      <div class="box-first">6</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-        </div>
-
-				<!-- Card -->	
-        <div class="section" id="section-card">
-          <h3 class="title"># Card</h3>
-          <p class="description">Basic and Complet card to your widgets or components.</p>
-          <div class="card">
-            <div class="card-content">
-              Basic card
+            <div class="col-xs-8 col-sm-12">
+              <p>This button is available with a single class</p><code>&lt;button class='outline'&gt;Content&lt;/button&gt;</code>
             </div>
           </div>
-          <hr /> 
-          <section class="card">
-            <header class="card-header">
-              <h4 class="card-title">
-                Title your content
-              </h4>
-            </header>
-            <div class="card-content">
-              Text
+          <div class="row">
+            <div class="col-xs-4 col-sm-12">
+              <button class="flat">Flat Button</button>
             </div>
-            <footer class="card-footer">
-              Card Footer
-            </footer>
-          </section>
+            <div class="col-xs-8 col-sm-12">
+              <p>This button is available by flat</p><code>&lt;button class="flat"&gt;Content&lt;/button&gt;</code>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-4 col-sm-12">
+              <button class="primary">Primary Button</button>
+            </div>
+            <div class="col-xs-8 col-sm-12">
+              <p>This button is available with a single class</p><code>&lt;button class='primary'&gt;Content&lt;/button&gt;</code>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-4 col-sm-12">
+              <button class="rounded">Rounded Button</button>
+            </div>
+            <div class="col-xs-8 col-sm-12">
+              <p>This button is available with a single class</p><code>&lt;button class='rounded'&gt;content&lt;/button&gt;</code>
+            </div>
+          </div>
         </div>
+
+        <!-- List -->
+        <div class="section" id="section-list">
+          <h3 class="title"># Lists</h3>
+          <p class="description">The List is a very versatile and common way to display items. Milligram has three types of lists: The unordered
+            list use ul element will be marked with a outline circles, the ordered list use ol element and your items will
+            be marked with numbers, the description list use dl element and your items will not be marking, only spacings.</p>
+
+          <div class="row">
+            <div class="col-xs-4">
+              <!-- Unordered list -->
+              <h5>Unordered</h5>
+              <ul>
+                <li>Unordered list item 1</li>
+                <li>Unordered list item 2</li>
+              </ul>
+            </div>
+
+            <div class="col-xs-4">
+              <!-- Ordered list -->
+              <h5>Ordered</h5>
+              <ol>
+                <li>Ordered list item 1</li>
+                <li>Ordered list item 2</li>
+              </ol>
+            </div>
+
+            <div class="col-xs-4">
+              <!-- Description list -->
+              <h5>Description</h5>
+              <dl>
+                <dt>Description list item 1</dt>
+                <dd>Description list item 1.1</dd>
+              </dl>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Table -->
+        <div class="section" id="section-table">
+          <h3 class="title"># Tables</h3>
+          <p class="description">The Table element represents data in two dimensions or more. We encourage the use of proper formatting with <code>&lt;thead&gt;</code>            and <code>&lt;tbody&gt;</code> to create a <code>&lt;table&gt;</code>. The code becomes cleaner without disturbing
+            understanding.</p>
+          <p class="description">Add the class <code>.table</code> to any <code>&lt;table&gt;</code> element and <code>.responsive</code> to table
+            responsive.</p>
+
+          <!-- Basic -->
+          <h5>Basic</h5>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Height</th>
+                <th>Location</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Neymar Jr</td>
+                <td>25</td>
+                <td>1,75</td>
+                <td>Brazil, BR</td>
+              </tr>
+              <tr>
+                <td>Cristiano Ronaldo</td>
+                <td>32</td>
+                <td>1,85</td>
+                <td>Portugal, PT</td>
+              </tr>
+              <tr>
+                <td>Lionel Messi</td>
+                <td>30</td>
+                <td>1,70</td>
+                <td>Argentina, ARG</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <hr>
+
+          <!-- Responsive -->
+          <h5>Responsive</h5>
+
+          <table class="table responsive">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Height</th>
+                <th>Location</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Neymar Jr</td>
+                <td>25</td>
+                <td>1,75</td>
+                <td>Brazil, BR</td>
+              </tr>
+              <tr>
+                <td>Cristiano Ronaldo</td>
+                <td>32</td>
+                <td>1,85</td>
+                <td>Portugal, PT</td>
+              </tr>
+              <tr>
+                <td>Lionel Messi</td>
+                <td>30</td>
+                <td>1,70</td>
+                <td>Argentina, ARG</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+
+        <!-- Forms -->
         <div class="section" id="section-forms">
           <h3 class="title"># Forms</h3>
           <p class="description">All common form elements with basic, clean styles.</p>
           <div class="row">
             <div class="col-xs-7">
-              <label>Name</label>
-              <input type="text" placeholder="Carl Johnson">
+              <label for="name">Name</label>
+              <input type="text" placeholder="Carl Johnson" id="name">
             </div>
             <div class="col-xs-5">
-              <label>Select</label>
-              <select name="type">
+              <label for="select">Select</label>
+              <select name="type" id="select">
 									<option value="fruit">Fruit</option>
 									<option value="drink">Drink</option>
 									<option value="milk">Milk</option>
@@ -666,8 +273,8 @@
           </div>
           <div class="row">
             <div class="col-xs-12">
-              <label>Message</label>
-              <textarea placeholder="Greetings..."></textarea>
+              <label for="message">Message</label>
+              <textarea placeholder="Greetings..." id="message"></textarea>
             </div>
           </div>
           <div class="row">
@@ -688,19 +295,502 @@
 							</label>
             </div>
           </div>
-          <div class="row margin">
+          <!-- <div class="row margin">
             <div class="col-xs-12">
               <pre><code>&lt;input type=&quot;text&quot; placeholder=&quot;What is your name?&quot;/&gt;
 &lt;input type=&quot;email&quot; placeholder=&quot;What is your email?&quot;/&gt;
 &lt;textarea placeholder=&quot;Additional details...&quot;&gt;&lt;/textarea&gt;</code></pre>
             </div>
+          </div> -->
+        </div>
+
+        <hr />
+
+        <!-- Extensions -->
+        <h2 id="extensions">Extensions</h2>
+        <p class="description">Here is a extensions or packages styled by Vishnu, how to use the grid, card, utils and how to install and use some modules.</p>
+        <h4>Install all extensions</h4>
+        <h5>CDN</h5>
+        <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/vishnucss-extensions&quot;/&gt;</code></pre>
+
+        <h5>NPM</h5>
+        <pre><code>$ npm install vishnucss-extensions</code></pre>
+
+        <!-- Alert -->
+        <div class="section" id="section-alert">
+          <h3 class="title"># Alert</h3>
+          <p class="description">All common alert with default <code>.alert</code> and other class <code>.info</code>, <code>.danger</code>, <code>.success</code>, improve style uses <code>.rounded</code></p>
+          <h5>CDN</h5>
+          <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/vishnucss-alert&quot;/&gt;</code></pre>
+  
+          <h5>NPM</h5>
+          <pre><code>$ npm install vishnucss-alert</code></pre>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="alert">
+                <button type="button" class="button button-clear close">
+                  x
+                </button>
+                <h5 class="title">Title</h5>
+                <p class="description">
+                  Description
+                </p>
+              </div>
+      
+              <div class="alert info">
+                <button type="button" class="button button-clear close">
+                  x
+                </button>
+                <h5 class="title">Title</h5>
+                <p class="description">
+                  Description
+                </p>
+              </div>
+      
+              <div class="alert danger">
+                <button type="button" class="button button-clear close">
+                  x
+                </button>
+                <h5 class="title">Title</h5>
+                <p class="description">
+                  Description
+                </p>
+              </div>
+      
+              <div class="alert success rounded">
+                <button type="button" class="button button-clear close">
+                  x
+                </button>
+                <h5 class="title">Title</h5>
+              </div>
+            </div>
           </div>
         </div>
 
-				<!-- Utilities -->	
+        <!-- Card -->
+        <div class="section" id="section-card">
+          <h3 class="title"># Card</h3>
+          <p class="description">Basic and Complet card to your widgets or components.</p>
+          <h5>CDN</h5>
+          <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/vishnucss-card&quot;/&gt;</code></pre>
+  
+          <h5>NPM</h5>
+          <pre><code>$ npm install vishnucss-card</code></pre>
+          <div class="card">
+            <div class="card-content">
+              Basic card
+            </div>
+          </div>
+          <hr />
+          <section class="card">
+            <header class="card-header">
+              <h4 class="card-title">
+                Title your content
+              </h4>
+            </header>
+            <div class="card-content">
+              Text
+            </div>
+            <footer class="card-footer">
+              Card Footer
+            </footer>
+          </section>
+        </div>
+
+        <!-- Grid -->
+        <div class="section" id="section-grid">
+          <h3 class="title"># Grid</h3>
+          <p class="description">Grid based on the flex display property.</p>
+          <h5>CDN</h5>
+          <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/vishnucss-grid&quot;/&gt;</code></pre>
+  
+          <h5>NPM</h5>
+          <pre><code>$ npm install vishnucss-grid</code></pre>
+          <div class="row">
+            <h5>Responsive</h5>
+            <p class="description">Responsive modifiers enable specifying different column sizes, offsets, alignment and distribution at xs, sm,
+              md & lg viewport widths.</p>
+            <div class="col-xs-12 col-sm-3 col-md-2 col-lg-1">
+              <div class="box-row"></div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-8 col-lg-10">
+              <div class="box-row"></div>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-2 col-lg-1">
+              <div class="box-row"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-3 col-md-2 col-lg-1">
+              <div class="box-row"></div>
+            </div>
+            <div class="col-xs-12 col-sm-9 col-md-10 col-lg-11">
+              <div class="box-row"></div>
+            </div>
+          </div>
+
+          <h5>Fluid</h5>
+          <p class="description">Percent based widths allow fluid resizing of columns and rows.</p>
+
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="box-row"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-1">
+              <div class="box-row"></div>
+            </div>
+            <div class="col-xs-11">
+              <div class="box-row"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-2">
+              <div class="box-row"></div>
+            </div>
+            <div class="col-xs-10">
+              <div class="box-row"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-3">
+              <div class="box-row"></div>
+            </div>
+            <div class="col-xs-9">
+              <div class="box-row"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-4">
+              <div class="box-row"></div>
+            </div>
+            <div class="col-xs-8">
+              <div class="box-row"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-5">
+              <div class="box-row"></div>
+            </div>
+            <div class="col-xs-7">
+              <div class="box-row"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="box-row"></div>
+            </div>
+            <div class="col-xs-6">
+              <div class="box-row"></div>
+            </div>
+          </div>
+
+          <h5>Offsets</h5>
+          <p class="description">Offset a column</p>
+          <div class="row">
+            <div class="col-xs-offset-11 col-xs-1">
+              <div class="box-row"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-offset-10 col-xs-2">
+              <div class="box-row"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-offset-9 col-xs-3">
+              <div class="box-row"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-offset-8 col-xs-4">
+              <div class="box-row"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-offset-7 col-xs-5">
+              <div class="box-row"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-offset-6 col-xs-6">
+              <div class="box-row"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-offset-5 col-xs-7">
+              <div class="box-row"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-offset-4 col-xs-8">
+              <div class="box-row"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-offset-3 col-xs-9">
+              <div class="box-row"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-offset-2 col-xs-10">
+              <div class="box-row"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-offset-1 col-xs-11">
+              <div class="box-row"></div>
+            </div>
+          </div>
+
+          <h5>Auto Width</h5>
+          <p class="description">Add any number of auto sizing columns to a row. Let the grid figure it out.</p>
+          <div class="row">
+            <div class="col-xs-7">
+              <div class="box container-grid">
+                <div class="row">
+                  <div class="col-xs-9">
+                    <div class="box-first container-grid">
+                      <div class="row">
+                        <div class="col-xs-4">
+                          <div class="box-nested"></div>
+                        </div>
+                        <div class="col-xs-8">
+                          <div class="box-nested"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-3">
+                    <div class="box-first container-grid">
+                      <div class="row">
+                        <div class="col-xs">
+                          <div class="box-nested"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-5">
+              <div class="box container-grid">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="box-first container-grid">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <div class="box-nested"></div>
+                        </div>
+                        <div class="col-xs-6">
+                          <div class="box-nested"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h5>Alignment</h5>
+          <p class="description">Add classes to align elements to the start or end of a row as well as the top, bottom, or center of a column</p>
+
+          <code>.start-</code>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="box container-grid">
+                <div class="row start-xs">
+                  <div class="col-xs-6">
+                    <div class="box-nested"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <code>.center-</code>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="box container-grid">
+                <div class="row center-xs">
+                  <div class="col-xs-6">
+                    <div class="box-nested"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <code>.end-</code>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="box container-grid">
+                <div class="row end-xs">
+                  <div class="col-xs-6">
+                    <div class="box-nested"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p class="margin">Here is an example of using the modifiers in conjunction to acheive different alignment at different viewport sizes.</p>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="box container-grid">
+                <div class="row center-xs end-sm start-lg">
+                  <div class="col-xs-6">
+                    <div class="box-nested"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <code>.top-</code>
+          <div class="row top-xs size">
+            <div class="col-xs-6">
+              <div class="box-large"></div>
+            </div>
+            <div class="col-xs-6">
+              <div class="box"></div>
+            </div>
+          </div>
+
+          <code>.middle-</code>
+          <div class="row middle-xs size">
+            <div class="col-xs-6">
+              <div class="box-large"></div>
+            </div>
+            <div class="col-xs-6">
+              <div class="box"></div>
+            </div>
+          </div>
+
+          <code>.bottom-</code>
+          <div class="row bottom-xs size">
+            <div class="col-xs-6">
+              <div class="box-large"></div>
+            </div>
+            <div class="col-xs-6">
+              <div class="box"></div>
+            </div>
+          </div>
+
+          <h5>Distribution</h5>
+          <p class="description">Add classes to distribute the contents of a row or column.</p>
+
+          <code>.around-</code>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="box container-grid">
+                <div class="row around-xs">
+                  <div class="col-xs-2">
+                    <div class="box-nested"></div>
+                  </div>
+                  <div class="col-xs-2">
+                    <div class="box-nested"></div>
+                  </div>
+                  <div class="col-xs-2">
+                    <div class="box-nested"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <code>.between-</code>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="box container-grid">
+                <div class="row between-xs">
+                  <div class="col-xs-2">
+                    <div class="box-nested"></div>
+                  </div>
+                  <div class="col-xs-2">
+                    <div class="box-nested"></div>
+                  </div>
+                  <div class="col-xs-2">
+                    <div class="box-nested"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h5>Reordering</h5>
+          <p class="description">Add classes to distribute the contents of a row or column.</p>
+
+          <code>.first-</code>
+          <div class="row reorder">
+            <div class="col-xs-12">
+              <div class="box container-grid">
+                <div class="row">
+                  <div class="col-xs-2 first-xs">
+                    <div class="box-nested">1</div>
+                  </div>
+                  <div class="col-xs-2">
+                    <div class="box-last">2</div>
+                  </div>
+                  <div class="col-xs-2">
+                    <div class="box-last">3</div>
+                  </div>
+                  <div class="col-xs-2">
+                    <div class="box-last">4</div>
+                  </div>
+                  <div class="col-xs-2">
+                    <div class="box-last">5</div>
+                  </div>
+                  <div class="col-xs-2">
+                    <div class="box-last">6</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <code>.last-</code>
+          <div class="row reorder">
+            <div class="col-xs-12">
+              <div class="box container-grid">
+                <div class="row">
+                  <div class="col-xs-2 last-xs">
+                    <div class="box-nested">1</div>
+                  </div>
+                  <div class="col-xs-2">
+                    <div class="box-first">2</div>
+                  </div>
+                  <div class="col-xs-2">
+                    <div class="box-first">3</div>
+                  </div>
+                  <div class="col-xs-2">
+                    <div class="box-first">4</div>
+                  </div>
+                  <div class="col-xs-2">
+                    <div class="box-first">5</div>
+                  </div>
+                  <div class="col-xs-2">
+                    <div class="box-first">6</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Utils -->
         <div class="section" id="utilities">
-          <h3 class="title"># Utilities</h3>
-          <p class="description">Vishnu provides some basic utility classes to speed up and improve your development.</p>
+          <h3 class="title"># Utils</h3>
+          <p class="description">Provides some basic utility classes to speed up and improve your development.</p>
+          <h4>Installation</h4>
+          <h5>CDN</h5>
+          <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/vishnucss-utils&quot;/&gt;</code></pre>
+  
+          <h5>NPM</h5>
+          <pre><code>$ npm install vishnucss-utils</code></pre>
           <ul>
             <li><code>pull-left</code> - float left</li>
             <li><code>pull-right</code> - float right</li>
@@ -729,18 +819,19 @@
 
     <hr>
 
-		<!-- Contributing -->	
+    <!-- Contributing -->
     <section class="container" id="contributing">
       <h2>Get Involved</h2>
       <p class="description">We'd love for you to help us build Vishnu. If you'd like to be a contributor, check out our <a href="https://github.com/vishnucss/vishnucss/blob/master/.github/contributing.md"
           title="Contributing">Contributing docs</a>.</p>
     </section>
 
-		<!-- Copyright -->	
+    <!-- Copyright -->
     <footer class="footer">
       <section class="container">
         <p>Made by <a target="_blank" href="http://alexandesigner.com.br" title="Allan Alexandre">Allan Alexandre</a> with
-          <strong class="red">♥</strong>. Licensed under the <a target="_blank" href="https://github.com/vishnucss/vishnucss#license" title="MIT License">MIT License</a>.</p>
+          <strong class="red">♥</strong>. Licensed under the <a target="_blank" href="https://github.com/vishnucss/vishnucss#license"
+            title="MIT License">MIT License</a>.</p>
       </section>
     </footer>
 
@@ -749,4 +840,5 @@
 </body>
 <!-- Place this tag in your head or just before your close body tag. -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
+
 </html>

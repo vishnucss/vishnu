@@ -52,12 +52,12 @@
 }
 
 /* Sections */
-.section {
+#docs-app .section {
   padding-top: 40px;
   margin-top: 40px;
   border-top: 1px solid #e5e5e5;
 }
-.section .title {
+#docs-app .section > .title {
   color: var(--primary-color);
 }
 #section-button .row {

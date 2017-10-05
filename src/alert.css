@@ -1,0 +1,109 @@
+/*
+* Alert
+*/
+
+/*
+*
+* @ custom-properties
+* :--alert .alert;
+* :--close .close;
+* :--info .info;
+* :--danger .danger;
+* :--rounded .rounded;
+* :--placeholder .placeholder;
+*
+*/
+
+:--alert {
+  position: relative;
+  padding: 8px 20px;
+  margin-bottom: 15px;
+  background: transparent;
+  color: var(--base-text-color);
+  border-radius: var(--base-radius);
+  transition: var(--transition-ease-in-out);
+  border: 1px solid var(--base-border-color);
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  & .title, & .description {
+    margin: 0;
+  }
+  & .title {
+    padding-right: 20px;
+  }
+}
+:--alert :--close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 28px;
+  height: 28px;
+  font-size: 1.3rem;
+  background: var(--base-color);
+  border: 1px solid var(--base-border-color);
+  border-radius: var(--base-rounded-radius);
+  color: var(--base-dark-color);
+  &:hover {
+    background: #fff;
+  }
+}
+:--alert:--info {
+  background: color(var(--base-info-color) alpha(5%));
+  border-color: color(var(--base-info-color) alpha(50%));
+  color: var(--base-info-color);
+  & .description {
+    color: color(var(--base-info-color) alpha(60%));
+  }
+  & .close {
+    border-color: transparent;
+    background: color(var(--base-info-color) alpha(50%));
+    color:#fff;
+  }
+}
+:--alert:--danger {
+  background: color(var(--base-danger-color) alpha(5%));
+  border-color: color(var(--base-danger-color) alpha(50%));
+  color: var(--base-danger-color);
+  & .close {
+    border-color: transparent;
+    background: color(var(--base-danger-color) alpha(50%));
+    color:#fff;
+  }
+  & .description {
+    color: color(var(--base-danger-color) alpha(60%));
+  }
+}
+:--alert:--success {
+  background: color(var(--base-success-color) alpha(5%));
+  border-color: color(var(--base-success-color) alpha(10%));
+  color: var(--base-success-color);
+  & .close {
+    border-color: transparent;
+    background: color(var(--base-success-color) alpha(50%));;
+    color: #fff;
+  }
+  & .description {
+    color: color(var(--base-success-color) alpha(60%));
+  }
+}
+:--alert:--rounded {
+  border-radius: 4rem;
+  padding-left: 30px;
+  padding-right: 30px;
+  & .close {
+    top: 50%;
+    margin-top: -14px;
+    right: 14px;
+  }
+}
+
+/* Placeholder */
+:--placeholder {
+  border-style: dashed;
+  border-color: var(--base-light-color);
+}

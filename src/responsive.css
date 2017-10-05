@@ -2,10 +2,15 @@
 * Responsive
 */
 
-@custom-media --phone-viewport only screen and (max-width: 25em);
-@custom-media --tablet-viewport only screen and (max-width: 48em);
-@custom-media --desktop-viewport only screen and (max-width: 62em);
-@custom-media --desktop-large-viewport only screen and (max-width: 75em);
+/*
+*
+* @ custom-properties
+* --phone-viewport only screen and (max-width: 25em);
+* --tablet-viewport only screen and (max-width: 48em);
+* --desktop-viewport only screen and (max-width: 62em);
+* --desktop-large-viewport only screen and (max-width: 75em);
+*
+*/
 
 @media (--phone-viewport) {
   .hide-phone {
