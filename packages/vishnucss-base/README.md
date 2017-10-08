@@ -1,5 +1,4 @@
-<p align="center"><a href="https://vishnucss.github.io/vishnu" target="_blank"><img src="https://vishnucss.github.io/vishnu/logo.png" width="59" height="59" /></a></p>
-<h1 align="center">Vishnu</h1>
+<h2 align="center">Vishnu Base</h2>
 
 <p align="center">
 <a href="https://circleci.com/gh/alexandesigner/vishnu/tree/master"><img src="https://circleci.com/gh/alexandesigner/vishnu/tree/master.svg?&style=shield" alt="circle ci" height="24"></a>
@@ -15,13 +14,13 @@ A simple style guide provides a setup of styles using Modern CSS for a fast and 
 **Using npm**
 
 ```sh
-$ npm install --save vishnucss
+$ npm install --save @vishnucss/base
 ```
 
 **Using directly link**
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/vishnucss"/>
+<link rel="stylesheet" href="https://unpkg.com/@vishnucss/base"/>
 ```
 
 ## Bug?

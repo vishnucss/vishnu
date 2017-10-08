@@ -1,18 +1,17 @@
-<p align="center"><a href="https://vishnucss.github.io/vishnu" target="_blank"><img src="https://vishnucss.github.io/vishnu/logo.png" width="59" height="59" /></a></p>
-<h1 align="center">Vishnu Extensions</h1>
+<h2 align="center">Vishnucss Extensions</h2>
 
 ## Install
 
 **Using npm**
 
 ```sh
-$ npm install --save vishnucss-extensions
+$ npm install --save @vishnucss/extensions
 ```
 
 **Using directly link**
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/vishnucss-extensions"/>
+<link rel="stylesheet" href="https://unpkg.com/@vishnucss/extensions"/>
 ```
 
 ## Bug?
