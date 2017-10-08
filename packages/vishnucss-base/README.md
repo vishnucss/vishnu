@@ -1,4 +1,4 @@
-<h2 align="center">Vishnu Base</h2>
+<h2 align="center">Base</h2>
 
 <p align="center">
 <a href="https://circleci.com/gh/alexandesigner/vishnu/tree/master"><img src="https://circleci.com/gh/alexandesigner/vishnu/tree/master.svg?&style=shield" alt="circle ci" height="24"></a>

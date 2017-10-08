@@ -1,4 +1,4 @@
-<h2 align="center">Vishnucss Extensions</h2>
+<h2 align="center">Extensions</h2>
 
 ## Install
 
