@@ -14,7 +14,7 @@ const gulp = require('gulp'),
   nesting = require('postcss-nesting'),
   customMedia = require('postcss-custom-media'),
   copyright = `/**
-* vishnucss v${pkg.version}
+* vishnucss base - v${pkg.version}
 * ${pkg.description}
 * https://vishnucss.github.io/vishnu
 */\r\n`,

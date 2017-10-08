@@ -5,7 +5,12 @@
 
 ## Why should I use it?
 
-A simple style guide provides a setup of styles using Modern CSS for a fast and clean starting point. Everything you need to create a basic project is included.
+A simple style guide provides a setup of styles using Modern CSS for a fast and clean starting point. Everything you need to create a basic project is included. All in just < 5kb.
+
+### Packages
+
+- [Base](https://github.com/vishnucss/vishnu/packages/vishnucss-base)
+- [Extensions](https://github.com/vishnucss/vishnu/packages/vishnucss-extensions)
 
 ## Bug?
 
