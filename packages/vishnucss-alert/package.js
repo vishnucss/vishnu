@@ -1,7 +1,7 @@
 Package.describe({
-	name: 'vishnucss:base',
+	name: 'vishnucss:alert',
 	version: '1.0.2',
-	summary: 'A simple and minimalist toolkit with modern css.',
+	summary: '',
 	git: 'https://github.com/vishnucss/vishnu.git',
 	documentation: 'README.md'
 })
@@ -9,6 +9,6 @@ Package.describe({
 Package.onUse((api) => {
 	api.versionsFrom('METEOR@1.0')
 	api.addFiles([
-		'dist/vishnu.css'
+		'dist/vishnu.alert.css'
 	], 'client')
 })
