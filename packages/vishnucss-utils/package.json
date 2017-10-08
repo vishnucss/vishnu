@@ -1,9 +1,9 @@
 {
-  "name": "@vishnucss/base",
-  "filename": "vishnu.min.css",
+  "name": "@vishnucss/utils",
+  "filename": "vishnu.utils.min.css",
   "version": "1.0.2",
-  "description": "A simple and minimalist toolkit with modern css",
-  "main": "./dist/vishnu.min.css",
+  "description": "Utils toolkit with modern css",
+  "main": "./dist/vishnu.utils.min.css",
   "keywords": [
     "bootstrap",
     "cssnext",
@@ -42,12 +42,11 @@
     "target": "git://github.com/vishnucss/vishnu.git",
     "basePath": "dist",
     "files": [
-      "vishnu.min.css",
-      "vishnu.css"
+      "vishnu.utils.min.css",
+      "vishnu.utils.css"
     ]
   },
   "devDependencies": {
-    "browser-sync": "^2.18.13",
     "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
     "gulp-clean-css": "latest",
@@ -59,7 +58,6 @@
     "gulp-postcss": "^7.0.0",
     "gulp-size": "^2.1.0",
     "gulp-sourcemaps": "^2.6.1",
-    "gulp-symdest": "^1.1.0",
     "gulp-util": "~2.2.9",
     "postcss-cssnext": "^3.0.2",
     "postcss-custom-media": "^6.0.0",

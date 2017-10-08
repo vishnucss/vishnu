@@ -1,0 +1,11 @@
+/*
+* Alert
+*/
+
+@custom-selector :--alert .alert;
+@custom-selector :--placeholder .placeholder;
+@custom-selector :--info .info;
+@custom-selector :--danger .danger;
+@custom-selector :--success .success;
+@custom-selector :--rounded .rounded;
+@custom-selector :--close .close;
