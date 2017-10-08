@@ -1,4 +1,4 @@
-<p align="center"><a href="https://vishnucss.github.io/vishnu" target="_blank"><img src="https://vishnucss.github.io/vishnu/logo.png" width="185" height="185" /></a></p>
+<p align="center"><a href="https://vishnucss.github.io/vishnu" target="_blank"><img src="https://vishnucss.github.io/vishnu/src/assets/logo.png" width="185" height="185" /></a></p>
 <h1 align="center">Vishnu</h1>
 <p align="center">A simple and minimalist toolkit with modern css</p>
 <p align="center"><a href="https://vishnucss.github.io/vishnu/#docs" target="_blank">Docs</a> / <a href="https://vishnucss.github.io/vishnu/#examples" target="_blank">Examples</a></p>
@@ -9,8 +9,8 @@ A simple style guide provides a setup of styles using Modern CSS for a fast and 
 
 ### Packages
 
-- [Base](https://github.com/vishnucss/vishnu/packages/vishnucss-base)
-- [Extensions](https://github.com/vishnucss/vishnu/packages/vishnucss-extensions)
+- [Base](https://github.com/vishnucss/vishnu/tree/master/packages/vishnucss-base)
+- [Extensions](https://github.com/vishnucss/vishnu/tree/master/packages/vishnucss-extensions)
 
 ## Bug?
 
