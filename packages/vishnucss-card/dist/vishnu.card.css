@@ -1,0 +1,76 @@
+/**
+* vishnucss card - v1.0.2
+* https://vishnucss.github.io/vishnu#card
+*/
+
+/*
+* Variables
+*/
+
+:root {
+  
+    /* Typhography */
+  
+    /* Colours */
+  
+    /* Transitions */
+  
+    /* Utils */
+  
+  }
+/*
+* Responsive
+*/
+
+/*
+* Alert
+*/
+
+/*
+* Card
+*/
+
+/* 
+ * Grid
+*/
+
+/*
+* Card
+*/
+
+/*
+*
+* @ custom-properties
+* :--card .card;
+* :--header .card-header;
+* :--footer .card-footer;
+* :--content .card-content;
+*
+*/
+
+.card {
+  border: 1px solid #f1f1f1;
+  background: #fff;
+  border-radius: 4px;
+}
+.card .card-header,
+.card .card-footer {
+  position: relative;
+  background: rgba(230, 236, 240, 0.3);
+  padding: 10px;
+  display: -webkit-box;
+  display: flex;
+}
+.card .card-header {
+  border-bottom: 1px solid #f1f1f1;
+}
+.card .card-footer {
+  border-top: 1px solid #f1f1f1;
+}
+.card .card-title {
+  margin: 0;
+}
+.card .card-content {
+  padding: 15px 10px;
+}
+/*# sourceMappingURL=vishnu.card.css.map */
