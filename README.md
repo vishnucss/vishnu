@@ -9,8 +9,8 @@ A simple style guide provides a setup of styles using Modern CSS for a fast and 
 
 ### Packages
 
-- [Base](https://github.com/vishnucss/vishnu/packages/vishnucss-base)
-- [Extensions](https://github.com/vishnucss/vishnu/packages/vishnucss-extensions)
+- [Base](https://github.com/vishnucss/vishnu/tree/master/packages/vishnucss-base)
+- [Extensions](https://github.com/vishnucss/vishnu/tree/master/packages/vishnucss-extensions)
 
 ## Bug?
 
