@@ -1,4 +1,46 @@
 {
+  "name": "vishnucss",
+  "version": "1.0.0-0",
+  "description": "A simple and minimalist toolkit with modern css",
+  "keywords": [
+    "bootstrap",
+    "cssnext",
+    "css3",
+    "flexbox",
+    "toolkit",
+    "front-end",
+    "css-framework",
+    "postcss",
+    "responsive",
+    "mobile",
+    "mobile-first"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vishnucss/vishnu.git"
+  },
+  "author": "Allan Alexandre",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vishnucss/vishnucss/issues"
+  },
+  "homepage": "https://vishnucss.github.io/vishnu",
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/vishnucss/vishnu.git",
+    "basePath": "dist",
+    "files": [
+      "vishnu.min.css",
+      "vishnu.css"
+    ]
+  },
+  "dependencies": {
+    "@vishnucss/base": "1.0.2",
+    "@vishnucss/utils": "1.0.2",
+    "@vishnucss/alert": "1.0.2",
+    "@vishnucss/card": "1.0.2",
+    "@vishnucss/grid": "1.0.2"
+  },
   "devDependencies": {
     "lerna": "^2.4.0"
   }
