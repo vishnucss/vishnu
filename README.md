@@ -5,9 +5,37 @@
 
 ## Why should I use it?
 
-A simple style guide provides a setup of styles using Modern CSS for a fast and clean starting point. Everything you need to create a basic project is included. All in just < 5kb.
+A simple style guide provides a setup of styles using Modern CSS for a fast and clean starting point. Everything you need to create a basic project is included. All in just < 2kb.
 
-### Packages
+## Install
+
+**Using npm**
+
+```sh
+$ npm install --save @vishnucss/base
+```
+
+**Using directly link**
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@vishnucss/base"/>
+```
+
+...and install extensions
+
+**Using npm**
+
+```sh
+$ npm install --save @vishnucss/extensions
+```
+
+**Using directly link**
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@vishnucss/extensions"/>
+```
+
+### List all Packages
 
 - [Base](https://github.com/vishnucss/vishnu/tree/master/packages/vishnucss-base)
 - [Extensions:](https://github.com/vishnucss/vishnu/tree/master/packages/vishnucss-extensions)
