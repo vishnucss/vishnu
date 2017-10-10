@@ -7,6 +7,8 @@
 
 A simple style guide provides a setup of styles using Modern CSS for a fast and clean starting point. Everything you need to create a basic project is included. All in just < 5kb.
 
+[See new package](https://www.npmjs.com/package/@vishnucss/vishnu)
+
 ## Install
 
 **Using npm**
