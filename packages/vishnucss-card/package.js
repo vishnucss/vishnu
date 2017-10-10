@@ -1,6 +1,6 @@
 Package.describe({
 	name: 'vishnucss:card',
-	version: '1.0.2',
+	version: '1.0.4',
 	summary: 'Card toolkit with modern css.',
 	git: 'https://github.com/vishnucss/vishnu.git',
 	documentation: 'README.md'
