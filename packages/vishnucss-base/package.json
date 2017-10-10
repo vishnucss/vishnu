@@ -1,9 +1,9 @@
 {
   "name": "@vishnucss/base",
   "filename": "vishnu.base.min.css",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple and minimalist toolkit with modern css",
-  "main": "./dist/vishnu.min.css",
+  "main": "./dist/vishnu.base.min.css",
   "keywords": [
     "bootstrap",
     "cssnext",
