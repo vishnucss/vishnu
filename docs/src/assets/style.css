@@ -60,13 +60,13 @@
 #docs-app .section > .title {
   color: var(--primary-color);
 }
-#section-button .row {
+#button .row {
   margin: 20px 0;
 }
-#section-button p {
+#button p {
   margin-bottom:0;
 }
-#section-grid h5 {
+#grid h5 {
   margin-top: 30px;
   margin-bottom: 5px;
 }
@@ -109,10 +109,16 @@
   margin-top: 30px;
 }
 
-#section-grid code {
+#grid code {
   margin: 20px 0 10px 0;
   display: table;
 }
 .red {
   color: red;
+}
+
+.margin-bottom {
+  margin-bottom: 20px;
+  display: table;
+  width: 100%;
 }

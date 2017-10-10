@@ -1,6 +1,6 @@
 Package.describe({
 	name: 'vishnucss:grid',
-	version: '1.0.2',
+	version: '1.0.3',
 	summary: 'Grid system toolkit with modern css',
 	git: 'https://github.com/vishnucss/vishnu.git',
 	documentation: 'README.md'

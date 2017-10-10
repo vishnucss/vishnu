@@ -81,9 +81,6 @@ h6 {
   margin-top: 0;
   margin-bottom: 2rem;
   font-weight: 400;
-  font-family: -apple-system, BlinkMacSystemFont, Avenir, 'Avenir Next',
-  'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-  'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
 h1 {
@@ -563,4 +560,4 @@ pre > code {
     display: none;
   }
 }
-/*# sourceMappingURL=vishnu.css.map */
+/*# sourceMappingURL=vishnu.base.css.map */

@@ -1,6 +1,6 @@
 {
   "name": "vishnucss",
-  "version": "1.0.0-0",
+  "version": "1.0.0-1",
   "description": "A simple and minimalist toolkit with modern css",
   "keywords": [
     "bootstrap",
@@ -35,11 +35,11 @@
     ]
   },
   "dependencies": {
-    "@vishnucss/base": "1.0.2",
-    "@vishnucss/utils": "1.0.2",
-    "@vishnucss/alert": "1.0.2",
-    "@vishnucss/card": "1.0.2",
-    "@vishnucss/grid": "1.0.2"
+    "@vishnucss/base": "1.0.3",
+    "@vishnucss/utils": "1.0.3",
+    "@vishnucss/alert": "1.0.3",
+    "@vishnucss/card": "1.0.3",
+    "@vishnucss/grid": "1.0.3"
   },
   "devDependencies": {
     "lerna": "^2.4.0"

@@ -7,7 +7,6 @@
 const gulp = require('gulp'),
   pkg = require('./package.json'),
   postcss = require('gulp-postcss'),
-  symdest = require('gulp-symdest'),
   cssnano = require('cssnano'),
   cssnext = require('postcss-cssnext'),
   selector = require('postcss-custom-selectors'),
@@ -73,7 +72,6 @@ gulp.task('minify', ['build'], function() {
     .pipe($.concat('vishnu.extensions.min.css'))
     .pipe($.sourcemaps.write('.'))
     .pipe(gulp.dest('./dist/'))
-    .pipe(symdest('../../docs/src/assets'))
 });
 
 /* 

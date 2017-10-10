@@ -1,0 +1,103 @@
+/* 
+ * Buttons
+*/
+
+/*
+*
+* @ custom-properties
+* :--button button, .button, [type='submit'];
+* :--button-outline button.outline, .button.outline, [type='submit'].outline;
+* :--button-flat button.flat, .button.flat, [type='submit'].flat;
+* :--button-primary button.primary, .button.primary, [type='submit'].primary;
+* :--button-rounded button.rounded, .button.rounded, [type='submit'].rounded;
+* :--hovered :hover;
+* :--pressed :focus;
+* :--large .large;
+* :--small .small;
+*
+*/
+
+/* Default */
+:--button {
+  padding: 1.1rem 3.5rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  color: var(--base-text-color);
+  background: var(--base-color);
+  border-radius: var(--base-radius);
+  transition: var(--transition-ease-in-out);
+  border: 1.5px solid transparent;
+  cursor: pointer;
+}
+:--button:--hovered {
+  color: var(--primary-color);
+  background: color(var(--base-color) alpha(-50%));
+}
+:--button:--pressed {
+  outline: none;
+  transform: scale(0.99);
+  background: color(var(--base-color) alpha(-20%));
+}
+
+/* Size */
+:--button:--small {
+  font-size: 1.2rem;
+  padding: 0.6rem 1.6rem;
+}
+:--button:--large {
+  font-size: 1.8rem;
+  padding: 1.8rem 4.2rem;
+}
+
+/* Outline */
+:--button-outline {
+  color: var(--primary-color);
+  background: none;
+  border: 1.5px solid var(--base-color);
+}
+:--button-outline:--hovered {
+  background: none;
+  border: 1.5px solid color(var(--primary-color) alpha(-50%));
+  color: color(var(--primary-color) alpha(-50%));
+}
+:--button-outline:--pressed {
+  transform: scale(0.99);
+  border-color: color(var(--primary-color) alpha(-20%));
+  color: color(var(--primary-color) alpha(-20%));
+}
+
+/* Flat */
+:--button-flat {
+  color: var(--primary-color);
+  background: none;
+  border: 1.5px solid transparent;
+}
+:--button-flat:--hovered {
+  background: none;
+  color: color(var(--primary-color) alpha(-20%));
+}
+:--button-flat:--pressed {
+  transform: scale(0.99);
+  color: color(var(--primary-color) alpha(-10%));
+}
+
+/* Primary */
+:--button-primary {
+  color: #fff;
+  background: var(--primary-color);
+  border: 1.5px solid transparent;
+}
+:--button-primary:--hovered {
+  background: color(var(--primary-color) alpha(-20%));
+  color: #fff;
+}
+:--button-primary:--pressed {
+  transform: scale(0.99);
+  background: color(var(--primary-color) alpha(-10%));
+}
+
+/* Rounded */
+:--button-rounded {
+  border-radius: 28px;
+}
