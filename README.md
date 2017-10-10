@@ -5,9 +5,23 @@
 
 ## Why should I use it?
 
-A simple style guide provides a setup of styles using Modern CSS for a fast and clean starting point. Everything you need to create a basic project is included. All in just < 2kb.
+A simple style guide provides a setup of styles using Modern CSS for a fast and clean starting point. Everything you need to create a basic project is included. All in just < 5kb.
 
 ## Install
+
+**Using npm**
+
+```sh
+$ npm install --save @vishnucss/vishnu
+```
+
+**Using directly link**
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@vishnucss/vishnu"/>
+```
+
+### [Base](https://github.com/vishnucss/vishnu/tree/master/packages/vishnucss-base)
 
 **Using npm**
 
@@ -21,7 +35,7 @@ $ npm install --save @vishnucss/base
 <link rel="stylesheet" href="https://unpkg.com/@vishnucss/base"/>
 ```
 
-...and install extensions
+### [Extensions](https://github.com/vishnucss/vishnu/tree/master/packages/vishnucss-extensions)
 
 **Using npm**
 
@@ -35,14 +49,12 @@ $ npm install --save @vishnucss/extensions
 <link rel="stylesheet" href="https://unpkg.com/@vishnucss/extensions"/>
 ```
 
-### List all Packages
+#### List all extensions:
 
-- [Base](https://github.com/vishnucss/vishnu/tree/master/packages/vishnucss-base)
-- [Extensions:](https://github.com/vishnucss/vishnu/tree/master/packages/vishnucss-extensions)
-  - [Alert](https://github.com/vishnucss/vishnu/tree/master/packages/vishnucss-alert)
-  - [Card](https://github.com/vishnucss/vishnu/tree/master/packages/vishnucss-card)
-  - [Grid](https://github.com/vishnucss/vishnu/tree/master/packages/vishnucss-grid)
-  - [Utils](https://github.com/vishnucss/vishnu/tree/master/packages/vishnucss-utils)
+- [Alert](https://github.com/vishnucss/vishnu/tree/master/packages/vishnucss-alert)
+- [Card](https://github.com/vishnucss/vishnu/tree/master/packages/vishnucss-card)
+- [Grid](https://github.com/vishnucss/vishnu/tree/master/packages/vishnucss-grid)
+- [Utils](https://github.com/vishnucss/vishnu/tree/master/packages/vishnucss-utils)
 
 ## Bug?
 

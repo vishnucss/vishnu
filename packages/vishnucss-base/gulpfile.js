@@ -6,7 +6,6 @@
 
 const gulp = require('gulp'),
   pkg = require('./package.json'),
-  symdest = require('gulp-symdest'),
   postcss = require('gulp-postcss'),
   cssnano = require('cssnano'),
   cssnext = require('postcss-cssnext'),
@@ -46,7 +45,7 @@ gulp.task('build', function() {
       './src/responsive.css'
     ])
     .pipe($.sourcemaps.init())
-    .pipe($.concat('vishnu.css'))
+    .pipe($.concat('vishnu.base.css'))
     .pipe(postcss(plugins))
     .pipe($.header(copyright + '\n'))
     .pipe($.size())
@@ -66,7 +65,7 @@ gulp.task('minify', ['build'], function() {
     cssnext({ browsers: ['last 1 version'] })
   ];
   return gulp
-    .src(['./dist/vishnu.css'])
+    .src(['./dist/vishnu.base.css'])
     .pipe($.sourcemaps.init())
     .pipe(postcss(plugins))
     .pipe($.header(copyright))
@@ -76,10 +75,9 @@ gulp.task('minify', ['build'], function() {
         gzip: true
       })
     )
-    .pipe($.concat('vishnu.min.css'))
+    .pipe($.concat('vishnu.base.min.css'))
     .pipe($.sourcemaps.write('.'))
     .pipe(gulp.dest('./dist/'))
-    .pipe(symdest('../../docs/src/assets'))
 });
 
 /* 

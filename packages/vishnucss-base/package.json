@@ -1,6 +1,6 @@
 {
   "name": "@vishnucss/base",
-  "filename": "vishnu.min.css",
+  "filename": "vishnu.base.min.css",
   "version": "1.0.2",
   "description": "A simple and minimalist toolkit with modern css",
   "main": "./dist/vishnu.min.css",
@@ -42,12 +42,11 @@
     "target": "git://github.com/vishnucss/vishnu.git",
     "basePath": "dist",
     "files": [
-      "vishnu.min.css",
-      "vishnu.css"
+      "vishnu.base.min.css",
+      "vishnu.base.css"
     ]
   },
   "devDependencies": {
-    "browser-sync": "^2.18.13",
     "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
     "gulp-clean-css": "latest",

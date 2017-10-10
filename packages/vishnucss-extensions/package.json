@@ -1,7 +1,7 @@
 {
   "name": "@vishnucss/extensions",
   "filename": "vishnu.extensions.min.css",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Extensions packages for Vishnucss toolkit with modern css",
   "main": "./dist/vishnu.extensions.min.css",
   "keywords": [
@@ -58,7 +58,6 @@
     "gulp-postcss": "^7.0.0",
     "gulp-size": "^2.1.0",
     "gulp-sourcemaps": "^2.6.1",
-    "gulp-symdest": "^1.1.0",
     "gulp-util": "~2.2.9",
     "postcss-cssnext": "^3.0.2",
     "postcss-custom-media": "^6.0.0",
