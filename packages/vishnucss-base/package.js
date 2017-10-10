@@ -1,6 +1,6 @@
 Package.describe({
 	name: 'vishnucss:base',
-	version: '1.0.3',
+	version: '1.0.4',
 	summary: 'Base toolkit with modern css.',
 	git: 'https://github.com/vishnucss/vishnu.git',
 	documentation: 'README.md'
