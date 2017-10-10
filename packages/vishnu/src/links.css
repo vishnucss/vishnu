@@ -1,0 +1,19 @@
+/* 
+ * Links
+*/
+
+:any-link {
+  color: var(--primary-color);
+  transition: color 0.1s ease;
+  &:hover {
+    cursor: pointer;
+    color: color(var(--primary-color) alpha(80%));
+    text-decoration: none;
+  }
+  &:focus {
+    outline: thin dotted;
+  }
+  &:active, &:hover {
+    outline: 0;
+  }
+}

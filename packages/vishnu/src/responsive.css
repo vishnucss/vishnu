@@ -1,0 +1,31 @@
+/*
+* Responsive
+*/
+
+/*
+*
+* @ custom-properties
+* --phone-viewport only screen and (max-width: 25em);
+* --tablet-viewport only screen and (max-width: 48em);
+* --desktop-viewport only screen and (max-width: 62em);
+* --desktop-large-viewport only screen and (max-width: 75em);
+*
+*/
+
+@media (--phone-viewport) {
+  .hide-phone {
+    display: none;
+  }
+}
+
+@media (--tablet-viewport) {
+  .hide-tablet {
+    display: none;
+  }
+}
+
+@media (--desktop-viewport) {
+  .hide-desktop {
+    display: none;
+  }
+}

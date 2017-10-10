@@ -1,0 +1,71 @@
+/* 
+ * Tables
+*/
+
+/*
+*
+* @ custom-properties
+* :--table table, .table;
+*
+*/
+
+:--table {
+  width: 100%;
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: left;
+  & th, & td {
+    vertical-align: middle;
+    padding: 12px 4px;
+  }
+  & thead {
+    border-bottom: 1px solid var(--base-border-color);
+  }
+}
+
+/* responsive table */
+@media (--tablet-viewport) {
+  :--table {
+    &.responsive {
+      position: relative;
+      display: block;
+      & th, & td {
+        margin: 0
+      }
+      & thead {
+        display: block;
+        float: left;
+        border: 0;
+        & tr {
+          display: block;
+          padding: 0 10px 0 0;
+          border-right: 1px solid var(--base-border-color);
+        }
+        & th {
+          text-align: left;
+        }
+      }
+      & th {
+        display: block;
+        text-align: right;
+      }
+      & tbody {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        & tr {
+          display: inline-block;
+        }
+      }
+      & td {
+        display: block;
+        min-height: 16px;
+        text-align: left;
+      }
+      & tr {
+        padding: 0 10px;
+      }
+    }
+  }
+}
