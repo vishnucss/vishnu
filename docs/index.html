@@ -9,7 +9,6 @@
   <title>Vishnu - A simple and minimalist toolkit with modern css.</title>
   <link rel="icon" href="./src/assets/logo.png">
   <link rel="stylesheet" href="./src/assets/vishnu.min.css">
-  <link rel="stylesheet" href="./src/assets/vishnu.extensions.min.css">
   <link rel="stylesheet" href="./src/assets/style.css">
 </head>
 
@@ -22,8 +21,8 @@
         <img src="./src/assets/logo.png" alt="Vishnu Logo" height="180">
         <h1>Vishnu</h1>
         <h5>A simple and minimalist toolkit with modern css</h5>
-        <a class="github-button" href="https://github.com/vishnucss/vishnu" data-icon="octicon-star" data-size="large" aria-label="Star vishnucss/vishnu on GitHub">Star</a>
-        <small class="full-width">Currently v1.0.2</small>
+        <a class="github-button" href="https://github.com/vishnucss/vishnu" data-show-count="true" data-icon="octicon-star" data-size="large" aria-label="Star vishnucss/vishnu on GitHub">Star</a>
+        <small class="full-width">Currently v1.0.3</small>
       </div>
     </section>
 
@@ -36,12 +35,14 @@
         <p class="description">You can install Vishnu in multiple ways, but it's as simple as adding a single <code>link</code> tag to your project.</p>
 
         <h5>CDN</h5>
-        <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/@vishnucss/base&quot;/&gt;</code></pre>
+        <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/@vishnucss/vishnu&quot;/&gt;</code></pre>
 
         <h5>NPM</h5>
-        <pre><code>$ npm install @vishnucss/base</code></pre>
+        <pre><code>$ npm install @vishnucss/vishnu</code></pre>
       </div>
+
     </section>
+    
 
     <section id="examples" class="section">
       <div>
@@ -62,9 +63,38 @@
       <div>
         <h2>Documentation</h2>
         <p class="description">Here is a docs of all the things styled, how to use the buttons, tables, utils and how to use some components.</p>
+        <strong class="margin-bottom">This project is divided into several main parts are:</strong>
+        <div class="row">
+          <div class="col-xs-12">
+            <ul>
+              <li><a href="#base" title="Base">Base</a></li>
+              <li>
+                <a href="#extensions" title="Extensions">Extensions</a>
+                <ul>
+                  <li><a class="anchor" href="#alert" title="Alert">Alert</a></li>
+                  <li><a class="anchor" href="#card" title="Card">Card</a></li>
+                  <li><a class="anchor" href="#grid" title="Grid">Grid</a></li>
+                  <li><a class="anchor" href="#utilities" title="Utils">Utils</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr />
+
+        <!-- Base -->
+        <h2 id="base">Base</h2>
+        <p class="description">Simple installation of the design base, style presets.</p>
+
+        <h5>CDN</h5>
+        <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/@vishnucss/base&quot;/&gt;</code></pre>
+
+        <h5>NPM</h5>
+        <pre><code>$ npm install @vishnucss/base</code></pre>
 
         <!-- Typhography -->
-        <div class="section" id="section-typhography">
+        <div class="section" id="typhography">
           <h3 class="title"># Typhography</h3>
           <p class="description">Based on <code>rem</code> units. All <code>rem</code> units are converted to base 10, so <code>1rem</code> is equal
             to <code>10px</code>. By default, all headings, paragraphs, and code use system fonts, using the most modern
@@ -88,7 +118,7 @@
         </div>
 
         <!-- Button -->
-        <div class="section" id="section-button">
+        <div class="section" id="button">
           <h3 class="title"># Buttons</h3>
           <p class="description">The Button, an essential part of any user experience. Buttons come in some basic styles: The <code>&lt;button&gt;Content&lt;/button&gt;</code>            element has default color, whereas <code>.outline</code> has a simple outline around, <code>.flat</code> is entirely
             clear and <code>.rounded</code> is rounded border radius.</p>
@@ -154,7 +184,7 @@
         </div>
 
         <!-- List -->
-        <div class="section" id="section-list">
+        <div class="section" id="list">
           <h3 class="title"># Lists</h3>
           <p class="description">The List is a very versatile and common way to display items. Milligram has three types of lists: The unordered
             list use ul element will be marked with a outline circles, the ordered list use ol element and your items will
@@ -192,7 +222,7 @@
         </div>
 
         <!-- Table -->
-        <div class="section" id="section-table">
+        <div class="section" id="table">
           <h3 class="title"># Tables</h3>
           <p class="description">The Table element represents data in two dimensions or more. We encourage the use of proper formatting with <code>&lt;thead&gt;</code>            and <code>&lt;tbody&gt;</code> to create a <code>&lt;table&gt;</code>. The code becomes cleaner without disturbing
             understanding.</p>
@@ -272,7 +302,7 @@
         </div>
 
         <!-- Forms -->
-        <div class="section" id="section-forms">
+        <div class="section" id="forms">
           <h3 class="title"># Forms</h3>
           <p class="description">All common form elements with basic, clean styles.</p>
           <div class="row">
@@ -335,7 +365,7 @@
         <pre><code>$ npm install @vishnucss/extensions</code></pre>
 
         <!-- Alert -->
-        <div class="section" id="section-alert">
+        <div class="section" id="alert">
           <h3 class="title"># Alert</h3>
           <p class="description">All common alert with default <code>.alert</code> and other class <code>.info</code>, <code>.danger</code>, <code>.success</code>, improve style uses <code>.rounded</code></p>
           <h5>CDN</h5>
@@ -386,7 +416,7 @@
         </div>
 
         <!-- Card -->
-        <div class="section" id="section-card">
+        <div class="section" id="card">
           <h3 class="title"># Card</h3>
           <p class="description">Basic and Complet card to your widgets or components.</p>
           <h5>CDN</h5>
@@ -416,7 +446,7 @@
         </div>
 
         <!-- Grid -->
-        <div class="section" id="section-grid">
+        <div class="section" id="grid">
           <h3 class="title"># Grid</h3>
           <p class="description">Grid based on the flex display property.</p>
           <h5>CDN</h5>
@@ -857,6 +887,8 @@
 
 </body>
 <!-- Place this tag in your head or just before your close body tag. -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script async defer src="https://buttons.github.io/buttons.js"></script>
+<script src="./src/assets/scripts.js"></script>
 
 </html>
