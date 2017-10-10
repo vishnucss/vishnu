@@ -1,21 +1,21 @@
-<h2 align="center">Base</h2>
+<h2 align="center">Vishnucss</h2>
 
 ## Why should I use it?
 
-A simple style guide provides a setup of styles using Modern CSS for a fast and clean starting point. Everything you need to create a basic project is included.
+A simple style guide provides a setup of styles using Modern CSS for a fast and clean starting point. Everything you need to create a basic project is included. All in just < 5kb.
 
 ## Install
 
 **Using npm**
 
 ```sh
-$ npm install --save @vishnucss/base
+$ npm install --save @vishnucss/vishnu
 ```
 
 **Using directly link**
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@vishnucss/base"/>
+<link rel="stylesheet" href="https://unpkg.com/@vishnucss/vishnu"/>
 ```
 
 ## Bug?
