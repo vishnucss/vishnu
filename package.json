@@ -1,7 +1,9 @@
 {
-  "name": "vishnucss",
-  "version": "1.0.0-1",
+  "name": "@vishnucss/vishnu",
+  "filename": "vishnu.min.css",
+  "version": "1.0.5",
   "description": "A simple and minimalist toolkit with modern css",
+  "main": "./dist/vishnu.min.css",
   "keywords": [
     "bootstrap",
     "cssnext",
@@ -15,6 +17,16 @@
     "mobile",
     "mobile-first"
   ],
+  "ignore": [
+    ".editorconfig",
+    ".gitignore",
+    "package.json",
+    "src"
+  ],
+  "scripts": {
+    "test": "echo \"Testing\"",
+    "build": "gulp"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vishnucss/vishnu.git"
@@ -24,7 +36,7 @@
   "bugs": {
     "url": "https://github.com/vishnucss/vishnucss/issues"
   },
-  "homepage": "https://vishnucss.github.io/vishnu",
+  "homepage": "https://vishnucss.github.io",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/vishnucss/vishnu.git",
@@ -34,14 +46,24 @@
       "vishnu.css"
     ]
   },
-  "dependencies": {
-    "@vishnucss/base": "1.0.3",
-    "@vishnucss/utils": "1.0.3",
-    "@vishnucss/alert": "1.0.3",
-    "@vishnucss/card": "1.0.3",
-    "@vishnucss/grid": "1.0.3"
-  },
   "devDependencies": {
-    "lerna": "^2.4.0"
+    "browser-sync": "^2.18.13",
+    "cssnano": "^3.10.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "latest",
+    "gulp-cli": "^1.2.1",
+    "gulp-concat": "latest",
+    "gulp-git": "^1.9.0",
+    "gulp-header": "^1.8.2",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-postcss": "^7.0.0",
+    "gulp-size": "^2.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-symdest": "^1.1.0",
+    "gulp-util": "~2.2.9",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-custom-media": "^6.0.0",
+    "postcss-custom-selectors": "^4.0.1",
+    "postcss-nesting": "^4.2.1"
   }
 }

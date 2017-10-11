@@ -1,21 +1,16 @@
 {
   "name": "@vishnucss/utils",
   "filename": "vishnu.utils.min.css",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Utils toolkit with modern css",
   "main": "./dist/vishnu.utils.min.css",
   "keywords": [
-    "bootstrap",
+    "utilities",
     "cssnext",
     "css3",
     "flexbox",
-    "toolkit",
-    "front-end",
-    "css-framework",
-    "postcss",
-    "responsive",
-    "mobile",
-    "mobile-first"
+    "css-class",
+    "helpers"
   ],
   "ignore": [
     ".editorconfig",

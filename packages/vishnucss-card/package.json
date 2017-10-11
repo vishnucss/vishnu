@@ -1,7 +1,7 @@
 {
   "name": "@vishnucss/card",
   "filename": "vishnu.card.min.css",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Card toolkit with modern css",
   "main": "./dist/vishnu.card.min.css",
   "keywords": [

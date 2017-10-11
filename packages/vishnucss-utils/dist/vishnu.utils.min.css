@@ -1,5 +1,5 @@
 /**
-* vishnucss utils - v1.0.4
+* vishnucss utils - v1.0.5
 * https://vishnucss.github.io/vishnu#utilities
 */
 .pull-right{float:right}.pull-left{float:left}.text-center{text-align:center}.text-left{text-align:left}.text-right{text-align:right}.full-screen{width:100%;min-height:100vh}.full-width{width:100%}.full-height{height:100%;min-height:100%}.vertical-align{display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center}.center,.horizontal-align{display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center}.center{-webkit-box-align:center;align-items:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column}.right{-webkit-box-pack:end;justify-content:flex-end}.left,.right{display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center}.left{-webkit-box-pack:start;justify-content:flex-start}.fixed{position:fixed}.relative{position:relative}.truncate{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}

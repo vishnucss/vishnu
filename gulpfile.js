@@ -84,7 +84,7 @@ gulp.task('minify', ['build'], function() {
     .pipe($.concat('vishnu.min.css'))
     .pipe($.sourcemaps.write('.'))
     .pipe(gulp.dest('./dist/'))
-    .pipe(symdest('../../docs/src/assets'))
+    .pipe(symdest('./docs/src/assets'))
 });
 
 /* 
