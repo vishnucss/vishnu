@@ -1,4 +1,4 @@
-<h2 align="center">Card</h2>
+<h2>Card</h2>
 
 ## Install
 

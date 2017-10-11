@@ -1,4 +1,4 @@
-<h2 align="center">Base</h2>
+<h2>Base</h2>
 
 ## Why should I use it?
 

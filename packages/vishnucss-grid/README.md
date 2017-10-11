@@ -1,4 +1,4 @@
-<h2 align="center">Grid</h2>
+<h2>Grid</h2>
 
 ## Install
 

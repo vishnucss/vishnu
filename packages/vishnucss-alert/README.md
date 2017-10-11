@@ -1,4 +1,4 @@
-<h2 align="center">Alert</h2>
+<h2>Alert</h2>
 
 ## Install
 
