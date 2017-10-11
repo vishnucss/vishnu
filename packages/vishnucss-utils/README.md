@@ -1,4 +1,4 @@
-<h2 align="center">Utils</h2>
+<h2>Utils</h2>
 
 ## Install
 
