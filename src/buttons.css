@@ -21,7 +21,6 @@
 :--button {
   padding: 1.1rem 3.5rem;
   margin-top: 0;
-  margin-bottom: 2rem;
   font-size: 1.5rem;
   color: var(--base-text-color);
   background: var(--base-color);
