@@ -7,6 +7,8 @@
 * @ custom-properties
 * :--fields input[type='text'], input[type='password'], input[type='email'], input[type='search'], input[type='number'], input[type='file'], input[type='tel'], input[type='url'], select, textarea, textarea[type='text'];
 * :--textarea textarea, textarea[type='text'];
+* :--checkbox input[type='checkbox'];
+* :--radio input[type='radio'];
 * :--hovered :hover;
 * :--pressed :focus;
 *
@@ -23,17 +25,109 @@
   background: #fff;
   border: 1px solid var(--base-border-color);
   border-radius: var(--base-radius);
-  transition: var(--transition-ease-in-out);
+  transition: var(--transition);
 }
 :--fields:--hovered {
-  border: 1px solid color(var(--primary-color) alpha(80%));
+  border-color: color(var(--primary-color) alpha(80%));
+  background-color: var(--base-light-color);
 }
 :--fields:--pressed {
   outline: none;
-  border: 1px solid color(var(--primary-color) blackness(20%));
-  box-shadow: color(var(--primary-color) alpha(60%)) 0px 0px 4px -1px;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px color(var(--primary-color) alpha(20%));
 }
 
 :--textarea {
   min-height: 7rem;
+}
+
+/* Checkbox */
+.checkbox {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
+  user-select: none;
+  border-radius: var(--base-radius);
+  & .checkmark {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #fff;
+    border: 1px solid var(--base-border-color);
+    transition: var(--transition);
+    border-radius: var(--base-radius);
+  }
+  & input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+}
+.checkbox .checkmark:after {
+  left: 6px;
+  top: 1px;
+  width: 4px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+/* Radio Button */
+.radio {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
+  user-select: none;
+  & .radiomark {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #fff;
+    border: 1px solid var(--base-border-color);
+    border-radius: var(--base-rounded-radius);
+    transition: var(--transition);
+  }
+  & input {
+    position: absolute;
+    opacity: 0;
+  }
+}
+.radio .radiomark:after {
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: var(--base-rounded-radius);
+  background: white;
+}
+
+/* Checkbox and Radio Button */
+.checkbox:hover input ~ .checkmark, .radio:hover input ~ .radiomark {
+  background-color: var(--base-light-color);
+  border-color: color(var(--primary-color) alpha(80%));
+}
+
+.checkbox input:checked ~ .checkmark, .radio input:checked ~ .radiomark {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px color(var(--primary-color) alpha(20%));
+}
+.checkbox .checkmark:after, .radio .radiomark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.checkbox input:checked ~ .checkmark:after, .radio input:checked ~ .radiomark:after {
+  display: block;
 }
