@@ -8,7 +8,7 @@
 * :--alert .alert;
 * :--close .close;
 * :--info .info;
-* :--danger .danger;
+* :--error .error;
 * :--rounded .rounded;
 * :--placeholder .placeholder;
 *
@@ -21,7 +21,7 @@
   background: transparent;
   color: var(--base-text-color);
   border-radius: var(--base-radius);
-  transition: var(--transition-ease-in-out);
+  transition: var(--transition);
   border: 1px solid var(--base-border-color);
   display: flex;
   justify-content: flex-start;
@@ -65,17 +65,17 @@
     color:#fff;
   }
 }
-:--alert:--danger {
-  background: color(var(--base-danger-color) alpha(5%));
-  border-color: color(var(--base-danger-color) alpha(50%));
-  color: var(--base-danger-color);
+:--alert:--error {
+  background: color(var(--base-error-color) alpha(5%));
+  border-color: color(var(--base-error-color) alpha(50%));
+  color: var(--base-error-color);
   & .close {
     border-color: transparent;
-    background: color(var(--base-danger-color) alpha(50%));
+    background: color(var(--base-error-color) alpha(50%));
     color:#fff;
   }
   & .description {
-    color: color(var(--base-danger-color) alpha(60%));
+    color: color(var(--base-error-color) alpha(60%));
   }
 }
 :--alert:--success {

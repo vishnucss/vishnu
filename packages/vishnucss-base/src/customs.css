@@ -22,10 +22,13 @@
 @custom-selector :--button-flat button.flat, .button.flat, [type='submit'].flat;
 @custom-selector :--button-primary button.primary, .button.primary, [type='submit'].primary;
 @custom-selector :--button-rounded button.rounded, .button.rounded, [type='submit'].rounded;
+@custom-selector :--button-success button.success, .button.success, [type='submit'].success;
+@custom-selector :--button-error button.error, .button.error, [type='submit'].error;
 @custom-selector :--hovered :hover;
 @custom-selector :--pressed :focus;
 @custom-selector :--large .large;
 @custom-selector :--small .small;
+
 
 /*
 * Forms
@@ -33,5 +36,10 @@
 
 @custom-selector :--fields input[type='text'], input[type='password'], input[type='email'], input[type='search'], input[type='number'], input[type='file'], input[type='tel'], input[type='url'], select, textarea, textarea[type='text'];
 @custom-selector :--textarea textarea, textarea[type='text'];
+@custom-selector :--checkbox input[type='checkbox'];
+@custom-selector :--radio input[type='radio'];
 @custom-selector :--hovered :hover;
 @custom-selector :--pressed :focus;
+
+
+

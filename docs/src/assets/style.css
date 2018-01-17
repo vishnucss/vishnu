@@ -13,7 +13,7 @@
   --base-light-text-color: #ccc;
   --base-line-height: 1.5;
   --base-font-size: 1.6rem;
-  --transition-ease-in-out: all 0.2s ease-in-out;
+  --transition: all 0.2s ease-in-out;
   --base-radius: 4px;
 }
 

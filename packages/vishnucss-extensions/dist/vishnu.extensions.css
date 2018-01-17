@@ -1,5 +1,5 @@
 /**
-* vishnucss extensions - v1.0.5
+* vishnucss extensions - v1.0.6
 * Extensions packages for Vishnucss toolkit with modern css
 * https://vishnucss.github.io/vishnu#extensions
 */
@@ -45,7 +45,7 @@
 * :--alert .alert;
 * :--close .close;
 * :--info .info;
-* :--danger .danger;
+* :--error .error;
 * :--rounded .rounded;
 * :--placeholder .placeholder;
 *
@@ -116,18 +116,18 @@
   color:#fff;
 
 }
-.alert.danger {
+.alert.error {
   background: rgba(249, 56, 56, 0.05);
   border-color: rgba(249, 56, 56, 0.5);
   color: #F93838
 }
-.alert.danger .close {
+.alert.error .close {
   border-color: transparent;
   background: rgba(249, 56, 56, 0.5);
   color:#fff;
 
 }
-.alert.danger .description {
+.alert.error .description {
   color: rgba(249, 56, 56, 0.6);
 
 }

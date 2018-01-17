@@ -1,6 +1,6 @@
 Package.describe({
 	name: 'vishnucss:extensions',
-	version: '1.0.5',
+	version: '1.0.6',
 	summary: 'Extensions packages for Vishnucss toolkit with modern css.',
 	git: 'https://github.com/vishnucss/vishnu.git',
 	documentation: 'README.md'
