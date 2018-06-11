@@ -1,4 +1,4 @@
-/* 
+/*
  * Buttons
 */
 
@@ -22,10 +22,9 @@
 /* Default */
 :--button {
   padding: 1.1rem 3.5rem;
-  margin-top: 0;
-  font-size: 1.5rem;
+  font-size: var(--base-font-size);
   color: var(--base-text-color);
-  background: var(--base-color);
+  background: color(var(--base-color) alpha(-60%));
   border-radius: var(--base-radius);
   transition: var(--transition);
   border: 1.5px solid transparent;
