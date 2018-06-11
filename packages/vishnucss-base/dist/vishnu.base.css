@@ -175,7 +175,7 @@ p {
   outline: 0;
 
 }
-/* 
+/*
  * Buttons
 */
 
@@ -201,10 +201,9 @@ button,
 .button,
 [type='submit'] {
   padding: 1.1rem 3.5rem;
-  margin-top: 0;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: #444;
-  background: #E6ECF0;
+  background: rgba(230, 236, 240, 0.4);
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
   border: 1.5px solid transparent;
@@ -354,6 +353,7 @@ button.error:focus,
 [type='submit'].error:focus {
   background: rgba(249, 56, 56, 0.9);
 }
+
 /* 
  * Forms
 */

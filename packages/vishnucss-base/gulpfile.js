@@ -1,4 +1,4 @@
-/* 
+/*
 * Config Gulpfile
 */
 
@@ -17,9 +17,9 @@ const gulp = require('gulp'),
 * https://vishnucss.github.io/vishnu
 */\r\n`,
   $ = require('gulp-load-plugins')();
-  
 
-/* 
+
+/*
 * Base build task
 */
 gulp.task('build', function() {
@@ -53,7 +53,7 @@ gulp.task('build', function() {
     .pipe(gulp.dest('./dist/'));
 });
 
-/* 
+/*
 * Minify in build base
 */
 gulp.task('minify', ['build'], function() {
@@ -80,14 +80,14 @@ gulp.task('minify', ['build'], function() {
     .pipe(gulp.dest('./dist/'))
 });
 
-/* 
+/*
 * Watch tasks
 */
 gulp.task('watch', function() {
   gulp.watch(['src/*.css'], ['default']);
 });
 
-/* 
+/*
 * Running commands to development and build
 */
 gulp.task('default', ['build', 'minify']);
