@@ -39,6 +39,7 @@
 }
 :--button:--pressed {
   outline: none;
+  transform: scale(0.99);
   background: color(var(--base-color) alpha(-20%));
 }
 
@@ -64,7 +65,6 @@
   color: color(var(--primary-color) alpha(-50%));
 }
 :--button-outline:--pressed {
-  transform: scale(0.99);
   border-color: color(var(--primary-color) alpha(-20%));
   color: color(var(--primary-color) alpha(-20%));
 }
@@ -80,7 +80,6 @@
   color: color(var(--primary-color) alpha(-20%));
 }
 :--button-flat:--pressed {
-  transform: scale(0.99);
   color: color(var(--primary-color) alpha(-10%));
 }
 
@@ -95,7 +94,6 @@
   color: #fff;
 }
 :--button-primary:--pressed {
-  transform: scale(0.99);
   background: color(var(--primary-color) alpha(-10%));
 }
 

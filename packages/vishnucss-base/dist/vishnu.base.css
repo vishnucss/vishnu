@@ -222,6 +222,8 @@ button:focus,
 .button:focus,
 [type='submit']:focus {
   outline: none;
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
   background: rgba(230, 236, 240, 0.8);
 }
 
@@ -257,8 +259,6 @@ button.outline:hover,
 button.outline:focus,
 .button.outline:focus,
 [type='submit'].outline:focus {
-  -webkit-transform: scale(0.99);
-          transform: scale(0.99);
   border-color: rgba(102, 126, 234, 0.8);
   color: rgba(102, 126, 234, 0.8);
 }
@@ -280,8 +280,6 @@ button.flat:hover,
 button.flat:focus,
 .button.flat:focus,
 [type='submit'].flat:focus {
-  -webkit-transform: scale(0.99);
-          transform: scale(0.99);
   color: rgba(102, 126, 234, 0.9);
 }
 
@@ -302,8 +300,6 @@ button.primary:hover,
 button.primary:focus,
 .button.primary:focus,
 [type='submit'].primary:focus {
-  -webkit-transform: scale(0.99);
-          transform: scale(0.99);
   background: rgba(102, 126, 234, 0.9);
 }
 
