@@ -1,4 +1,4 @@
-/* 
+/*
 * Config Gulpfile
 */
 
@@ -9,18 +9,20 @@ const gulp = require('gulp'),
   symdest = require('gulp-symdest'),
   postcss = require('gulp-postcss'),
   cssnano = require('cssnano'),
-  cssnext = require('postcss-cssnext'),
+  autoprefixer = require('autoprefixer'),
   selector = require('postcss-custom-selectors'),
+  presetEnv = require('postcss-preset-env'),
   nesting = require('postcss-nesting'),
   customMedia = require('postcss-custom-media'),
+  purge = require('gulp-css-purge'),
   copyright = `/**
 * vishnucss - v${pkg.version}
 * https://vishnucss.github.io/vishnu
 */\r\n`,
   $ = require('gulp-load-plugins')();
-  
 
-/* 
+
+/*
 * Base build task
 */
 gulp.task('build', function() {
@@ -28,7 +30,8 @@ gulp.task('build', function() {
     selector(),
     nesting(),
     customMedia(),
-    cssnext({ browsers: ['last 1 version'] })
+    autoprefixer({browsers: ['last 1 version']}),
+    presetEnv()
   ];
   return gulp
     .src([
@@ -56,10 +59,15 @@ gulp.task('build', function() {
     .pipe($.header(copyright + '\n'))
     .pipe($.size())
     .pipe($.sourcemaps.write('.'))
+    .pipe(purge({
+      trim : true,
+      shorten : true,
+      verbose : true
+    }))
     .pipe(gulp.dest('./dist/'));
 });
 
-/* 
+/*
 * Minify in build base
 */
 gulp.task('minify', ['build'], function() {
@@ -68,7 +76,8 @@ gulp.task('minify', ['build'], function() {
     cssnano(),
     nesting(),
     customMedia(),
-    cssnext({ browsers: ['last 1 version'] })
+    autoprefixer({browsers: ['last 1 version']}),
+    presetEnv()
   ];
   return gulp
     .src(['./dist/vishnu.css'])
@@ -83,18 +92,23 @@ gulp.task('minify', ['build'], function() {
     )
     .pipe($.concat('vishnu.min.css'))
     .pipe($.sourcemaps.write('.'))
+    .pipe(purge({
+      trim : true,
+      shorten : true,
+      verbose : true
+    }))
     .pipe(gulp.dest('./dist/'))
     .pipe(symdest('./docs/src/assets'))
 });
 
-/* 
+/*
 * Watch tasks
 */
 gulp.task('watch', function() {
   gulp.watch(['src/*.css'], ['default']);
 });
 
-/* 
+/*
 * Running commands to development and build
 */
 gulp.task('default', ['build', 'minify']);
