@@ -11,10 +11,10 @@ const gulp = require('gulp'),
   cssnano = require('cssnano'),
   autoprefixer = require('autoprefixer'),
   selector = require('postcss-custom-selectors'),
-  presetEnv = require('postcss-preset-env'),
   nesting = require('postcss-nesting'),
   customMedia = require('postcss-custom-media'),
-  purge = require('gulp-css-purge'),
+  cssvariables = require('postcss-css-variables'),
+  colorMod = require('postcss-color-mod-function'),
   copyright = `/**
 * vishnucss - v${pkg.version}
 * https://vishnucss.github.io/vishnu
@@ -27,11 +27,12 @@ const gulp = require('gulp'),
 */
 gulp.task('build', function() {
   let plugins = [
+    cssvariables(),
     selector(),
     nesting(),
     customMedia(),
-    autoprefixer({browsers: ['last 1 version']}),
-    presetEnv()
+    colorMod(),
+    autoprefixer({browsers: ['last 1 version']})
   ];
   return gulp
     .src([
@@ -59,11 +60,6 @@ gulp.task('build', function() {
     .pipe($.header(copyright + '\n'))
     .pipe($.size())
     .pipe($.sourcemaps.write('.'))
-    .pipe(purge({
-      trim : true,
-      shorten : true,
-      verbose : true
-    }))
     .pipe(gulp.dest('./dist/'));
 });
 
@@ -72,12 +68,13 @@ gulp.task('build', function() {
 */
 gulp.task('minify', ['build'], function() {
   let plugins = [
+    cssvariables(),
     selector(),
     cssnano(),
     nesting(),
     customMedia(),
-    autoprefixer({browsers: ['last 1 version']}),
-    presetEnv()
+    colorMod(),
+    autoprefixer({browsers: ['last 1 version']})
   ];
   return gulp
     .src(['./dist/vishnu.css'])
@@ -92,11 +89,6 @@ gulp.task('minify', ['build'], function() {
     )
     .pipe($.concat('vishnu.min.css'))
     .pipe($.sourcemaps.write('.'))
-    .pipe(purge({
-      trim : true,
-      shorten : true,
-      verbose : true
-    }))
     .pipe(gulp.dest('./dist/'))
     .pipe(symdest('./docs/src/assets'))
 });
