@@ -38,17 +38,18 @@
   /* Utils */
 
 }
-/* 
+
+/*
  * Reset
 */
 
 ::-moz-selection {
-  color: #667eea; 
+  color: #667eea;
   background: #E6ECF0;
 }
 
 ::selection {
-  color: #667eea; 
+  color: #667eea;
   background: #E6ECF0;
 }
 
@@ -73,7 +74,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* 
+/*
  * Typography
 */
 
@@ -150,31 +151,67 @@ p {
   }
 }
 
-/* 
+/*
  * Links
 */
 
-:link,:visited {
+:-webkit-any-link {
   color: #667eea;
   transition: color 0.1s ease
 }
 
-:link:hover,:visited:hover {
-  cursor: pointer;
-  color: rgba(102, 126, 234, 0.8);
-  text-decoration: none;
-
+:-moz-any-link {
+  color: #667eea;
+  transition: color 0.1s ease
 }
 
-:link:focus,:visited:focus {
-  outline: thin dotted;
-
+:any-link {
+  color: #667eea;
+  transition: color 0.1s ease
 }
 
-:link:active,:visited:active, :link:hover, :visited:hover {
-  outline: 0;
+:-webkit-any-link:hover {
+    cursor: pointer;
+    color: rgba(102, 126, 234, 0.8);
+    text-decoration: none;
+  }
 
-}
+:-moz-any-link:hover {
+    cursor: pointer;
+    color: rgba(102, 126, 234, 0.8);
+    text-decoration: none;
+  }
+
+:any-link:hover {
+    cursor: pointer;
+    color: rgba(102, 126, 234, 0.8);
+    text-decoration: none;
+  }
+
+:-webkit-any-link:focus {
+    outline: thin dotted;
+  }
+
+:-moz-any-link:focus {
+    outline: thin dotted;
+  }
+
+:any-link:focus {
+    outline: thin dotted;
+  }
+
+:-webkit-any-link:active, :-webkit-any-link:hover {
+    outline: 0;
+  }
+
+:-moz-any-link:active, :-moz-any-link:hover {
+    outline: 0;
+  }
+
+:any-link:active, :any-link:hover {
+    outline: 0;
+  }
+
 /*
  * Buttons
 */
@@ -206,7 +243,7 @@ button,
   background: rgba(230, 236, 240, 0.4);
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
-  border: 1.5px solid transparent;
+  border: 1px solid transparent;
   cursor: pointer;
   text-decoration: none;
 }
@@ -222,8 +259,6 @@ button:focus,
 .button:focus,
 [type='submit']:focus {
   outline: none;
-  -webkit-transform: scale(0.99);
-          transform: scale(0.99);
   background: rgba(230, 236, 240, 0.8);
 }
 
@@ -247,13 +282,13 @@ button.outline,
 [type='submit'].outline {
   color: #667eea;
   background: none;
-  border: 1.5px solid #E6ECF0;
+  border: 1px solid #E6ECF0;
 }
 button.outline:hover,
 .button.outline:hover,
 [type='submit'].outline:hover {
   background: none;
-  border: 1.5px solid rgba(102, 126, 234, 0.5);
+  border: 1px solid rgba(102, 126, 234, 0.5);
   color: rgba(102, 126, 234, 0.5);
 }
 button.outline:focus,
@@ -269,7 +304,7 @@ button.flat,
 [type='submit'].flat {
   color: #667eea;
   background: none;
-  border: 1.5px solid transparent;
+  border: 1px solid transparent;
 }
 button.flat:hover,
 .button.flat:hover,
@@ -289,7 +324,7 @@ button.primary,
 [type='submit'].primary {
   color: #fff;
   background: #667eea;
-  border: 1.5px solid transparent;
+  border: 1px solid transparent;
 }
 button.primary:hover,
 .button.primary:hover,
@@ -316,7 +351,7 @@ button.success,
 [type='submit'].success {
   color: #fff;
   background: #0DC222;
-  border: 1.5px solid transparent;
+  border: 1px solid transparent;
 }
 button.success:hover,
 .button.success:hover,
@@ -336,7 +371,7 @@ button.error,
 [type='submit'].error {
   color: #fff;
   background: #F93838;
-  border: 1.5px solid transparent;
+  border: 1px solid transparent;
 }
 button.error:hover,
 .button.error:hover,
@@ -350,15 +385,15 @@ button.error:focus,
   background: rgba(249, 56, 56, 0.9);
 }
 
-/* 
+/*
  * Forms
 */
 
 /*
 *
 * @ custom-properties
-* :--fields input[type='text'], input[type='password'], input[type='email'], input[type='search'], input[type='number'], input[type='file'], input[type='tel'], input[type='url'], select, textarea, textarea[type='text'];
-* :--textarea textarea, textarea[type='text'];
+* :--fields input[type='text'], input[type='password'], input[type='email'], input[type='search'], input[type='number'], input[type='file'], input[type='tel'], input[type='url'], select, textarea;
+* :--textarea textarea;
 * :--checkbox input[type='checkbox'];
 * :--radio input[type='radio'];
 * :--hovered :hover;
@@ -401,7 +436,6 @@ select:hover,
 textarea:hover,
 textarea[type='text']:hover {
   border-color: rgba(102, 126, 234, 0.8);
-  background-color: #f1f1f1;
 }
 input[type='text']:focus,
 input[type='password']:focus,
@@ -424,6 +458,11 @@ textarea[type='text'] {
   min-height: 7rem;
 }
 
+/* Select */
+select {
+  cursor: pointer;
+}
+
 /* Checkbox */
 .checkbox {
   display: block;
@@ -439,23 +478,21 @@ textarea[type='text'] {
   border-radius: 4px
 }
 .checkbox .checkmark {
-  position: absolute;
-  top: 3px;
-  left: 0;
-  height: 18px;
-  width: 18px;
-  background-color: #fff;
-  border: 1px solid #e5e5e5;
-  transition: all 0.2s ease-in-out;
-  border-radius: 4px;
-
-}
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    transition: all 0.2s ease-in-out;
+    border-radius: 4px;
+  }
 .checkbox input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-
-}
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
 .checkbox .checkmark:after {
   left: 6px;
   top: 1px;
@@ -481,22 +518,20 @@ textarea[type='text'] {
           user-select: none
 }
 .radio .radiomark {
-  position: absolute;
-  top: 3px;
-  left: 0;
-  height: 16px;
-  width: 16px;
-  background-color: #fff;
-  border: 1px solid #e5e5e5;
-  border-radius: 50%;
-  transition: all 0.2s ease-in-out;
-
-}
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+  }
 .radio input {
-  position: absolute;
-  opacity: 0;
-
-}
+    position: absolute;
+    opacity: 0;
+  }
 .radio .radiomark:after {
   top: 4px;
   left: 4px;
@@ -507,12 +542,20 @@ textarea[type='text'] {
 }
 
 /* Checkbox and Radio Button */
-.checkbox:hover input ~ .checkmark, .radio:hover input ~ .radiomark {
-  background-color: #f1f1f1;
+.checkbox:hover input ~ .checkmark {
+  border-color: rgba(102, 126, 234, 0.8);
+}
+.radio:hover input ~ .radiomark {
   border-color: rgba(102, 126, 234, 0.8);
 }
 
-.checkbox input:checked ~ .checkmark, .radio input:checked ~ .radiomark {
+.checkbox input:checked ~ .checkmark {
+  background-color: #667eea;
+  border-color: #667eea;
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
+}
+
+.radio input:checked ~ .radiomark {
   background-color: #667eea;
   border-color: #667eea;
   box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
@@ -525,7 +568,8 @@ textarea[type='text'] {
 .checkbox input:checked ~ .checkmark:after, .radio input:checked ~ .radiomark:after {
   display: block;
 }
-/* 
+
+/*
  * List
 */
 
@@ -549,7 +593,7 @@ li {
   margin-bottom: 1rem;
 }
 
-/* 
+/*
  * Tables
 */
 
@@ -570,71 +614,59 @@ table,
 }
 
 table th, table td, .table th, .table td {
-  vertical-align: middle;
-  padding: 12px 4px;
-
-}
+    vertical-align: middle;
+    padding: 12px 4px;
+  }
 
 table thead, .table thead {
-  border-bottom: 1px solid #e5e5e5;
-
-}
+    border-bottom: 1px solid #e5e5e5;
+  }
 
 /* responsive table */
 @media only screen and (max-width: 48em) {
-  table.responsive, .table.responsive {
-    position: relative;
-    display: block;
-
-  }
-  table.responsive th, table.responsive td, .table.responsive th, .table.responsive td {
-    margin: 0;
-
-  }
-  table.responsive thead, .table.responsive thead {
-    display: block;
-    float: left;
-    border: 0;
-
-  }
-  table.responsive thead tr, .table.responsive thead tr {
-    display: block;
-    padding: 0 10px 0 0;
-    border-right: 1px solid #e5e5e5;
-
-  }
-  table.responsive thead th, .table.responsive thead th {
-    text-align: left;
-
-  }
-  table.responsive th, .table.responsive th {
-    display: block;
-    text-align: right;
-
-  }
-  table.responsive tbody, .table.responsive tbody {
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
-
-  }
-  table.responsive tbody tr, .table.responsive tbody tr {
-    display: inline-block;
-
-  }
-  table.responsive td, .table.responsive td {
-    display: block;
-    min-height: 16px;
-    text-align: left;
-
-  }
-  table.responsive tr, .table.responsive tr {
-    padding: 0 10px;
-
-  }
+    table.responsive, .table.responsive {
+      position: relative;
+      display: block
+    }
+      table.responsive th, table.responsive td, .table.responsive th, .table.responsive td {
+        margin: 0
+      }
+      table.responsive thead, .table.responsive thead {
+        display: block;
+        float: left;
+        border: 0
+      }
+        table.responsive thead tr, .table.responsive thead tr {
+          display: block;
+          padding: 0 10px 0 0;
+          border-right: 1px solid #e5e5e5;
+        }
+        table.responsive thead th, .table.responsive thead th {
+          text-align: left;
+        }
+      table.responsive th, .table.responsive th {
+        display: block;
+        text-align: right;
+      }
+      table.responsive tbody, .table.responsive tbody {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap
+      }
+        table.responsive tbody tr, .table.responsive tbody tr {
+          display: inline-block;
+        }
+      table.responsive td, .table.responsive td {
+        display: block;
+        min-height: 16px;
+        text-align: left;
+      }
+      table.responsive tr, .table.responsive tr {
+        padding: 0 10px;
+      }
 }
 
-/* 
+/*
  * Images
 */
 
@@ -642,7 +674,7 @@ img {
   max-width: 100%;
 }
 
-/* 
+/*
  * Misc
 */
 
@@ -707,4 +739,5 @@ pre > code {
     display: none;
   }
 }
+
 /*# sourceMappingURL=vishnu.base.css.map */

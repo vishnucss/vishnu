@@ -1,4 +1,4 @@
-/* 
+/*
 * Config Gulpfile
 */
 
@@ -8,10 +8,12 @@ const gulp = require('gulp'),
   pkg = require('./package.json'),
   postcss = require('gulp-postcss'),
   cssnano = require('cssnano'),
-  cssnext = require('postcss-cssnext'),
+  autoprefixer = require('autoprefixer'),
   selector = require('postcss-custom-selectors'),
   nesting = require('postcss-nesting'),
   customMedia = require('postcss-custom-media'),
+  cssvariables = require('postcss-css-variables'),
+  colorMod = require('postcss-color-mod-function'),
   copyright = `/**
 * vishnucss extensions - v${pkg.version}
 * ${pkg.description}
@@ -19,15 +21,17 @@ const gulp = require('gulp'),
 */\r\n`,
   $ = require('gulp-load-plugins')();
 
-/* 
+/*
 * Extensions build task
 */
 gulp.task('build', function() {
   let plugins = [
+    cssvariables(),
     selector(),
     nesting(),
     customMedia(),
-    cssnext({ browsers: ['last 1 version'] })
+    colorMod(),
+    autoprefixer({browsers: ['last 1 version']})
   ];
   return gulp
     .src([
@@ -47,16 +51,18 @@ gulp.task('build', function() {
     .pipe(gulp.dest('./dist/'));
 });
 
-/* 
+/*
 * Minify in build extensions
 */
 gulp.task('minify', ['build'], function() {
   let plugins = [
+    cssvariables(),
     selector(),
     cssnano(),
     nesting(),
     customMedia(),
-    cssnext({ browsers: ['last 1 version'] })
+    colorMod(),
+    autoprefixer({browsers: ['last 1 version']})
   ];
   return gulp
     .src(['./dist/vishnu.extensions.css'])
@@ -74,14 +80,14 @@ gulp.task('minify', ['build'], function() {
     .pipe(gulp.dest('./dist/'))
 });
 
-/* 
+/*
 * Watch tasks
 */
 gulp.task('watch', function() {
   gulp.watch(['src/*.css'], ['default']);
 });
 
-/* 
+/*
 * Running commands to development and build
 */
 gulp.task('default', ['build', 'minify']);

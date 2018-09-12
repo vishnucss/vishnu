@@ -27,7 +27,7 @@
   background: color-mod(var(--base-color) alpha(-60%));
   border-radius: var(--base-radius);
   transition: var(--transition);
-  border: 1.5px solid transparent;
+  border: 1px solid transparent;
   cursor: pointer;
   text-decoration: none;
 }
@@ -39,7 +39,6 @@
 }
 :--button:--pressed {
   outline: none;
-  transform: scale(0.99);
   background: color-mod(var(--base-color) alpha(-20%));
 }
 
@@ -57,11 +56,11 @@
 :--button-outline {
   color: var(--primary-color);
   background: none;
-  border: 1.5px solid var(--base-color);
+  border: 1px solid var(--base-color);
 }
 :--button-outline:--hovered {
   background: none;
-  border: 1.5px solid color-mod(var(--primary-color) alpha(-50%));
+  border: 1px solid color-mod(var(--primary-color) alpha(-50%));
   color: color-mod(var(--primary-color) alpha(-50%));
 }
 :--button-outline:--pressed {
@@ -73,7 +72,7 @@
 :--button-flat {
   color: var(--primary-color);
   background: none;
-  border: 1.5px solid transparent;
+  border: 1px solid transparent;
 }
 :--button-flat:--hovered {
   background: none;
@@ -87,7 +86,7 @@
 :--button-primary {
   color: #fff;
   background: var(--primary-color);
-  border: 1.5px solid transparent;
+  border: 1px solid transparent;
 }
 :--button-primary:--hovered {
   background: color-mod(var(--primary-color) alpha(-20%));
@@ -106,7 +105,7 @@
 :--button-success {
   color: #fff;
   background: var(--base-success-color);
-  border: 1.5px solid transparent;
+  border: 1px solid transparent;
 }
 :--button-success:--hovered {
   background: color-mod(var(--base-success-color) alpha(-20%));
@@ -120,7 +119,7 @@
 :--button-error {
   color: #fff;
   background: var(--base-error-color);
-  border: 1.5px solid transparent;
+  border: 1px solid transparent;
 }
 :--button-error:--hovered {
   background: color-mod(var(--base-error-color) alpha(-20%));

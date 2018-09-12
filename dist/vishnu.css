@@ -251,7 +251,7 @@ button,
   background: rgba(230, 236, 240, 0.4);
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
-  border: 1.5px solid transparent;
+  border: 1px solid transparent;
   cursor: pointer;
   text-decoration: none;
 }
@@ -267,8 +267,6 @@ button:focus,
 .button:focus,
 [type='submit']:focus {
   outline: none;
-  -webkit-transform: scale(0.99);
-          transform: scale(0.99);
   background: rgba(230, 236, 240, 0.8);
 }
 
@@ -292,13 +290,13 @@ button.outline,
 [type='submit'].outline {
   color: #667eea;
   background: none;
-  border: 1.5px solid #E6ECF0;
+  border: 1px solid #E6ECF0;
 }
 button.outline:hover,
 .button.outline:hover,
 [type='submit'].outline:hover {
   background: none;
-  border: 1.5px solid rgba(102, 126, 234, 0.5);
+  border: 1px solid rgba(102, 126, 234, 0.5);
   color: rgba(102, 126, 234, 0.5);
 }
 button.outline:focus,
@@ -314,7 +312,7 @@ button.flat,
 [type='submit'].flat {
   color: #667eea;
   background: none;
-  border: 1.5px solid transparent;
+  border: 1px solid transparent;
 }
 button.flat:hover,
 .button.flat:hover,
@@ -334,7 +332,7 @@ button.primary,
 [type='submit'].primary {
   color: #fff;
   background: #667eea;
-  border: 1.5px solid transparent;
+  border: 1px solid transparent;
 }
 button.primary:hover,
 .button.primary:hover,
@@ -361,7 +359,7 @@ button.success,
 [type='submit'].success {
   color: #fff;
   background: #0DC222;
-  border: 1.5px solid transparent;
+  border: 1px solid transparent;
 }
 button.success:hover,
 .button.success:hover,
@@ -381,7 +379,7 @@ button.error,
 [type='submit'].error {
   color: #fff;
   background: #F93838;
-  border: 1.5px solid transparent;
+  border: 1px solid transparent;
 }
 button.error:hover,
 .button.error:hover,
@@ -402,8 +400,8 @@ button.error:focus,
 /*
 *
 * @ custom-properties
-* :--fields input[type='text'], input[type='password'], input[type='email'], input[type='search'], input[type='number'], input[type='file'], input[type='tel'], input[type='url'], select, textarea, textarea[type='text'];
-* :--textarea textarea, textarea[type='text'];
+* :--fields input[type='text'], input[type='password'], input[type='email'], input[type='search'], input[type='number'], input[type='file'], input[type='tel'], input[type='url'], select, textarea;
+* :--textarea textarea;
 * :--checkbox input[type='checkbox'];
 * :--radio input[type='radio'];
 * :--hovered :hover;
@@ -444,7 +442,6 @@ input[type='url']:hover,
 select:hover,
 textarea:hover {
   border-color: rgba(102, 126, 234, 0.8);
-  background-color: #f1f1f1;
 }
 input[type='text']:focus,
 input[type='password']:focus,
@@ -463,6 +460,11 @@ textarea:focus {
 
 textarea {
   min-height: 7rem;
+}
+
+/* Select */
+select {
+  cursor: pointer;
 }
 
 /* Checkbox */
@@ -545,11 +547,9 @@ textarea {
 
 /* Checkbox and Radio Button */
 .checkbox:hover input ~ .checkmark {
-  background-color: #f1f1f1;
   border-color: rgba(102, 126, 234, 0.8);
 }
 .radio:hover input ~ .radiomark {
-  background-color: #f1f1f1;
   border-color: rgba(102, 126, 234, 0.8);
 }
 

@@ -5,8 +5,8 @@
 /*
 *
 * @ custom-properties
-* :--fields input[type='text'], input[type='password'], input[type='email'], input[type='search'], input[type='number'], input[type='file'], input[type='tel'], input[type='url'], select, textarea, textarea[type='text'];
-* :--textarea textarea, textarea[type='text'];
+* :--fields input[type='text'], input[type='password'], input[type='email'], input[type='search'], input[type='number'], input[type='file'], input[type='tel'], input[type='url'], select, textarea;
+* :--textarea textarea;
 * :--checkbox input[type='checkbox'];
 * :--radio input[type='radio'];
 * :--hovered :hover;
@@ -29,7 +29,6 @@
 }
 :--fields:--hovered {
   border-color: color-mod(var(--primary-color) alpha(80%));
-  background-color: var(--base-light-color);
 }
 :--fields:--pressed {
   outline: none;
@@ -39,6 +38,11 @@
 
 :--textarea {
   min-height: 7rem;
+}
+
+/* Select */
+select {
+  cursor: pointer;
 }
 
 /* Checkbox */
@@ -114,7 +118,6 @@
 
 /* Checkbox and Radio Button */
 .checkbox:hover input ~ .checkmark, .radio:hover input ~ .radiomark {
-  background-color: var(--base-light-color);
   border-color: color-mod(var(--primary-color) alpha(80%));
 }
 

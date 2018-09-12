@@ -19,7 +19,7 @@
 }
 :--card :--header, :--card :--footer {
   position: relative;
-  background: color(var(--base-color) alpha(30%));
+  background: color-mod(var(--base-color) alpha(30%));
   padding: 10px;
   display: flex;
 }

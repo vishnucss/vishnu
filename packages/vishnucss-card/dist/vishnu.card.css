@@ -53,12 +53,16 @@
   background: #fff;
   border-radius: 4px;
 }
-.card .card-header,
+.card .card-header {
+  position: relative;
+  background: rgba(230, 236, 240, 0.3);
+  padding: 10px;
+  display: flex;
+}
 .card .card-footer {
   position: relative;
   background: rgba(230, 236, 240, 0.3);
   padding: 10px;
-  display: -webkit-box;
   display: flex;
 }
 .card .card-header {
@@ -73,4 +77,5 @@
 .card .card-content {
   padding: 15px 10px;
 }
+
 /*# sourceMappingURL=vishnu.card.css.map */
