@@ -53,42 +53,42 @@
   }
 }
 :--alert:--info {
-  background: color(var(--base-info-color) alpha(5%));
-  border-color: color(var(--base-info-color) alpha(50%));
+  background: color-mod(var(--base-info-color) alpha(5%));
+  border-color: color-mod(var(--base-info-color) alpha(50%));
   color: var(--base-info-color);
   & .description {
-    color: color(var(--base-info-color) alpha(60%));
+    color: color-mod(var(--base-info-color) alpha(60%));
   }
   & .close {
     border-color: transparent;
-    background: color(var(--base-info-color) alpha(50%));
+    background: color-mod(var(--base-info-color) alpha(50%));
     color:#fff;
   }
 }
 :--alert:--error {
-  background: color(var(--base-error-color) alpha(5%));
-  border-color: color(var(--base-error-color) alpha(50%));
+  background: color-mod(var(--base-error-color) alpha(5%));
+  border-color: color-mod(var(--base-error-color) alpha(50%));
   color: var(--base-error-color);
   & .close {
     border-color: transparent;
-    background: color(var(--base-error-color) alpha(50%));
+    background: color-mod(var(--base-error-color) alpha(50%));
     color:#fff;
   }
   & .description {
-    color: color(var(--base-error-color) alpha(60%));
+    color: color-mod(var(--base-error-color) alpha(60%));
   }
 }
 :--alert:--success {
-  background: color(var(--base-success-color) alpha(5%));
-  border-color: color(var(--base-success-color) alpha(10%));
+  background: color-mod(var(--base-success-color) alpha(5%));
+  border-color: color-mod(var(--base-success-color) alpha(10%));
   color: var(--base-success-color);
   & .close {
     border-color: transparent;
-    background: color(var(--base-success-color) alpha(50%));;
+    background: color-mod(var(--base-success-color) alpha(50%));;
     color: #fff;
   }
   & .description {
-    color: color(var(--base-success-color) alpha(60%));
+    color: color-mod(var(--base-success-color) alpha(60%));
   }
 }
 :--alert:--rounded {

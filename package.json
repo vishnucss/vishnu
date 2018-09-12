@@ -1,7 +1,7 @@
 {
   "name": "@vishnucss/vishnu",
   "filename": "vishnu.min.css",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A simple and minimalist toolkit with modern css",
   "main": "./dist/vishnu.min.css",
   "keywords": [
@@ -47,6 +47,7 @@
     ]
   },
   "devDependencies": {
+    "autoprefixer": "^9.1.5",
     "browser-sync": "^2.18.13",
     "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
@@ -61,9 +62,7 @@
     "gulp-sourcemaps": "^2.6.1",
     "gulp-symdest": "^1.1.0",
     "gulp-util": "~2.2.9",
-    "postcss-cssnext": "^3.0.2",
-    "postcss-custom-media": "^6.0.0",
-    "postcss-custom-selectors": "^4.0.1",
-    "postcss-nesting": "^4.2.1"
+    "postcss-css-variables": "^0.9.0",
+    "postcss-preset-env": "^5.3.0"
   }
 }

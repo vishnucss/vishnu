@@ -1,9 +1,9 @@
 /**
-* vishnucss utils - v1.0.6
+* vishnucss utils - v1.0.7
 * https://vishnucss.github.io/vishnu#utilities
 */
 
-/* 
+/*
  * Utils
 */
 
@@ -42,47 +42,32 @@
 }
 
 .vertical-align {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .horizontal-align {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .center {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .right {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-          justify-content: flex-end;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .left {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-          justify-content: flex-start;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .fixed {

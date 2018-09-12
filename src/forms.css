@@ -1,12 +1,12 @@
-/* 
+/*
  * Forms
 */
 
 /*
 *
 * @ custom-properties
-* :--fields input[type='text'], input[type='password'], input[type='email'], input[type='search'], input[type='number'], input[type='file'], input[type='tel'], input[type='url'], select, textarea, textarea[type='text'];
-* :--textarea textarea, textarea[type='text'];
+* :--fields input[type='text'], input[type='password'], input[type='email'], input[type='search'], input[type='number'], input[type='file'], input[type='tel'], input[type='url'], select, textarea;
+* :--textarea textarea;
 * :--checkbox input[type='checkbox'];
 * :--radio input[type='radio'];
 * :--hovered :hover;
@@ -28,17 +28,21 @@
   transition: var(--transition);
 }
 :--fields:--hovered {
-  border-color: color(var(--primary-color) alpha(80%));
-  background-color: var(--base-light-color);
+  border-color: color-mod(var(--primary-color) alpha(80%));
 }
 :--fields:--pressed {
   outline: none;
   border-color: var(--primary-color);
-  box-shadow: 0 0 0 2px color(var(--primary-color) alpha(20%));
+  box-shadow: 0 0 0 2px color-mod(var(--primary-color) alpha(20%));
 }
 
 :--textarea {
   min-height: 7rem;
+}
+
+/* Select */
+select {
+  cursor: pointer;
 }
 
 /* Checkbox */
@@ -114,14 +118,13 @@
 
 /* Checkbox and Radio Button */
 .checkbox:hover input ~ .checkmark, .radio:hover input ~ .radiomark {
-  background-color: var(--base-light-color);
-  border-color: color(var(--primary-color) alpha(80%));
+  border-color: color-mod(var(--primary-color) alpha(80%));
 }
 
 .checkbox input:checked ~ .checkmark, .radio input:checked ~ .radiomark {
   background-color: var(--primary-color);
   border-color: var(--primary-color);
-  box-shadow: 0 0 0 2px color(var(--primary-color) alpha(20%));
+  box-shadow: 0 0 0 2px color-mod(var(--primary-color) alpha(20%));
 }
 .checkbox .checkmark:after, .radio .radiomark:after {
   content: "";

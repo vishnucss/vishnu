@@ -33,8 +33,8 @@
 * Forms
 */
 
-@custom-selector :--fields input[type='text'], input[type='password'], input[type='email'], input[type='search'], input[type='number'], input[type='file'], input[type='tel'], input[type='url'], select, textarea, textarea[type='text'];
-@custom-selector :--textarea textarea, textarea[type='text'];
+@custom-selector :--fields input[type='text'], input[type='password'], input[type='email'], input[type='search'], input[type='number'], input[type='file'], input[type='tel'], input[type='url'], select, textarea;
+@custom-selector :--textarea textarea;
 @custom-selector :--checkbox input[type='checkbox'];
 @custom-selector :--radio input[type='radio'];
 @custom-selector :--hovered :hover;
@@ -62,7 +62,7 @@
 @custom-selector :--title .card-title;
 @custom-selector :--content .card-content;
 
-/* 
+/*
  * Grid
 */
 
