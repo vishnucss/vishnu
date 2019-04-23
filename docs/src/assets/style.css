@@ -21,9 +21,20 @@
 .wrapper {
   max-width: 60%;
   margin: 60px auto;
+  /* background: #000; */
+}
+button {
+  width: 90%;
 }
 .container {
   margin-top: 30px;
+}
+
+.section h4 {
+  margin-top: 30px;
+}
+#typhography h4 {
+  margin-top: 0;
 }
 
 /* Hero */
@@ -121,4 +132,7 @@
   margin-bottom: 20px;
   display: table;
   width: 100%;
+}
+* {
+  font-family: Catamaran;
 }

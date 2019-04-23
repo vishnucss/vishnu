@@ -23,8 +23,9 @@
 :--button {
   padding: 1.1rem 3.5rem;
   font-size: var(--base-font-size);
+  font-weight: 600;
   color: var(--base-text-color);
-  background: color-mod(var(--base-color) alpha(-60%));
+  background: var(--base-light-color);
   border-radius: var(--base-radius);
   transition: var(--transition);
   border: 1px solid transparent;
@@ -34,52 +35,77 @@
 
 /* Status */
 :--button:--hovered {
-  color: var(--primary-color);
-  background: color-mod(var(--base-color) alpha(-50%));
+  color: color-mod(var(--base-text-color) alpha(-30%));
+  background: color-mod(var(--base-light-color) alpha(-30%));
 }
 :--button:--pressed {
   outline: none;
-  background: color-mod(var(--base-color) alpha(-20%));
+  background: color-mod(var(--base-light-color) alpha(-20%));
 }
 
 /* Size */
 :--button:--small {
-  font-size: 1.2rem;
+  font-size: calc(var(--base-font-size) - .2rem);
   padding: 0.6rem 1.6rem;
+  font-weight: 700;
 }
 :--button:--large {
-  font-size: 1.8rem;
-  padding: 1.8rem 4.2rem;
+  font-size: calc(var(--base-font-size) + .8rem);
+  padding: 1.6rem 4.2rem;
 }
 
 /* Outline */
 :--button-outline {
-  color: var(--primary-color);
+  color: var(--base-text-color);
   background: none;
-  border: 1px solid var(--base-color);
+  border: 1px solid var(--base-text-color);
+  &.primary {
+    color: var(--primary-color);
+    background: none;
+    border: 1px solid var(--primary-color);
+    &:hover {
+      background: none;
+      border: 1px solid color-mod(var(--primary-color) alpha(-30%));
+      color: color-mod(var(--primary-color) alpha(-30%));
+    }
+    &:focus, &:active {
+      background: none;
+      border-color: color-mod(var(--primary-color) alpha(-20%));
+      color: color-mod(var(--primary-color) alpha(-20%));
+    }
+  }
 }
 :--button-outline:--hovered {
   background: none;
-  border: 1px solid color-mod(var(--primary-color) alpha(-50%));
-  color: color-mod(var(--primary-color) alpha(-50%));
+  border: 1px solid color-mod(var(--base-text-color) alpha(-30%));
+  color: color-mod(var(--base-text-color) alpha(-30%));
 }
 :--button-outline:--pressed {
-  border-color: color-mod(var(--primary-color) alpha(-20%));
-  color: color-mod(var(--primary-color) alpha(-20%));
+  border-color: color-mod(var(--base-text-color) alpha(-20%));
+  color: color-mod(var(--base-text-color) alpha(-20%));
 }
 
 /* Flat */
 :--button-flat {
-  color: var(--primary-color);
+  color: var(--base-text-color);
   background: none;
   border: 1px solid transparent;
+  &.primary {
+    color: var(--primary-color);
+    &:hover {
+      color: color-mod(var(--primary-color) alpha(-20%));
+    }
+    &:active, &:focus {
+      color: color-mod(var(--primary-color) alpha(-10%));
+    }
+  }
 }
 :--button-flat:--hovered {
   background: none;
-  color: color-mod(var(--primary-color) alpha(-20%));
+  color: color-mod(var(--base-text-color) alpha(-20%));
 }
 :--button-flat:--pressed {
-  color: color-mod(var(--primary-color) alpha(-10%));
+  color: color-mod(var(--base-text-color) alpha(-10%));
 }
 
 /* Primary */
@@ -98,7 +124,7 @@
 
 /* Rounded */
 :--button-rounded {
-  border-radius: 28px;
+  border-radius: 50px;
 }
 
 /* Success */
@@ -127,4 +153,32 @@
 }
 :--button-error:--pressed {
   background: color-mod(var(--base-error-color) alpha(-10%));
+}
+
+/* Warning */
+:--button-warning {
+  color: #fff;
+  background: var(--base-warning-color);
+  border: 1px solid transparent;
+}
+:--button-warning:--hovered {
+  background: color-mod(var(--base-warning-color) alpha(-20%));
+  color: #fff;
+}
+:--button-warning:--pressed {
+  background: color-mod(var(--base-warning-color) alpha(-10%));
+}
+
+/* Info */
+:--button-info {
+  color: #fff;
+  background: var(--base-info-color);
+  border: 1px solid transparent;
+}
+:--button-info:--hovered {
+  background: color-mod(var(--base-info-color) alpha(-20%));
+  color: #fff;
+}
+:--button-info:--pressed {
+  background: color-mod(var(--base-info-color) alpha(-10%));
 }

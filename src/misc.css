@@ -31,3 +31,7 @@ pre > code {
   white-space: pre-wrap;
   word-wrap: break-word;
 }
+
+.shadow {
+  box-shadow: var(--base-box-shadow);
+}

@@ -19,8 +19,8 @@
 }
 :--card :--header, :--card :--footer {
   position: relative;
-  background: color-mod(var(--base-color) alpha(30%));
-  padding: 10px;
+  background: transparent;
+  padding: 15px;
   display: flex;
 }
 :--card :--header {
@@ -33,5 +33,5 @@
   margin: 0;
 }
 :--card :--content {
-  padding: 15px 10px;
+  padding: 20px 15px;
 }
