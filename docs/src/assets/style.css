@@ -165,3 +165,6 @@ button {
   padding: 5px 15px;
   outline: 0;
 }
+.avatar-margins div {
+  margin: 0 5px;
+}

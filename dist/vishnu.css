@@ -28,6 +28,10 @@
 */
 
 /*
+* Avatar
+*/
+
+/*
  * Grid
 */
 
@@ -967,6 +971,64 @@ pre > code {
   background: rgba(255, 255, 255, 0.15);
 }
 
+
+/*
+* Avatar
+*/
+
+/*
+*
+* @ custom-properties
+* :--avatar .avatar;
+* :--alert-primary .avatar.primary;
+* :--alert-outline .avatar.outline;
+* :--alert-small .avatar.small;
+* :--alert-large .avatar.large;
+*
+*/
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  max-width: 50px;
+  min-width: 50px;
+  flex-basis: 50px;
+  background: #f1f1f1;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #282828;
+}
+.avatar.primary {
+  background: #667eea;
+  color: #fff
+}
+.avatar.primary.outline {
+    background: transparent;
+    border-color: #667eea;
+    color: #667eea;
+  }
+.avatar.outline {
+  background: transparent;
+  border: 1px solid #282828;
+}
+.avatar.small {
+  width: 32px;
+  height: 32px;
+  max-width: 32px;
+  min-width: 32px;
+  flex-basis: 32px;
+}
+.avatar.large {
+  width: 80px;
+  height: 80px;
+  max-width: 80px;
+  min-width: 80px;
+  flex-basis: 80px;
+}
 
 /*
 * Card
