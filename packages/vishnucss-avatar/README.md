@@ -1,17 +1,17 @@
-<h2>Card</h2>
+<h2>Avatar</h2>
 
 ## Install
 
 **Using npm**
 
 ```sh
-$ npm install --save @vishnucss/card
+$ npm install --save @vishnucss/avatar
 ```
 
 **Using directly link**
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@vishnucss/card"/>
+<link rel="stylesheet" href="https://unpkg.com/@vishnucss/avatar"/>
 ```
 
 ## Bug?
