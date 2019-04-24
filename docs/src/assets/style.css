@@ -80,6 +80,8 @@ button {
 #grid h5 {
   margin-top: 30px;
   margin-bottom: 5px;
+  width: 100%;
+  display: block;
 }
 
 /* Grid samples*/

@@ -8,16 +8,19 @@
 */
 
 :root {
-  
-    /* Typhography */
-  
-    /* Colours */
-  
-    /* Transitions */
-  
-    /* Utils */
-  
-  }
+
+  /* Typhography */
+
+  /* Colours */
+
+  /* Transitions */
+
+  /* Shadows */
+
+  /* Utils */
+
+}
+
 /*
 * Responsive
 */
@@ -55,13 +58,13 @@
 }
 .card .card-header {
   position: relative;
-  background: rgba(230, 236, 240, 0.3);
+  background: rgba(255, 255, 255, 0.3);
   padding: 10px;
   display: flex;
 }
 .card .card-footer {
   position: relative;
-  background: rgba(230, 236, 240, 0.3);
+  background: rgba(255, 255, 255, 0.3);
   padding: 10px;
   display: flex;
 }
