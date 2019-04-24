@@ -5,7 +5,7 @@
     if (target.length) {
       event.preventDefault()
       jQuery('html, body').animate({
-        scrollTop: target.offset().top
+        scrollTop: target.offset().top - 20
       }, 1000)
     }
   })
