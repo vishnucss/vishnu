@@ -21,8 +21,9 @@
 
 /* Default */
 :--button {
-  padding: 1.1rem 3.5rem;
+  padding: 0 1.5rem;
   font-size: var(--base-font-size);
+  min-height: 52px;
   font-weight: 600;
   color: var(--base-text-color);
   background: var(--base-light-color);
@@ -31,26 +32,40 @@
   border: 1px solid transparent;
   cursor: pointer;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & .icon {
+    margin: 0 5px;
+    stroke: var(--base-text-color);
+  }
 }
 
 /* Status */
 :--button:--hovered {
   color: color-mod(var(--base-text-color) alpha(-30%));
   background: color-mod(var(--base-light-color) alpha(-30%));
+  & .icon {
+    stroke: color-mod(var(--base-text-color) alpha(-30%));
+  }
 }
 :--button:--pressed {
   outline: none;
   background: color-mod(var(--base-light-color) alpha(-20%));
+  & .icon {
+    stroke: color-mod(var(--base-text-color) alpha(-30%));
+  }
 }
 
 /* Size */
 :--button:--small {
   font-size: calc(var(--base-font-size) - .2rem);
-  padding: 0.6rem 1.6rem;
+  min-height: 36px;
   font-weight: 700;
 }
 :--button:--large {
   font-size: calc(var(--base-font-size) + .8rem);
+  min-height: 72px;
   padding: 1.6rem 4.2rem;
 }
 
@@ -98,6 +113,9 @@
     &:active, &:focus {
       color: color-mod(var(--primary-color) alpha(-10%));
     }
+    & .icon {
+      stroke: var(--primary-color);
+    }
   }
 }
 :--button-flat:--hovered {
@@ -113,6 +131,9 @@
   color: #fff;
   background: var(--primary-color);
   border: 1px solid transparent;
+  & .icon {
+    stroke: #fff;
+  }
 }
 :--button-primary:--hovered {
   background: color-mod(var(--primary-color) alpha(-20%));
@@ -132,6 +153,9 @@
   color: #fff;
   background: var(--base-success-color);
   border: 1px solid transparent;
+  & .icon {
+    stroke: #fff;
+  }
 }
 :--button-success:--hovered {
   background: color-mod(var(--base-success-color) alpha(-20%));
@@ -146,6 +170,9 @@
   color: #fff;
   background: var(--base-error-color);
   border: 1px solid transparent;
+  & .icon {
+    stroke: #fff;
+  }
 }
 :--button-error:--hovered {
   background: color-mod(var(--base-error-color) alpha(-20%));
@@ -160,6 +187,9 @@
   color: #fff;
   background: var(--base-warning-color);
   border: 1px solid transparent;
+  & .icon {
+    stroke: #fff;
+  }
 }
 :--button-warning:--hovered {
   background: color-mod(var(--base-warning-color) alpha(-20%));
@@ -174,6 +204,9 @@
   color: #fff;
   background: var(--base-info-color);
   border: 1px solid transparent;
+  & .icon {
+    stroke: #fff;
+  }
 }
 :--button-info:--hovered {
   background: color-mod(var(--base-info-color) alpha(-20%));

@@ -47,17 +47,19 @@ select {
 
 /* Checkbox */
 .checkbox {
-  display: block;
+  display: flex;
   position: relative;
-  padding-left: 25px;
+  padding-left: 30px;
+  min-height: 20px;
   cursor: pointer;
   font-size: var(--base-font-size);
   line-height: var(--base-line-height);
   user-select: none;
+  align-items: center;
   border-radius: var(--base-radius);
   & .checkmark {
     position: absolute;
-    top: 3px;
+    top: 0;
     left: 0;
     height: 18px;
     width: 18px;
@@ -84,19 +86,19 @@ select {
 
 /* Radio Button */
 .radio {
-  display: block;
+  display: flex;
   position: relative;
-  padding-left: 25px;
+  padding-left: 30px;
   cursor: pointer;
   font-size: var(--base-font-size);
   line-height: var(--base-line-height);
   user-select: none;
   & .radiomark {
     position: absolute;
-    top: 3px;
+    top: 0;
     left: 0;
-    height: 16px;
-    width: 16px;
+    height: 18px;
+    width: 18px;
     background-color: #fff;
     border: 1px solid var(--base-border-color);
     border-radius: var(--base-rounded-radius);
@@ -108,10 +110,10 @@ select {
   }
 }
 .radio .radiomark:after {
-  top: 4px;
-  left: 4px;
-  width: 8px;
-  height: 8px;
+  top: 6px;
+  left: 6px;
+  width: 6px;
+  height: 6px;
   border-radius: var(--base-rounded-radius);
   background: white;
 }

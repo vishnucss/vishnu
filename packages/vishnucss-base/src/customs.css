@@ -23,11 +23,14 @@
 @custom-selector :--button-primary button.primary, .button.primary, [type='submit'].primary;
 @custom-selector :--button-rounded button.rounded, .button.rounded, [type='submit'].rounded;
 @custom-selector :--button-success button.success, .button.success, [type='submit'].success;
+@custom-selector :--button-info button.info, .button.info, [type='submit'].info;
+@custom-selector :--button-warning button.warning, .button.warning, [type='submit'].warning;
 @custom-selector :--button-error button.error, .button.error, [type='submit'].error;
 @custom-selector :--hovered :hover;
 @custom-selector :--pressed :focus;
 @custom-selector :--large .large;
 @custom-selector :--small .small;
+
 
 
 /*

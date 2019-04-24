@@ -8,16 +8,19 @@
 */
 
 :root {
-  
-    /* Typhography */
-  
-    /* Colours */
-  
-    /* Transitions */
-  
-    /* Utils */
-  
-  }
+
+  /* Typhography */
+
+  /* Colours */
+
+  /* Transitions */
+
+  /* Shadows */
+
+  /* Utils */
+
+}
+
 /*
 * Alert
 */
@@ -69,7 +72,7 @@
   width: 28px;
   height: 28px;
   font-size: 1.3rem;
-  background: #E6ECF0;
+  background: #fff;
   border: 1px solid #e5e5e5;
   border-radius: 50%;
   color: #282828

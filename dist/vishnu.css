@@ -83,7 +83,7 @@ html {
 }
 
 body {
-  line-height: normal;
+  line-height: 1.4;
   font-size: 1.6rem;
   font-family: -apple-system, BlinkMacSystemFont, Avenir, 'Avenir Next',
   'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
@@ -255,8 +255,9 @@ p {
 button,
 .button,
 [type='submit'] {
-  padding: 1.1rem 3.5rem;
+  padding: 0 1.5rem;
   font-size: 1.6rem;
+  min-height: 52px;
   font-weight: 600;
   color: #444;
   background: #f1f1f1;
@@ -265,34 +266,48 @@ button,
   border: 1px solid transparent;
   cursor: pointer;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center
 }
+button .icon, .button .icon, [type='submit'] .icon {
+    margin: 0 5px;
+    stroke: #444;
+  }
 
 /* Status */
 button:hover,
 .button:hover,
 [type='submit']:hover {
   color: rgba(68, 68, 68, 0.7);
-  background: rgba(241, 241, 241, 0.7);
+  background: rgba(241, 241, 241, 0.7)
 }
+button:hover .icon, .button:hover .icon, [type='submit']:hover .icon {
+    stroke: rgba(68, 68, 68, 0.7);
+  }
 button:focus,
 .button:focus,
 [type='submit']:focus {
   outline: none;
-  background: rgba(241, 241, 241, 0.8);
+  background: rgba(241, 241, 241, 0.8)
 }
+button:focus .icon, .button:focus .icon, [type='submit']:focus .icon {
+    stroke: rgba(68, 68, 68, 0.7);
+  }
 
 /* Size */
 button.small,
 .button.small,
 [type='submit'].small {
   font-size: calc(1.6rem - .2rem);
-  padding: 0.6rem 1.6rem;
+  min-height: 36px;
   font-weight: 700;
 }
 button.large,
 .button.large,
 [type='submit'].large {
   font-size: calc(1.6rem + .8rem);
+  min-height: 72px;
   padding: 1.6rem 4.2rem;
 }
 
@@ -358,6 +373,9 @@ button.flat.primary:active, .button.flat.primary:active, [type='submit'].flat.pr
 button.flat.primary:focus, .button.flat.primary:focus, [type='submit'].flat.primary:focus {
       color: rgba(102, 126, 234, 0.9);
     }
+button.flat.primary .icon, .button.flat.primary .icon, [type='submit'].flat.primary .icon {
+      stroke: #667eea;
+    }
 button.flat:hover,
 .button.flat:hover,
 [type='submit'].flat:hover {
@@ -376,8 +394,11 @@ button.primary,
 [type='submit'].primary {
   color: #fff;
   background: #667eea;
-  border: 1px solid transparent;
+  border: 1px solid transparent
 }
+button.primary .icon, .button.primary .icon, [type='submit'].primary .icon {
+    stroke: #fff;
+  }
 button.primary:hover,
 .button.primary:hover,
 [type='submit'].primary:hover {
@@ -403,8 +424,11 @@ button.success,
 [type='submit'].success {
   color: #fff;
   background: #0DC222;
-  border: 1px solid transparent;
+  border: 1px solid transparent
 }
+button.success .icon, .button.success .icon, [type='submit'].success .icon {
+    stroke: #fff;
+  }
 button.success:hover,
 .button.success:hover,
 [type='submit'].success:hover {
@@ -423,8 +447,11 @@ button.error,
 [type='submit'].error {
   color: #fff;
   background: #F93838;
-  border: 1px solid transparent;
+  border: 1px solid transparent
 }
+button.error .icon, .button.error .icon, [type='submit'].error .icon {
+    stroke: #fff;
+  }
 button.error:hover,
 .button.error:hover,
 [type='submit'].error:hover {
@@ -443,8 +470,11 @@ button.warning,
 [type='submit'].warning {
   color: #fff;
   background: #f2ad00;
-  border: 1px solid transparent;
+  border: 1px solid transparent
 }
+button.warning .icon, .button.warning .icon, [type='submit'].warning .icon {
+    stroke: #fff;
+  }
 button.warning:hover,
 .button.warning:hover,
 [type='submit'].warning:hover {
@@ -463,8 +493,11 @@ button.info,
 [type='submit'].info {
   color: #fff;
   background: #2C80FF;
-  border: 1px solid transparent;
+  border: 1px solid transparent
 }
+button.info .icon, .button.info .icon, [type='submit'].info .icon {
+    stroke: #fff;
+  }
 button.info:hover,
 .button.info:hover,
 [type='submit'].info:hover {
@@ -476,6 +509,7 @@ button.info:focus,
 [type='submit'].info:focus {
   background: rgba(44, 128, 255, 0.9);
 }
+
 /*
  * Forms
 */
@@ -555,9 +589,10 @@ select {
   display: flex;
   position: relative;
   padding-left: 30px;
+  min-height: 20px;
   cursor: pointer;
   font-size: 1.6rem;
-  line-height: normal;
+  line-height: 1.4;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -599,7 +634,7 @@ select {
   padding-left: 30px;
   cursor: pointer;
   font-size: 1.6rem;
-  line-height: normal;
+  line-height: 1.4;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
