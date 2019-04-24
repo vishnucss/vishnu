@@ -79,7 +79,7 @@ html {
 }
 
 body {
-  line-height: 1.5;
+  line-height: normal;
   font-size: 1.6rem;
   font-family: -apple-system, BlinkMacSystemFont, Avenir, 'Avenir Next',
   'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
@@ -553,7 +553,7 @@ select {
   padding-left: 30px;
   cursor: pointer;
   font-size: 1.6rem;
-  line-height: 1.5;
+  line-height: normal;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -595,7 +595,7 @@ select {
   padding-left: 30px;
   cursor: pointer;
   font-size: 1.6rem;
-  line-height: 1.5;
+  line-height: normal;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -988,11 +988,11 @@ pre > code {
 */
 
 .avatar {
-  width: 50px;
-  height: 50px;
-  max-width: 50px;
-  min-width: 50px;
-  flex-basis: 50px;
+  width: 42px;
+  height: 42px;
+  max-width: 42px;
+  min-width: 42px;
+  flex-basis: 42px;
   background: #f1f1f1;
   border-radius: 50%;
   overflow: hidden;
@@ -1023,11 +1023,11 @@ pre > code {
   flex-basis: 32px;
 }
 .avatar.large {
-  width: 80px;
-  height: 80px;
-  max-width: 80px;
-  min-width: 80px;
-  flex-basis: 80px;
+  width: 62px;
+  height: 62px;
+  max-width: 62px;
+  min-width: 62px;
+  flex-basis: 62px;
 }
 
 /*
