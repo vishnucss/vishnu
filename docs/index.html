@@ -15,8 +15,16 @@
 
 <body>
   <main id="docs-app" class="wrapper">
-    <a href="https://github.com/vishnucss/vishnu"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
-    <section class="hero flex center">
+    <a href="https://github.com/vishnucss/vishnu"><img style="z-index: 3;position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+
+    <nav class="sidenav">
+      <a href="#about" title="About">About</a>
+      <a href="#installation" title="Installation">Install</a>
+      <a href="#examples" title="Examples">Examples</a>
+      <a href="#docs" title="Documentation">Documentation</a>
+    </nav>
+
+    <section class="hero flex center" id="about">
       <div class="text-center">
         <img src="./src/assets/logo.png" alt="Vishnu Logo" height="180">
         <h1 style="font-weight: 900;">Vishnu</h1>
@@ -372,20 +380,46 @@
                 <span class="radiomark"></span>
 								Male
 							</label>
-              <label class="radio" for="radio-2">
+              <label class="radio" for="radio-2" style="margin-top:10px;">
                 <input type="radio" id="radio-2">
                 <span class="radiomark"></span>
-								female
+								Female
 							</label>
             </div>
           </div>
-          <!-- <div class="row margin">
+          <div class="row margin">
             <div class="col-xs-12">
-              <pre><code>&lt;input type=&quot;text&quot; placeholder=&quot;What is your name?&quot;/&gt;
-&lt;input type=&quot;email&quot; placeholder=&quot;What is your email?&quot;/&gt;
+              <pre><code># Input<br/>&lt;label for=&quot;name&quot;&gt;Name&lt;/label&gt;
+&lt;input type=&quot;name&quot; placeholder=&quot;What is your name?&quot;/&gt;<br/><br/>
+# Select
+&lt;label for=&quot;typeId&quot;&gt;Select type&lt;/label&gt;
+&lt;select id="typeId" name=&quot;type&quot;&gt;
+  &lt;option value=&quot;fruit&quot;&gt;Fruit&lt;/option&gt;
+  &lt;option value=&quot;drink&quot;&gt;Drink&lt;/option&gt;
+  &lt;option value=&quot;milk&quot;&gt;Milk&lt;/option&gt;
+&lt;/select&gt; <br /><br />
+# Checkbox
+&lt;label class="checkbox" name=&quot;checkbox-id-0&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-id-0&quot; checked=&quot;checked&quot;/&gt;
+  Checkbox #0
+&lt;/label&gt;
+&lt;label class="checkbox" name=&quot;checkbox-id-1&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-id-1&quot; /&gt;
+  Checkbox #1
+&lt;/label&gt; <br /><br />
+# Radio
+&lt;label class="radio" name=&quot;radio-id-0&quot;&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;radio-id-0&quot; checked=&quot;checked&quot;/&gt;
+  Radio #0
+&lt;/label&gt;
+&lt;label class="radio" name=&quot;radio-id-1&quot;&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;radio-id-1&quot; /&gt;
+  Radio #1
+&lt;/label&gt; <br /><br />
+# Textarea
 &lt;textarea placeholder=&quot;Additional details...&quot;&gt;&lt;/textarea&gt;</code></pre>
             </div>
-          </div> -->
+          </div>
         </div>
 
         <hr />
@@ -420,9 +454,9 @@
                     c0.267,0,0.532-0.101,0.735-0.304c0.406-0.406,0.406-1.064,0-1.469L11.469,10z"></path>
                   </svg>
                 </button>
-                <h5 class="title">Title</h5>
+                <h5 class="title">Default</h5>
                 <p class="description">
-                  Description
+                  This alert just use class .alert
                 </p>
               </div>
 
@@ -435,9 +469,9 @@
                     c0.267,0,0.532-0.101,0.735-0.304c0.406-0.406,0.406-1.064,0-1.469L11.469,10z"></path>
                   </svg>
                 </button>
-                <h5 class="title">Title</h5>
+                <h5 class="title">Info</h5>
                 <p class="description">
-                  Description
+                  This alert use class .alert and .info
                 </p>
               </div>
 
@@ -450,9 +484,9 @@
                     c0.267,0,0.532-0.101,0.735-0.304c0.406-0.406,0.406-1.064,0-1.469L11.469,10z"></path>
                   </svg>
                 </button>
-                <h5 class="title">Title</h5>
+                <h5 class="title">Error</h5>
                 <p class="description">
-                  Description
+                  This alert use class .alert and .error
                 </p>
               </div>
 
@@ -465,9 +499,9 @@
                     c0.267,0,0.532-0.101,0.735-0.304c0.406-0.406,0.406-1.064,0-1.469L11.469,10z"></path>
                   </svg>
                 </button>
-                <h5 class="title">Title</h5>
+                <h5 class="title">Placeholder</h5>
                 <p class="description">
-                  Description
+                  This alert use class .alert and .placeholder use in drag and drop, upload picture ...
                 </p>
               </div>
 
@@ -480,7 +514,7 @@
                     c0.267,0,0.532-0.101,0.735-0.304c0.406-0.406,0.406-1.064,0-1.469L11.469,10z"></path>
                   </svg>
                 </button>
-                <h5 class="title">Title</h5>
+                <h5 class="title">This alert use class .alert and .sucess with .rounded</h5>
               </div>
             </div>
           </div>
@@ -514,6 +548,12 @@
               Card Footer
             </footer>
           </section>
+          <hr />
+          <div class="card shadow">
+            <div class="card-content">
+              Card with shadow
+            </div>
+          </div>
         </div>
 
         <!-- Grid -->
@@ -771,7 +811,7 @@
           <code>.top-</code>
           <div class="row top-xs size">
             <div class="col-xs-6">
-              <div class="box-large"></div>
+              <div class="box"></div>
             </div>
             <div class="col-xs-6">
               <div class="box"></div>
@@ -781,7 +821,7 @@
           <code>.middle-</code>
           <div class="row middle-xs size">
             <div class="col-xs-6">
-              <div class="box-large"></div>
+              <div class="box"></div>
             </div>
             <div class="col-xs-6">
               <div class="box"></div>
@@ -791,7 +831,7 @@
           <code>.bottom-</code>
           <div class="row bottom-xs size">
             <div class="col-xs-6">
-              <div class="box-large"></div>
+              <div class="box"></div>
             </div>
             <div class="col-xs-6">
               <div class="box"></div>
@@ -948,8 +988,8 @@
     <!-- Copyright -->
     <footer class="footer">
       <section class="container">
-        <p>Made by <a target="_blank" href="http://alexandesigner.com.br" title="Allan Alexandre">Allan Alexandre</a> with
-          <strong class="red">♥</strong>. Licensed under the <a target="_blank" href="https://github.com/vishnucss/vishnucss#license"
+        <p>Made by <a target="_blank" href="https://github.com/alexandesigner" title="Allan Alexandre">Allan Alexandre</a> with
+          <strong class="red">♥</strong> Licensed under the <a target="_blank" href="https://github.com/vishnucss/vishnucss#license"
             title="MIT License">MIT License</a>.</p>
       </section>
     </footer>

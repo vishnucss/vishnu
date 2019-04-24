@@ -1,5 +1,5 @@
 /**
-* vishnucss - v1.0.7
+* vishnucss - v1.0.8
 * https://vishnucss.github.io/vishnu
 */
 
@@ -544,9 +544,9 @@ select {
 
 /* Checkbox */
 .checkbox {
-  display: block;
+  display: flex;
   position: relative;
-  padding-left: 25px;
+  padding-left: 30px;
   cursor: pointer;
   font-size: 1.6rem;
   line-height: 1.5;
@@ -554,11 +554,12 @@ select {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  align-items: center;
   border-radius: 4px
 }
 .checkbox .checkmark {
     position: absolute;
-    top: 3px;
+    top: 0;
     left: 0;
     height: 18px;
     width: 18px;
@@ -585,9 +586,9 @@ select {
 
 /* Radio Button */
 .radio {
-  display: block;
+  display: flex;
   position: relative;
-  padding-left: 25px;
+  padding-left: 30px;
   cursor: pointer;
   font-size: 1.6rem;
   line-height: 1.5;
@@ -598,10 +599,10 @@ select {
 }
 .radio .radiomark {
     position: absolute;
-    top: 3px;
+    top: 0;
     left: 0;
-    height: 16px;
-    width: 16px;
+    height: 18px;
+    width: 18px;
     background-color: #fff;
     border: 1px solid #e5e5e5;
     border-radius: 50%;
@@ -612,10 +613,10 @@ select {
     opacity: 0;
   }
 .radio .radiomark:after {
-  top: 4px;
-  left: 4px;
-  width: 8px;
-  height: 8px;
+  top: 6px;
+  left: 6px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   background: white;
 }
