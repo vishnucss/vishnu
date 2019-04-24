@@ -136,3 +136,14 @@ button {
 * {
   font-family: Catamaran;
 }
+.badge-version {
+  border: 1px solid #e5e5e5;
+  display: table!important;
+  margin: 20px auto;
+  border-radius: 4px;
+  padding: 5px 10px;
+  width: auto;
+}
+.badge-version a {
+  font-weight: 700;
+}
