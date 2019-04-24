@@ -6,7 +6,6 @@
 
 const gulp = require('gulp'),
   pkg = require('./package.json'),
-  symdest = require('gulp-symdest'),
   postcss = require('gulp-postcss'),
   cssnano = require('cssnano'),
   autoprefixer = require('autoprefixer'),
@@ -16,14 +15,13 @@ const gulp = require('gulp'),
   cssvariables = require('postcss-css-variables'),
   colorMod = require('postcss-color-mod-function'),
   copyright = `/**
-* vishnucss - v${pkg.version}
-* https://vishnucss.github.io/vishnu
+* vishnucss avatar - v${pkg.version}
+* https://vishnucss.github.io/vishnu#avatar
 */\r\n`,
   $ = require('gulp-load-plugins')();
 
-
 /*
-* Base build task
+* Avatar build task
 */
 gulp.task('build', function() {
   let plugins = [
@@ -36,27 +34,12 @@ gulp.task('build', function() {
   ];
   return gulp
     .src([
-      './src/customs.css',
       './src/variables.css',
-      './src/reset.css',
-      './src/typography.css',
-      './src/links.css',
-      './src/buttons.css',
-      './src/forms.css',
-      './src/lists.css',
-      './src/tables.css',
-      './src/images.css',
-      './src/misc.css',
-      './src/responsive.css',
-      // Extensions
-      './src/alert.css',
-      './src/avatar.css',
-      './src/card.css',
-      './src/grid.css',
-      './src/utils.css'
+      './src/customs.css',
+      './src/avatar.css'
     ])
     .pipe($.sourcemaps.init())
-    .pipe($.concat('vishnu.css'))
+    .pipe($.concat('vishnu.avatar.css'))
     .pipe(postcss(plugins))
     .pipe($.header(copyright + '\n'))
     .pipe($.size())
@@ -65,7 +48,7 @@ gulp.task('build', function() {
 });
 
 /*
-* Minify in build base
+* Minify in build avatar
 */
 gulp.task('minify', ['build'], function() {
   let plugins = [
@@ -78,7 +61,7 @@ gulp.task('minify', ['build'], function() {
     autoprefixer({browsers: ['last 1 version']})
   ];
   return gulp
-    .src(['./dist/vishnu.css'])
+    .src(['./dist/vishnu.avatar.css'])
     .pipe($.sourcemaps.init())
     .pipe(postcss(plugins))
     .pipe($.header(copyright))
@@ -88,10 +71,9 @@ gulp.task('minify', ['build'], function() {
         gzip: true
       })
     )
-    .pipe($.concat('vishnu.min.css'))
+    .pipe($.concat('vishnu.avatar.min.css'))
     .pipe($.sourcemaps.write('.'))
     .pipe(gulp.dest('./dist/'))
-    .pipe(symdest('./docs/src/assets'))
 });
 
 /*

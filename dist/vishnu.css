@@ -28,6 +28,10 @@
 */
 
 /*
+* Avatar
+*/
+
+/*
  * Grid
 */
 
@@ -75,7 +79,7 @@ html {
 }
 
 body {
-  line-height: 1.5;
+  line-height: normal;
   font-size: 1.6rem;
   font-family: -apple-system, BlinkMacSystemFont, Avenir, 'Avenir Next',
   'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
@@ -549,7 +553,7 @@ select {
   padding-left: 30px;
   cursor: pointer;
   font-size: 1.6rem;
-  line-height: 1.5;
+  line-height: normal;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -591,7 +595,7 @@ select {
   padding-left: 30px;
   cursor: pointer;
   font-size: 1.6rem;
-  line-height: 1.5;
+  line-height: normal;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -967,6 +971,64 @@ pre > code {
   background: rgba(255, 255, 255, 0.15);
 }
 
+
+/*
+* Avatar
+*/
+
+/*
+*
+* @ custom-properties
+* :--avatar .avatar;
+* :--alert-primary .avatar.primary;
+* :--alert-outline .avatar.outline;
+* :--alert-small .avatar.small;
+* :--alert-large .avatar.large;
+*
+*/
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  max-width: 42px;
+  min-width: 42px;
+  flex-basis: 42px;
+  background: #f1f1f1;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #282828;
+}
+.avatar.primary {
+  background: #667eea;
+  color: #fff
+}
+.avatar.primary.outline {
+    background: transparent;
+    border-color: #667eea;
+    color: #667eea;
+  }
+.avatar.outline {
+  background: transparent;
+  border: 1px solid #282828;
+}
+.avatar.small {
+  width: 32px;
+  height: 32px;
+  max-width: 32px;
+  min-width: 32px;
+  flex-basis: 32px;
+}
+.avatar.large {
+  width: 62px;
+  height: 62px;
+  max-width: 62px;
+  min-width: 62px;
+  flex-basis: 62px;
+}
 
 /*
 * Card

@@ -1,0 +1,9 @@
+/*
+* Avatar
+*/
+
+@custom-selector :--avatar .avatar;
+@custom-selector :--alert-primary .avatar.primary;
+@custom-selector :--alert-outline .avatar.outline;
+@custom-selector :--alert-small .avatar.small;
+@custom-selector :--alert-large .avatar.large;
