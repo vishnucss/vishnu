@@ -76,6 +76,14 @@
 @custom-selector :--alert-large .avatar.large;
 
 /*
+* Icons
+*/
+
+@custom-selector :--icon .icon;
+@custom-selector :--icon-large .icon.lg;
+@custom-selector :--icon-small .icon.sm;
+
+/*
  * Grid
 */
 

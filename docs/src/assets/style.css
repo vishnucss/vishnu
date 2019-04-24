@@ -168,3 +168,18 @@ button {
 .avatar-margins div {
   margin: 0 5px;
 }
+
+.icons {
+  text-align: center;
+  margin: 0 auto;
+  padding: 5px 0;
+}
+
+.icons__item {
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  padding: 20px;
+  display: inline-block;
+  margin: 9px;
+  line-height: 0;
+}

@@ -1,0 +1,38 @@
+/*
+* Variables
+*/
+
+:root {
+
+  /* Typhography */
+  --base-font-family: -apple-system, BlinkMacSystemFont, Avenir, 'Avenir Next',
+  'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+  'Droid Sans', 'Helvetica Neue', sans-serif;
+  --base-font-size: 1.6rem;
+  --base-line-height: normal;
+
+  /* Colours */
+  --primary-color: #667eea;
+  --secondary-color: #764ba2;
+  --base-color: #fff;
+  --base-dark-color: #282828;
+  --base-info-color: #2C80FF;
+  --base-error-color: #F93838;
+  --base-success-color: #0DC222;
+  --base-warning-color: #f2ad00;
+  --base-light-color: #f1f1f1;
+  --base-border-color: #e5e5e5;
+  --base-text-color: #444;
+  --base-light-text-color: #ccc;
+
+  /* Transitions */
+  --transition: all 0.2s ease-in-out;
+
+  /* Shadows */
+  --base-box-shadow: 0 0 5px 3px rgba(0,0,0,.0325);
+
+  /* Utils */
+  --base-radius: 4px;
+  --base-rounded-radius: 50%;
+
+}
