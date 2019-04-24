@@ -32,6 +32,10 @@
 */
 
 /*
+* Icons
+*/
+
+/*
  * Grid
 */
 
@@ -1662,6 +1666,40 @@ pre > code {
     order: 1;
   }
 }
+/*
+* Icons
+*/
+
+/*
+*
+* @ custom-properties
+* :--icon .icon;
+* :--icon-large .icon.lg;
+* :--icon-small .icon.sm;
+*
+*/
+
+.icon {
+  width: 32px;
+  height: 32px;
+  stroke: #667eea;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  color: #667eea;
+}
+
+.icon.lg {
+  width: 52px;
+  height: 52px;
+}
+
+.icon.sm {
+  width: 20px;
+  height: 20px;
+}
+
 /* 
  * Utils
 */
