@@ -53,16 +53,20 @@
   flex-direction: column;
 }
 
-.right {
+.start {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-.left {
+.end {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+
+.absolute {
+  position: absolute;
 }
 
 .fixed {
