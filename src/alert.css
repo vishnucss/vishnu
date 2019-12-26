@@ -25,7 +25,8 @@
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  & .title, & .description {
+  & .title,
+  & .description {
     margin: 0;
   }
   & .title {
@@ -42,6 +43,7 @@
   padding: 0;
   width: 28px;
   height: 28px;
+  min-height: 28px;
   font-size: 1.3rem;
   background: transparent;
   border-radius: var(--base-rounded-radius);
@@ -52,7 +54,7 @@
     & path {
       fill: var(--base-text-color);
     }
-    
+
     & circle {
       stroke: var(--base-text-color);
       stroke-width: 1;
@@ -74,7 +76,7 @@
       & path {
         fill: var(--primary-color);
       }
-      
+
       & circle {
         stroke: var(--primary-color);
         stroke-width: 1;
@@ -95,7 +97,7 @@
   & .close {
     border-color: transparent;
     background: color-mod(var(--base-warning-color) alpha(50%));
-    color:#fff;
+    color: #fff;
   }
 }
 :--alert:--error {
@@ -107,7 +109,7 @@
       & path {
         fill: var(--base-error-color);
       }
-      
+
       & circle {
         stroke: var(--base-error-color);
         stroke-width: 1;
@@ -128,7 +130,7 @@
       & path {
         fill: var(--base-success-color);
       }
-      
+
       & circle {
         stroke: var(--base-success-color);
         stroke-width: 1;
@@ -155,4 +157,3 @@
   border: 2px dashed var(--base-light-color);
   background: color-mod(var(--base-color) alpha(15%));
 }
-

@@ -13,7 +13,6 @@
 * :--placeholder .placeholder;
 *
 */
-
 :--alert {
   position: relative;
   padding: 8px 20px;
@@ -26,7 +25,8 @@
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  & .title, & .description {
+  & .title,
+  & .description {
     margin: 0;
   }
   & .title {
@@ -43,26 +43,61 @@
   padding: 0;
   width: 28px;
   height: 28px;
+  min-height: 28px;
   font-size: 1.3rem;
-  background: var(--base-color);
-  border: 1px solid var(--base-border-color);
+  background: transparent;
   border-radius: var(--base-rounded-radius);
   color: var(--base-dark-color);
-  &:hover {
-    background: #fff;
+  & .svg-icon {
+    width: 1rem;
+    height: 1rem;
+    & path {
+      fill: var(--base-text-color);
+    }
+
+    & circle {
+      stroke: var(--base-text-color);
+      stroke-width: 1;
+    }
   }
 }
 :--alert:--info {
   background: color-mod(var(--base-info-color) alpha(5%));
   border-color: color-mod(var(--base-info-color) alpha(50%));
   color: var(--base-info-color);
+  &:before {
+    color: var(--base-info-color);
+  }
   & .description {
     color: color-mod(var(--base-info-color) alpha(60%));
   }
   & .close {
+    & .svg-icon {
+      & path {
+        fill: var(--primary-color);
+      }
+
+      & circle {
+        stroke: var(--primary-color);
+        stroke-width: 1;
+      }
+    }
+  }
+}
+:--alert:--warning {
+  background: color-mod(var(--base-warning-color) alpha(5%));
+  border-color: color-mod(var(--base-warning-color) alpha(50%));
+  color: var(--base-warning-color);
+  &:before {
+    color: var(--base-warning-color);
+  }
+  & .description {
+    color: color-mod(var(--base-warning-color) alpha(60%));
+  }
+  & .close {
     border-color: transparent;
-    background: color-mod(var(--base-info-color) alpha(50%));
-    color:#fff;
+    background: color-mod(var(--base-warning-color) alpha(50%));
+    color: #fff;
   }
 }
 :--alert:--error {
@@ -70,9 +105,16 @@
   border-color: color-mod(var(--base-error-color) alpha(50%));
   color: var(--base-error-color);
   & .close {
-    border-color: transparent;
-    background: color-mod(var(--base-error-color) alpha(50%));
-    color:#fff;
+    & .svg-icon {
+      & path {
+        fill: var(--base-error-color);
+      }
+
+      & circle {
+        stroke: var(--base-error-color);
+        stroke-width: 1;
+      }
+    }
   }
   & .description {
     color: color-mod(var(--base-error-color) alpha(60%));
@@ -84,8 +126,16 @@
   color: var(--base-success-color);
   & .close {
     border-color: transparent;
-    background: color-mod(var(--base-success-color) alpha(50%));;
-    color: #fff;
+    & .svg-icon {
+      & path {
+        fill: var(--base-success-color);
+      }
+
+      & circle {
+        stroke: var(--base-success-color);
+        stroke-width: 1;
+      }
+    }
   }
   & .description {
     color: color-mod(var(--base-success-color) alpha(60%));
@@ -104,6 +154,6 @@
 
 /* Placeholder */
 :--placeholder {
-  border-style: dashed;
-  border-color: var(--base-light-color);
+  border: 2px dashed var(--base-light-color);
+  background: color-mod(var(--base-color) alpha(15%));
 }

@@ -30,6 +30,7 @@
   border-radius: var(--base-radius);
   transition: var(--transition);
   border: 1px solid transparent;
+  line-height: normal;
   cursor: pointer;
   text-decoration: none;
   display: flex;
@@ -59,12 +60,12 @@
 
 /* Size */
 :--button:--small {
-  font-size: calc(var(--base-font-size) - .2rem);
+  font-size: calc(var(--base-font-size) - 0.2rem);
   min-height: 36px;
   font-weight: 700;
 }
 :--button:--large {
-  font-size: calc(var(--base-font-size) + .8rem);
+  font-size: calc(var(--base-font-size) + 0.8rem);
   min-height: 72px;
   padding: 1.6rem 4.2rem;
 }
@@ -83,7 +84,8 @@
       border: 1px solid color-mod(var(--primary-color) alpha(-30%));
       color: color-mod(var(--primary-color) alpha(-30%));
     }
-    &:focus, &:active {
+    &:focus,
+    &:active {
       background: none;
       border-color: color-mod(var(--primary-color) alpha(-20%));
       color: color-mod(var(--primary-color) alpha(-20%));
@@ -110,7 +112,8 @@
     &:hover {
       color: color-mod(var(--primary-color) alpha(-20%));
     }
-    &:active, &:focus {
+    &:active,
+    &:focus {
       color: color-mod(var(--primary-color) alpha(-10%));
     }
     & .icon {
