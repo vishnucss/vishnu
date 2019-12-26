@@ -271,7 +271,7 @@ button,
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
   border: 1px solid transparent;
-  line-height: normal;
+  line-height: 1.8rem;
   cursor: pointer;
   text-decoration: none;
   display: flex;
@@ -310,6 +310,7 @@ button.small,
   font-size: calc(1.6rem - 0.2rem);
   min-height: 36px;
   font-weight: 700;
+  line-height: 1.2rem;
 }
 button.large,
 .button.large,
@@ -317,6 +318,7 @@ button.large,
   font-size: calc(1.6rem + 0.8rem);
   min-height: 72px;
   padding: 1.6rem 4.2rem;
+  line-height: 2rem;
 }
 
 /* Outline */
@@ -885,6 +887,7 @@ pre > code {
 * :--close .close;
 * :--info .info;
 * :--error .error;
+* :--warning .warning;
 * :--rounded .rounded;
 * :--placeholder .placeholder;
 *
