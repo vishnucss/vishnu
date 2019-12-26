@@ -48,9 +48,9 @@
   background: transparent;
   border-radius: var(--base-rounded-radius);
   color: var(--base-dark-color);
-  & .svg-icon {
-    width: 1rem;
-    height: 1rem;
+  & .icon {
+    width: 24px;
+    height: 24px;
     & path {
       fill: var(--base-text-color);
     }
@@ -72,7 +72,7 @@
     color: color-mod(var(--base-info-color) alpha(60%));
   }
   & .close {
-    & .svg-icon {
+    & .icon {
       & path {
         fill: var(--primary-color);
       }
@@ -105,7 +105,7 @@
   border-color: color-mod(var(--base-error-color) alpha(50%));
   color: var(--base-error-color);
   & .close {
-    & .svg-icon {
+    & .icon {
       & path {
         fill: var(--base-error-color);
       }
@@ -126,7 +126,7 @@
   color: var(--base-success-color);
   & .close {
     border-color: transparent;
-    & .svg-icon {
+    & .icon {
       & path {
         fill: var(--base-success-color);
       }
@@ -147,7 +147,7 @@
   padding-right: 30px;
   & .close {
     top: 50%;
-    margin-top: -14px;
+    margin-top: -16px;
     right: 14px;
   }
 }

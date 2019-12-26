@@ -28,6 +28,11 @@
 */
 
 /*
+* Dialog
+*/
+
+
+/*
 * Avatar
 */
 
@@ -920,14 +925,14 @@ pre > code {
   border-radius: 50%;
   color: #282828
 }
-.alert .close .svg-icon {
-    width: 1rem;
-    height: 1rem
+.alert .close .icon {
+    width: 24px;
+    height: 24px
   }
-.alert .close .svg-icon path {
+.alert .close .icon path {
       fill: #444;
     }
-.alert .close .svg-icon circle {
+.alert .close .icon circle {
       stroke: #444;
       stroke-width: 1;
     }
@@ -942,10 +947,10 @@ pre > code {
 .alert.info .description {
     color: rgba(44, 128, 255, 0.6);
   }
-.alert.info .close .svg-icon path {
+.alert.info .close .icon path {
         fill: #667eea;
       }
-.alert.info .close .svg-icon circle {
+.alert.info .close .icon circle {
         stroke: #667eea;
         stroke-width: 1;
       }
@@ -970,10 +975,10 @@ pre > code {
   border-color: rgba(249, 56, 56, 0.5);
   color: #F93838
 }
-.alert.error .close .svg-icon path {
+.alert.error .close .icon path {
         fill: #F93838;
       }
-.alert.error .close .svg-icon circle {
+.alert.error .close .icon circle {
         stroke: #F93838;
         stroke-width: 1;
       }
@@ -988,10 +993,10 @@ pre > code {
 .alert.success .close {
     border-color: transparent
   }
-.alert.success .close .svg-icon path {
+.alert.success .close .icon path {
         fill: #0DC222;
       }
-.alert.success .close .svg-icon circle {
+.alert.success .close .icon circle {
         stroke: #0DC222;
         stroke-width: 1;
       }
@@ -1005,7 +1010,7 @@ pre > code {
 }
 .alert.rounded .close {
     top: 50%;
-    margin-top: -14px;
+    margin-top: -16px;
     right: 14px;
   }
 
@@ -1113,6 +1118,74 @@ pre > code {
   padding: 20px 15px;
 }
 
+/*
+* Dialog
+*/
+
+/*
+*
+* @ custom-properties
+* :--dialog .dialog;
+* :--close .close;
+* :--light .light;
+* :--overlay .overlay;
+*
+*/
+.dialog {
+  margin: 45px auto;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  width: 480px;
+  height: 320px;
+  z-index: 100;
+  position: relative;
+  border-radius: 4px;
+}
+.dialog .close {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 20px;
+  right: 20px;
+  opacity: 0.8;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #666
+}
+.dialog .close:hover {
+    opacity: 1;
+  }
+.dialog .close .icon {
+    width: 20px;
+    height: 20px;
+    stroke: #444;
+  }
+.overlay {
+  position: fixed;
+  z-index: 90;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.88);
+  visibility: hidden;
+  opacity: 0
+}
+.overlay.light {
+    background: rgba(255, 255, 255, 0.92);
+  }
+.overlay .cancel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: default;
+  }
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
 /* 
  * Grid
 */
@@ -1795,16 +1868,20 @@ pre > code {
   flex-direction: column;
 }
 
-.start {
+.end {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-.end {
+.start {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+
+.flex {
+  display: flex;
 }
 
 .absolute {
