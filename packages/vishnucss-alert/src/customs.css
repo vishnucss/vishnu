@@ -6,6 +6,7 @@
 @custom-selector :--placeholder .placeholder;
 @custom-selector :--info .info;
 @custom-selector :--error .error;
+@custom-selector :--warning .warning;
 @custom-selector :--success .success;
 @custom-selector :--rounded .rounded;
 @custom-selector :--close .close;

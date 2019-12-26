@@ -1,5 +1,5 @@
 /**
-* vishnucss base - v1.0.8
+* vishnucss base - v1.1.0-beta.0
 * https://vishnucss.github.io/vishnu
 */
 
@@ -160,11 +160,13 @@ p {
 
 :-webkit-any-link {
   color: #667eea;
+  -webkit-transition: color 0.1s ease;
   transition: color 0.1s ease
 }
 
 :-moz-any-link {
   color: #667eea;
+  -moz-transition: color 0.1s ease;
   transition: color 0.1s ease
 }
 
@@ -249,6 +251,7 @@ button,
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
   border: 1px solid transparent;
+  line-height: 1.8rem;
   cursor: pointer;
   text-decoration: none;
   display: flex;
@@ -284,16 +287,18 @@ button:focus .icon, .button:focus .icon, [type='submit']:focus .icon {
 button.small,
 .button.small,
 [type='submit'].small {
-  font-size: calc(1.6rem - .2rem);
+  font-size: calc(1.6rem - 0.2rem);
   min-height: 36px;
   font-weight: 700;
+  line-height: 1.2rem;
 }
 button.large,
 .button.large,
 [type='submit'].large {
-  font-size: calc(1.6rem + .8rem);
+  font-size: calc(1.6rem + 0.8rem);
   min-height: 72px;
   padding: 1.6rem 4.2rem;
+  line-height: 2rem;
 }
 
 /* Outline */

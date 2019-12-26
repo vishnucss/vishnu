@@ -1,5 +1,5 @@
 /**
-* vishnucss avatar - v1.1.0
+* vishnucss avatar - v1.1.0-beta.0
 * https://vishnucss.github.io/vishnu#avatar
 */
 
@@ -48,6 +48,7 @@
   flex-basis: 42px;
   background: #f1f1f1;
   border-radius: 50%;
+  line-height: normal;
   overflow: hidden;
   display: flex;
   align-items: center;

@@ -1,5 +1,5 @@
 /**
-* vishnucss utils - v1.0.8
+* vishnucss utils - v1.1.0-beta.0
 * https://vishnucss.github.io/vishnu#utilities
 */
 
@@ -58,16 +58,24 @@
   flex-direction: column;
 }
 
-.right {
+.end {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-.left {
+.start {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+
+.flex {
+  display: flex;
+}
+
+.absolute {
+  position: absolute;
 }
 
 .fixed {

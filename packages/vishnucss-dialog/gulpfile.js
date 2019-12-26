@@ -5,7 +5,7 @@
 "use strict";
 
 const gulp = require("gulp"),
-  pkg = require("./package.json.js"),
+  pkg = require("./package.json"),
   postcss = require("gulp-postcss"),
   cssnano = require("cssnano"),
   autoprefixer = require("autoprefixer"),

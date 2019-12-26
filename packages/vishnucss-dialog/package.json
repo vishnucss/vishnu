@@ -1,7 +1,7 @@
 {
   "name": "@vishnucss/dialog",
   "filename": "vishnu.dialog.min.css",
-  "version": "1.1.0",
+  "version": "1.1.0-beta.0",
   "description": "Dialog package for Vishnucss toolkit with modern css.",
   "main": "./dist/vishnu.dialog.min.css",
   "keywords": [

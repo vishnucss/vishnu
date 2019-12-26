@@ -1,6 +1,6 @@
 Package.describe({
   name: "vishnucss:dialog",
-  version: "1.1.0",
+  version: "1.1.0-beta.0",
   summary: "Dialog toolkit with modern css.",
   git: "https://github.com/vishnucss/vishnu.git",
   documentation: "README.md"
