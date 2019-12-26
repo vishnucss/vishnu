@@ -1,0 +1,58 @@
+/*
+* Avatar
+*/
+
+/*
+*
+* @ custom-properties
+* :--avatar .avatar;
+* :--alert-primary .avatar.primary;
+* :--alert-outline .avatar.outline;
+* :--alert-small .avatar.small;
+* :--alert-large .avatar.large;
+*
+*/
+
+:--avatar {
+  width: 42px;
+  height: 42px;
+  max-width: 42px;
+  min-width: 42px;
+  flex-basis: 42px;
+  background: #f1f1f1;
+  border-radius: 50%;
+  line-height: normal;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: var(--base-dark-color);
+}
+:--alert-primary {
+  background: var(--primary-color);
+  color: #fff;
+  &.outline {
+    background: transparent;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+  }
+}
+:--alert-outline {
+  background: transparent;
+  border: 1px solid var(--base-dark-color);
+}
+:--alert-small {
+  width: 32px;
+  height: 32px;
+  max-width: 32px;
+  min-width: 32px;
+  flex-basis: 32px;
+}
+:--alert-large {
+  width: 62px;
+  height: 62px;
+  max-width: 62px;
+  min-width: 62px;
+  flex-basis: 62px;
+}
