@@ -5,8 +5,7 @@
 "use strict";
 
 const gulp = require("gulp"),
-  pkg = require("./package.json"),
-  symdest = require("gulp-symdest"),
+  pkg = require("./package.json.js"),
   postcss = require("gulp-postcss"),
   cssnano = require("cssnano"),
   autoprefixer = require("autoprefixer"),
@@ -16,48 +15,27 @@ const gulp = require("gulp"),
   cssvariables = require("postcss-css-variables"),
   colorMod = require("postcss-color-mod-function"),
   copyright = `/**
-* vishnucss - v${pkg.version}
-* https://vishnucss.github.io/vishnu
+* vishnucss dialog - v${pkg.version}
+* https://vishnucss.github.io/vishnu#dialog
 */\r\n`,
   $ = require("gulp-load-plugins")();
 
 /*
- * Base build task
+ * dialog build task
  */
-gulp.task("build", function () {
+gulp.task("build", function() {
   let plugins = [
     cssvariables(),
     selector(),
     nesting(),
     customMedia(),
     colorMod(),
-    autoprefixer({browsers: ["last 1 version"]})
+    autoprefixer({ browsers: ["last 1 version"] })
   ];
   return gulp
-    .src([
-    "./src/customs.css",
-    "./src/variables.css",
-    "./src/reset.css",
-    "./src/typography.css",
-    "./src/links.css",
-    "./src/buttons.css",
-    "./src/forms.css",
-    "./src/lists.css",
-    "./src/tables.css",
-    "./src/images.css",
-    "./src/misc.css",
-    "./src/responsive.css",
-    // Extensions
-    "./src/alert.css",
-    "./src/avatar.css",
-    "./src/card.css",
-    "./src/dialog.css",
-    "./src/grid.css",
-    "./src/icons.css",
-    "./src/utils.css"
-  ])
+    .src(["./src/variables.css", "./src/customs.css", "./src/dialog.css"])
     .pipe($.sourcemaps.init())
-    .pipe($.concat("vishnu.css"))
+    .pipe($.concat("vishnu.dialog.css"))
     .pipe(postcss(plugins))
     .pipe($.header(copyright + "\n"))
     .pipe($.size())
@@ -66,9 +44,9 @@ gulp.task("build", function () {
 });
 
 /*
- * Minify in build base
+ * Minify in build dialog
  */
-gulp.task("minify", ["build"], function () {
+gulp.task("minify", ["build"], function() {
   let plugins = [
     cssvariables(),
     selector(),
@@ -76,25 +54,28 @@ gulp.task("minify", ["build"], function () {
     nesting(),
     customMedia(),
     colorMod(),
-    autoprefixer({browsers: ["last 1 version"]})
+    autoprefixer({ browsers: ["last 1 version"] })
   ];
   return gulp
-    .src(["./dist/vishnu.css"])
+    .src(["./dist/vishnu.dialog.css"])
     .pipe($.sourcemaps.init())
     .pipe(postcss(plugins))
     .pipe($.header(copyright))
     .pipe($.size())
-    .pipe($.size({gzip: true}))
-    .pipe($.concat("vishnu.min.css"))
+    .pipe(
+      $.size({
+        gzip: true
+      })
+    )
+    .pipe($.concat("vishnu.dialog.min.css"))
     .pipe($.sourcemaps.write("."))
-    .pipe(gulp.dest("./dist/"))
-    .pipe(symdest("./docs/src/assets"));
+    .pipe(gulp.dest("./dist/"));
 });
 
 /*
  * Watch tasks
  */
-gulp.task("watch", function () {
+gulp.task("watch", function() {
   gulp.watch(["src/*.css"], ["default"]);
 });
 

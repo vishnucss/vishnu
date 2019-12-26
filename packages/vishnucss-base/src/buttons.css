@@ -30,7 +30,7 @@
   border-radius: var(--base-radius);
   transition: var(--transition);
   border: 1px solid transparent;
-  line-height: normal;
+  line-height: 1.8rem;
   cursor: pointer;
   text-decoration: none;
   display: flex;
@@ -63,11 +63,13 @@
   font-size: calc(var(--base-font-size) - 0.2rem);
   min-height: 36px;
   font-weight: 700;
+  line-height: 1.2rem;
 }
 :--button:--large {
   font-size: calc(var(--base-font-size) + 0.8rem);
   min-height: 72px;
   padding: 1.6rem 4.2rem;
+  line-height: 2rem;
 }
 
 /* Outline */

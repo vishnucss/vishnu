@@ -1,0 +1,7 @@
+/*
+* Dialog
+*/
+
+@custom-selector :--dialog .dialog;
+@custom-selector :--close .close;
+@custom-selector :--overlay .overlay;

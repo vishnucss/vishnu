@@ -66,6 +66,15 @@
 @custom-selector :--content .card-content;
 
 /*
+* Dialog
+*/
+
+@custom-selector :--dialog .dialog;
+@custom-selector :--close .close;
+@custom-selector :--overlay .overlay;
+
+
+/*
 * Avatar
 */
 
