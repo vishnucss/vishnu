@@ -1,4 +1,4 @@
-/* 
+/*
  * Utils
 */
 
@@ -53,16 +53,24 @@
   flex-direction: column;
 }
 
-.right {
+.end {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-.left {
+.start {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+
+.flex {
+  display: flex;
+}
+
+.absolute {
+  position: absolute;
 }
 
 .fixed {

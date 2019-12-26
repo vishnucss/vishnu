@@ -38,7 +38,10 @@ gulp.task('build', function() {
       './src/variables.css',
       './src/customs.css',
       './src/alert.css',
+      './src/avatar.css',
       './src/card.css',
+      './src/icons.css',
+      './src/dialog.css',
       './src/grid.css',
       './src/utils.css'
     ])

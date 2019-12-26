@@ -1,5 +1,5 @@
 /**
-* vishnucss - v1.0.8
+* vishnucss - v1.1.0-beta.1
 * https://vishnucss.github.io/vishnu
 */
 
@@ -25,6 +25,19 @@
 
 /*
 * Card
+*/
+
+/*
+* Dialog
+*/
+
+
+/*
+* Avatar
+*/
+
+/*
+* Icons
 */
 
 /*
@@ -75,7 +88,7 @@ html {
 }
 
 body {
-  line-height: 1.5;
+  line-height: 1.4;
   font-size: 1.6rem;
   font-family: -apple-system, BlinkMacSystemFont, Avenir, 'Avenir Next',
   'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
@@ -167,11 +180,13 @@ p {
 
 :-webkit-any-link {
   color: #667eea;
+  -webkit-transition: color 0.1s ease;
   transition: color 0.1s ease
 }
 
 :-moz-any-link {
   color: #667eea;
+  -moz-transition: color 0.1s ease;
   transition: color 0.1s ease
 }
 
@@ -247,45 +262,63 @@ p {
 button,
 .button,
 [type='submit'] {
-  padding: 1.1rem 3.5rem;
+  padding: 0 1.5rem;
   font-size: 1.6rem;
+  min-height: 52px;
   font-weight: 600;
   color: #444;
   background: #f1f1f1;
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
   border: 1px solid transparent;
+  line-height: 1.8rem;
   cursor: pointer;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center
 }
+button .icon, .button .icon, [type='submit'] .icon {
+    margin: 0 5px;
+    stroke: #444;
+  }
 
 /* Status */
 button:hover,
 .button:hover,
 [type='submit']:hover {
   color: rgba(68, 68, 68, 0.7);
-  background: rgba(241, 241, 241, 0.7);
+  background: rgba(241, 241, 241, 0.7)
 }
+button:hover .icon, .button:hover .icon, [type='submit']:hover .icon {
+    stroke: rgba(68, 68, 68, 0.7);
+  }
 button:focus,
 .button:focus,
 [type='submit']:focus {
   outline: none;
-  background: rgba(241, 241, 241, 0.8);
+  background: rgba(241, 241, 241, 0.8)
 }
+button:focus .icon, .button:focus .icon, [type='submit']:focus .icon {
+    stroke: rgba(68, 68, 68, 0.7);
+  }
 
 /* Size */
 button.small,
 .button.small,
 [type='submit'].small {
-  font-size: calc(1.6rem - .2rem);
-  padding: 0.6rem 1.6rem;
+  font-size: calc(1.6rem - 0.2rem);
+  min-height: 36px;
   font-weight: 700;
+  line-height: 1.2rem;
 }
 button.large,
 .button.large,
 [type='submit'].large {
-  font-size: calc(1.6rem + .8rem);
+  font-size: calc(1.6rem + 0.8rem);
+  min-height: 72px;
   padding: 1.6rem 4.2rem;
+  line-height: 2rem;
 }
 
 /* Outline */
@@ -350,6 +383,9 @@ button.flat.primary:active, .button.flat.primary:active, [type='submit'].flat.pr
 button.flat.primary:focus, .button.flat.primary:focus, [type='submit'].flat.primary:focus {
       color: rgba(102, 126, 234, 0.9);
     }
+button.flat.primary .icon, .button.flat.primary .icon, [type='submit'].flat.primary .icon {
+      stroke: #667eea;
+    }
 button.flat:hover,
 .button.flat:hover,
 [type='submit'].flat:hover {
@@ -368,8 +404,11 @@ button.primary,
 [type='submit'].primary {
   color: #fff;
   background: #667eea;
-  border: 1px solid transparent;
+  border: 1px solid transparent
 }
+button.primary .icon, .button.primary .icon, [type='submit'].primary .icon {
+    stroke: #fff;
+  }
 button.primary:hover,
 .button.primary:hover,
 [type='submit'].primary:hover {
@@ -395,8 +434,11 @@ button.success,
 [type='submit'].success {
   color: #fff;
   background: #0DC222;
-  border: 1px solid transparent;
+  border: 1px solid transparent
 }
+button.success .icon, .button.success .icon, [type='submit'].success .icon {
+    stroke: #fff;
+  }
 button.success:hover,
 .button.success:hover,
 [type='submit'].success:hover {
@@ -415,8 +457,11 @@ button.error,
 [type='submit'].error {
   color: #fff;
   background: #F93838;
-  border: 1px solid transparent;
+  border: 1px solid transparent
 }
+button.error .icon, .button.error .icon, [type='submit'].error .icon {
+    stroke: #fff;
+  }
 button.error:hover,
 .button.error:hover,
 [type='submit'].error:hover {
@@ -435,8 +480,11 @@ button.warning,
 [type='submit'].warning {
   color: #fff;
   background: #f2ad00;
-  border: 1px solid transparent;
+  border: 1px solid transparent
 }
+button.warning .icon, .button.warning .icon, [type='submit'].warning .icon {
+    stroke: #fff;
+  }
 button.warning:hover,
 .button.warning:hover,
 [type='submit'].warning:hover {
@@ -455,8 +503,11 @@ button.info,
 [type='submit'].info {
   color: #fff;
   background: #2C80FF;
-  border: 1px solid transparent;
+  border: 1px solid transparent
 }
+button.info .icon, .button.info .icon, [type='submit'].info .icon {
+    stroke: #fff;
+  }
 button.info:hover,
 .button.info:hover,
 [type='submit'].info:hover {
@@ -468,6 +519,7 @@ button.info:focus,
 [type='submit'].info:focus {
   background: rgba(44, 128, 255, 0.9);
 }
+
 /*
  * Forms
 */
@@ -547,9 +599,10 @@ select {
   display: flex;
   position: relative;
   padding-left: 30px;
+  min-height: 20px;
   cursor: pointer;
   font-size: 1.6rem;
-  line-height: 1.5;
+  line-height: 1.4;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -591,7 +644,7 @@ select {
   padding-left: 30px;
   cursor: pointer;
   font-size: 1.6rem;
-  line-height: 1.5;
+  line-height: 1.4;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -834,6 +887,7 @@ pre > code {
 * :--close .close;
 * :--info .info;
 * :--error .error;
+* :--warning .warning;
 * :--rounded .rounded;
 * :--placeholder .placeholder;
 *
@@ -851,7 +905,8 @@ pre > code {
   justify-content: flex-start;
   flex-direction: column
 }
-.alert .title, .alert .description {
+.alert .title,
+  .alert .description {
     margin: 0;
   }
 .alert .title {
@@ -867,19 +922,20 @@ pre > code {
   padding: 0;
   width: 28px;
   height: 28px;
+  min-height: 28px;
   font-size: 1.3rem;
   background: transparent;
   border-radius: 50%;
   color: #282828
 }
-.alert .close .svg-icon {
-    width: 1rem;
-    height: 1rem
+.alert .close .icon {
+    width: 24px;
+    height: 24px
   }
-.alert .close .svg-icon path {
+.alert .close .icon path {
       fill: #444;
     }
-.alert .close .svg-icon circle {
+.alert .close .icon circle {
       stroke: #444;
       stroke-width: 1;
     }
@@ -894,10 +950,10 @@ pre > code {
 .alert.info .description {
     color: rgba(44, 128, 255, 0.6);
   }
-.alert.info .close .svg-icon path {
+.alert.info .close .icon path {
         fill: #667eea;
       }
-.alert.info .close .svg-icon circle {
+.alert.info .close .icon circle {
         stroke: #667eea;
         stroke-width: 1;
       }
@@ -915,17 +971,17 @@ pre > code {
 .alert.warning .close {
     border-color: transparent;
     background: rgba(242, 173, 0, 0.5);
-    color:#fff;
+    color: #fff;
   }
 .alert.error {
   background: rgba(249, 56, 56, 0.05);
   border-color: rgba(249, 56, 56, 0.5);
   color: #F93838
 }
-.alert.error .close .svg-icon path {
+.alert.error .close .icon path {
         fill: #F93838;
       }
-.alert.error .close .svg-icon circle {
+.alert.error .close .icon circle {
         stroke: #F93838;
         stroke-width: 1;
       }
@@ -940,10 +996,10 @@ pre > code {
 .alert.success .close {
     border-color: transparent
   }
-.alert.success .close .svg-icon path {
+.alert.success .close .icon path {
         fill: #0DC222;
       }
-.alert.success .close .svg-icon circle {
+.alert.success .close .icon circle {
         stroke: #0DC222;
         stroke-width: 1;
       }
@@ -957,7 +1013,7 @@ pre > code {
 }
 .alert.rounded .close {
     top: 50%;
-    margin-top: -14px;
+    margin-top: -16px;
     right: 14px;
   }
 
@@ -967,6 +1023,64 @@ pre > code {
   background: rgba(255, 255, 255, 0.15);
 }
 
+/*
+* Avatar
+*/
+
+/*
+*
+* @ custom-properties
+* :--avatar .avatar;
+* :--alert-primary .avatar.primary;
+* :--alert-outline .avatar.outline;
+* :--alert-small .avatar.small;
+* :--alert-large .avatar.large;
+*
+*/
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  max-width: 42px;
+  min-width: 42px;
+  flex-basis: 42px;
+  background: #f1f1f1;
+  border-radius: 50%;
+  line-height: normal;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #282828;
+}
+.avatar.primary {
+  background: #667eea;
+  color: #fff
+}
+.avatar.primary.outline {
+    background: transparent;
+    border-color: #667eea;
+    color: #667eea;
+  }
+.avatar.outline {
+  background: transparent;
+  border: 1px solid #282828;
+}
+.avatar.small {
+  width: 32px;
+  height: 32px;
+  max-width: 32px;
+  min-width: 32px;
+  flex-basis: 32px;
+}
+.avatar.large {
+  width: 62px;
+  height: 62px;
+  max-width: 62px;
+  min-width: 62px;
+  flex-basis: 62px;
+}
 
 /*
 * Card
@@ -1007,6 +1121,74 @@ pre > code {
   padding: 20px 15px;
 }
 
+/*
+* Dialog
+*/
+
+/*
+*
+* @ custom-properties
+* :--dialog .dialog;
+* :--close .close;
+* :--light .light;
+* :--overlay .overlay;
+*
+*/
+.dialog {
+  margin: 45px auto;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  width: 480px;
+  height: 320px;
+  z-index: 100;
+  position: relative;
+  border-radius: 4px;
+}
+.dialog .close {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 20px;
+  right: 20px;
+  opacity: 0.8;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #666
+}
+.dialog .close:hover {
+    opacity: 1;
+  }
+.dialog .close .icon {
+    width: 20px;
+    height: 20px;
+    stroke: #444;
+  }
+.overlay {
+  position: fixed;
+  z-index: 90;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.88);
+  visibility: hidden;
+  opacity: 0
+}
+.overlay.light {
+    background: rgba(255, 255, 255, 0.92);
+  }
+.overlay .cancel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: default;
+  }
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
 /* 
  * Grid
 */
@@ -1600,7 +1782,41 @@ pre > code {
     order: 1;
   }
 }
-/* 
+/*
+* Icons
+*/
+
+/*
+*
+* @ custom-properties
+* :--icon .icon;
+* :--icon-large .icon.lg;
+* :--icon-small .icon.sm;
+*
+*/
+
+.icon {
+  width: 32px;
+  height: 32px;
+  stroke: #667eea;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  color: #667eea;
+}
+
+.icon.lg {
+  width: 52px;
+  height: 52px;
+}
+
+.icon.sm {
+  width: 20px;
+  height: 20px;
+}
+
+/*
  * Utils
 */
 
@@ -1655,16 +1871,24 @@ pre > code {
   flex-direction: column;
 }
 
-.right {
+.end {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-.left {
+.start {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+
+.flex {
+  display: flex;
+}
+
+.absolute {
+  position: absolute;
 }
 
 .fixed {

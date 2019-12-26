@@ -1,5 +1,5 @@
 /**
-* vishnucss base - v1.0.8
+* vishnucss base - v1.1.0-beta.1
 * https://vishnucss.github.io/vishnu
 */
 
@@ -14,6 +14,7 @@
 /*
 * Buttons
 */
+
 
 
 /*
@@ -35,6 +36,8 @@
 
   /* Transitions */
 
+  /* Shadows */
+
   /* Utils */
 
 }
@@ -45,12 +48,12 @@
 
 ::-moz-selection {
   color: #667eea;
-  background: #E6ECF0;
+  background: #fff;
 }
 
 ::selection {
   color: #667eea;
-  background: #E6ECF0;
+  background: #fff;
 }
 
 html,
@@ -65,7 +68,7 @@ html {
 }
 
 body {
-  line-height: 1.5;
+  line-height: 1.4;
   font-size: 1.6rem;
   font-family: -apple-system, BlinkMacSystemFont, Avenir, 'Avenir Next',
   'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
@@ -157,11 +160,13 @@ p {
 
 :-webkit-any-link {
   color: #667eea;
+  -webkit-transition: color 0.1s ease;
   transition: color 0.1s ease
 }
 
 :-moz-any-link {
   color: #667eea;
+  -moz-transition: color 0.1s ease;
   transition: color 0.1s ease
 }
 
@@ -237,85 +242,140 @@ p {
 button,
 .button,
 [type='submit'] {
-  padding: 1.1rem 3.5rem;
+  padding: 0 1.5rem;
   font-size: 1.6rem;
+  min-height: 52px;
+  font-weight: 600;
   color: #444;
-  background: rgba(230, 236, 240, 0.4);
+  background: #f1f1f1;
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
   border: 1px solid transparent;
+  line-height: 1.8rem;
   cursor: pointer;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center
 }
+button .icon, .button .icon, [type='submit'] .icon {
+    margin: 0 5px;
+    stroke: #444;
+  }
 
 /* Status */
 button:hover,
 .button:hover,
 [type='submit']:hover {
-  color: #667eea;
-  background: rgba(230, 236, 240, 0.5);
+  color: rgba(68, 68, 68, 0.7);
+  background: rgba(241, 241, 241, 0.7)
 }
+button:hover .icon, .button:hover .icon, [type='submit']:hover .icon {
+    stroke: rgba(68, 68, 68, 0.7);
+  }
 button:focus,
 .button:focus,
 [type='submit']:focus {
   outline: none;
-  background: rgba(230, 236, 240, 0.8);
+  background: rgba(241, 241, 241, 0.8)
 }
+button:focus .icon, .button:focus .icon, [type='submit']:focus .icon {
+    stroke: rgba(68, 68, 68, 0.7);
+  }
 
 /* Size */
 button.small,
 .button.small,
 [type='submit'].small {
-  font-size: 1.2rem;
-  padding: 0.6rem 1.6rem;
+  font-size: calc(1.6rem - 0.2rem);
+  min-height: 36px;
+  font-weight: 700;
+  line-height: 1.2rem;
 }
 button.large,
 .button.large,
 [type='submit'].large {
-  font-size: 1.8rem;
-  padding: 1.8rem 4.2rem;
+  font-size: calc(1.6rem + 0.8rem);
+  min-height: 72px;
+  padding: 1.6rem 4.2rem;
+  line-height: 2rem;
 }
 
 /* Outline */
 button.outline,
 .button.outline,
 [type='submit'].outline {
-  color: #667eea;
+  color: #444;
   background: none;
-  border: 1px solid #E6ECF0;
+  border: 1px solid #444
 }
+button.outline.primary, .button.outline.primary, [type='submit'].outline.primary {
+    color: #667eea;
+    background: none;
+    border: 1px solid #667eea
+  }
+button.outline.primary:hover, .button.outline.primary:hover, [type='submit'].outline.primary:hover {
+      background: none;
+      border: 1px solid rgba(102, 126, 234, 0.7);
+      color: rgba(102, 126, 234, 0.7);
+    }
+button.outline.primary:focus, .button.outline.primary:focus, [type='submit'].outline.primary:focus {
+      background: none;
+      border-color: rgba(102, 126, 234, 0.8);
+      color: rgba(102, 126, 234, 0.8);
+    }
+button.outline.primary:active, .button.outline.primary:active, [type='submit'].outline.primary:active {
+      background: none;
+      border-color: rgba(102, 126, 234, 0.8);
+      color: rgba(102, 126, 234, 0.8);
+    }
 button.outline:hover,
 .button.outline:hover,
 [type='submit'].outline:hover {
   background: none;
-  border: 1px solid rgba(102, 126, 234, 0.5);
-  color: rgba(102, 126, 234, 0.5);
+  border: 1px solid rgba(68, 68, 68, 0.7);
+  color: rgba(68, 68, 68, 0.7);
 }
 button.outline:focus,
 .button.outline:focus,
 [type='submit'].outline:focus {
-  border-color: rgba(102, 126, 234, 0.8);
-  color: rgba(102, 126, 234, 0.8);
+  border-color: rgba(68, 68, 68, 0.8);
+  color: rgba(68, 68, 68, 0.8);
 }
 
 /* Flat */
 button.flat,
 .button.flat,
 [type='submit'].flat {
-  color: #667eea;
+  color: #444;
   background: none;
-  border: 1px solid transparent;
+  border: 1px solid transparent
 }
+button.flat.primary, .button.flat.primary, [type='submit'].flat.primary {
+    color: #667eea
+  }
+button.flat.primary:hover, .button.flat.primary:hover, [type='submit'].flat.primary:hover {
+      color: rgba(102, 126, 234, 0.8);
+    }
+button.flat.primary:active, .button.flat.primary:active, [type='submit'].flat.primary:active {
+      color: rgba(102, 126, 234, 0.9);
+    }
+button.flat.primary:focus, .button.flat.primary:focus, [type='submit'].flat.primary:focus {
+      color: rgba(102, 126, 234, 0.9);
+    }
+button.flat.primary .icon, .button.flat.primary .icon, [type='submit'].flat.primary .icon {
+      stroke: #667eea;
+    }
 button.flat:hover,
 .button.flat:hover,
 [type='submit'].flat:hover {
   background: none;
-  color: rgba(102, 126, 234, 0.8);
+  color: rgba(68, 68, 68, 0.8);
 }
 button.flat:focus,
 .button.flat:focus,
 [type='submit'].flat:focus {
-  color: rgba(102, 126, 234, 0.9);
+  color: rgba(68, 68, 68, 0.9);
 }
 
 /* Primary */
@@ -324,8 +384,11 @@ button.primary,
 [type='submit'].primary {
   color: #fff;
   background: #667eea;
-  border: 1px solid transparent;
+  border: 1px solid transparent
 }
+button.primary .icon, .button.primary .icon, [type='submit'].primary .icon {
+    stroke: #fff;
+  }
 button.primary:hover,
 .button.primary:hover,
 [type='submit'].primary:hover {
@@ -342,7 +405,7 @@ button.primary:focus,
 button.rounded,
 .button.rounded,
 [type='submit'].rounded {
-  border-radius: 28px;
+  border-radius: 50px;
 }
 
 /* Success */
@@ -351,8 +414,11 @@ button.success,
 [type='submit'].success {
   color: #fff;
   background: #0DC222;
-  border: 1px solid transparent;
+  border: 1px solid transparent
 }
+button.success .icon, .button.success .icon, [type='submit'].success .icon {
+    stroke: #fff;
+  }
 button.success:hover,
 .button.success:hover,
 [type='submit'].success:hover {
@@ -371,8 +437,11 @@ button.error,
 [type='submit'].error {
   color: #fff;
   background: #F93838;
-  border: 1px solid transparent;
+  border: 1px solid transparent
 }
+button.error .icon, .button.error .icon, [type='submit'].error .icon {
+    stroke: #fff;
+  }
 button.error:hover,
 .button.error:hover,
 [type='submit'].error:hover {
@@ -383,6 +452,52 @@ button.error:focus,
 .button.error:focus,
 [type='submit'].error:focus {
   background: rgba(249, 56, 56, 0.9);
+}
+
+/* Warning */
+button.warning,
+.button.warning,
+[type='submit'].warning {
+  color: #fff;
+  background: #f2ad00;
+  border: 1px solid transparent
+}
+button.warning .icon, .button.warning .icon, [type='submit'].warning .icon {
+    stroke: #fff;
+  }
+button.warning:hover,
+.button.warning:hover,
+[type='submit'].warning:hover {
+  background: rgba(242, 173, 0, 0.8);
+  color: #fff;
+}
+button.warning:focus,
+.button.warning:focus,
+[type='submit'].warning:focus {
+  background: rgba(242, 173, 0, 0.9);
+}
+
+/* Info */
+button.info,
+.button.info,
+[type='submit'].info {
+  color: #fff;
+  background: #2C80FF;
+  border: 1px solid transparent
+}
+button.info .icon, .button.info .icon, [type='submit'].info .icon {
+    stroke: #fff;
+  }
+button.info:hover,
+.button.info:hover,
+[type='submit'].info:hover {
+  background: rgba(44, 128, 255, 0.8);
+  color: #fff;
+}
+button.info:focus,
+.button.info:focus,
+[type='submit'].info:focus {
+  background: rgba(44, 128, 255, 0.9);
 }
 
 /*
@@ -465,21 +580,23 @@ select {
 
 /* Checkbox */
 .checkbox {
-  display: block;
+  display: flex;
   position: relative;
-  padding-left: 25px;
+  padding-left: 30px;
+  min-height: 20px;
   cursor: pointer;
   font-size: 1.6rem;
-  line-height: 1.5;
+  line-height: 1.4;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  align-items: center;
   border-radius: 4px
 }
 .checkbox .checkmark {
     position: absolute;
-    top: 3px;
+    top: 0;
     left: 0;
     height: 18px;
     width: 18px;
@@ -506,12 +623,12 @@ select {
 
 /* Radio Button */
 .radio {
-  display: block;
+  display: flex;
   position: relative;
-  padding-left: 25px;
+  padding-left: 30px;
   cursor: pointer;
   font-size: 1.6rem;
-  line-height: 1.5;
+  line-height: 1.4;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -519,10 +636,10 @@ select {
 }
 .radio .radiomark {
     position: absolute;
-    top: 3px;
+    top: 0;
     left: 0;
-    height: 16px;
-    width: 16px;
+    height: 18px;
+    width: 18px;
     background-color: #fff;
     border: 1px solid #e5e5e5;
     border-radius: 50%;
@@ -533,10 +650,10 @@ select {
     opacity: 0;
   }
 .radio .radiomark:after {
-  top: 4px;
-  left: 4px;
-  width: 8px;
-  height: 8px;
+  top: 6px;
+  left: 6px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   background: white;
 }
@@ -695,7 +812,7 @@ code {
   margin: 0 0.2rem;
   font-size: 1.3rem;
   white-space: nowrap;
-  background: #E6ECF0;
+  background: #fff;
   border: 1px solid #dbdbdb;
   border-radius: 4px;
   font-family: 'Consolas', 'Monaco', 'Menlo', monospace;

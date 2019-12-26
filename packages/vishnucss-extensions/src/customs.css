@@ -8,6 +8,16 @@
 @custom-media --desktop-large-viewport only screen and (max-width: 75em);
 
 /*
+* Avatar
+*/
+
+@custom-selector :--avatar .avatar;
+@custom-selector :--alert-primary .avatar.primary;
+@custom-selector :--alert-outline .avatar.outline;
+@custom-selector :--alert-small .avatar.small;
+@custom-selector :--alert-large .avatar.large;
+
+/*
 * Alert
 */
 
@@ -15,9 +25,18 @@
 @custom-selector :--placeholder .placeholder;
 @custom-selector :--info .info;
 @custom-selector :--error .error;
+@custom-selector :--warning .warning;
 @custom-selector :--success .success;
 @custom-selector :--rounded .rounded;
 @custom-selector :--close .close;
+
+/*
+* Dialog
+*/
+
+@custom-selector :--dialog .dialog;
+@custom-selector :--close .close;
+@custom-selector :--overlay .overlay;
 
 /*
 * Card
@@ -28,6 +47,14 @@
 @custom-selector :--footer .card-footer;
 @custom-selector :--title .card-title;
 @custom-selector :--content .card-content;
+
+/*
+* Icons
+*/
+
+@custom-selector :--icon .icon;
+@custom-selector :--icon-large .icon.lg;
+@custom-selector :--icon-small .icon.sm;
 
 /* 
  * Grid

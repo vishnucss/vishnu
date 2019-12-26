@@ -9,6 +9,7 @@
 * :--close .close;
 * :--info .info;
 * :--error .error;
+* :--warning .warning;
 * :--rounded .rounded;
 * :--placeholder .placeholder;
 *
@@ -25,7 +26,8 @@
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  & .title, & .description {
+  & .title,
+  & .description {
     margin: 0;
   }
   & .title {
@@ -42,17 +44,18 @@
   padding: 0;
   width: 28px;
   height: 28px;
+  min-height: 28px;
   font-size: 1.3rem;
   background: transparent;
   border-radius: var(--base-rounded-radius);
   color: var(--base-dark-color);
-  & .svg-icon {
-    width: 1rem;
-    height: 1rem;
+  & .icon {
+    width: 24px;
+    height: 24px;
     & path {
       fill: var(--base-text-color);
     }
-    
+
     & circle {
       stroke: var(--base-text-color);
       stroke-width: 1;
@@ -70,11 +73,11 @@
     color: color-mod(var(--base-info-color) alpha(60%));
   }
   & .close {
-    & .svg-icon {
+    & .icon {
       & path {
         fill: var(--primary-color);
       }
-      
+
       & circle {
         stroke: var(--primary-color);
         stroke-width: 1;
@@ -95,7 +98,7 @@
   & .close {
     border-color: transparent;
     background: color-mod(var(--base-warning-color) alpha(50%));
-    color:#fff;
+    color: #fff;
   }
 }
 :--alert:--error {
@@ -103,11 +106,11 @@
   border-color: color-mod(var(--base-error-color) alpha(50%));
   color: var(--base-error-color);
   & .close {
-    & .svg-icon {
+    & .icon {
       & path {
         fill: var(--base-error-color);
       }
-      
+
       & circle {
         stroke: var(--base-error-color);
         stroke-width: 1;
@@ -124,11 +127,11 @@
   color: var(--base-success-color);
   & .close {
     border-color: transparent;
-    & .svg-icon {
+    & .icon {
       & path {
         fill: var(--base-success-color);
       }
-      
+
       & circle {
         stroke: var(--base-success-color);
         stroke-width: 1;
@@ -145,7 +148,7 @@
   padding-right: 30px;
   & .close {
     top: 50%;
-    margin-top: -14px;
+    margin-top: -16px;
     right: 14px;
   }
 }
@@ -155,4 +158,3 @@
   border: 2px dashed var(--base-light-color);
   background: color-mod(var(--base-color) alpha(15%));
 }
-

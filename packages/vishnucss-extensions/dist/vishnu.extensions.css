@@ -1,5 +1,5 @@
 /**
-* vishnucss extensions - v1.0.8
+* vishnucss extensions - v1.1.0-beta.1
 * Extensions packages for Vishnucss toolkit with modern css
 * https://vishnucss.github.io/vishnu#extensions
 */
@@ -16,11 +16,18 @@
 
   /* Transitions */
 
+  /* Shadows */
+
   /* Utils */
 
 }
+
 /*
 * Responsive
+*/
+
+/*
+* Avatar
 */
 
 /*
@@ -28,7 +35,15 @@
 */
 
 /*
+* Dialog
+*/
+
+/*
 * Card
+*/
+
+/*
+* Icons
 */
 
 /* 
@@ -46,11 +61,11 @@
 * :--close .close;
 * :--info .info;
 * :--error .error;
+* :--warning .warning;
 * :--rounded .rounded;
 * :--placeholder .placeholder;
 *
 */
-
 .alert {
   position: relative;
   padding: 8px 20px;
@@ -64,11 +79,10 @@
   justify-content: flex-start;
   flex-direction: column
 }
-
-.alert .title, .alert .description {
+.alert .title,
+  .alert .description {
     margin: 0;
   }
-
 .alert .title {
     padding-right: 20px;
   }
@@ -82,38 +96,69 @@
   padding: 0;
   width: 28px;
   height: 28px;
+  min-height: 28px;
   font-size: 1.3rem;
-  background: #E6ECF0;
-  border: 1px solid #e5e5e5;
+  background: transparent;
   border-radius: 50%;
   color: #282828
 }
-.alert .close:hover {
-    background: #fff;
+.alert .close .icon {
+    width: 24px;
+    height: 24px
   }
+.alert .close .icon path {
+      fill: #444;
+    }
+.alert .close .icon circle {
+      stroke: #444;
+      stroke-width: 1;
+    }
 .alert.info {
   background: rgba(44, 128, 255, 0.05);
   border-color: rgba(44, 128, 255, 0.5);
   color: #2C80FF
 }
+.alert.info:before {
+    color: #2C80FF;
+  }
 .alert.info .description {
     color: rgba(44, 128, 255, 0.6);
   }
-.alert.info .close {
+.alert.info .close .icon path {
+        fill: #667eea;
+      }
+.alert.info .close .icon circle {
+        stroke: #667eea;
+        stroke-width: 1;
+      }
+.alert.warning {
+  background: rgba(242, 173, 0, 0.05);
+  border-color: rgba(242, 173, 0, 0.5);
+  color: #f2ad00
+}
+.alert.warning:before {
+    color: #f2ad00;
+  }
+.alert.warning .description {
+    color: rgba(242, 173, 0, 0.6);
+  }
+.alert.warning .close {
     border-color: transparent;
-    background: rgba(44, 128, 255, 0.5);
-    color:#fff;
+    background: rgba(242, 173, 0, 0.5);
+    color: #fff;
   }
 .alert.error {
   background: rgba(249, 56, 56, 0.05);
   border-color: rgba(249, 56, 56, 0.5);
   color: #F93838
 }
-.alert.error .close {
-    border-color: transparent;
-    background: rgba(249, 56, 56, 0.5);
-    color:#fff;
-  }
+.alert.error .close .icon path {
+        fill: #F93838;
+      }
+.alert.error .close .icon circle {
+        stroke: #F93838;
+        stroke-width: 1;
+      }
 .alert.error .description {
     color: rgba(249, 56, 56, 0.6);
   }
@@ -123,10 +168,15 @@
   color: #0DC222
 }
 .alert.success .close {
-    border-color: transparent;
-    background: rgba(13, 194, 34, 0.5);;
-    color: #fff;
+    border-color: transparent
   }
+.alert.success .close .icon path {
+        fill: #0DC222;
+      }
+.alert.success .close .icon circle {
+        stroke: #0DC222;
+        stroke-width: 1;
+      }
 .alert.success .description {
     color: rgba(13, 194, 34, 0.6);
   }
@@ -137,14 +187,73 @@
 }
 .alert.rounded .close {
     top: 50%;
-    margin-top: -14px;
+    margin-top: -16px;
     right: 14px;
   }
 
 /* Placeholder */
 .placeholder {
-  border-style: dashed;
-  border-color: #f1f1f1;
+  border: 2px dashed #f1f1f1;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/*
+* Avatar
+*/
+
+/*
+*
+* @ custom-properties
+* :--avatar .avatar;
+* :--alert-primary .avatar.primary;
+* :--alert-outline .avatar.outline;
+* :--alert-small .avatar.small;
+* :--alert-large .avatar.large;
+*
+*/
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  max-width: 42px;
+  min-width: 42px;
+  flex-basis: 42px;
+  background: #f1f1f1;
+  border-radius: 50%;
+  line-height: normal;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #282828;
+}
+.avatar.primary {
+  background: #667eea;
+  color: #fff
+}
+.avatar.primary.outline {
+    background: transparent;
+    border-color: #667eea;
+    color: #667eea;
+  }
+.avatar.outline {
+  background: transparent;
+  border: 1px solid #282828;
+}
+.avatar.small {
+  width: 32px;
+  height: 32px;
+  max-width: 32px;
+  min-width: 32px;
+  flex-basis: 32px;
+}
+.avatar.large {
+  width: 62px;
+  height: 62px;
+  max-width: 62px;
+  min-width: 62px;
+  flex-basis: 62px;
 }
 
 /*
@@ -168,13 +277,13 @@
 }
 .card .card-header {
   position: relative;
-  background: rgba(230, 236, 240, 0.3);
+  background: rgba(255, 255, 255, 0.3);
   padding: 10px;
   display: flex;
 }
 .card .card-footer {
   position: relative;
-  background: rgba(230, 236, 240, 0.3);
+  background: rgba(255, 255, 255, 0.3);
   padding: 10px;
   display: flex;
 }
@@ -191,6 +300,108 @@
   padding: 15px 10px;
 }
 
+/*
+* Icons
+*/
+
+/*
+*
+* @ custom-properties
+* :--icon .icon;
+* :--icon-large .icon.lg;
+* :--icon-small .icon.sm;
+*
+*/
+
+.icon {
+  width: 32px;
+  height: 32px;
+  stroke: #667eea;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  color: #667eea;
+}
+
+.icon.lg {
+  width: 52px;
+  height: 52px;
+}
+
+.icon.sm {
+  width: 20px;
+  height: 20px;
+}
+
+/*
+* Dialog
+*/
+
+/*
+*
+* @ custom-properties
+* :--dialog .dialog;
+* :--close .close;
+* :--light .light;
+* :--overlay .overlay;
+*
+*/
+.dialog {
+  margin: 45px auto;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  width: 480px;
+  height: 320px;
+  z-index: 100;
+  position: relative;
+  border-radius: 4px;
+}
+.dialog .close {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 20px;
+  right: 20px;
+  opacity: 0.8;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #666
+}
+.dialog .close:hover {
+    opacity: 1;
+  }
+.dialog .close .icon {
+    width: 20px;
+    height: 20px;
+    stroke: #444;
+  }
+.overlay {
+  position: fixed;
+  z-index: 90;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.88);
+  visibility: hidden;
+  opacity: 0
+}
+.overlay.light {
+    background: rgba(255, 255, 255, 0.92);
+  }
+.overlay .cancel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: default;
+  }
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
 /*
  * Grid
 */
@@ -840,16 +1051,24 @@
   flex-direction: column;
 }
 
-.right {
+.end {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-.left {
+.start {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+
+.flex {
+  display: flex;
+}
+
+.absolute {
+  position: absolute;
 }
 
 .fixed {

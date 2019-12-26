@@ -1,5 +1,5 @@
 /**
-* vishnucss alert - v1.0.8
+* vishnucss alert - v1.1.0-beta.1
 * https://vishnucss.github.io/vishnu#alert
 */
 
@@ -8,16 +8,19 @@
 */
 
 :root {
-  
-    /* Typhography */
-  
-    /* Colours */
-  
-    /* Transitions */
-  
-    /* Utils */
-  
-  }
+
+  /* Typhography */
+
+  /* Colours */
+
+  /* Transitions */
+
+  /* Shadows */
+
+  /* Utils */
+
+}
+
 /*
 * Alert
 */
@@ -32,11 +35,11 @@
 * :--close .close;
 * :--info .info;
 * :--error .error;
+* :--warning .warning;
 * :--rounded .rounded;
 * :--placeholder .placeholder;
 *
 */
-
 .alert {
   position: relative;
   padding: 8px 20px;
@@ -50,11 +53,10 @@
   justify-content: flex-start;
   flex-direction: column
 }
-
-.alert .title, .alert .description {
+.alert .title,
+  .alert .description {
     margin: 0;
   }
-
 .alert .title {
     padding-right: 20px;
   }
@@ -68,38 +70,69 @@
   padding: 0;
   width: 28px;
   height: 28px;
+  min-height: 28px;
   font-size: 1.3rem;
-  background: #E6ECF0;
-  border: 1px solid #e5e5e5;
+  background: transparent;
   border-radius: 50%;
   color: #282828
 }
-.alert .close:hover {
-    background: #fff;
+.alert .close .icon {
+    width: 24px;
+    height: 24px
   }
+.alert .close .icon path {
+      fill: #444;
+    }
+.alert .close .icon circle {
+      stroke: #444;
+      stroke-width: 1;
+    }
 .alert.info {
   background: rgba(44, 128, 255, 0.05);
   border-color: rgba(44, 128, 255, 0.5);
   color: #2C80FF
 }
+.alert.info:before {
+    color: #2C80FF;
+  }
 .alert.info .description {
     color: rgba(44, 128, 255, 0.6);
   }
-.alert.info .close {
+.alert.info .close .icon path {
+        fill: #667eea;
+      }
+.alert.info .close .icon circle {
+        stroke: #667eea;
+        stroke-width: 1;
+      }
+.alert.warning {
+  background: rgba(242, 173, 0, 0.05);
+  border-color: rgba(242, 173, 0, 0.5);
+  color: #f2ad00
+}
+.alert.warning:before {
+    color: #f2ad00;
+  }
+.alert.warning .description {
+    color: rgba(242, 173, 0, 0.6);
+  }
+.alert.warning .close {
     border-color: transparent;
-    background: rgba(44, 128, 255, 0.5);
-    color:#fff;
+    background: rgba(242, 173, 0, 0.5);
+    color: #fff;
   }
 .alert.error {
   background: rgba(249, 56, 56, 0.05);
   border-color: rgba(249, 56, 56, 0.5);
   color: #F93838
 }
-.alert.error .close {
-    border-color: transparent;
-    background: rgba(249, 56, 56, 0.5);
-    color:#fff;
-  }
+.alert.error .close .icon path {
+        fill: #F93838;
+      }
+.alert.error .close .icon circle {
+        stroke: #F93838;
+        stroke-width: 1;
+      }
 .alert.error .description {
     color: rgba(249, 56, 56, 0.6);
   }
@@ -109,10 +142,15 @@
   color: #0DC222
 }
 .alert.success .close {
-    border-color: transparent;
-    background: rgba(13, 194, 34, 0.5);;
-    color: #fff;
+    border-color: transparent
   }
+.alert.success .close .icon path {
+        fill: #0DC222;
+      }
+.alert.success .close .icon circle {
+        stroke: #0DC222;
+        stroke-width: 1;
+      }
 .alert.success .description {
     color: rgba(13, 194, 34, 0.6);
   }
@@ -123,14 +161,14 @@
 }
 .alert.rounded .close {
     top: 50%;
-    margin-top: -14px;
+    margin-top: -16px;
     right: 14px;
   }
 
 /* Placeholder */
 .placeholder {
-  border-style: dashed;
-  border-color: #f1f1f1;
+  border: 2px dashed #f1f1f1;
+  background: rgba(255, 255, 255, 0.15);
 }
 
 /*# sourceMappingURL=vishnu.alert.css.map */

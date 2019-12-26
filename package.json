@@ -1,7 +1,7 @@
 {
   "name": "@vishnucss/vishnu",
   "filename": "vishnu.min.css",
-  "version": "1.0.8",
+  "version": "1.1.0-beta.1",
   "description": "A simple and minimalist toolkit with modern css",
   "main": "./dist/vishnu.min.css",
   "keywords": [

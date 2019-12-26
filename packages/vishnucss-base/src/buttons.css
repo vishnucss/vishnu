@@ -21,65 +21,114 @@
 
 /* Default */
 :--button {
-  padding: 1.1rem 3.5rem;
+  padding: 0 1.5rem;
   font-size: var(--base-font-size);
+  min-height: 52px;
+  font-weight: 600;
   color: var(--base-text-color);
-  background: color-mod(var(--base-color) alpha(-60%));
+  background: var(--base-light-color);
   border-radius: var(--base-radius);
   transition: var(--transition);
   border: 1px solid transparent;
+  line-height: 1.8rem;
   cursor: pointer;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & .icon {
+    margin: 0 5px;
+    stroke: var(--base-text-color);
+  }
 }
 
 /* Status */
 :--button:--hovered {
-  color: var(--primary-color);
-  background: color-mod(var(--base-color) alpha(-50%));
+  color: color-mod(var(--base-text-color) alpha(-30%));
+  background: color-mod(var(--base-light-color) alpha(-30%));
+  & .icon {
+    stroke: color-mod(var(--base-text-color) alpha(-30%));
+  }
 }
 :--button:--pressed {
   outline: none;
-  background: color-mod(var(--base-color) alpha(-20%));
+  background: color-mod(var(--base-light-color) alpha(-20%));
+  & .icon {
+    stroke: color-mod(var(--base-text-color) alpha(-30%));
+  }
 }
 
 /* Size */
 :--button:--small {
-  font-size: 1.2rem;
-  padding: 0.6rem 1.6rem;
+  font-size: calc(var(--base-font-size) - 0.2rem);
+  min-height: 36px;
+  font-weight: 700;
+  line-height: 1.2rem;
 }
 :--button:--large {
-  font-size: 1.8rem;
-  padding: 1.8rem 4.2rem;
+  font-size: calc(var(--base-font-size) + 0.8rem);
+  min-height: 72px;
+  padding: 1.6rem 4.2rem;
+  line-height: 2rem;
 }
 
 /* Outline */
 :--button-outline {
-  color: var(--primary-color);
+  color: var(--base-text-color);
   background: none;
-  border: 1px solid var(--base-color);
+  border: 1px solid var(--base-text-color);
+  &.primary {
+    color: var(--primary-color);
+    background: none;
+    border: 1px solid var(--primary-color);
+    &:hover {
+      background: none;
+      border: 1px solid color-mod(var(--primary-color) alpha(-30%));
+      color: color-mod(var(--primary-color) alpha(-30%));
+    }
+    &:focus,
+    &:active {
+      background: none;
+      border-color: color-mod(var(--primary-color) alpha(-20%));
+      color: color-mod(var(--primary-color) alpha(-20%));
+    }
+  }
 }
 :--button-outline:--hovered {
   background: none;
-  border: 1px solid color-mod(var(--primary-color) alpha(-50%));
-  color: color-mod(var(--primary-color) alpha(-50%));
+  border: 1px solid color-mod(var(--base-text-color) alpha(-30%));
+  color: color-mod(var(--base-text-color) alpha(-30%));
 }
 :--button-outline:--pressed {
-  border-color: color-mod(var(--primary-color) alpha(-20%));
-  color: color-mod(var(--primary-color) alpha(-20%));
+  border-color: color-mod(var(--base-text-color) alpha(-20%));
+  color: color-mod(var(--base-text-color) alpha(-20%));
 }
 
 /* Flat */
 :--button-flat {
-  color: var(--primary-color);
+  color: var(--base-text-color);
   background: none;
   border: 1px solid transparent;
+  &.primary {
+    color: var(--primary-color);
+    &:hover {
+      color: color-mod(var(--primary-color) alpha(-20%));
+    }
+    &:active,
+    &:focus {
+      color: color-mod(var(--primary-color) alpha(-10%));
+    }
+    & .icon {
+      stroke: var(--primary-color);
+    }
+  }
 }
 :--button-flat:--hovered {
   background: none;
-  color: color-mod(var(--primary-color) alpha(-20%));
+  color: color-mod(var(--base-text-color) alpha(-20%));
 }
 :--button-flat:--pressed {
-  color: color-mod(var(--primary-color) alpha(-10%));
+  color: color-mod(var(--base-text-color) alpha(-10%));
 }
 
 /* Primary */
@@ -87,6 +136,9 @@
   color: #fff;
   background: var(--primary-color);
   border: 1px solid transparent;
+  & .icon {
+    stroke: #fff;
+  }
 }
 :--button-primary:--hovered {
   background: color-mod(var(--primary-color) alpha(-20%));
@@ -98,7 +150,7 @@
 
 /* Rounded */
 :--button-rounded {
-  border-radius: 28px;
+  border-radius: 50px;
 }
 
 /* Success */
@@ -106,6 +158,9 @@
   color: #fff;
   background: var(--base-success-color);
   border: 1px solid transparent;
+  & .icon {
+    stroke: #fff;
+  }
 }
 :--button-success:--hovered {
   background: color-mod(var(--base-success-color) alpha(-20%));
@@ -120,6 +175,9 @@
   color: #fff;
   background: var(--base-error-color);
   border: 1px solid transparent;
+  & .icon {
+    stroke: #fff;
+  }
 }
 :--button-error:--hovered {
   background: color-mod(var(--base-error-color) alpha(-20%));
@@ -127,4 +185,38 @@
 }
 :--button-error:--pressed {
   background: color-mod(var(--base-error-color) alpha(-10%));
+}
+
+/* Warning */
+:--button-warning {
+  color: #fff;
+  background: var(--base-warning-color);
+  border: 1px solid transparent;
+  & .icon {
+    stroke: #fff;
+  }
+}
+:--button-warning:--hovered {
+  background: color-mod(var(--base-warning-color) alpha(-20%));
+  color: #fff;
+}
+:--button-warning:--pressed {
+  background: color-mod(var(--base-warning-color) alpha(-10%));
+}
+
+/* Info */
+:--button-info {
+  color: #fff;
+  background: var(--base-info-color);
+  border: 1px solid transparent;
+  & .icon {
+    stroke: #fff;
+  }
+}
+:--button-info:--hovered {
+  background: color-mod(var(--base-info-color) alpha(-20%));
+  color: #fff;
+}
+:--button-info:--pressed {
+  background: color-mod(var(--base-info-color) alpha(-10%));
 }
