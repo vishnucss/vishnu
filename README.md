@@ -55,7 +55,10 @@ $ npm install --save @vishnucss/extensions
 #### List all extensions:
 
 - [Alert](https://github.com/vishnucss/vishnu/tree/master/packages/vishnucss-alert)
+- [Avatar](https://github.com/vishnucss/vishnu/tree/master/packages/vishnucss-avatar)
 - [Card](https://github.com/vishnucss/vishnu/tree/master/packages/vishnucss-card)
+- [Icons](https://github.com/vishnucss/vishnu/tree/master/packages/vishnucss-icons)
+- [Dialog](https://github.com/vishnucss/vishnu/tree/master/packages/vishnucss-dialog)
 - [Grid](https://github.com/vishnucss/vishnu/tree/master/packages/vishnucss-grid)
 - [Utils](https://github.com/vishnucss/vishnu/tree/master/packages/vishnucss-utils)
 
