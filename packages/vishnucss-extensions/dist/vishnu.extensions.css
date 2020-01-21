@@ -31,6 +31,10 @@
 */
 
 /*
+* Chips
+*/
+
+/*
 * Alert
 */
 
@@ -205,10 +209,10 @@
 *
 * @ custom-properties
 * :--avatar .avatar;
-* :--alert-primary .avatar.primary;
-* :--alert-outline .avatar.outline;
-* :--alert-small .avatar.small;
-* :--alert-large .avatar.large;
+* :--avatar-primary .avatar.primary;
+* :--avatar-outline .avatar.outline;
+* :--avatar-small .avatar.small;
+* :--avatar-large .avatar.large;
 *
 */
 
@@ -256,6 +260,223 @@
   flex-basis: 62px;
 }
 
+/*
+* Chips
+*/
+
+/*
+*
+* @ custom-properties
+* :--chips .chips;
+* :--chips-outline .outline;
+* :--chips-large .large;
+* :--chips-small .small;
+* :--chips-primary .primary;
+* :--chips-info .info;
+* :--chips-success .success;
+* :--chips-error .error;
+* :--chips-dark .dark;
+* :--chips-warning .warning;
+*
+*/
+
+.chips {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  height: 28px;
+  border-radius: 50px;
+  background: #f2f2f2
+}
+
+.chips .image {
+    border-radius: 50%;
+  }
+
+.chips .icon {
+    width: 22px;
+    height: 22px;
+    margin-left: 8px;
+    margin-right: -8px
+  }
+
+.chips .icon.right {
+      margin-right: 8px;
+      margin-left: -8px;
+    }
+
+.chips .label {
+    font-size: 13px;
+    font-weight: 500;
+    padding: 0 12px;
+  }
+
+.chips.small {
+  height: 20px
+}
+
+.chips.small img {
+    max-height: 20px;
+  }
+
+.chips.small .label {
+    font-size: 12px;
+  }
+
+.chips.large {
+  height: 42px;
+  padding: 0 16px
+}
+
+.chips.large img {
+    max-height: 42px;
+  }
+
+.chips.large .label {
+    font-size: 16px;
+  }
+
+.chips.primary {
+  background: #667eea
+}
+
+.chips.primary .label {
+    color: #fff;
+  }
+
+.chips.primary .icon {
+    stroke: #fff;
+  }
+
+.chips.error {
+  background: #F93838
+}
+
+.chips.error .label {
+    color: #fff;
+  }
+
+.chips.error .icon {
+    stroke: #fff;
+  }
+
+.chips.success {
+  background: #0DC222
+}
+
+.chips.success .label {
+    color: #fff;
+  }
+
+.chips.success .icon {
+    stroke: #fff;
+  }
+
+.chips.info {
+  background: #2C80FF
+}
+
+.chips.info .label {
+    color: #fff;
+  }
+
+.chips.info .icon {
+    stroke: #fff;
+  }
+
+.chips.warning {
+  background: #f2ad00
+}
+
+.chips.warning .label {
+    color: #fff;
+  }
+
+.chips.warning .icon {
+    stroke: #fff;
+  }
+
+.chips.dark {
+  background: rgba(0,0,0, .45)
+}
+
+.chips.dark .label {
+    color: #fff;
+  }
+
+.chips.dark .icon {
+    stroke: #fff;
+  }
+
+.chips.outline {
+  background: transparent;
+  box-shadow: 0 0 0 1px #e5e5e5
+}
+
+.chips.outline.icon {
+    stroke: #444;
+  }
+
+.chips.outline.primary {
+    box-shadow: 0 0 0 1px #667eea
+  }
+
+.chips.outline.primary .icon {
+      stroke: #667eea;
+    }
+
+.chips.outline.primary .label {
+      color: #667eea;
+    }
+
+.chips.outline.error {
+    box-shadow: 0 0 0 1px #F93838
+  }
+
+.chips.outline.error .icon {
+      stroke: #F93838;
+    }
+
+.chips.outline.error .label {
+      color: #F93838;
+    }
+
+.chips.outline.success {
+    box-shadow: 0 0 0 1px #0DC222
+  }
+
+.chips.outline.success .icon {
+      stroke: #0DC222;
+    }
+
+.chips.outline.success .label {
+      color: #0DC222;
+    }
+
+.chips.outline.info {
+    box-shadow: 0 0 0 1px #2C80FF
+  }
+
+.chips.outline.info .icon {
+      stroke: #2C80FF;
+    }
+
+.chips.outline.info .label {
+      color: #2C80FF;
+    }
+
+.chips.outline.warning {
+    box-shadow: 0 0 0 1px #f2ad00
+  }
+
+.chips.outline.warning .icon {
+      stroke: #f2ad00;
+    }
+
+.chips.outline.warning .label {
+      color: #f2ad00;
+    }
 /*
 * Card
 */
@@ -1073,6 +1294,10 @@
 
 .fixed {
   position: fixed;
+}
+
+.wrap {
+  flex-wrap: wrap;
 }
 
 .relative {

@@ -77,6 +77,10 @@
   position: fixed;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
 .relative {
   position: relative;
 }

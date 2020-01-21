@@ -50,6 +50,7 @@ gulp.task("build", function () {
     // Extensions
     "./src/alert.css",
     "./src/avatar.css",
+    "./src/chips.css",
     "./src/card.css",
     "./src/dialog.css",
     "./src/grid.css",

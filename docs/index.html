@@ -94,6 +94,7 @@
                 <ul>
                   <li><a class="anchor" href="#alert" title="Alert">Alert</a></li>
                   <li><a class="anchor" href="#avatar" title="Avatar">Avatar</a></li>
+                  <li><a class="anchor" href="#chips" title="Avatar">Chips</a></li>
                   <li><a class="anchor" href="#card" title="Card">Card</a></li>
                   <li><a class="anchor" href="#dialog" title="Card">Dialog</a></li>
                   <li><a class="anchor" href="#icons" title="Card">Icons</a></li>
@@ -693,6 +694,70 @@
                 <div class="avatar outline small">
                   S
                 </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Chips -->
+        <div class="section" id="avatar">
+          <h3 class="title"># Chips</h3>
+          <p class="description">Description</p>
+          <h5>CDN</h5>
+          <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/@vishnucss/chips&quot;/&gt;</code></pre>
+
+          <h5>NPM</h5>
+          <pre><code>$ npm install @vishnucss/chips</code></pre>
+
+          <div class="row">
+            <div class="col-xs-12 vertical-align wrap">
+              <div class="chips">
+                <img class="image" src="//via.placeholder.com/30x30" height="30" alt="Profile Number">
+                <span class="label">Default</span>
+              </div>
+              <div class="chips primary">
+                <svg class="icon">
+                  <use xlink:href="./src/assets/icons.svg#close"></use>
+                </svg>
+                <span class="label">Primary</span>
+              </div>
+              <div class="chips error">
+                <svg class="icon">
+                  <use xlink:href="./src/assets/icons.svg#bin"></use>
+                </svg>
+                <span class="label">Error</span>
+              </div>
+              <div class="chips warning">
+                <span class="label">Warning</span>
+              </div>
+              <div class="chips info">
+                <span class="label">Info</span>
+                <svg class="icon right">
+                  <use xlink:href="./src/assets/icons.svg#search"></use>
+                </svg>
+              </div>
+              <div class="chips success">
+                <span class="label">Success</span>
+              </div>
+              <div class="chips dark">
+                <span class="label">Dark</span>
+              </div>
+              <div class="chips outline success">
+                <svg class="icon">
+                  <use xlink:href="./src/assets/icons.svg#verified"></use>
+                </svg>
+                <span class="label">Outline</span>
+              </div>
+              <div class="chips error large outline">
+                <span class="label">Outline Error Large</span>
+                <svg class="icon right">
+                  <use xlink:href="./src/assets/icons.svg#danger"></use>
+                </svg>
+              </div>
+              <div class="chips small outline">
+                <img class="image" src="//via.placeholder.com/30x30" height="30" alt="Profile Number">
+                <span class="label">Outline Small</span>
               </div>
             </div>
           </div>
@@ -3419,6 +3484,7 @@
             <li><code>start</code> - align children to the start</li>
             <li><code>end</code> - align children to the end</li>
             <li><code>center</code> - align children to the center</li>
+            <li><code>wrap</code> - display wrap elements children</li>
             <li><code>full-screen</code> - make element full screen</li>
             <li><code>full-width</code> - make element full width size</li>
             <li><code>full-height</code> - make element full height size</li>

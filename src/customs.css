@@ -56,6 +56,21 @@
 @custom-selector :--close .close;
 
 /*
+* Chips
+*/
+
+@custom-selector :--chips .chips;
+@custom-selector :--chips-primary .chips.primary;
+@custom-selector :--chips-error .chips.error;
+@custom-selector :--chips-info .chips.info;
+@custom-selector :--chips-warning .chips.warning;
+@custom-selector :--chips-success .chips.success;
+@custom-selector :--chips-dark .chips.dark;
+@custom-selector :--chips-outline .chips.outline;
+@custom-selector :--chips-small .chips.small;
+@custom-selector :--chips-large .chips.large;
+
+/*
 * Card
 */
 
@@ -79,10 +94,10 @@
 */
 
 @custom-selector :--avatar .avatar;
-@custom-selector :--alert-primary .avatar.primary;
-@custom-selector :--alert-outline .avatar.outline;
-@custom-selector :--alert-small .avatar.small;
-@custom-selector :--alert-large .avatar.large;
+@custom-selector :--avatar-primary .avatar.primary;
+@custom-selector :--avatar-outline .avatar.outline;
+@custom-selector :--avatar-small .avatar.small;
+@custom-selector :--avatar-large .avatar.large;
 
 /*
 * Icons

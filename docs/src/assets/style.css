@@ -202,3 +202,8 @@ button {
   margin-top: 15px;
   font-weight: 500;
 }
+
+.chips {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}

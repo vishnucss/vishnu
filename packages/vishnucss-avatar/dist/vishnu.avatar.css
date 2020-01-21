@@ -33,10 +33,10 @@
 *
 * @ custom-properties
 * :--avatar .avatar;
-* :--alert-primary .avatar.primary;
-* :--alert-outline .avatar.outline;
-* :--alert-small .avatar.small;
-* :--alert-large .avatar.large;
+* :--avatar-primary .avatar.primary;
+* :--avatar-outline .avatar.outline;
+* :--avatar-small .avatar.small;
+* :--avatar-large .avatar.large;
 *
 */
 
