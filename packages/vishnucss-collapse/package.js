@@ -1,6 +1,6 @@
 Package.describe({
 	name: 'vishnucss:collapse',
-	version: '1.1.0-beta.1',
+	version: '1.1.0-rc.1',
 	summary: 'Collapse toolkit with modern css.',
 	git: 'https://github.com/vishnucss/vishnu.git',
 	documentation: 'README.md'
