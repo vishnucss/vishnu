@@ -53,7 +53,7 @@
     height: var(--toggle-rail-height);
     background-color: var(--toggle-rail-background-color);
     border-radius: var(--toggle-rail-border-radius);
-    transition: background-color var(--toggle-transition-duration)s var(--toggle-transition-timing-function);
+    transition: background-color var(--toggle-transition-duration) var(--toggle-transition-timing-function);
   }
   &:after {
     top: 0;
