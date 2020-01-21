@@ -1,0 +1,10 @@
+/*
+* Toggle
+*/
+
+@custom-selector :--toggle .toggle;
+@custom-selector :--toggle-label .toggle-label;
+@custom-selector :--toggle-activated .toggle.activated;
+@custom-selector :--toggle-disabled .toggle.disabled;
+@custom-selector :--toggle-checked .toggle-input:checked + .toggle-label;
+@custom-selector :--toggle-input .toggle-input;

@@ -53,6 +53,7 @@ gulp.task("build", function () {
     "./src/chips.css",
     "./src/card.css",
     "./src/dialog.css",
+    "./src/toggle.css",
     "./src/grid.css",
     "./src/icons.css",
     "./src/utils.css"

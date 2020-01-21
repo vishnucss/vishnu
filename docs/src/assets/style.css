@@ -203,7 +203,7 @@ button {
   font-weight: 500;
 }
 
-.chips {
+.chips, .toggle {
   margin-right: 20px;
   margin-bottom: 20px;
 }
