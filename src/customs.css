@@ -128,3 +128,16 @@
 @custom-selector :--toggle-checked .toggle-input:checked + .toggle-label;
 @custom-selector :--toggle-input .toggle-input;
 
+/*
+* Collapse
+*/
+
+@custom-selector :--collapse .collapse;
+@custom-selector :--collapse-content .collapse-content;
+@custom-selector :--collapse-content-checked .collapse input:checked ~ .collapse-content;
+@custom-selector :--collapse-item .collapse-item;
+@custom-selector :--collapse-input .collapse input;
+@custom-selector :--collapse-label .collapse label;
+@custom-selector :--collapse-icon-left .icon.left;
+@custom-selector :--collapse-icon-right .icon.right;
+

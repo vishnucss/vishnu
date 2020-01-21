@@ -59,6 +59,10 @@
 /*
 * Toggle
 */
+
+/*
+* Collapse
+*/
 /*
 * Alert
 */
@@ -527,37 +531,95 @@
 }
 
 /*
-* Icons
+* Collapse
 */
 
 /*
 *
 * @ custom-properties
-* :--icon .icon;
-* :--icon-large .icon.lg;
-* :--icon-small .icon.sm;
+* :--collapse .collapse;
+* :--collapse-content .collapse-content;
+* :--collapse-content-checked .collapse-content-checked;
+* :--collapse-item .collapse-item;
+* :--collapse-input .collapse-input;
+* :--collapse-label .collapse-label;
+* :--collapse-icon-right-left .icon.left;
+* :--collapse-icon-right .icon.right;
 *
 */
 
-.icon {
-  width: 32px;
-  height: 32px;
-  stroke: #667eea;
-  stroke-width: 1.5;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  fill: none;
-  color: #667eea;
+.collapse {
+  width: 100%
 }
 
-.icon.lg {
-  width: 52px;
-  height: 52px;
+.collapse .collapse-item {
+    position: relative;
+    margin-bottom: 2px;
+    width: 100%;
+    color: #282828;
+    overflow: hidden;
+    border: 1px solid #f1f1f1;
+    transition: all 0.2s ease-in-out
+  }
+
+.collapse .collapse-item:hover {
+      border-color: #667eea;
+    }
+
+.collapse input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1
 }
 
-.icon.sm {
-  width: 20px;
-  height: 20px;
+.collapse input:checked ~ label .icon.right,
+    .collapse input:checked ~ label .icon.left {
+      -webkit-transform: rotate(-180deg);
+              transform: rotate(-180deg);
+    }
+
+.icon.right {
+  width: 22px;
+  height: 22px;
+  stroke: #282828;
+  transition: all 0.2s ease-in-out;
+}
+
+.icon.left {
+  width: 22px;
+  height: 22px;
+  stroke: #282828;
+  transition: all 0.2s ease-in-out;
+}
+
+.collapse label {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 15px;
+  font-weight: 500;
+  line-height: 3;
+  cursor: pointer
+}
+
+.collapse label:hover {
+    background: transparent;
+  }
+.collapse-content {
+  max-height: 0;
+  padding: 0 15px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 1);
+  transition: max-height .25s
+}
+.collapse-content p {
+    font-size: 14px;
+    line-height: 16px;
+    margin: 10px 0;
+  }
+.collapse input:checked ~ .collapse-content {
+  max-height: 10em;
 }
 
 /*
@@ -628,6 +690,149 @@
     visibility: visible;
     opacity: 1;
   }
+/*
+* Toggle
+*/
+
+/*
+*
+* @ custom-properties
+* :--toggle .toggle;
+* :--toggle-small .toggle.small;
+* :--toggle-label .toggle-label;
+* :--toggle-activated .toggle.activated;
+* :--toggle-disabled .toggle.disabled;
+* :--toggle-checked .toggle-input:checked + .toggle-label;
+* :--toggle-input .toggle-input;
+*
+*/
+
+.toggle {
+  position: relative;
+  display: inline-block;
+}
+
+
+/*
+* Hide input
+*/
+
+.toggle-input {
+  display: none;
+}
+
+
+/*
+* Toggle Label
+*/
+
+.toggle-label {
+  display: block;
+  width: 48px;
+  height: 24px;
+  text-indent: -9999px;
+  clip: rect(0 0 0 0);
+  color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none
+}
+
+.toggle-label:before, .toggle-label:after {
+    content: "";
+    display: block;
+    position: absolute;
+    cursor: pointer;
+  }
+
+.toggle-label:before {
+    width: 100%;
+    height: 100%;
+    background-color: #f1f1f1;
+    border-radius: 9999em;
+    transition: background-color 0.25ss ease;
+  }
+
+.toggle-label:after {
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: left 0.25s ease;
+    box-shadow: 1px 1px 4px 2px rgba(0,0,0,.0525);
+  }
+
+/*
+* Toggle checked
+*/
+
+.toggle-input:checked + .toggle-label:before {
+    background-color: #0DC222;
+  }
+
+.toggle-input:checked + .toggle-label:after {
+    left: 25px;
+  }
+
+
+/*
+* Toggle activated
+*/
+.toggle.activated .toggle-label {
+    opacity: 1
+  }
+.toggle.activated .toggle-label:before {
+      background-color: #0DC222;
+    }
+.toggle.activated .toggle-label:after {
+      left: 24px;
+    }
+.toggle.activated .toggle-input:checked + .toggle-label:before {
+      background-color: #f1f1f1;
+    }
+.toggle.activated .toggle-input:checked + .toggle-label:after {
+      left: 0!important;
+    }
+
+/*
+* Toggle disabled
+*/
+
+.toggle.disabled {
+  cursor: default
+}
+
+.toggle.disabled .toggle-input:checked + .toggle-label {
+    opacity: 0.7
+  }
+
+.toggle.disabled .toggle-input:checked + .toggle-label:before {
+      background-color: #f1f1f1;
+    }
+
+.toggle.disabled .toggle-input:checked + .toggle-label:after {
+      left: 25px;
+    }
+
+.toggle.disabled .toggle-label {
+    opacity: 0.7;
+    cursor: default
+  }
+
+.toggle.disabled .toggle-label:before {
+      background-color: #f1f1f1;
+      cursor: default;
+    }
+
+.toggle.disabled .toggle-label:after {
+      top: 0;
+      left: 0!important;
+      box-shadow: 1px 1px 4px 2px rgba(0,0,0,.0525);
+    }
+
 /*
  * Grid
 */
@@ -1220,6 +1425,40 @@
   .last-lg {
     order: 1;
   }
+}
+
+/*
+* Icons
+*/
+
+/*
+*
+* @ custom-properties
+* :--icon .icon;
+* :--icon-large .icon.lg;
+* :--icon-small .icon.sm;
+*
+*/
+
+.icon {
+  width: 32px;
+  height: 32px;
+  stroke: #667eea;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  color: #667eea;
+}
+
+.icon.lg {
+  width: 52px;
+  height: 52px;
+}
+
+.icon.sm {
+  width: 20px;
+  height: 20px;
 }
 
 /*

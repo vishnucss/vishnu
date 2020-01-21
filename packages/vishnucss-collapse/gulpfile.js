@@ -15,14 +15,13 @@ const gulp = require('gulp'),
   cssvariables = require('postcss-css-variables'),
   colorMod = require('postcss-color-mod-function'),
   copyright = `/**
-* vishnucss extensions - v${pkg.version}
-* ${pkg.description}
-* https://vishnucss.github.io/vishnu#extensions
+* vishnucss collapse - v${pkg.version}
+* https://vishnucss.github.io/vishnu#collapse
 */\r\n`,
   $ = require('gulp-load-plugins')();
 
 /*
-* Extensions build task
+* Collapse build task
 */
 gulp.task('build', function() {
   let plugins = [
@@ -37,19 +36,10 @@ gulp.task('build', function() {
     .src([
       './src/variables.css',
       './src/customs.css',
-      "./src/alert.css",
-      "./src/avatar.css",
-      "./src/chips.css",
-      "./src/card.css",
-      "./src/collapse.css",
-      "./src/dialog.css",
-      "./src/toggle.css",
-      "./src/grid.css",
-      "./src/icons.css",
-      "./src/utils.css"
+      './src/collapse.css'
     ])
     .pipe($.sourcemaps.init())
-    .pipe($.concat('vishnu.extensions.css'))
+    .pipe($.concat('vishnu.collapse.css'))
     .pipe(postcss(plugins))
     .pipe($.header(copyright + '\n'))
     .pipe($.size())
@@ -58,7 +48,7 @@ gulp.task('build', function() {
 });
 
 /*
-* Minify in build extensions
+* Minify in build collapse
 */
 gulp.task('minify', ['build'], function() {
   let plugins = [
@@ -71,7 +61,7 @@ gulp.task('minify', ['build'], function() {
     autoprefixer({browsers: ['last 1 version']})
   ];
   return gulp
-    .src(['./dist/vishnu.extensions.css'])
+    .src(['./dist/vishnu.collapse.css'])
     .pipe($.sourcemaps.init())
     .pipe(postcss(plugins))
     .pipe($.header(copyright))
@@ -81,7 +71,7 @@ gulp.task('minify', ['build'], function() {
         gzip: true
       })
     )
-    .pipe($.concat('vishnu.extensions.min.css'))
+    .pipe($.concat('vishnu.collapse.min.css'))
     .pipe($.sourcemaps.write('.'))
     .pipe(gulp.dest('./dist/'))
 });
