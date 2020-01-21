@@ -1,0 +1,181 @@
+/*
+* Chips
+*/
+
+/*
+*
+* @ custom-properties
+* :--chips .chips;
+* :--chips-outline .outline;
+* :--chips-large .large;
+* :--chips-small .small;
+* :--chips-primary .primary;
+* :--chips-info .info;
+* :--chips-success .success;
+* :--chips-error .error;
+* :--chips-dark .dark;
+* :--chips-warning .warning;
+*
+*/
+
+:--chips {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  height: 28px;
+  border-radius: 50px;
+  background: #f2f2f2;
+  & .image {
+    border-radius: 50%;
+  }
+  & .icon {
+    width: 22px;
+    height: 22px;
+    margin-left: 8px;
+    margin-right: -8px;
+    &.right {
+      margin-right: 8px;
+      margin-left: -8px;
+    }
+  }
+  & .label {
+    font-size: 13px;
+    font-weight: 500;
+    padding: 0 12px;
+  }
+}
+
+:--chips-small {
+  height: 20px;
+  & img {
+    max-height: 20px;
+  }
+  & .label {
+    font-size: 12px;
+  }
+}
+
+:--chips-large {
+  height: 42px;
+  padding: 0 16px;
+  & img {
+    max-height: 42px;
+  }
+  & .label {
+    font-size: 16px;
+  }
+}
+
+:--chips-primary {
+  background: var(--primary-color);
+  & .label {
+    color: #fff;
+  }
+  & .icon {
+    stroke: #fff;
+  }
+}
+
+:--chips-error {
+  background: var(--base-error-color);
+  & .label {
+    color: #fff;
+  }
+  & .icon {
+    stroke: #fff;
+  }
+}
+
+:--chips-success {
+  background: var(--base-success-color);
+  & .label {
+    color: #fff;
+  }
+  & .icon {
+    stroke: #fff;
+  }
+}
+
+:--chips-info {
+  background: var(--base-info-color);
+  & .label {
+    color: #fff;
+  }
+  & .icon {
+    stroke: #fff;
+  }
+}
+
+:--chips-warning {
+  background: var(--base-warning-color);
+  & .label {
+    color: #fff;
+  }
+  & .icon {
+    stroke: #fff;
+  }
+}
+
+:--chips-dark {
+  background: rgba(0,0,0, .45);
+  & .label {
+    color: #fff;
+  }
+  & .icon {
+    stroke: #fff;
+  }
+}
+
+:--chips-outline {
+  background: transparent;
+  box-shadow: 0 0 0 1px var(--base-border-color);
+  &.icon {
+    stroke: var(--base-text-color);
+  }
+  &.primary {
+    box-shadow: 0 0 0 1px var(--primary-color);
+    & .icon {
+      stroke: var(--primary-color);
+    }
+    & .label {
+      color: var(--primary-color);
+    }
+  }
+  &.error {
+    box-shadow: 0 0 0 1px var(--base-error-color);
+    & .icon {
+      stroke: var(--base-error-color);
+    }
+    & .label {
+      color: var(--base-error-color);
+    }
+  }
+  &.success {
+    box-shadow: 0 0 0 1px var(--base-success-color);
+    & .icon {
+      stroke: var(--base-success-color);
+    }
+    & .label {
+      color: var(--base-success-color);
+    }
+  }
+  &.info {
+    box-shadow: 0 0 0 1px var(--base-info-color);
+    & .icon {
+      stroke: var(--base-info-color);
+    }
+    & .label {
+      color: var(--base-info-color);
+    }
+  }
+  &.warning {
+    box-shadow: 0 0 0 1px var(--base-warning-color);
+    & .icon {
+      stroke: var(--base-warning-color);
+    }
+    & .label {
+      color: var(--base-warning-color);
+    }
+  }
+}
