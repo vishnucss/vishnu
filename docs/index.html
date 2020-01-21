@@ -37,8 +37,8 @@
         <h5>A simple and minimalist toolkit with modern css</h5>
         <a class="github-button" href="https://github.com/vishnucss/vishnu" data-show-count="true"
           data-icon="octicon-star" data-size="large" aria-label="Star vishnucss/vishnu on GitHub">Star</a>
-        <small class="badge-version">Currently <a href="https://github.com/vishnucss/vishnu/releases/tag/1.1.0-beta.1"
-            target="_blank" title="Currently Version">v1.1.0-beta.1</a></small>
+        <small class="badge-version">Currently <a href="https://github.com/vishnucss/vishnu/releases/tag/1.1.0-rc.1"
+            target="_blank" title="Currently Version">v1.1.0-rc.1</a></small>
       </div>
     </section>
 
@@ -94,9 +94,12 @@
                 <ul>
                   <li><a class="anchor" href="#alert" title="Alert">Alert</a></li>
                   <li><a class="anchor" href="#avatar" title="Avatar">Avatar</a></li>
+                  <li><a class="anchor" href="#chips" title="Chips">Chips</a></li>
                   <li><a class="anchor" href="#card" title="Card">Card</a></li>
-                  <li><a class="anchor" href="#dialog" title="Card">Dialog</a></li>
-                  <li><a class="anchor" href="#icons" title="Card">Icons</a></li>
+                  <li><a class="anchor" href="#collapse" title="Collapse">Collase</a></li>
+                  <li><a class="anchor" href="#dialog" title="Dialog">Dialog</a></li>
+                  <li><a class="anchor" href="#toggle" title="Toggle">Toggle</a></li>
+                  <li><a class="anchor" href="#icons" title="Icons">Icons</a></li>
                   <li><a class="anchor" href="#grid" title="Grid">Grid</a></li>
                   <li><a class="anchor" href="#utilities" title="Utils">Utils</a></li>
                 </ul>
@@ -652,7 +655,7 @@
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-            </code>
+           </code>
           </pre>
 
         </div>
@@ -692,6 +695,188 @@
                 </div>
                 <div class="avatar outline small">
                   S
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Chips -->
+        <div class="section" id="avatar">
+          <h3 class="title"># Chips</h3>
+          <p class="description">
+            Use in labels or badges just <code>.chips</code>, with images, icons and some color variations <code>.primary</code>, <code>.info</code>, <code>success</code>, <code>.error</code>, <code>.warning</code> and <code>outline</code> styles, and even <code>.small</code> and <code>.large</code> sizes <br /><br />
+            An important detail for the icons, use the class <code>.icon</code> for your icons and their position <code>.left</code> or <code>.right</code>
+          </p>
+          <h5>CDN</h5>
+          <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/@vishnucss/chips&quot;/&gt;</code></pre>
+
+          <h5>NPM</h5>
+          <pre><code>$ npm install @vishnucss/chips</code></pre>
+
+          <div class="row">
+            <div class="col-xs-12 vertical-align wrap">
+              <div class="chips">
+                <img class="image" src="//via.placeholder.com/30x30" height="30" alt="Profile Number">
+                <span class="label">Default</span>
+              </div>
+              <div class="chips primary">
+                <svg class="icon">
+                  <use xlink:href="./src/assets/icons.svg#close"></use>
+                </svg>
+                <span class="label">Primary</span>
+              </div>
+              <div class="chips error">
+                <svg class="icon">
+                  <use xlink:href="./src/assets/icons.svg#bin"></use>
+                </svg>
+                <span class="label">Error</span>
+              </div>
+              <div class="chips warning">
+                <span class="label">Warning</span>
+              </div>
+              <div class="chips info">
+                <span class="label">Info</span>
+                <svg class="icon right">
+                  <use xlink:href="./src/assets/icons.svg#search"></use>
+                </svg>
+              </div>
+              <div class="chips success">
+                <span class="label">Success</span>
+              </div>
+              <div class="chips dark">
+                <span class="label">Dark</span>
+              </div>
+              <div class="chips outline success">
+                <svg class="icon">
+                  <use xlink:href="./src/assets/icons.svg#verified"></use>
+                </svg>
+                <span class="label">Outline</span>
+              </div>
+              <div class="chips error large outline">
+                <span class="label">Outline Error Large</span>
+                <svg class="icon right">
+                  <use xlink:href="./src/assets/icons.svg#danger"></use>
+                </svg>
+              </div>
+              <div class="chips small outline">
+                <img class="image" src="//via.placeholder.com/30x30" height="30" alt="Profile Number">
+                <span class="label">Outline Small</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+        <!-- Toggle -->
+        <div class="section" id="avatar">
+          <h3 class="title"># Toggle</h3>
+          <p class="description">Description</p>
+          <h5>CDN</h5>
+          <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/@vishnucss/toggle&quot;/&gt;</code></pre>
+
+          <h5>NPM</h5>
+          <pre><code>$ npm install @vishnucss/toggle</code></pre>
+
+          <div class="row">
+            <div class="col-xs-12 vertical-align wrap">
+              <div class="toggle">
+                <input id="toggle-1" type="checkbox" class="toggle-input">
+                <label for="toggle-1" class="toggle-label">Toggle</label>
+              </div>
+              <div class="toggle activated">
+                <input id="toggle-2" type="checkbox" class="toggle-input">
+                <label for="toggle-2" class="toggle-label">Toggle</label>
+              </div>
+              <div class="toggle disabled">
+                <input id="toggle-3" type="checkbox" class="toggle-input">
+                <label for="toggle-3" class="toggle-label">Toggle</label>
+              </div>
+              <div class="toggle small">
+                <input id="toggle-4" type="checkbox" class="toggle-input">
+                <label for="toggle-4" class="toggle-label">Toggle</label>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+        <!-- Collapse -->
+        <div class="section" id="avatar">
+          <h3 class="title"># Collapse</h3>
+          <p class="description">Description</p>
+          <h5>CDN</h5>
+          <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/@vishnucss/collapse&quot;/&gt;</code></pre>
+
+          <h5>NPM</h5>
+          <pre><code>$ npm install @vishnucss/collapse</code></pre>
+
+          <div class="row">
+            <div class="col-xs-12 vertical-align wrap" style="margin-bottom: 20px;">
+              <h5 class="mr-lg-1">Basic</h5>
+              <div class="collapse">
+                <div class="collapse-item">
+                  <input id="collapse-one" type="checkbox" name="collapse-group">
+                  <label for="collapse-one">
+                    Label One
+                    <svg class="icon right">
+                      <use xlink:href="./src/assets/icons.svg#chevron-down"></use>
+                    </svg>
+                  </label>
+                  <div class="collapse-content">
+                    <p>Text</p>
+                  </div>
+                </div>
+                <div class="collapse-item">
+                  <input id="tab-two" type="checkbox" name="collapse-group">
+                  <label for="tab-two">
+                    Label Two
+                    <svg class="icon right">
+                      <use xlink:href="./src/assets/icons.svg#chevron-down"></use>
+                    </svg>
+                  </label>
+                  <div class="collapse-content">
+                    <p>Text</p>
+                  </div>
+                </div>
+                <div class="collapse-item">
+                  <input id="tab-three" type="checkbox" name="collapse-group">
+                  <label for="tab-three">
+                    Label Three
+                    <svg class="icon right">
+                      <use xlink:href="./src/assets/icons.svg#chevron-down"></use>
+                    </svg>
+                  </label>
+                  <div class="collapse-content">
+                    <p>Text</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 vertical-align wrap">
+              <h5>Open just one</h5>
+              <div class="collapse">
+                <div class="collapse-item">
+                  <input id="tab-four" type="radio" name="collapse-group">
+                  <label for="tab-four">Label One</label>
+                  <div class="collapse-content">
+                    <p>Text</p>
+                  </div>
+                </div>
+                <div class="collapse-item">
+                  <input id="tab-five" type="radio" name="collapse-group">
+                  <label for="tab-five">Label Two</label>
+                  <div class="collapse-content">
+                    <p>Text</p>
+                  </div>
+                </div>
+                <div class="collapse-item">
+                  <input id="tab-six" type="radio" name="collapse-group">
+                  <label for="tab-six">Label Three</label>
+                  <div class="collapse-content">
+                    <p>Text</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -3419,6 +3604,7 @@
             <li><code>start</code> - align children to the start</li>
             <li><code>end</code> - align children to the end</li>
             <li><code>center</code> - align children to the center</li>
+            <li><code>wrap</code> - display wrap elements children</li>
             <li><code>full-screen</code> - make element full screen</li>
             <li><code>full-width</code> - make element full width size</li>
             <li><code>full-height</code> - make element full height size</li>

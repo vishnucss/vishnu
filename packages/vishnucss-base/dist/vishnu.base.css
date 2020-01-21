@@ -1,5 +1,5 @@
 /**
-* vishnucss base - v1.1.0-beta.1
+* vishnucss base - v1.1.0-rc.1
 * https://vishnucss.github.io/vishnu
 */
 
@@ -40,6 +40,8 @@
 
   /* Utils */
 
+  /* Toogle */
+
 }
 
 /*
@@ -68,7 +70,7 @@ html {
 }
 
 body {
-  line-height: 1.4;
+  line-height: 1.5;
   font-size: 1.6rem;
   font-family: -apple-system, BlinkMacSystemFont, Avenir, 'Avenir Next',
   'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
@@ -586,7 +588,7 @@ select {
   min-height: 20px;
   cursor: pointer;
   font-size: 1.6rem;
-  line-height: 1.4;
+  line-height: 1.5;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -628,7 +630,7 @@ select {
   padding-left: 30px;
   cursor: pointer;
   font-size: 1.6rem;
-  line-height: 1.4;
+  line-height: 1.5;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;

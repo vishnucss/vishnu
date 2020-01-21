@@ -12,10 +12,25 @@
 */
 
 @custom-selector :--avatar .avatar;
-@custom-selector :--alert-primary .avatar.primary;
-@custom-selector :--alert-outline .avatar.outline;
-@custom-selector :--alert-small .avatar.small;
-@custom-selector :--alert-large .avatar.large;
+@custom-selector :--avatar-primary .avatar.primary;
+@custom-selector :--avatar-outline .avatar.outline;
+@custom-selector :--avatar-small .avatar.small;
+@custom-selector :--avatar-large .avatar.large;
+
+/*
+* Chips
+*/
+
+@custom-selector :--chips .chips;
+@custom-selector :--chips-primary .chips.primary;
+@custom-selector :--chips-error .chips.error;
+@custom-selector :--chips-info .chips.info;
+@custom-selector :--chips-warning .chips.warning;
+@custom-selector :--chips-success .chips.success;
+@custom-selector :--chips-dark .chips.dark;
+@custom-selector :--chips-outline .chips.outline;
+@custom-selector :--chips-small .chips.small;
+@custom-selector :--chips-large .chips.large;
 
 /*
 * Alert
@@ -64,3 +79,27 @@
 @custom-selector :--all-cols-sm .col-sm, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12;
 @custom-selector :--all-cols-md .col-md, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12;
 @custom-selector :--all-cols-lg .col-lg, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12;
+
+/*
+* Toggle
+*/
+
+@custom-selector :--toggle .toggle;
+@custom-selector :--toggle-label .toggle-label;
+@custom-selector :--toggle-activated .toggle.activated;
+@custom-selector :--toggle-disabled .toggle.disabled;
+@custom-selector :--toggle-checked .toggle-input:checked + .toggle-label;
+@custom-selector :--toggle-input .toggle-input;
+
+/*
+* Collapse
+*/
+
+@custom-selector :--collapse .collapse;
+@custom-selector :--collapse-content .collapse-content;
+@custom-selector :--collapse-content-checked .collapse input:checked ~ .collapse-content;
+@custom-selector :--collapse-item .collapse-item;
+@custom-selector :--collapse-input .collapse input;
+@custom-selector :--collapse-label .collapse label;
+@custom-selector :--collapse-icon-left .icon.left;
+@custom-selector :--collapse-icon-right .icon.right;

@@ -37,13 +37,16 @@ gulp.task('build', function() {
     .src([
       './src/variables.css',
       './src/customs.css',
-      './src/alert.css',
-      './src/avatar.css',
-      './src/card.css',
-      './src/icons.css',
-      './src/dialog.css',
-      './src/grid.css',
-      './src/utils.css'
+      "./src/alert.css",
+      "./src/avatar.css",
+      "./src/chips.css",
+      "./src/card.css",
+      "./src/collapse.css",
+      "./src/dialog.css",
+      "./src/toggle.css",
+      "./src/grid.css",
+      "./src/icons.css",
+      "./src/utils.css"
     ])
     .pipe($.sourcemaps.init())
     .pipe($.concat('vishnu.extensions.css'))

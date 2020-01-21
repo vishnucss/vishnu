@@ -1,5 +1,5 @@
 /**
-* vishnucss avatar - v1.1.0-beta.1
+* vishnucss avatar - v1.1.0-rc.1
 * https://vishnucss.github.io/vishnu#avatar
 */
 
@@ -19,6 +19,8 @@
 
   /* Utils */
 
+  /* Toogle */
+
 }
 
 /*
@@ -33,10 +35,10 @@
 *
 * @ custom-properties
 * :--avatar .avatar;
-* :--alert-primary .avatar.primary;
-* :--alert-outline .avatar.outline;
-* :--alert-small .avatar.small;
-* :--alert-large .avatar.large;
+* :--avatar-primary .avatar.primary;
+* :--avatar-outline .avatar.outline;
+* :--avatar-small .avatar.small;
+* :--avatar-large .avatar.large;
 *
 */
 

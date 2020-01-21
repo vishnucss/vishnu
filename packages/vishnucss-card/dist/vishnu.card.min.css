@@ -1,5 +1,5 @@
 /**
-* vishnucss card - v1.1.0-beta.1
+* vishnucss card - v1.1.0-rc.1
 * https://vishnucss.github.io/vishnu#card
 */
 .card{border:1px solid #f1f1f1;background:#fff;border-radius:4px}.card .card-footer,.card .card-header{position:relative;background:hsla(0,0%,100%,.3);padding:10px;display:flex}.card .card-header{border-bottom:1px solid #f1f1f1}.card .card-footer{border-top:1px solid #f1f1f1}.card .card-title{margin:0}.card .card-content{padding:15px 10px}
