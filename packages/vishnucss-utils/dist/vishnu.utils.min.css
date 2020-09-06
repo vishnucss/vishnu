@@ -1,6 +1,6 @@
 /**
-* vishnucss utils - v1.1.0-rc.1
+* vishnucss utils - v1.1.0-rc.2
 * https://vishnucss.github.io/vishnu#utilities
 */
-.pull-right{float:right}.pull-left{float:left}.text-center{text-align:center}.text-left{text-align:left}.text-right{text-align:right}.full-screen{width:100%;min-height:100vh}.full-width{width:100%}.full-height{height:100%;min-height:100%}.vertical-align{display:flex;align-items:center}.center,.horizontal-align{display:flex;justify-content:center}.center{align-items:center;flex-direction:column}.end{justify-content:flex-end}.end,.start{display:flex;align-items:center}.start{justify-content:flex-start}.flex{display:flex}.absolute{position:absolute}.fixed{position:fixed}.wrap{flex-wrap:wrap}.relative{position:relative}.truncate{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pull-right{float:right}.pull-left{float:left}.text-center{text-align:center}.text-left{text-align:left}.text-right{text-align:right}.full-screen{width:100%;min-height:100vh}.full-width{width:100%}.full-height{height:100%;min-height:100%}.vertical-align{display:flex;align-items:center}.center,.horizontal-align{display:flex;justify-content:center}.center{align-items:center;flex-direction:column}.end{justify-content:flex-end}.end,.start{display:flex;align-items:center}.start{justify-content:flex-start}.flex{display:flex}.absolute{position:absolute}.fixed{position:fixed}.wrap{flex-wrap:wrap}.relative{position:relative}.truncate{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.hide{display:none}
 /*# sourceMappingURL=vishnu.utils.min.css.map */

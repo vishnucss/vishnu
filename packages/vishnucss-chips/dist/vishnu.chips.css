@@ -1,5 +1,5 @@
 /**
-* vishnucss chips - v1.1.0-rc.1
+* vishnucss chips - v1.1.0-rc.2
 * https://vishnucss.github.io/vishnu#chips
 */
 
@@ -8,8 +8,7 @@
 */
 
 :root {
-
-  /* Typhography */
+  /* Typography */
 
   /* Colours */
 
@@ -20,6 +19,10 @@
   /* Utils */
 
   /* Toogle */
+
+  /* Spacing */
+
+/* Responsive breakpoints */
 
 }
 
@@ -105,7 +108,7 @@
   }
 
 .chips.primary {
-  background: #667eea
+  background: #8549b9
 }
 
 .chips.primary .label {
@@ -117,7 +120,7 @@
   }
 
 .chips.error {
-  background: #F93838
+  background: #f93838
 }
 
 .chips.error .label {
@@ -129,7 +132,7 @@
   }
 
 .chips.success {
-  background: #0DC222
+  background: #0dc222
 }
 
 .chips.success .label {
@@ -141,7 +144,7 @@
   }
 
 .chips.info {
-  background: #2C80FF
+  background: #2c80ff
 }
 
 .chips.info .label {
@@ -178,59 +181,59 @@
 
 .chips.outline {
   background: transparent;
-  box-shadow: 0 0 0 1px #e5e5e5
+  box-shadow: 0 0 0 1px #cfcfcf
 }
 
 .chips.outline.icon {
-    stroke: #444;
+    stroke: #4c4c4c;
   }
 
 .chips.outline.primary {
-    box-shadow: 0 0 0 1px #667eea
+    box-shadow: 0 0 0 1px #8549b9
   }
 
 .chips.outline.primary .icon {
-      stroke: #667eea;
+      stroke: #8549b9;
     }
 
 .chips.outline.primary .label {
-      color: #667eea;
+      color: #8549b9;
     }
 
 .chips.outline.error {
-    box-shadow: 0 0 0 1px #F93838
+    box-shadow: 0 0 0 1px #f93838
   }
 
 .chips.outline.error .icon {
-      stroke: #F93838;
+      stroke: #f93838;
     }
 
 .chips.outline.error .label {
-      color: #F93838;
+      color: #f93838;
     }
 
 .chips.outline.success {
-    box-shadow: 0 0 0 1px #0DC222
+    box-shadow: 0 0 0 1px #0dc222
   }
 
 .chips.outline.success .icon {
-      stroke: #0DC222;
+      stroke: #0dc222;
     }
 
 .chips.outline.success .label {
-      color: #0DC222;
+      color: #0dc222;
     }
 
 .chips.outline.info {
-    box-shadow: 0 0 0 1px #2C80FF
+    box-shadow: 0 0 0 1px #2c80ff
   }
 
 .chips.outline.info .icon {
-      stroke: #2C80FF;
+      stroke: #2c80ff;
     }
 
 .chips.outline.info .label {
-      color: #2C80FF;
+      color: #2c80ff;
     }
 
 .chips.outline.warning {

@@ -24,14 +24,14 @@ const gulp = require('gulp'),
 /*
 * Extensions build task
 */
-gulp.task('build', function() {
+gulp.task('build', function () {
   let plugins = [
     cssvariables(),
     selector(),
     nesting(),
     customMedia(),
     colorMod(),
-    autoprefixer({browsers: ['last 1 version']})
+    autoprefixer({ browsers: ['last 1 version'] })
   ];
   return gulp
     .src([
@@ -46,6 +46,7 @@ gulp.task('build', function() {
       "./src/toggle.css",
       "./src/grid.css",
       "./src/icons.css",
+      "./src/spacing.css",
       "./src/utils.css"
     ])
     .pipe($.sourcemaps.init())
@@ -60,7 +61,7 @@ gulp.task('build', function() {
 /*
 * Minify in build extensions
 */
-gulp.task('minify', ['build'], function() {
+gulp.task('minify', ['build'], function () {
   let plugins = [
     cssvariables(),
     selector(),
@@ -68,7 +69,7 @@ gulp.task('minify', ['build'], function() {
     nesting(),
     customMedia(),
     colorMod(),
-    autoprefixer({browsers: ['last 1 version']})
+    autoprefixer({ browsers: ['last 1 version'] })
   ];
   return gulp
     .src(['./dist/vishnu.extensions.css'])
@@ -89,7 +90,7 @@ gulp.task('minify', ['build'], function() {
 /*
 * Watch tasks
 */
-gulp.task('watch', function() {
+gulp.task('watch', function () {
   gulp.watch(['src/*.css'], ['default']);
 });
 

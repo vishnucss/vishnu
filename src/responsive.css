@@ -5,27 +5,33 @@
 /*
 *
 * @ custom-properties
-* --phone-viewport only screen and (max-width: 25em);
-* --tablet-viewport only screen and (max-width: 48em);
-* --desktop-viewport only screen and (max-width: 62em);
-* --desktop-large-viewport only screen and (max-width: 75em);
+* --sm-viewport only screen and (max-width: 25em);
+* --md-viewport only screen and (max-width: 48em);
+* --lg-viewport only screen and (max-width: 62em);
+* --xl-viewport only screen and (max-width: 75em);
 *
 */
 
-@media (--phone-viewport) {
-  .hide-phone {
+@media (--sm-viewport) {
+  .hide-sm {
     display: none;
   }
 }
 
-@media (--tablet-viewport) {
-  .hide-tablet {
+@media (--md-viewport) {
+  .hide-md {
     display: none;
   }
 }
 
-@media (--desktop-viewport) {
-  .hide-desktop {
+@media (--lg-viewport) {
+  .hide-lg {
+    display: none;
+  }
+}
+
+@media (--xl-viewport) {
+  .hide-xl {
     display: none;
   }
 }

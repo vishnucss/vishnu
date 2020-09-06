@@ -53,6 +53,10 @@
   flex-direction: column;
 }
 
+.column {
+  flex-direction: column;
+}
+
 .end {
   display: flex;
   align-items: center;
@@ -89,4 +93,8 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.hide {
+  display: none;
 }

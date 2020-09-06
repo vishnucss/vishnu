@@ -1,5 +1,5 @@
 /**
-* vishnucss collapse - v1.1.0-rc.1
+* vishnucss collapse - v1.1.0-rc.2
 * https://vishnucss.github.io/vishnu#collapse
 */
 
@@ -8,8 +8,7 @@
 */
 
 :root {
-
-  /* Typhography */
+  /* Typography */
 
   /* Colours */
 
@@ -20,6 +19,10 @@
   /* Utils */
 
   /* Toogle */
+
+  /* Spacing */
+
+/* Responsive breakpoints */
 
 }
 
@@ -54,12 +57,12 @@
     width: 100%;
     color: #282828;
     overflow: hidden;
-    border: 1px solid #f1f1f1;
+    border: 1px solid #f0f0f0;
     transition: all 0.2s ease-in-out
   }
 
 .collapse .collapse-item:hover {
-      border-color: #667eea;
+      border-color: #8549b9;
     }
 
 .collapse input {

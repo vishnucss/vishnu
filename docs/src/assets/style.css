@@ -3,15 +3,17 @@
   --base-font-family: -apple-system, BlinkMacSystemFont, Avenir, "Avenir Next",
     "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif;
-  --primary-color: #667eea;
-  --secondary-color: #764ba2;
+  --primary-color: #8549b9;
+  --secondary-color: #a460e8;
   --base-color: #e6ecf0;
   --base-dark-color: #282828;
-  --base-light-color: #f1f1f1;
+  --base-light-color: #f0f0f0;
   --base-border-color: #a4a4a4;
-  --base-text-color: #444;
-  --base-light-text-color: #ccc;
+  --base-text-color: #4c4c4c;
+  --base-label-color: #6f6f6f;
+
   --base-line-height: 1.5;
+  --base-space-size: 16px;
   --base-font-size: 1.6rem;
   --transition: all 0.2s ease-in-out;
   --base-radius: 4px;
@@ -23,17 +25,28 @@
   margin: 60px auto;
   /* background: #000; */
 }
-button {
-  width: 90%;
-}
+
 .container {
   margin-top: 30px;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.title-header {
+  font-size: 52px;
+  font-weight: 600;
+}
+.description-header {
+  font-size: 24px;
+  margin-bottom: 25px;
 }
 
 .section h4 {
   margin-top: 30px;
 }
-#typhography h4 {
+#Typography h4 {
   margin-top: 0;
 }
 
@@ -138,7 +151,7 @@ button {
   width: 100%;
 }
 * {
-  font-family: Catamaran;
+  font-family: "Inter", sans-serif;
 }
 .badge-version {
   border: 1px solid #e5e5e5;
@@ -203,7 +216,8 @@ button {
   font-weight: 500;
 }
 
-.chips, .toggle {
+.chips,
+.toggle {
   margin-right: 20px;
   margin-bottom: 20px;
 }

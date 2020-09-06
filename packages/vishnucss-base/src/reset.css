@@ -16,12 +16,13 @@ body {
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  letter-spacing: -0.04em;
 }
 
 body {
   line-height: var(--base-line-height);
   font-size: var(--base-font-size);
   font-family: var(--base-font-family);
-  font-weight: 400;
+  font-weight: 500;
   text-rendering: optimizeLegibility;
 }
