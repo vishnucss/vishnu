@@ -1,4 +1,4 @@
-/* 
+/*
  * Tables
 */
 
@@ -25,7 +25,7 @@
 }
 
 /* responsive table */
-@media (--tablet-viewport) {
+@media (--md-viewport) {
   :--table {
     &.responsive {
       position: relative;

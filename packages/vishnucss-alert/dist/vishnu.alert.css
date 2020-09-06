@@ -8,8 +8,7 @@
 */
 
 :root {
-
-  /* Typhography */
+  /* Typography */
 
   /* Colours */
 
@@ -20,7 +19,6 @@
   /* Utils */
 
   /* Toogle */
-
 }
 
 /*
@@ -53,15 +51,15 @@
   border: 1px solid #e5e5e5;
   display: flex;
   justify-content: flex-start;
-  flex-direction: column
+  flex-direction: column;
 }
 .alert .title,
-  .alert .description {
-    margin: 0;
-  }
+.alert .description {
+  margin: 0;
+}
 .alert .title {
-    padding-right: 20px;
-  }
+  padding-right: 20px;
+}
 .alert .close {
   position: absolute;
   right: 5px;
@@ -76,96 +74,96 @@
   font-size: 1.3rem;
   background: transparent;
   border-radius: 50%;
-  color: #282828
+  color: #282828;
 }
 .alert .close .icon {
-    width: 24px;
-    height: 24px
-  }
+  width: 24px;
+  height: 24px;
+}
 .alert .close .icon path {
-      fill: #444;
-    }
+  fill: #444;
+}
 .alert .close .icon circle {
-      stroke: #444;
-      stroke-width: 1;
-    }
+  stroke: #444;
+  stroke-width: 1;
+}
 .alert.info {
   background: rgba(44, 128, 255, 0.05);
   border-color: rgba(44, 128, 255, 0.5);
-  color: #2C80FF
+  color: #2c80ff;
 }
 .alert.info:before {
-    color: #2C80FF;
-  }
+  color: #2c80ff;
+}
 .alert.info .description {
-    color: rgba(44, 128, 255, 0.6);
-  }
+  color: rgba(44, 128, 255, 0.6);
+}
 .alert.info .close .icon path {
-        fill: #667eea;
-      }
+  fill: #8549b9;
+}
 .alert.info .close .icon circle {
-        stroke: #667eea;
-        stroke-width: 1;
-      }
+  stroke: #8549b9;
+  stroke-width: 1;
+}
 .alert.warning {
   background: rgba(242, 173, 0, 0.05);
   border-color: rgba(242, 173, 0, 0.5);
-  color: #f2ad00
+  color: #f2ad00;
 }
 .alert.warning:before {
-    color: #f2ad00;
-  }
+  color: #f2ad00;
+}
 .alert.warning .description {
-    color: rgba(242, 173, 0, 0.6);
-  }
+  color: rgba(242, 173, 0, 0.6);
+}
 .alert.warning .close {
-    border-color: transparent;
-    background: rgba(242, 173, 0, 0.5);
-    color: #fff;
-  }
+  border-color: transparent;
+  background: rgba(242, 173, 0, 0.5);
+  color: #fff;
+}
 .alert.error {
   background: rgba(249, 56, 56, 0.05);
   border-color: rgba(249, 56, 56, 0.5);
-  color: #F93838
+  color: #f93838;
 }
 .alert.error .close .icon path {
-        fill: #F93838;
-      }
+  fill: #f93838;
+}
 .alert.error .close .icon circle {
-        stroke: #F93838;
-        stroke-width: 1;
-      }
+  stroke: #f93838;
+  stroke-width: 1;
+}
 .alert.error .description {
-    color: rgba(249, 56, 56, 0.6);
-  }
+  color: rgba(249, 56, 56, 0.6);
+}
 .alert.success {
   background: rgba(13, 194, 34, 0.05);
   border-color: rgba(13, 194, 34, 0.1);
-  color: #0DC222
+  color: #0dc222;
 }
 .alert.success .close {
-    border-color: transparent
-  }
+  border-color: transparent;
+}
 .alert.success .close .icon path {
-        fill: #0DC222;
-      }
+  fill: #0dc222;
+}
 .alert.success .close .icon circle {
-        stroke: #0DC222;
-        stroke-width: 1;
-      }
+  stroke: #0dc222;
+  stroke-width: 1;
+}
 .alert.success .description {
-    color: rgba(13, 194, 34, 0.6);
-  }
+  color: rgba(13, 194, 34, 0.6);
+}
 .alert.rounded {
   border-radius: 4rem;
   padding-left: 30px;
-  padding-right: 30px
+  padding-right: 30px;
 }
 .alert.rounded .close {
-    top: 50%;
-    margin-top: -16px;
-    right: 14px;
-  }
+  top: 50%;
+  margin-top: -16px;
+  right: 14px;
+}
 
 /* Placeholder */
 .placeholder {

@@ -24,7 +24,7 @@
 */
 
 :root {
-  /* Typhography */
+  /* Typography */
 
   /* Colours */
 
@@ -42,12 +42,12 @@
 */
 
 ::-moz-selection {
-  color: #667eea;
+  color: #8549b9;
   background: #fff;
 }
 
 ::selection {
-  color: #667eea;
+  color: #8549b9;
   background: #fff;
 }
 
@@ -60,6 +60,7 @@ body {
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  letter-spacing: -0.04em;
 }
 
 body {
@@ -83,7 +84,7 @@ h4,
 h5,
 h6 {
   margin-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-weight: 400;
 }
 
@@ -119,7 +120,7 @@ h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-size: 1.6rem;
 }
 
@@ -154,19 +155,19 @@ p {
 */
 
 :-webkit-any-link {
-  color: #667eea;
+  color: #8549b9;
   -webkit-transition: color 0.1s ease;
   transition: color 0.1s ease;
 }
 
 :-moz-any-link {
-  color: #667eea;
+  color: #8549b9;
   -moz-transition: color 0.1s ease;
   transition: color 0.1s ease;
 }
 
 :any-link {
-  color: #667eea;
+  color: #8549b9;
   transition: color 0.1s ease;
 }
 
@@ -316,9 +317,9 @@ button.outline,
 button.outline.primary,
 .button.outline.primary,
 [type="submit"].outline.primary {
-  color: #667eea;
+  color: #8549b9;
   background: none;
-  border: 1px solid #667eea;
+  border: 1px solid #8549b9;
 }
 button.outline.primary:hover,
 .button.outline.primary:hover,
@@ -366,7 +367,7 @@ button.flat,
 button.flat.primary,
 .button.flat.primary,
 [type="submit"].flat.primary {
-  color: #667eea;
+  color: #8549b9;
 }
 button.flat.primary:hover,
 .button.flat.primary:hover,
@@ -386,7 +387,7 @@ button.flat.primary:focus,
 button.flat.primary .icon,
 .button.flat.primary .icon,
 [type="submit"].flat.primary .icon {
-  stroke: #667eea;
+  stroke: #8549b9;
 }
 button.flat:hover,
 .button.flat:hover,
@@ -405,7 +406,7 @@ button.primary,
 .button.primary,
 [type="submit"].primary {
   color: #fff;
-  background: #667eea;
+  background: #8549b9;
   border: 1px solid transparent;
 }
 button.primary .icon,
@@ -596,7 +597,7 @@ select:focus,
 textarea:focus,
 textarea[type="text"]:focus {
   outline: none;
-  border-color: #667eea;
+  border-color: #8549b9;
   box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
 }
 
@@ -699,14 +700,14 @@ select {
 }
 
 .checkbox input:checked ~ .checkmark {
-  background-color: #667eea;
-  border-color: #667eea;
+  background-color: #8549b9;
+  border-color: #8549b9;
   box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
 }
 
 .radio input:checked ~ .radiomark {
-  background-color: #667eea;
-  border-color: #667eea;
+  background-color: #8549b9;
+  border-color: #8549b9;
   box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
 }
 .checkbox .checkmark:after,
@@ -728,7 +729,7 @@ ul,
 ol {
   padding-left: 0;
   margin-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   list-style-position: inside;
 }
 
@@ -854,7 +855,7 @@ hr {
 
 pre {
   margin-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 code {
@@ -882,29 +883,36 @@ pre > code {
 /*
 *
 * @ custom-properties
-* --phone-viewport only screen and (max-width: 25em);
-* --tablet-viewport only screen and (max-width: 48em);
-* --desktop-viewport only screen and (max-width: 62em);
-* --desktop-large-viewport only screen and (max-width: 75em);
+* --sm-viewport only screen and (max-width: 25em);
+* --md-viewport only screen and (max-width: 48em);
+* --lg-viewport only screen and (max-width: 62em);
+* --xl-viewport only screen and (max-width: 75em);
 *
 */
 
-@media only screen and (max-width: 25em) {
-  .hide-phone {
+@media (--sm-viewport) {
+  .hide-sm {
     display: none;
   }
 }
 
-@media only screen and (max-width: 48em) {
-  .hide-tablet {
+@media (--md-viewport) {
+  .hide-md {
     display: none;
   }
 }
 
-@media only screen and (max-width: 62em) {
-  .hide-desktop {
+@media (--lg-viewport) {
+  .hide-lg {
     display: none;
   }
 }
+
+@media (--xl-viewport) {
+  .hide-xl {
+    display: none;
+  }
+}
+
 
 /*# sourceMappingURL=vishnu.base.css.map */

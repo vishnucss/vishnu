@@ -1,25 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Allan Alexandre">
-  <meta name="description" content="vishnucss provides a minimal setup of styles for a fast and clean starting point.">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Allan Alexandre" />
+  <meta name="description"
+    content="vishnucss provides a minimal setup of styles for a fast and clean starting point." />
   <title>Vishnu - A simple and minimalist toolkit with modern css.</title>
-  <link rel="icon" href="./src/assets/vishnu.svg">
-  <link rel="stylesheet" href="./src/assets/vishnu.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Catamaran:300,400,500,600,700" rel="stylesheet">
-  <link rel="stylesheet" href="./src/assets/style.css">
+  <link rel="icon" href="./src/assets/vishnu.svg" />
+  <link rel="stylesheet" href="./src/assets/vishnu.min.css" />
+  <link href=" https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="./src/assets/style.css" />
 </head>
 
 <body>
   <main id="docs-app" class="wrapper">
     <a href="https://github.com/vishnucss/vishnu"><img
-        style="z-index: 3;position: absolute; top: 0; right: 0; border: 0;"
+        style="z-index: 3; position: absolute; top: 0; right: 0; border: 0"
         src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67"
         alt="Fork me on GitHub"
-        data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+        data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" /></a>
 
     <nav class="sidenav">
       <a class="anchor" href="#about" title="About">About</a>
@@ -32,25 +35,33 @@
 
     <section class="hero flex center" id="about">
       <div class="text-center">
-        <img src="./src/assets/vishnu.svg" alt="Vishnu Logo - Ilustration art made by Alexandre Plennevaux" height="180">
-        <h1 style="font-weight: 900;">Vishnu</h1>
-        <h5>A simple and minimalist toolkit with modern css</h5>
+        <img class="logo" src="./src/assets/vishnu.svg" alt="Vishnu Logo - Ilustration art made by Alexandre Plennevaux"
+          height="180" />
+        <h1 class="title-header">Vishnu</h1>
+        <h2 class="description-header">
+          A simple and minimalist toolkit with modern css
+        </h2>
         <a class="github-button" href="https://github.com/vishnucss/vishnu" data-show-count="true"
           data-icon="octicon-star" data-size="large" aria-label="Star vishnucss/vishnu on GitHub">Star</a>
-        <small class="badge-version">Currently <a href="https://github.com/vishnucss/vishnu/releases/tag/1.1.0-rc.1"
-            target="_blank" title="Currently Version">v1.1.0-rc.1</a></small>
+        <small class="badge-version">Currently
+          <a href="https://github.com/vishnucss/vishnu/releases/tag/1.1.0-rc.1" target="_blank"
+            title="Currently Version">v1.1.0-rc.1</a></small>
       </div>
     </section>
 
     <section id="installation">
       <div class="section">
         <h2>Why should I use it?</h2>
-        <p class="description">A simple style guide provides a setup of styles using Modern CSS for a fast and clean
-          starting point. Everything
-          you need to create a basic project is included.</p>
+        <p class="description">
+          A simple style guide provides a setup of styles using Modern CSS for
+          a fast and clean starting point. Everything you need to create a
+          basic project is included.
+        </p>
         <h3 class="title"># Install</h3>
-        <p class="description">You can install Vishnu in multiple ways, but it's as simple as adding a single
-          <code>link</code> tag to your project.</p>
+        <p class="description">
+          You can install Vishnu in multiple ways, but it's as simple as
+          adding a single <code>link</code> tag to your project.
+        </p>
 
         <h5>CDN</h5>
         <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/@vishnucss/vishnu&quot;/&gt;</code></pre>
@@ -58,9 +69,7 @@
         <h5>NPM</h5>
         <pre><code>$ npm install @vishnucss/vishnu</code></pre>
       </div>
-
     </section>
-
 
     <section id="examples" class="section">
       <div>
@@ -68,22 +77,27 @@
         <div class="row">
           <div class="col-xs-12">
             <ul>
-              <li><a target="_blank" href="https://github.com/vishnucss/vishnu/tree/master/examples/gulp-boilerplate"
-                  title="Gulp Boilerplate">Gulp Boilerplate</a></li>
-              <li><a target="_blank" href="https://github.com/vishnucss/vishnu/tree/master/examples/meteor-boilerplate"
-                  title="Meteor Boilerplate">Meteor Boilerplate</a></li>
+              <li>
+                <a target="_blank" href="https://github.com/vishnucss/vishnu/tree/master/examples/gulp-boilerplate"
+                  title="Gulp Boilerplate">Gulp Boilerplate</a>
+              </li>
+              <li>
+                <a target="_blank" href="https://github.com/vishnucss/vishnu/tree/master/examples/meteor-boilerplate"
+                  title="Meteor Boilerplate">Meteor Boilerplate</a>
+              </li>
             </ul>
           </div>
         </div>
-
       </div>
     </section>
 
     <section id="docs" class="section">
       <div>
         <h2>Documentation</h2>
-        <p class="description">Here is a docs of all the things styled, how to use the buttons, tables, utils and how to
-          use some components.</p>
+        <p class="description">
+          Here is a docs of all the things styled, how to use the buttons,
+          tables, utils and how to use some components.
+        </p>
         <strong class="margin-bottom">This project is divided into several main parts are:</strong>
         <div class="row">
           <div class="col-xs-12">
@@ -92,16 +106,36 @@
               <li>
                 <a href="#extensions" title="Extensions">Extensions</a>
                 <ul>
-                  <li><a class="anchor" href="#alert" title="Alert">Alert</a></li>
-                  <li><a class="anchor" href="#avatar" title="Avatar">Avatar</a></li>
-                  <li><a class="anchor" href="#chips" title="Chips">Chips</a></li>
-                  <li><a class="anchor" href="#card" title="Card">Card</a></li>
-                  <li><a class="anchor" href="#collapse" title="Collapse">Collase</a></li>
-                  <li><a class="anchor" href="#dialog" title="Dialog">Dialog</a></li>
-                  <li><a class="anchor" href="#toggle" title="Toggle">Toggle</a></li>
-                  <li><a class="anchor" href="#icons" title="Icons">Icons</a></li>
-                  <li><a class="anchor" href="#grid" title="Grid">Grid</a></li>
-                  <li><a class="anchor" href="#utilities" title="Utils">Utils</a></li>
+                  <li>
+                    <a class="anchor" href="#alert" title="Alert">Alert</a>
+                  </li>
+                  <li>
+                    <a class="anchor" href="#avatar" title="Avatar">Avatar</a>
+                  </li>
+                  <li>
+                    <a class="anchor" href="#chips" title="Chips">Chips</a>
+                  </li>
+                  <li>
+                    <a class="anchor" href="#card" title="Card">Card</a>
+                  </li>
+                  <li>
+                    <a class="anchor" href="#collapse" title="Collapse">Collase</a>
+                  </li>
+                  <li>
+                    <a class="anchor" href="#dialog" title="Dialog">Dialog</a>
+                  </li>
+                  <li>
+                    <a class="anchor" href="#toggle" title="Toggle">Toggle</a>
+                  </li>
+                  <li>
+                    <a class="anchor" href="#icons" title="Icons">Icons</a>
+                  </li>
+                  <li>
+                    <a class="anchor" href="#grid" title="Grid">Grid</a>
+                  </li>
+                  <li>
+                    <a class="anchor" href="#utilities" title="Utils">Utils</a>
+                  </li>
                 </ul>
               </li>
             </ul>
@@ -112,7 +146,9 @@
 
         <!-- Base -->
         <h2 id="base">Base</h2>
-        <p class="description">Simple installation of the design base, style presets.</p>
+        <p class="description">
+          Simple installation of the design base, style presets.
+        </p>
 
         <h5>CDN</h5>
         <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/@vishnucss/base&quot;/&gt;</code></pre>
@@ -120,13 +156,16 @@
         <h5>NPM</h5>
         <pre><code>$ npm install @vishnucss/base</code></pre>
 
-        <!-- Typhography -->
-        <div class="section" id="typhography">
-          <h3 class="title"># Typhography</h3>
-          <p class="description">Based on <code>rem</code> units. All <code>rem</code> units are converted to base 10,
-            so <code>1rem</code> is equal
-            to <code>10px</code>. By default, all headings, paragraphs, and code use system fonts, using the most modern
-            one available on a user's operating system.</p>
+        <!-- Typography -->
+        <div class="section" id="Typography">
+          <h3 class="title"># Typography</h3>
+          <p class="description">
+            Based on <code>rem</code> units. All <code>rem</code> units are
+            converted to base 10, so <code>1rem</code> is equal to
+            <code>10px</code>. By default, all headings, paragraphs, and code
+            use system fonts, using the most modern one available on a user's
+            operating system.
+          </p>
           <div class="row">
             <div class="col-xs-5">
               <h1>H1 Heading</h1>
@@ -148,18 +187,24 @@
         <!-- Button -->
         <div class="section" id="button">
           <h3 class="title"># Buttons</h3>
-          <p class="description">The Button, an essential part of any user experience. Buttons come in some basic
-            styles: The <code>&lt;button&gt;Content&lt;/button&gt;</code> element has default color, whereas
-            <code>.outline</code> has a simple outline around, <code>.flat</code> is entirely
-            clear and <code>.rounded</code> is rounded border radius. The buttons also have states:
-            <code>.success</code>, <code>.error</code>, <code>.warning</code> and <code>.info</code></p>
+          <p class="description">
+            The Button, an essential part of any user experience. Buttons come
+            in some basic styles: The
+            <code>&lt;button&gt;Content&lt;/button&gt;</code> element has
+            default color, whereas <code>.outline</code> has a simple outline
+            around, <code>.flat</code> is entirely clear and
+            <code>.rounded</code> is rounded border radius. The buttons also
+            have states: <code>.success</code>, <code>.error</code>,
+            <code>.warning</code> and <code>.info</code>
+          </p>
           <h4>Styles</h4>
           <div class="row">
             <div class="col-xs-4 col-sm-12">
               <button>Default Button</button>
             </div>
             <div class="col-xs-8 col-sm-12">
-              <p>This button is available by default</p><code>&lt;button&gt;Content&lt;/button&gt;</code>
+              <p>This button is available by default</p>
+              <code>&lt;button&gt;Content&lt;/button&gt;</code>
             </div>
           </div>
           <div class="row">
@@ -185,7 +230,8 @@
               <button class="flat">Flat Button</button>
             </div>
             <div class="col-xs-8 col-sm-12">
-              <p>This button is available by flat</p><code>&lt;button class="flat"&gt;Content&lt;/button&gt;</code>
+              <p>This button is available by flat</p>
+              <code>&lt;button class="flat"&gt;Content&lt;/button&gt;</code>
             </div>
           </div>
           <div class="row">
@@ -207,8 +253,10 @@
               </button>
             </div>
             <div class="col-xs-8 col-sm-12">
-              <p>This button is available by default with button, just add icon with class <code>.icon</code> inside
-                button</p>
+              <p>
+                This button is available by default with button, just add icon
+                with class <code>.icon</code> inside button
+              </p>
             </div>
           </div>
           <h4>Status</h4>
@@ -267,18 +315,19 @@
               <code>&lt;button class='small'&gt;Content&lt;/button&gt;</code>
             </div>
           </div>
-
         </div>
 
         <!-- List -->
         <div class="section" id="list">
           <h3 class="title"># Lists</h3>
-          <p class="description">The List is a very versatile and common way to display items. Milligram has three types
-            of lists: The unordered
-            list use ul element will be marked with a outline circles, the ordered list use ol element and your items
-            will
-            be marked with numbers, the description list use dl element and your items will not be marking, only
-            spacings.</p>
+          <p class="description">
+            The List is a very versatile and common way to display items.
+            Milligram has three types of lists: The unordered list use ul
+            element will be marked with a outline circles, the ordered list
+            use ol element and your items will be marked with numbers, the
+            description list use dl element and your items will not be
+            marking, only spacings.
+          </p>
 
           <div class="row">
             <div class="col-xs-4">
@@ -308,19 +357,23 @@
               </dl>
             </div>
           </div>
-
         </div>
 
         <!-- Table -->
         <div class="section" id="table">
           <h3 class="title"># Tables</h3>
-          <p class="description">The Table element represents data in two dimensions or more. We encourage the use of
-            proper formatting with <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> to create a
-            <code>&lt;table&gt;</code>. The code becomes cleaner without disturbing
-            understanding.</p>
-          <p class="description">Add the class <code>.table</code> to any <code>&lt;table&gt;</code> element and
-            <code>.responsive</code> to table
-            responsive.</p>
+          <p class="description">
+            The Table element represents data in two dimensions or more. We
+            encourage the use of proper formatting with
+            <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> to
+            create a <code>&lt;table&gt;</code>. The code becomes cleaner
+            without disturbing understanding.
+          </p>
+          <p class="description">
+            Add the class <code>.table</code> to any
+            <code>&lt;table&gt;</code> element and <code>.responsive</code> to
+            table responsive.
+          </p>
 
           <!-- Basic -->
           <h5>Basic</h5>
@@ -356,7 +409,7 @@
             </tbody>
           </table>
 
-          <hr>
+          <hr />
 
           <!-- Responsive -->
           <h5>Responsive</h5>
@@ -391,17 +444,18 @@
               </tr>
             </tbody>
           </table>
-
         </div>
 
         <!-- Forms -->
         <div class="section" id="forms">
           <h3 class="title"># Forms</h3>
-          <p class="description">All common form elements with basic, clean styles.</p>
+          <p class="description">
+            All common form elements with basic, clean styles.
+          </p>
           <div class="row">
             <div class="col-xs-7">
               <label for="name">Name</label>
-              <input type="text" placeholder="Carl Johnson" id="name">
+              <input type="text" placeholder="Carl Johnson" id="name" />
             </div>
             <div class="col-xs-5">
               <label for="select">Select</label>
@@ -421,19 +475,19 @@
           <div class="row">
             <div class="col-xs-7">
               <label class="checkbox" for="checkbox-1">
-                <input type="checkbox" id="checkbox-1" checked="checked">
+                <input type="checkbox" id="checkbox-1" checked="checked" />
                 <span class="checkmark"></span>
                 Remind me
               </label>
             </div>
             <div class="col-xs-5">
               <label class="radio" for="radio-1">
-                <input type="radio" id="radio-1" checked="checked">
+                <input type="radio" id="radio-1" checked="checked" />
                 <span class="radiomark"></span>
                 Male
               </label>
-              <label class="radio" for="radio-2" style="margin-top:10px;">
-                <input type="radio" id="radio-2">
+              <label class="radio" for="radio-2" style="margin-top: 10px">
+                <input type="radio" id="radio-2" />
                 <span class="radiomark"></span>
                 Female
               </label>
@@ -478,8 +532,10 @@
 
         <!-- Extensions -->
         <h2 id="extensions">Extensions</h2>
-        <p class="description">Here is a extensions or packages styled by Vishnu, how to use the grid, card, utils and
-          how to install and use some modules.</p>
+        <p class="description">
+          Here is a extensions or packages styled by Vishnu, how to use the
+          grid, card, utils and how to install and use some modules.
+        </p>
         <h4>Install all extensions</h4>
         <h5>CDN</h5>
         <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/@vishnucss/extensions&quot;/&gt;</code></pre>
@@ -490,8 +546,11 @@
         <!-- Alert -->
         <div class="section" id="alert">
           <h3 class="title"># Alert</h3>
-          <p class="description">All common alert with default <code>.alert</code> and other class <code>.info</code>,
-            <code>.error</code>, <code>.success</code>, improve style uses <code>.rounded</code></p>
+          <p class="description">
+            All common alert with default <code>.alert</code> and other class
+            <code>.info</code>, <code>.error</code>, <code>.success</code>,
+            improve style uses <code>.rounded</code>
+          </p>
           <h5>CDN</h5>
           <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/@vishnucss/alert&quot;/&gt;</code></pre>
 
@@ -506,9 +565,7 @@
                   </svg>
                 </button>
                 <h5 class="title">Default</h5>
-                <p class="description">
-                  This alert just use class .alert
-                </p>
+                <p class="description">This alert just use class .alert</p>
               </div>
 
               <div class="alert info">
@@ -543,7 +600,8 @@
                 </button>
                 <h5 class="title">Placeholder</h5>
                 <p class="description">
-                  This alert use class .alert and .placeholder use in drag and drop, upload picture ...
+                  This alert use class .alert and .placeholder use in drag and
+                  drop, upload picture ...
                 </p>
               </div>
 
@@ -553,7 +611,9 @@
                     <use xlink:href="./src/assets/icons.svg#close"></use>
                   </svg>
                 </button>
-                <h5 class="title">This alert use class .alert and .sucess with .rounded</h5>
+                <h5 class="title">
+                  This alert use class .alert and .sucess with .rounded
+                </h5>
               </div>
             </div>
           </div>
@@ -562,45 +622,39 @@
         <!-- Card -->
         <div class="section" id="card">
           <h3 class="title"># Card</h3>
-          <p class="description">Basic and Complet card to your widgets or components.</p>
+          <p class="description">
+            Basic and Complet card to your widgets or components.
+          </p>
           <h5>CDN</h5>
           <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/@vishnucss/card&quot;/&gt;</code></pre>
 
           <h5>NPM</h5>
           <pre><code>$ npm install @vishnucss/card</code></pre>
           <div class="card">
-            <div class="card-content">
-              Basic card
-            </div>
+            <div class="card-content">Basic card</div>
           </div>
           <hr />
           <section class="card">
             <header class="card-header no-padding">
-              <h5 class="card-title">
-                Title your content
-              </h5>
+              <h5 class="card-title">Title your content</h5>
             </header>
-            <div class="card-content no-padding">
-              Text
-            </div>
-            <footer class="card-footer">
-              Card Footer
-            </footer>
+            <div class="card-content no-padding">Text</div>
+            <footer class="card-footer">Card Footer</footer>
           </section>
           <hr />
           <div class="card shadow">
-            <div class="card-content">
-              Card with shadow
-            </div>
+            <div class="card-content">Card with shadow</div>
           </div>
         </div>
 
         <!-- Dialog -->
         <div class="section" id="dialog">
           <h3 class="title"># Dialog</h3>
-          <p class="description">Using dialog box to confirm, alert or even display something, this module is made
-            entirely with css without
-            any script, see how to use it below</p>
+          <p class="description">
+            Using dialog box to confirm, alert or even display something, this
+            module is made entirely with css without any script, see how to
+            use it below
+          </p>
           <h5>CDN</h5>
           <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/@vishnucss/dialog&quot;/&gt;</code></pre>
 
@@ -608,9 +662,10 @@
           <pre><code>$ npm install @vishnucss/dialog</code></pre>
 
           <div class="flex">
-            <div style="margin-right: 20px;">
+            <div style="margin-right: 20px">
               <a href="#dialog2" class="button small primary">Open Dialog Light</a>
-              <div id="dialog2" class="overlay light"><a class="cancel" href="#"></a>
+              <div id="dialog2" class="overlay light">
+                <a class="cancel" href="#"></a>
                 <div class="dialog">
                   <a class="close" href="#">
                     <svg class="icon">
@@ -619,9 +674,13 @@
                   </a>
                   <div class="content">
                     <strong>Dialog</strong>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur earum suscipit, expedita
-                      magni vel accusamus libero inventore, velit quidem maiores, architecto incidunt! Voluptate fuga
-                      recusandae adipisci excepturi, dolor maiores voluptatibus!</p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing
+                      elit. Consequatur earum suscipit, expedita magni vel
+                      accusamus libero inventore, velit quidem maiores,
+                      architecto incidunt! Voluptate fuga recusandae adipisci
+                      excepturi, dolor maiores voluptatibus!
+                    </p>
                     <p>Click outside the dialog to close.</p>
                   </div>
                 </div>
@@ -634,9 +693,13 @@
             <div id="dialog1" class="overlay">
               <div class="dialog">
                 <h2>Dialog Title</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur earum suscipit, expedita magni
-                  vel accusamus libero inventore, velit quidem maiores, architecto incidunt! Voluptate fuga recusandae
-                  adipisci excepturi, dolor maiores voluptatibus!</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Consequatur earum suscipit, expedita magni vel accusamus
+                  libero inventore, velit quidem maiores, architecto incidunt!
+                  Voluptate fuga recusandae adipisci excepturi, dolor maiores
+                  voluptatibus!
+                </p>
                 <a class="close" href="#">
                   <svg class="icon">
                     <use xlink:href="./src/assets/icons.svg#close"></use>
@@ -657,15 +720,17 @@
 &lt;/div&gt;
            </code>
           </pre>
-
         </div>
 
         <!-- Avatar -->
         <div class="section" id="avatar">
           <h3 class="title"># Avatar</h3>
-          <p class="description">Use the avatar in thumbs, profile and even to illustrate an icon just use the class
-            <code>.avatar</code>, you can also vary the styles use <code>.primary</code> or <code>.outline</code> and
-            the sizes <code>.small</code> and <code>.large</code></p>
+          <p class="description">
+            Use the avatar in thumbs, profile and even to illustrate an icon
+            just use the class <code>.avatar</code>, you can also vary the
+            styles use <code>.primary</code> or <code>.outline</code> and the
+            sizes <code>.small</code> and <code>.large</code>
+          </p>
           <h5>CDN</h5>
           <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/@vishnucss/avatar&quot;/&gt;</code></pre>
 
@@ -679,35 +744,32 @@
                 <div class="avatar">
                   <img src="http://placekitten.com/g/50/50" />
                 </div>
-                <div class="avatar primary">
-                  V
-                </div>
-                <div class="avatar primary outline">
-                  N
-                </div>
+                <div class="avatar primary">V</div>
+                <div class="avatar primary outline">N</div>
               </div>
             </div>
             <div class="col-xs-4">
               <h4>Sizes</h4>
               <div class="horizontal-align start avatar-margins">
-                <div class="avatar large">
-                  L
-                </div>
-                <div class="avatar outline small">
-                  S
-                </div>
+                <div class="avatar large">L</div>
+                <div class="avatar outline small">S</div>
               </div>
             </div>
           </div>
-
         </div>
 
         <!-- Chips -->
         <div class="section" id="avatar">
           <h3 class="title"># Chips</h3>
           <p class="description">
-            Use in labels or badges just <code>.chips</code>, with images, icons and some color variations <code>.primary</code>, <code>.info</code>, <code>success</code>, <code>.error</code>, <code>.warning</code> and <code>outline</code> styles, and even <code>.small</code> and <code>.large</code> sizes <br /><br />
-            An important detail for the icons, use the class <code>.icon</code> for your icons and their position <code>.left</code> or <code>.right</code>
+            Use in labels or badges just <code>.chips</code>, with images,
+            icons and some color variations <code>.primary</code>,
+            <code>.info</code>, <code>success</code>, <code>.error</code>,
+            <code>.warning</code> and <code>outline</code> styles, and even
+            <code>.small</code> and <code>.large</code> sizes <br /><br />
+            An important detail for the icons, use the class
+            <code>.icon</code> for your icons and their position
+            <code>.left</code> or <code>.right</code>
           </p>
           <h5>CDN</h5>
           <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/@vishnucss/chips&quot;/&gt;</code></pre>
@@ -718,7 +780,7 @@
           <div class="row">
             <div class="col-xs-12 vertical-align wrap">
               <div class="chips">
-                <img class="image" src="//via.placeholder.com/30x30" height="30" alt="Profile Number">
+                <img class="image" src="//via.placeholder.com/30x30" height="30" alt="Profile Number" />
                 <span class="label">Default</span>
               </div>
               <div class="chips primary">
@@ -761,12 +823,11 @@
                 </svg>
               </div>
               <div class="chips small outline">
-                <img class="image" src="//via.placeholder.com/30x30" height="30" alt="Profile Number">
+                <img class="image" src="//via.placeholder.com/30x30" height="30" alt="Profile Number" />
                 <span class="label">Outline Small</span>
               </div>
             </div>
           </div>
-
         </div>
 
         <!-- Toggle -->
@@ -782,24 +843,23 @@
           <div class="row">
             <div class="col-xs-12 vertical-align wrap">
               <div class="toggle">
-                <input id="toggle-1" type="checkbox" class="toggle-input">
+                <input id="toggle-1" type="checkbox" class="toggle-input" />
                 <label for="toggle-1" class="toggle-label">Toggle</label>
               </div>
               <div class="toggle activated">
-                <input id="toggle-2" type="checkbox" class="toggle-input">
+                <input id="toggle-2" type="checkbox" class="toggle-input" />
                 <label for="toggle-2" class="toggle-label">Toggle</label>
               </div>
               <div class="toggle disabled">
-                <input id="toggle-3" type="checkbox" class="toggle-input">
+                <input id="toggle-3" type="checkbox" class="toggle-input" />
                 <label for="toggle-3" class="toggle-label">Toggle</label>
               </div>
               <div class="toggle small">
-                <input id="toggle-4" type="checkbox" class="toggle-input">
+                <input id="toggle-4" type="checkbox" class="toggle-input" />
                 <label for="toggle-4" class="toggle-label">Toggle</label>
               </div>
             </div>
           </div>
-
         </div>
 
         <!-- Collapse -->
@@ -813,11 +873,11 @@
           <pre><code>$ npm install @vishnucss/collapse</code></pre>
 
           <div class="row">
-            <div class="col-xs-12 vertical-align wrap" style="margin-bottom: 20px;">
+            <div class="col-xs-12 vertical-align wrap" style="margin-bottom: 20px">
               <h5 class="mr-lg-1">Basic</h5>
               <div class="collapse">
                 <div class="collapse-item">
-                  <input id="collapse-one" type="checkbox" name="collapse-group">
+                  <input id="collapse-one" type="checkbox" name="collapse-group" />
                   <label for="collapse-one">
                     Label One
                     <svg class="icon right">
@@ -829,7 +889,7 @@
                   </div>
                 </div>
                 <div class="collapse-item">
-                  <input id="tab-two" type="checkbox" name="collapse-group">
+                  <input id="tab-two" type="checkbox" name="collapse-group" />
                   <label for="tab-two">
                     Label Two
                     <svg class="icon right">
@@ -841,7 +901,7 @@
                   </div>
                 </div>
                 <div class="collapse-item">
-                  <input id="tab-three" type="checkbox" name="collapse-group">
+                  <input id="tab-three" type="checkbox" name="collapse-group" />
                   <label for="tab-three">
                     Label Three
                     <svg class="icon right">
@@ -858,21 +918,21 @@
               <h5>Open just one</h5>
               <div class="collapse">
                 <div class="collapse-item">
-                  <input id="tab-four" type="radio" name="collapse-group">
+                  <input id="tab-four" type="radio" name="collapse-group" />
                   <label for="tab-four">Label One</label>
                   <div class="collapse-content">
                     <p>Text</p>
                   </div>
                 </div>
                 <div class="collapse-item">
-                  <input id="tab-five" type="radio" name="collapse-group">
+                  <input id="tab-five" type="radio" name="collapse-group" />
                   <label for="tab-five">Label Two</label>
                   <div class="collapse-content">
                     <p>Text</p>
                   </div>
                 </div>
                 <div class="collapse-item">
-                  <input id="tab-six" type="radio" name="collapse-group">
+                  <input id="tab-six" type="radio" name="collapse-group" />
                   <label for="tab-six">Label Three</label>
                   <div class="collapse-content">
                     <p>Text</p>
@@ -881,20 +941,27 @@
               </div>
             </div>
           </div>
-
         </div>
 
         <!-- Icons -->
         <div class="section" id="icons">
           <h3 class="title"># Icons</h3>
-          <p class="description">Basic icons in SVG sprite for you to use on your site, we are using a pack <a
-              href="https://www.ikonate.com/" title="Icons" target="_blank">ikonate</a> <br />To use just use the
-            <code>.icon</code> class in svg and import the icon using xlink:href, for example:
-            <code>path-to-icon/icons.svg#icon-name</code> you can also use sizes, <code>.lg</code> for large and
-            <code>.sm</code> for small</p>
-          <p>But before you start using it, you need to <a href="./src/assets/icons.svg" download>download the pack</a>
-            then put it in the recommended folder for assets, static or use import directly node_modules
-            <code>./node_modules/@vishnucss/icons/src/icons.svg#icon-name</code></p>
+          <p class="description">
+            Basic icons in SVG sprite for you to use on your site, we are
+            using a pack
+            <a href="https://www.ikonate.com/" title="Icons" target="_blank">ikonate</a>
+            <br />To use just use the <code>.icon</code> class in svg and
+            import the icon using xlink:href, for example:
+            <code>path-to-icon/icons.svg#icon-name</code> you can also use
+            sizes, <code>.lg</code> for large and <code>.sm</code> for small
+          </p>
+          <p>
+            But before you start using it, you need to
+            <a href="./src/assets/icons.svg" download>download the pack</a>
+            then put it in the recommended folder for assets, static or use
+            import directly node_modules
+            <code>./node_modules/@vishnucss/icons/src/icons.svg#icon-name</code>
+          </p>
 
           <h5>CDN</h5>
           <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/@vishnucss/icons&quot;/&gt;</code></pre>
@@ -905,14 +972,18 @@
           <div class="icons card shadow">
             <div class="icons__item">
               <svg class="icon">
-                <title id="accessibilityIconTitle">A11Y (accessibility)</title>
+                <title id="accessibilityIconTitle">
+                  A11Y (accessibility)
+                </title>
                 <use xlink:href="./src/assets/icons.svg#accessibility"></use>
               </svg>
               <span class="name">accessibility</span>
             </div>
             <div class="icons__item">
               <svg class="icon">
-                <title id="accessibilityHumanIconTitle">Accessibility features</title>
+                <title id="accessibilityHumanIconTitle">
+                  Accessibility features
+                </title>
                 <use xlink:href="./src/assets/icons.svg#accessibility-human"></use>
               </svg>
               <span class="name">accessibility-human</span>
@@ -1024,7 +1095,9 @@
             </div>
             <div class="icons__item">
               <svg class="icon">
-                <title id="arrowRightBottomIconTitle">Arrow Right Bottom</title>
+                <title id="arrowRightBottomIconTitle">
+                  Arrow Right Bottom
+                </title>
                 <use xlink:href="./src/assets/icons.svg#arrow-right-bottom"></use>
               </svg>
               <span class="name">arrow-right-bottom</span>
@@ -1269,7 +1342,9 @@
             </div>
             <div class="icons__item">
               <svg class="icon">
-                <title id="calendarDeclineIconTitle">Decline calendar invite</title>
+                <title id="calendarDeclineIconTitle">
+                  Decline calendar invite
+                </title>
                 <use xlink:href="./src/assets/icons.svg#calendar-decline"></use>
               </svg>
               <span class="name">calendar-decline</span>
@@ -1388,14 +1463,18 @@
             </div>
             <div class="icons__item">
               <svg class="icon">
-                <title id="chatWarningIconTitle">Chat with a warning state</title>
+                <title id="chatWarningIconTitle">
+                  Chat with a warning state
+                </title>
                 <use xlink:href="./src/assets/icons.svg#chat-warning"></use>
               </svg>
               <span class="name">chat-warning</span>
             </div>
             <div class="icons__item">
               <svg class="icon">
-                <title id="checkboxIntermediateIconTitle">Checkbox in intermediate state</title>
+                <title id="checkboxIntermediateIconTitle">
+                  Checkbox in intermediate state
+                </title>
                 <use xlink:href="./src/assets/icons.svg#checkbox-intermediate"></use>
               </svg>
               <span class="name">checkbox-intermediate</span>
@@ -1507,7 +1586,9 @@
             </div>
             <div class="icons__item">
               <svg class="icon">
-                <title id="cloudCrossedIconTitle">Cloud/internet services unavailable</title>
+                <title id="cloudCrossedIconTitle">
+                  Cloud/internet services unavailable
+                </title>
                 <use xlink:href="./src/assets/icons.svg#cloud-crossed"></use>
               </svg>
               <span class="name">cloud-crossed</span>
@@ -1913,7 +1994,9 @@
             </div>
             <div class="icons__item">
               <svg class="icon">
-                <title id="folderWarningIconTitle">Folder with a warning state</title>
+                <title id="folderWarningIconTitle">
+                  Folder with a warning state
+                </title>
                 <use xlink:href="./src/assets/icons.svg#folder-warning"></use>
               </svg>
               <span class="name">folder-warning</span>
@@ -1990,7 +2073,9 @@
             </div>
             <div class="icons__item">
               <svg class="icon">
-                <title id="hearingDisabilityIconTitle">Hearing disability</title>
+                <title id="hearingDisabilityIconTitle">
+                  Hearing disability
+                </title>
                 <use xlink:href="./src/assets/icons.svg#hearing-disability"></use>
               </svg>
               <span class="name">hearing-disability</span>
@@ -2235,7 +2320,9 @@
             </div>
             <div class="icons__item">
               <svg class="icon">
-                <title id="microphoneIconTitle">Microphone (Voice input)</title>
+                <title id="microphoneIconTitle">
+                  Microphone (Voice input)
+                </title>
                 <use xlink:href="./src/assets/icons.svg#microphone"></use>
               </svg>
               <span class="name">microphone</span>
@@ -2536,7 +2623,9 @@
             </div>
             <div class="icons__item">
               <svg class="icon">
-                <title id="radioSelectedIconTitle">Radio button (selected)</title>
+                <title id="radioSelectedIconTitle">
+                  Radio button (selected)
+                </title>
                 <use xlink:href="./src/assets/icons.svg#radio-button-selected"></use>
               </svg>
               <span class="name">radio-button-selected</span>
@@ -2879,14 +2968,18 @@
             </div>
             <div class="icons__item">
               <svg class="icon">
-                <title id="swapVerticalIconTitle">Swap items (vertically)</title>
+                <title id="swapVerticalIconTitle">
+                  Swap items (vertically)
+                </title>
                 <use xlink:href="./src/assets/icons.svg#swap-vertical"></use>
               </svg>
               <span class="name">swap-vertical</span>
             </div>
             <div class="icons__item">
               <svg class="icon">
-                <title id="swapHorizontalIconTitle">Swap items (horizontally)</title>
+                <title id="swapHorizontalIconTitle">
+                  Swap items (horizontally)
+                </title>
                 <use xlink:href="./src/assets/icons.svg#swap-horizontal"></use>
               </svg>
               <span class="name">swap-horizontal</span>
@@ -3145,7 +3238,9 @@
             </div>
             <div class="icons__item">
               <svg class="icon">
-                <title id="wheelChairIconTitle">Accessibility (wheelchair)</title>
+                <title id="wheelChairIconTitle">
+                  Accessibility (wheelchair)
+                </title>
                 <use xlink:href="./src/assets/icons.svg#wheelchair"></use>
               </svg>
               <span class="name">wheelchair</span>
@@ -3193,7 +3288,6 @@
               <span class="name">zoom-out</span>
             </div>
           </div>
-
         </div>
 
         <!-- Grid -->
@@ -3207,9 +3301,11 @@
           <pre><code>$ npm install @vishnucss/grid</code></pre>
           <div class="row">
             <h5>Responsive</h5>
-            <p class="description">Responsive modifiers enable specifying different column sizes, offsets, alignment and
-              distribution at xs, sm,
-              md & lg viewport widths.</p>
+            <p class="description">
+              Responsive modifiers enable specifying different column sizes,
+              offsets, alignment and distribution at xs, sm, md & lg viewport
+              widths.
+            </p>
             <div class="col-xs-12 col-sm-3 col-md-2 col-lg-1">
               <div class="box-row"></div>
             </div>
@@ -3230,7 +3326,9 @@
           </div>
 
           <h5>Fluid</h5>
-          <p class="description">Percent based widths allow fluid resizing of columns and rows.</p>
+          <p class="description">
+            Percent based widths allow fluid resizing of columns and rows.
+          </p>
 
           <div class="row">
             <div class="col-xs-12">
@@ -3345,7 +3443,10 @@
           </div>
 
           <h5>Auto Width</h5>
-          <p class="description">Add any number of auto sizing columns to a row. Let the grid figure it out.</p>
+          <p class="description">
+            Add any number of auto sizing columns to a row. Let the grid
+            figure it out.
+          </p>
           <div class="row">
             <div class="col-xs-7">
               <div class="box container-grid">
@@ -3395,8 +3496,10 @@
           </div>
 
           <h5>Alignment</h5>
-          <p class="description">Add classes to align elements to the start or end of a row as well as the top, bottom,
-            or center of a column</p>
+          <p class="description">
+            Add classes to align elements to the start or end of a row as well
+            as the top, bottom, or center of a column
+          </p>
 
           <code>.start-</code>
           <div class="row">
@@ -3437,8 +3540,10 @@
             </div>
           </div>
 
-          <p class="margin">Here is an example of using the modifiers in conjunction to acheive different alignment at
-            different viewport sizes.</p>
+          <p class="margin">
+            Here is an example of using the modifiers in conjunction to
+            acheive different alignment at different viewport sizes.
+          </p>
           <div class="row">
             <div class="col-xs-12">
               <div class="box container-grid">
@@ -3482,7 +3587,9 @@
           </div>
 
           <h5>Distribution</h5>
-          <p class="description">Add classes to distribute the contents of a row or column.</p>
+          <p class="description">
+            Add classes to distribute the contents of a row or column.
+          </p>
 
           <code>.around-</code>
           <div class="row">
@@ -3523,7 +3630,9 @@
           </div>
 
           <h5>Reordering</h5>
-          <p class="description">Add classes to distribute the contents of a row or column.</p>
+          <p class="description">
+            Add classes to distribute the contents of a row or column.
+          </p>
 
           <code>.first-</code>
           <div class="row reorder">
@@ -3580,13 +3689,15 @@
               </div>
             </div>
           </div>
-
         </div>
 
         <!-- Utils -->
         <div class="section" id="utilities">
           <h3 class="title"># Utils</h3>
-          <p class="description">Provides some basic utility classes to speed up and improve your development.</p>
+          <p class="description">
+            Provides some basic utility classes to speed up and improve your
+            development.
+          </p>
           <h4>Installation</h4>
           <h5>CDN</h5>
           <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/@vishnucss/utils&quot;/&gt;</code></pre>
@@ -3599,7 +3710,9 @@
             <li><code>text-center</code> - center align text</li>
             <li><code>text-left</code> - left align text</li>
             <li><code>text-right</code> - right align text</li>
-            <li><code>horizontal-align</code> - horizontally align an element</li>
+            <li>
+              <code>horizontal-align</code> - horizontally align an element
+            </li>
             <li><code>vertical-align</code> - vertical align an element</li>
             <li><code>start</code> - align children to the start</li>
             <li><code>end</code> - align children to the end</li>
@@ -3610,39 +3723,44 @@
             <li><code>full-height</code> - make element full height size</li>
             <li><code>flex</code> - display elements flex</li>
             <li><code>fixed</code> - make element full width and fixed</li>
+            <li><code>column</code> - display elements column</li>
             <li><code>absolute</code> - make element absolute</li>
             <li><code>relative</code> - make element relative</li>
-            <li><code>truncate</code> - make a single straight line with ellipsis</li>
-            <li><code>hide-phone</code> - hide elements on a phone</li>
-            <li><code>hide-tablet</code> - hide elements on a tablet</li>
-            <li><code>hide-desktop</code> - hide elements on a desktop</li>
+            <li>
+              <code>truncate</code> - make a single straight line with
+              ellipsis
+            </li>
+            <li><code>hide</code> - hide elements</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <hr>
+    <hr />
 
     <!-- Contributing -->
     <section class="container" id="contributing">
       <h2>Get Involved</h2>
-      <p class="description">We'd love for you to help us build Vishnu. If you'd like to be a contributor, check out our
+      <p class="description">
+        We'd love for you to help us build Vishnu. If you'd like to be a
+        contributor, check out our
         <a href="https://github.com/vishnucss/vishnucss/blob/master/.github/contributing.md"
-          title="Contributing">Contributing docs</a>.</p>
+          title="Contributing">Contributing docs</a>.
+      </p>
     </section>
 
     <!-- Copyright -->
     <footer class="footer">
       <section class="container">
-        <p>Made by <a target="_blank" href="https://github.com/alexandesigner" title="Allan Alexandre">Allan
-            Alexandre</a> with
-          <strong class="red">♥</strong> Licensed under the <a target="_blank"
-            href="https://github.com/vishnucss/vishnucss#license" title="MIT License">MIT License</a>.</p>
+        <p>
+          Made by
+          <a target="_blank" href="https://github.com/alexandesigner" title="Allan Alexandre">Allan Alexandre</a>
+          with <strong class="red">♥</strong> Licensed under the
+          <a target="_blank" href="https://github.com/vishnucss/vishnucss#license" title="MIT License">MIT License</a>.
+        </p>
       </section>
     </footer>
-
   </main>
-
 </body>
 <!-- Place this tag in your head or just before your close body tag. -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>

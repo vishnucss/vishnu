@@ -23,6 +23,9 @@
     "package.json",
     "src"
   ],
+  "resolutions": {
+    "graceful-fs": "^4.2.4"
+  },
   "scripts": {
     "test": "echo \"Testing\"",
     "build": "gulp"

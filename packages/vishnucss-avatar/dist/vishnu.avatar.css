@@ -8,8 +8,7 @@
 */
 
 :root {
-
-  /* Typhography */
+  /* Typography */
 
   /* Colours */
 
@@ -20,7 +19,6 @@
   /* Utils */
 
   /* Toogle */
-
 }
 
 /*
@@ -59,14 +57,14 @@
   color: #282828;
 }
 .avatar.primary {
-  background: #667eea;
-  color: #fff
+  background: #8549b9;
+  color: #fff;
 }
 .avatar.primary.outline {
-    background: transparent;
-    border-color: #667eea;
-    color: #667eea;
-  }
+  background: transparent;
+  border-color: #8549b9;
+  color: #8549b9;
+}
 .avatar.outline {
   background: transparent;
   border: 1px solid #282828;

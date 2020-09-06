@@ -13,5 +13,8 @@
     "gulp": "^3.9.1",
     "gulp-load-plugins": "^1.2.4",
     "gulp-symdest": "^1.1.0"
+  },
+  "resolutions": {
+    "graceful-fs": "^4.2.4"
   }
 }

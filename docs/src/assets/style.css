@@ -13,6 +13,7 @@
   --base-label-color: #6f6f6f;
 
   --base-line-height: 1.5;
+  --base-space-size: 16px;
   --base-font-size: 1.6rem;
   --transition: all 0.2s ease-in-out;
   --base-radius: 4px;
@@ -24,17 +25,28 @@
   margin: 60px auto;
   /* background: #000; */
 }
-button {
-  width: 90%;
-}
+
 .container {
   margin-top: 30px;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.title-header {
+  font-size: 52px;
+  font-weight: 600;
+}
+.description-header {
+  font-size: 24px;
+  margin-bottom: 25px;
 }
 
 .section h4 {
   margin-top: 30px;
 }
-#typhography h4 {
+#Typography h4 {
   margin-top: 0;
 }
 
@@ -139,7 +151,7 @@ button {
   width: 100%;
 }
 * {
-  font-family: Catamaran;
+  font-family: "Inter", sans-serif;
 }
 .badge-version {
   border: 1px solid #e5e5e5;

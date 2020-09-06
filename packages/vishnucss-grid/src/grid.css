@@ -162,7 +162,7 @@
 .last-xs {
   order: 1;
 }
-@media (--tablet-viewport) {
+@media (--md-viewport) {
   :--all-cols-sm {
     box-sizing: border-box;
     flex: 0 0 auto;
@@ -289,7 +289,7 @@
     order: 1;
   }
 }
-@media (--desktop-viewport) {
+@media (--lg-viewport) {
   :--all-cols-md {
     box-sizing: border-box;
     flex: 0 0 auto;
@@ -416,7 +416,7 @@
     order: 1;
   }
 }
-@media (--desktop-large-viewport) {
+@media (--xl-viewport) {
   :--all-cols-lg {
     box-sizing: border-box;
     flex: 0 0 auto;

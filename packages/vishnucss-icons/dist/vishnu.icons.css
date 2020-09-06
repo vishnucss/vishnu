@@ -8,8 +8,7 @@
 */
 
 :root {
-
-  /* Typhography */
+  /* Typography */
 
   /* Colours */
 
@@ -20,7 +19,6 @@
   /* Utils */
 
   /* Toogle */
-
 }
 
 /*
@@ -43,12 +41,12 @@
 .icon {
   width: 32px;
   height: 32px;
-  stroke: #667eea;
+  stroke: #8549b9;
   stroke-width: 1.5;
   stroke-linecap: round;
   stroke-linejoin: round;
   fill: none;
-  color: #667eea;
+  color: #8549b9;
 }
 
 .icon.lg {

@@ -3,12 +3,13 @@
 */
 
 :root {
-  /* Typhography */
+  /* Typography */
   --base-font-family: -apple-system, BlinkMacSystemFont, Avenir, "Avenir Next",
     "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif;
   --base-font-size: 1.6rem;
   --base-line-height: 1.5;
+  --base-space-size: 16px;
 
   /* Colours */
   --primary-color: #8549b9;
@@ -50,4 +51,21 @@
   --toggle-background-color: #fff;
   --toggle-box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.0525);
   --toggle-checked-left: 25px;
+
+  /* Spacing */
+--spacing-xxs:  var(--base-space-size / 6);
+--spacing-xs: var(--base-space-size / 4);
+--spacing-sm: var(--base-space-size / 2);
+--spacing-md: var(--base-space-size);
+--spacing-lg: var(--base-space-size + 4);
+--spacing-xl: var(--base-space-size + 6);
+--spacing-xxl: var(--base-space-size * 2);
+--spacing-xxxl: var(--base-space-size * 2 + 8);
+
+/* Responsive breakpoints */
+--responsive-sm: 25em;
+--responsive-md: 48em;
+--responsive-lg: 62em;
+--responsive-xl: 75em;
+
 }
