@@ -19,6 +19,11 @@
   /* Utils */
 
   /* Toogle */
+
+  /* Spacing */
+
+/* Responsive breakpoints */
+
 }
 
 /*
@@ -52,194 +57,194 @@
   padding: 0;
   height: 28px;
   border-radius: 50px;
-  background: #f2f2f2;
+  background: #f2f2f2
 }
 
 .chips .image {
-  border-radius: 50%;
-}
+    border-radius: 50%;
+  }
 
 .chips .icon {
-  width: 22px;
-  height: 22px;
-  margin-left: 8px;
-  margin-right: -8px;
-}
+    width: 22px;
+    height: 22px;
+    margin-left: 8px;
+    margin-right: -8px
+  }
 
 .chips .icon.right {
-  margin-right: 8px;
-  margin-left: -8px;
-}
+      margin-right: 8px;
+      margin-left: -8px;
+    }
 
 .chips .label {
-  font-size: 13px;
-  font-weight: 500;
-  padding: 0 12px;
-}
+    font-size: 13px;
+    font-weight: 500;
+    padding: 0 12px;
+  }
 
 .chips.small {
-  height: 20px;
+  height: 20px
 }
 
 .chips.small img {
-  max-height: 20px;
-}
+    max-height: 20px;
+  }
 
 .chips.small .label {
-  font-size: 12px;
-}
+    font-size: 12px;
+  }
 
 .chips.large {
   height: 42px;
-  padding: 0 16px;
+  padding: 0 16px
 }
 
 .chips.large img {
-  max-height: 42px;
-}
+    max-height: 42px;
+  }
 
 .chips.large .label {
-  font-size: 16px;
-}
+    font-size: 16px;
+  }
 
 .chips.primary {
-  background: #8549b9;
+  background: #8549b9
 }
 
 .chips.primary .label {
-  color: #fff;
-}
+    color: #fff;
+  }
 
 .chips.primary .icon {
-  stroke: #fff;
-}
+    stroke: #fff;
+  }
 
 .chips.error {
-  background: #f93838;
+  background: #f93838
 }
 
 .chips.error .label {
-  color: #fff;
-}
+    color: #fff;
+  }
 
 .chips.error .icon {
-  stroke: #fff;
-}
+    stroke: #fff;
+  }
 
 .chips.success {
-  background: #0dc222;
+  background: #0dc222
 }
 
 .chips.success .label {
-  color: #fff;
-}
+    color: #fff;
+  }
 
 .chips.success .icon {
-  stroke: #fff;
-}
+    stroke: #fff;
+  }
 
 .chips.info {
-  background: #2c80ff;
+  background: #2c80ff
 }
 
 .chips.info .label {
-  color: #fff;
-}
+    color: #fff;
+  }
 
 .chips.info .icon {
-  stroke: #fff;
-}
+    stroke: #fff;
+  }
 
 .chips.warning {
-  background: #f2ad00;
+  background: #f2ad00
 }
 
 .chips.warning .label {
-  color: #fff;
-}
+    color: #fff;
+  }
 
 .chips.warning .icon {
-  stroke: #fff;
-}
+    stroke: #fff;
+  }
 
 .chips.dark {
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0,0,0, .45)
 }
 
 .chips.dark .label {
-  color: #fff;
-}
+    color: #fff;
+  }
 
 .chips.dark .icon {
-  stroke: #fff;
-}
+    stroke: #fff;
+  }
 
 .chips.outline {
   background: transparent;
-  box-shadow: 0 0 0 1px #e5e5e5;
+  box-shadow: 0 0 0 1px #cfcfcf
 }
 
 .chips.outline.icon {
-  stroke: #444;
-}
+    stroke: #4c4c4c;
+  }
 
 .chips.outline.primary {
-  box-shadow: 0 0 0 1px #8549b9;
-}
+    box-shadow: 0 0 0 1px #8549b9
+  }
 
 .chips.outline.primary .icon {
-  stroke: #8549b9;
-}
+      stroke: #8549b9;
+    }
 
 .chips.outline.primary .label {
-  color: #8549b9;
-}
+      color: #8549b9;
+    }
 
 .chips.outline.error {
-  box-shadow: 0 0 0 1px #f93838;
-}
+    box-shadow: 0 0 0 1px #f93838
+  }
 
 .chips.outline.error .icon {
-  stroke: #f93838;
-}
+      stroke: #f93838;
+    }
 
 .chips.outline.error .label {
-  color: #f93838;
-}
+      color: #f93838;
+    }
 
 .chips.outline.success {
-  box-shadow: 0 0 0 1px #0dc222;
-}
+    box-shadow: 0 0 0 1px #0dc222
+  }
 
 .chips.outline.success .icon {
-  stroke: #0dc222;
-}
+      stroke: #0dc222;
+    }
 
 .chips.outline.success .label {
-  color: #0dc222;
-}
+      color: #0dc222;
+    }
 
 .chips.outline.info {
-  box-shadow: 0 0 0 1px #2c80ff;
-}
+    box-shadow: 0 0 0 1px #2c80ff
+  }
 
 .chips.outline.info .icon {
-  stroke: #2c80ff;
-}
+      stroke: #2c80ff;
+    }
 
 .chips.outline.info .label {
-  color: #2c80ff;
-}
+      color: #2c80ff;
+    }
 
 .chips.outline.warning {
-  box-shadow: 0 0 0 1px #f2ad00;
-}
+    box-shadow: 0 0 0 1px #f2ad00
+  }
 
 .chips.outline.warning .icon {
-  stroke: #f2ad00;
-}
+      stroke: #f2ad00;
+    }
 
 .chips.outline.warning .label {
-  color: #f2ad00;
-}
+      color: #f2ad00;
+    }
 /*# sourceMappingURL=vishnu.chips.css.map */

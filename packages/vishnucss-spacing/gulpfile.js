@@ -34,6 +34,7 @@ gulp.task('build', function () {
   ];
   return gulp
     .src([
+      './src/variables.css',
       './src/spacing.css'
     ])
     .pipe($.sourcemaps.init())

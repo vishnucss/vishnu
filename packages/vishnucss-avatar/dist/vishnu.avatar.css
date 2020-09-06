@@ -19,6 +19,11 @@
   /* Utils */
 
   /* Toogle */
+
+  /* Spacing */
+
+/* Responsive breakpoints */
+
 }
 
 /*
@@ -58,13 +63,13 @@
 }
 .avatar.primary {
   background: #8549b9;
-  color: #fff;
+  color: #fff
 }
 .avatar.primary.outline {
-  background: transparent;
-  border-color: #8549b9;
-  color: #8549b9;
-}
+    background: transparent;
+    border-color: #8549b9;
+    color: #8549b9;
+  }
 .avatar.outline {
   background: transparent;
   border: 1px solid #282828;

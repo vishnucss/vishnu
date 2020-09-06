@@ -96,4 +96,8 @@
   text-overflow: ellipsis;
 }
 
+.hide {
+  display: none;
+}
+
 /*# sourceMappingURL=vishnu.utils.css.map */

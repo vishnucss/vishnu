@@ -19,6 +19,11 @@
   /* Utils */
 
   /* Toogle */
+
+  /* Spacing */
+
+/* Responsive breakpoints */
+
 }
 
 /*
@@ -43,34 +48,34 @@
 */
 
 .collapse {
-  width: 100%;
+  width: 100%
 }
 
 .collapse .collapse-item {
-  position: relative;
-  margin-bottom: 2px;
-  width: 100%;
-  color: #282828;
-  overflow: hidden;
-  border: 1px solid #f1f1f1;
-  transition: all 0.2s ease-in-out;
-}
+    position: relative;
+    margin-bottom: 2px;
+    width: 100%;
+    color: #282828;
+    overflow: hidden;
+    border: 1px solid #f0f0f0;
+    transition: all 0.2s ease-in-out
+  }
 
 .collapse .collapse-item:hover {
-  border-color: #8549b9;
-}
+      border-color: #8549b9;
+    }
 
 .collapse input {
   position: absolute;
   opacity: 0;
-  z-index: -1;
+  z-index: -1
 }
 
 .collapse input:checked ~ label .icon.right,
-.collapse input:checked ~ label .icon.left {
-  -webkit-transform: rotate(-180deg);
-  transform: rotate(-180deg);
-}
+    .collapse input:checked ~ label .icon.left {
+      -webkit-transform: rotate(-180deg);
+              transform: rotate(-180deg);
+    }
 
 .icon.right {
   width: 22px;
@@ -94,24 +99,24 @@
   padding: 6px 15px;
   font-weight: 500;
   line-height: 3;
-  cursor: pointer;
+  cursor: pointer
 }
 
 .collapse label:hover {
-  background: transparent;
-}
+    background: transparent;
+  }
 .collapse-content {
   max-height: 0;
   padding: 0 15px;
   overflow: hidden;
   background: rgba(255, 255, 255, 1);
-  transition: max-height 0.25s;
+  transition: max-height .25s
 }
 .collapse-content p {
-  font-size: 14px;
-  line-height: 16px;
-  margin: 10px 0;
-}
+    font-size: 14px;
+    line-height: 16px;
+    margin: 10px 0;
+  }
 .collapse input:checked ~ .collapse-content {
   max-height: 10em;
 }
