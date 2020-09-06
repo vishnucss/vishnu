@@ -1,6 +1,6 @@
 Package.describe({
 	name: 'vishnucss:utils',
-	version: '1.1.0-rc.1',
+	version: '1.1.0-rc.2',
 	summary: 'Utils toolkit with modern css.',
 	git: 'https://github.com/vishnucss/vishnu.git',
 	documentation: 'README.md'

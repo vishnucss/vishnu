@@ -1,5 +1,5 @@
 /**
-* vishnucss dialog - v1.1.0-rc.1
+* vishnucss dialog - v1.1.0-rc.2
 * https://vishnucss.github.io/vishnu#dialog
 */
 
@@ -19,6 +19,11 @@
   /* Utils */
 
   /* Toogle */
+
+  /* Spacing */
+
+/* Responsive breakpoints */
+
 }
 
 /*
@@ -42,7 +47,7 @@
   margin: 45px auto;
   padding: 20px;
   background: #fff;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #cfcfcf;
   width: 480px;
   height: 320px;
   z-index: 100;
@@ -59,16 +64,16 @@
   font-size: 24px;
   font-weight: bold;
   text-decoration: none;
-  color: #666;
+  color: #666
 }
 .dialog .close:hover {
-  opacity: 1;
-}
+    opacity: 1;
+  }
 .dialog .close .icon {
-  width: 20px;
-  height: 20px;
-  stroke: #444;
-}
+    width: 20px;
+    height: 20px;
+    stroke: #4c4c4c;
+  }
 .overlay {
   position: fixed;
   z-index: 90;
@@ -78,19 +83,19 @@
   right: 0;
   background: rgba(0, 0, 0, 0.88);
   visibility: hidden;
-  opacity: 0;
+  opacity: 0
 }
 .overlay.light {
-  background: rgba(255, 255, 255, 0.92);
-}
+    background: rgba(255, 255, 255, 0.92);
+  }
 .overlay .cancel {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  cursor: default;
-}
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: default;
+  }
 .overlay:target {
-  visibility: visible;
-  opacity: 1;
-}
+    visibility: visible;
+    opacity: 1;
+  }
 /*# sourceMappingURL=vishnu.dialog.css.map */
