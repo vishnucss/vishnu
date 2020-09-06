@@ -1,0 +1,11 @@
+{
+  "name": "@vishnucss/docs",
+  "short_name": "@vishnucss/docs",
+  "description": "## Setup",
+  "icons": [],
+  "start_url": "/?standalone=true",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#8549b9",
+  "lang": "en"
+}
