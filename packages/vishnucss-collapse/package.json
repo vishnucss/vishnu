@@ -17,6 +17,9 @@
     "mobile",
     "mobile-first"
   ],
+  "resolutions": {
+    "graceful-fs": "^4.2.4"
+  },
   "ignore": [
     ".editorconfig",
     ".gitignore",
