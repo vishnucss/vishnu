@@ -1,7 +1,7 @@
 {
   "name": "@vishnucss/alert",
   "filename": "vishnu.alert.min.css",
-  "version": "1.1.0-rc.2",
+  "version": "1.1.0",
   "description": "Alert package for Vishnucss toolkit with modern css.",
   "main": "./dist/vishnu.alert.min.css",
   "keywords": [

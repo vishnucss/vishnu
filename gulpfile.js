@@ -31,34 +31,35 @@ gulp.task("build", function () {
     nesting(),
     customMedia(),
     colorMod(),
-    autoprefixer({browsers: ["last 1 version"]})
+    autoprefixer({ browsers: ["last 1 version"] })
   ];
   return gulp
     .src([
-    "./src/customs.css",
-    "./src/variables.css",
-    "./src/reset.css",
-    "./src/typography.css",
-    "./src/links.css",
-    "./src/buttons.css",
-    "./src/forms.css",
-    "./src/lists.css",
-    "./src/tables.css",
-    "./src/images.css",
-    "./src/misc.css",
-    "./src/responsive.css",
-    // Extensions
-    "./src/alert.css",
-    "./src/avatar.css",
-    "./src/chips.css",
-    "./src/card.css",
-    "./src/collapse.css",
-    "./src/dialog.css",
-    "./src/toggle.css",
-    "./src/grid.css",
-    "./src/icons.css",
-    "./src/utils.css"
-  ])
+      "./src/customs.css",
+      "./src/variables.css",
+      "./src/reset.css",
+      "./src/typography.css",
+      "./src/links.css",
+      "./src/buttons.css",
+      "./src/forms.css",
+      "./src/lists.css",
+      "./src/tables.css",
+      "./src/images.css",
+      "./src/misc.css",
+      "./src/responsive.css",
+      // Extensions
+      "./src/alert.css",
+      "./src/avatar.css",
+      "./src/chips.css",
+      "./src/card.css",
+      "./src/collapse.css",
+      "./src/dialog.css",
+      "./src/toggle.css",
+      "./src/grid.css",
+      "./src/spacing.css",
+      "./src/icons.css",
+      "./src/utils.css"
+    ])
     .pipe($.sourcemaps.init())
     .pipe($.concat("vishnu.css"))
     .pipe(postcss(plugins))
@@ -79,7 +80,7 @@ gulp.task("minify", ["build"], function () {
     nesting(),
     customMedia(),
     colorMod(),
-    autoprefixer({browsers: ["last 1 version"]})
+    autoprefixer({ browsers: ["last 1 version"] })
   ];
   return gulp
     .src(["./dist/vishnu.css"])
@@ -87,7 +88,7 @@ gulp.task("minify", ["build"], function () {
     .pipe(postcss(plugins))
     .pipe($.header(copyright))
     .pipe($.size())
-    .pipe($.size({gzip: true}))
+    .pipe($.size({ gzip: true }))
     .pipe($.concat("vishnu.min.css"))
     .pipe($.sourcemaps.write("."))
     .pipe(gulp.dest("./dist/"))

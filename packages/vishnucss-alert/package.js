@@ -1,6 +1,6 @@
 Package.describe({
 	name: 'vishnucss:alert',
-	version: '1.1.0-rc.2',
+	version: '1.1.0',
 	summary: 'Alert toolkit with modern css.',
 	git: 'https://github.com/vishnucss/vishnu.git',
 	documentation: 'README.md'
