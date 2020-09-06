@@ -1,6 +1,4 @@
-<p align="center"><a href="https://vishnucss.github.io/vishnu" target="_blank"><img src="https://vishnucss.github.io/vishnu/src/assets/vishnu.svg" width="185" height="185" /></a></p>
-<h1 align="center">Vishnu</h1>
-<p align="center">A simple and minimalist toolkit with modern css</p>
+<p align="center"><a href="https://vishnucss.github.io/vishnu" target="_blank"><img src="https://vishnucss.github.io/vishnu/preview.png" height="385" /></a></p>
 <p align="center"><img src="https://badge.fury.io/js/%40vishnucss%2Fvishnu.svg" /> <img src="https://img.shields.io/npm/dt/@vishnucss/vishnu.svg" /></p>
 <p align="center"><a href="https://vishnucss.github.io/vishnu/#docs" target="_blank">Docs</a> / <a href="https://vishnucss.github.io/vishnu/#examples" target="_blank">Examples</a></p>
 
