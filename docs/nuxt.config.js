@@ -3,7 +3,7 @@ import theme from '@nuxt/content-theme-docs'
 export default theme({
   target: 'static',
   router: {
-    base: 'https://github.com/vishnucss/vishnu'
+    base: '/vishnucss.github.io/vishnu'
   },
   loading: { color: '#8549b9' },
   liveEdit: false
