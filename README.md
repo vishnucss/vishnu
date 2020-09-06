@@ -60,6 +60,8 @@ $ npm install --save @vishnucss/extensions
 - [Icons](https://github.com/vishnucss/vishnu/tree/master/packages/vishnucss-icons)
 - [Dialog](https://github.com/vishnucss/vishnu/tree/master/packages/vishnucss-dialog)
 - [Grid](https://github.com/vishnucss/vishnu/tree/master/packages/vishnucss-grid)
+- [Toggle](https://github.com/vishnucss/vishnu/tree/master/packages/vishnucss-toggle)
+- [Spacing](https://github.com/vishnucss/vishnu/tree/master/packages/vishnucss-spacing)
 - [Utils](https://github.com/vishnucss/vishnu/tree/master/packages/vishnucss-utils)
 
 ## Bug?
