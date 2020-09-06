@@ -11,8 +11,8 @@ features:
   - All in just < 5kb.
 ---
 
-<img src="/preview.png" class="light-img" />
-<img src="/preview-dark.png" class="dark-img" />
+<img src="/vishnu/preview.png" class="light-img" />
+<img src="/vishnu/preview-dark.png" class="dark-img" />
 
 ## Why should I use it?
 
