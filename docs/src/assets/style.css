@@ -3,14 +3,15 @@
   --base-font-family: -apple-system, BlinkMacSystemFont, Avenir, "Avenir Next",
     "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif;
-  --primary-color: #667eea;
-  --secondary-color: #764ba2;
+  --primary-color: #8549b9;
+  --secondary-color: #a460e8;
   --base-color: #e6ecf0;
   --base-dark-color: #282828;
-  --base-light-color: #f1f1f1;
+  --base-light-color: #f0f0f0;
   --base-border-color: #a4a4a4;
-  --base-text-color: #444;
-  --base-light-text-color: #ccc;
+  --base-text-color: #4c4c4c;
+  --base-label-color: #6f6f6f;
+
   --base-line-height: 1.5;
   --base-font-size: 1.6rem;
   --transition: all 0.2s ease-in-out;
@@ -203,7 +204,8 @@ button {
   font-weight: 500;
 }
 
-.chips, .toggle {
+.chips,
+.toggle {
   margin-right: 20px;
   margin-bottom: 20px;
 }
