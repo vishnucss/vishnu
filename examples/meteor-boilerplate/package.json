@@ -9,7 +9,6 @@
     "meteor-node-stubs": "~0.2.4"
   },
   "devDependencies": {
-    "@vishnucss/base": "~1.0.2",
-    "@vishnucss/extensions": "~1.0.2"
+    "@vishnucss/vishnu": "^1.1.0"
   }
 }
