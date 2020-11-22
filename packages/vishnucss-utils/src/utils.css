@@ -77,6 +77,10 @@
   position: fixed;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
 .relative {
   position: relative;
 }
@@ -85,4 +89,8 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.hide {
+  display: none;
 }

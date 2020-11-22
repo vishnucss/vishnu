@@ -32,6 +32,7 @@
   }
   & .title {
     padding-right: 20px;
+    font-weight: 500;
   }
 }
 :--alert :--close {

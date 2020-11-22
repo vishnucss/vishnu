@@ -1,5 +1,5 @@
 /**
-* vishnucss utils - v1.1.0-beta.1
+* vishnucss utils - v1.1.0
 * https://vishnucss.github.io/vishnu#utilities
 */
 
@@ -82,6 +82,10 @@
   position: fixed;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
 .relative {
   position: relative;
 }
@@ -90,6 +94,10 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.hide {
+  display: none;
 }
 
 /*# sourceMappingURL=vishnu.utils.css.map */

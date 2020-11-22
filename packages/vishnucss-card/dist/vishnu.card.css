@@ -1,5 +1,5 @@
 /**
-* vishnucss card - v1.1.0-beta.1
+* vishnucss card - v1.1.0
 * https://vishnucss.github.io/vishnu#card
 */
 
@@ -8,8 +8,7 @@
 */
 
 :root {
-
-  /* Typhography */
+  /* Typography */
 
   /* Colours */
 
@@ -18,6 +17,12 @@
   /* Shadows */
 
   /* Utils */
+
+  /* Toogle */
+
+  /* Spacing */
+
+/* Responsive breakpoints */
 
 }
 
@@ -33,7 +38,7 @@
 * Card
 */
 
-/* 
+/*
  * Grid
 */
 
@@ -52,7 +57,7 @@
 */
 
 .card {
-  border: 1px solid #f1f1f1;
+  border: 1px solid #f0f0f0;
   background: #fff;
   border-radius: 4px;
 }
@@ -69,10 +74,10 @@
   display: flex;
 }
 .card .card-header {
-  border-bottom: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f0f0f0;
 }
 .card .card-footer {
-  border-top: 1px solid #f1f1f1;
+  border-top: 1px solid #f0f0f0;
 }
 .card .card-title {
   margin: 0;

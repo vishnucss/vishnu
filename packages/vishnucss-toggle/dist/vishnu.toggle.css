@@ -1,0 +1,175 @@
+/**
+* vishnucss toggle - v1.1.0
+* https://vishnucss.github.io/vishnu#toggle
+*/
+
+/*
+* Variables
+*/
+
+:root {
+  /* Typography */
+
+  /* Colours */
+
+  /* Transitions */
+
+  /* Shadows */
+
+  /* Utils */
+
+  /* Toogle */
+
+  /* Spacing */
+
+/* Responsive breakpoints */
+
+}
+
+/*
+* Toggle
+*/
+/*
+* Toggle
+*/
+
+/*
+*
+* @ custom-properties
+* :--toggle .toggle;
+* :--toggle-small .toggle.small;
+* :--toggle-label .toggle-label;
+* :--toggle-activated .toggle.activated;
+* :--toggle-disabled .toggle.disabled;
+* :--toggle-checked .toggle-input:checked + .toggle-label;
+* :--toggle-input .toggle-input;
+*
+*/
+
+.toggle {
+  position: relative;
+  display: inline-block;
+}
+
+
+/*
+* Hide input
+*/
+
+.toggle-input {
+  display: none;
+}
+
+
+/*
+* Toggle Label
+*/
+
+.toggle-label {
+  display: block;
+  width: 48px;
+  height: 24px;
+  text-indent: -9999px;
+  clip: rect(0 0 0 0);
+  color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none
+}
+
+.toggle-label:before, .toggle-label:after {
+    content: "";
+    display: block;
+    position: absolute;
+    cursor: pointer;
+  }
+
+.toggle-label:before {
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+    border-radius: 9999em;
+    transition: background-color 0.25s ease;
+  }
+
+.toggle-label:after {
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: left 0.25s ease;
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.0525);
+  }
+
+/*
+* Toggle checked
+*/
+
+.toggle-input:checked + .toggle-label:before {
+    background-color: #0dc222;
+  }
+
+.toggle-input:checked + .toggle-label:after {
+    left: 25px;
+  }
+
+
+/*
+* Toggle activated
+*/
+.toggle.activated .toggle-label {
+    opacity: 1
+  }
+.toggle.activated .toggle-label:before {
+      background-color: #0dc222;
+    }
+.toggle.activated .toggle-label:after {
+      left: 24px;
+    }
+.toggle.activated .toggle-input:checked + .toggle-label:before {
+      background-color: #f0f0f0;
+    }
+.toggle.activated .toggle-input:checked + .toggle-label:after {
+      left: 0!important;
+    }
+
+/*
+* Toggle disabled
+*/
+
+.toggle.disabled {
+  cursor: default
+}
+
+.toggle.disabled .toggle-input:checked + .toggle-label {
+    opacity: 0.7
+  }
+
+.toggle.disabled .toggle-input:checked + .toggle-label:before {
+      background-color: #f0f0f0;
+    }
+
+.toggle.disabled .toggle-input:checked + .toggle-label:after {
+      left: 25px;
+    }
+
+.toggle.disabled .toggle-label {
+    opacity: 0.7;
+    cursor: default
+  }
+
+.toggle.disabled .toggle-label:before {
+      background-color: #f0f0f0;
+      cursor: default;
+    }
+
+.toggle.disabled .toggle-label:after {
+      top: 0;
+      left: 0!important;
+      box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.0525);
+    }
+
+/*# sourceMappingURL=vishnu.toggle.css.map */

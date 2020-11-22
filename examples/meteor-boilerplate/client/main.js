@@ -1,4 +1,3 @@
-import '@vishnucss/base';
-import '@vishnucss/extensions';
+import '@vishnucss/vishnu';
 
 import './main.html';

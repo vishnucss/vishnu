@@ -66,10 +66,10 @@
   line-height: 1.2rem;
 }
 :--button:--large {
-  font-size: calc(var(--base-font-size) + 0.8rem);
-  min-height: 72px;
-  padding: 1.6rem 4.2rem;
-  line-height: 2rem;
+  font-size: calc(var(--base-font-size) + 0.4rem);
+  min-height: 58px;
+  padding: 1.4rem 3.2rem;
+  line-height: 1.4rem;
 }
 
 /* Outline */

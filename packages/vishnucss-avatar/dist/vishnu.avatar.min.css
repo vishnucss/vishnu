@@ -1,6 +1,6 @@
 /**
-* vishnucss avatar - v1.1.0-beta.1
+* vishnucss avatar - v1.1.0
 * https://vishnucss.github.io/vishnu#avatar
 */
-.avatar{width:42px;height:42px;max-width:42px;min-width:42px;flex-basis:42px;background:#f1f1f1;border-radius:50%;line-height:normal;overflow:hidden;display:flex;align-items:center;justify-content:center;font-weight:700;color:#282828}.avatar.primary{background:#667eea;color:#fff}.avatar.primary.outline{background:transparent;border-color:#667eea;color:#667eea}.avatar.outline{background:transparent;border:1px solid #282828}.avatar.small{width:32px;height:32px;max-width:32px;min-width:32px;flex-basis:32px}.avatar.large{width:62px;height:62px;max-width:62px;min-width:62px;flex-basis:62px}
+.avatar{width:42px;height:42px;max-width:42px;min-width:42px;flex-basis:42px;background:#f1f1f1;border-radius:50%;line-height:normal;overflow:hidden;display:flex;align-items:center;justify-content:center;font-weight:700;color:#282828}.avatar.primary{background:#8549b9;color:#fff}.avatar.primary.outline{background:transparent;border-color:#8549b9;color:#8549b9}.avatar.outline{background:transparent;border:1px solid #282828}.avatar.small{width:32px;height:32px;max-width:32px;min-width:32px;flex-basis:32px}.avatar.large{width:62px;height:62px;max-width:62px;min-width:62px;flex-basis:62px}
 /*# sourceMappingURL=vishnu.avatar.min.css.map */

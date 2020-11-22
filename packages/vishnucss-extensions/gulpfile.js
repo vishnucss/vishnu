@@ -24,26 +24,30 @@ const gulp = require('gulp'),
 /*
 * Extensions build task
 */
-gulp.task('build', function() {
+gulp.task('build', function () {
   let plugins = [
     cssvariables(),
     selector(),
     nesting(),
     customMedia(),
     colorMod(),
-    autoprefixer({browsers: ['last 1 version']})
+    autoprefixer({ browsers: ['last 1 version'] })
   ];
   return gulp
     .src([
       './src/variables.css',
       './src/customs.css',
-      './src/alert.css',
-      './src/avatar.css',
-      './src/card.css',
-      './src/icons.css',
-      './src/dialog.css',
-      './src/grid.css',
-      './src/utils.css'
+      "./src/alert.css",
+      "./src/avatar.css",
+      "./src/chips.css",
+      "./src/card.css",
+      "./src/collapse.css",
+      "./src/dialog.css",
+      "./src/toggle.css",
+      "./src/grid.css",
+      "./src/icons.css",
+      "./src/spacing.css",
+      "./src/utils.css"
     ])
     .pipe($.sourcemaps.init())
     .pipe($.concat('vishnu.extensions.css'))
@@ -57,7 +61,7 @@ gulp.task('build', function() {
 /*
 * Minify in build extensions
 */
-gulp.task('minify', ['build'], function() {
+gulp.task('minify', ['build'], function () {
   let plugins = [
     cssvariables(),
     selector(),
@@ -65,7 +69,7 @@ gulp.task('minify', ['build'], function() {
     nesting(),
     customMedia(),
     colorMod(),
-    autoprefixer({browsers: ['last 1 version']})
+    autoprefixer({ browsers: ['last 1 version'] })
   ];
   return gulp
     .src(['./dist/vishnu.extensions.css'])
@@ -86,7 +90,7 @@ gulp.task('minify', ['build'], function() {
 /*
 * Watch tasks
 */
-gulp.task('watch', function() {
+gulp.task('watch', function () {
   gulp.watch(['src/*.css'], ['default']);
 });
 

@@ -3,7 +3,7 @@
 */
 
 @custom-selector :--avatar .avatar;
-@custom-selector :--alert-primary .avatar.primary;
-@custom-selector :--alert-outline .avatar.outline;
-@custom-selector :--alert-small .avatar.small;
-@custom-selector :--alert-large .avatar.large;
+@custom-selector :--avatar-primary .avatar.primary;
+@custom-selector :--avatar-outline .avatar.outline;
+@custom-selector :--avatar-small .avatar.small;
+@custom-selector :--avatar-large .avatar.large;

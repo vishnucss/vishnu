@@ -1,5 +1,5 @@
 /**
-* vishnucss icons - v1.1.0-beta.1
+* vishnucss icons - v1.1.0
 * https://vishnucss.github.io/vishnu#icons
 */
 
@@ -8,8 +8,7 @@
 */
 
 :root {
-
-  /* Typhography */
+  /* Typography */
 
   /* Colours */
 
@@ -18,6 +17,12 @@
   /* Shadows */
 
   /* Utils */
+
+  /* Toogle */
+
+  /* Spacing */
+
+/* Responsive breakpoints */
 
 }
 
@@ -41,12 +46,12 @@
 .icon {
   width: 32px;
   height: 32px;
-  stroke: #667eea;
+  stroke: #8549b9;
   stroke-width: 1.5;
   stroke-linecap: round;
   stroke-linejoin: round;
   fill: none;
-  color: #667eea;
+  color: #8549b9;
 }
 
 .icon.lg {

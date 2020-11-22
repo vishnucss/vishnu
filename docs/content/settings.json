@@ -1,0 +1,9 @@
+{
+  "title": "Vishnu CSS - A simple and minimalist toolkit with modern css",
+  "url": "https://vishnucss.github.io/vishnu/",
+  "logo": {
+    "light": "/vishnu/logo-light.svg",
+    "dark": "/vishnu/logo-dark.svg"
+  },
+  "github": "vishnucss/vishnu"
+}

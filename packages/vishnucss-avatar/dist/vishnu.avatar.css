@@ -1,5 +1,5 @@
 /**
-* vishnucss avatar - v1.1.0-beta.1
+* vishnucss avatar - v1.1.0
 * https://vishnucss.github.io/vishnu#avatar
 */
 
@@ -8,8 +8,7 @@
 */
 
 :root {
-
-  /* Typhography */
+  /* Typography */
 
   /* Colours */
 
@@ -18,6 +17,12 @@
   /* Shadows */
 
   /* Utils */
+
+  /* Toogle */
+
+  /* Spacing */
+
+/* Responsive breakpoints */
 
 }
 
@@ -33,10 +38,10 @@
 *
 * @ custom-properties
 * :--avatar .avatar;
-* :--alert-primary .avatar.primary;
-* :--alert-outline .avatar.outline;
-* :--alert-small .avatar.small;
-* :--alert-large .avatar.large;
+* :--avatar-primary .avatar.primary;
+* :--avatar-outline .avatar.outline;
+* :--avatar-small .avatar.small;
+* :--avatar-large .avatar.large;
 *
 */
 
@@ -57,13 +62,13 @@
   color: #282828;
 }
 .avatar.primary {
-  background: #667eea;
+  background: #8549b9;
   color: #fff
 }
 .avatar.primary.outline {
     background: transparent;
-    border-color: #667eea;
-    color: #667eea;
+    border-color: #8549b9;
+    color: #8549b9;
   }
 .avatar.outline {
   background: transparent;

@@ -1,8 +1,6 @@
-<p align="center"><a href="https://vishnucss.github.io/vishnu" target="_blank"><img src="https://vishnucss.github.io/vishnu/src/assets/logo.png" width="185" height="185" /></a></p>
-<h1 align="center">Vishnu</h1>
-<p align="center">A simple and minimalist toolkit with modern css</p>
+<p align="center"><a href="https://vishnucss.github.io/vishnu" target="_blank"><img src="https://vishnucss.github.io/vishnu/preview.png" height="385" /></a></p>
 <p align="center"><img src="https://badge.fury.io/js/%40vishnucss%2Fvishnu.svg" /> <img src="https://img.shields.io/npm/dt/@vishnucss/vishnu.svg" /></p>
-<p align="center"><a href="https://vishnucss.github.io/vishnu/#docs" target="_blank">Docs</a> / <a href="https://vishnucss.github.io/vishnu/#examples" target="_blank">Examples</a></p>
+<p align="center"><a href="https://vishnucss.github.io/vishnu" target="_blank">Docs</a> / <a href="https://vishnucss.github.io/vishnu/#examples" target="_blank">Examples</a></p>
 
 ## Why should I use it?
 
@@ -21,7 +19,7 @@ $ npm install --save @vishnucss/vishnu
 **Using directly link**
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@vishnucss/vishnu"/>
+<link rel="stylesheet" href="https://unpkg.com/@vishnucss/vishnu" />
 ```
 
 ### [Base](https://github.com/vishnucss/vishnu/tree/master/packages/vishnucss-base)
@@ -35,7 +33,7 @@ $ npm install --save @vishnucss/base
 **Using directly link**
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@vishnucss/base"/>
+<link rel="stylesheet" href="https://unpkg.com/@vishnucss/base" />
 ```
 
 ### [Extensions](https://github.com/vishnucss/vishnu/tree/master/packages/vishnucss-extensions)
@@ -49,7 +47,7 @@ $ npm install --save @vishnucss/extensions
 **Using directly link**
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@vishnucss/extensions"/>
+<link rel="stylesheet" href="https://unpkg.com/@vishnucss/extensions" />
 ```
 
 #### List all extensions:
@@ -60,6 +58,8 @@ $ npm install --save @vishnucss/extensions
 - [Icons](https://github.com/vishnucss/vishnu/tree/master/packages/vishnucss-icons)
 - [Dialog](https://github.com/vishnucss/vishnu/tree/master/packages/vishnucss-dialog)
 - [Grid](https://github.com/vishnucss/vishnu/tree/master/packages/vishnucss-grid)
+- [Toggle](https://github.com/vishnucss/vishnu/tree/master/packages/vishnucss-toggle)
+- [Spacing](https://github.com/vishnucss/vishnu/tree/master/packages/vishnucss-spacing)
 - [Utils](https://github.com/vishnucss/vishnu/tree/master/packages/vishnucss-utils)
 
 ## Bug?

@@ -1,7 +1,7 @@
 {
   "name": "@vishnucss/vishnu",
   "filename": "vishnu.min.css",
-  "version": "1.1.0-beta.1",
+  "version": "1.1.0",
   "description": "A simple and minimalist toolkit with modern css",
   "main": "./dist/vishnu.min.css",
   "keywords": [
@@ -23,6 +23,9 @@
     "package.json",
     "src"
   ],
+  "resolutions": {
+    "graceful-fs": "^4.2.4"
+  },
   "scripts": {
     "test": "echo \"Testing\"",
     "build": "gulp"

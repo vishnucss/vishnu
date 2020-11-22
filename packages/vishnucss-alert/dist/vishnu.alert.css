@@ -1,5 +1,5 @@
 /**
-* vishnucss alert - v1.1.0-beta.1
+* vishnucss alert - v1.1.0
 * https://vishnucss.github.io/vishnu#alert
 */
 
@@ -8,8 +8,7 @@
 */
 
 :root {
-
-  /* Typhography */
+  /* Typography */
 
   /* Colours */
 
@@ -18,6 +17,12 @@
   /* Shadows */
 
   /* Utils */
+
+  /* Toogle */
+
+  /* Spacing */
+
+/* Responsive breakpoints */
 
 }
 
@@ -45,10 +50,10 @@
   padding: 8px 20px;
   margin-bottom: 15px;
   background: transparent;
-  color: #444;
+  color: #4c4c4c;
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #cfcfcf;
   display: flex;
   justify-content: flex-start;
   flex-direction: column
@@ -59,6 +64,7 @@
   }
 .alert .title {
     padding-right: 20px;
+    font-weight: 500;
   }
 .alert .close {
   position: absolute;
@@ -81,28 +87,28 @@
     height: 24px
   }
 .alert .close .icon path {
-      fill: #444;
+      fill: #4c4c4c;
     }
 .alert .close .icon circle {
-      stroke: #444;
+      stroke: #4c4c4c;
       stroke-width: 1;
     }
 .alert.info {
   background: rgba(44, 128, 255, 0.05);
   border-color: rgba(44, 128, 255, 0.5);
-  color: #2C80FF
+  color: #2c80ff
 }
 .alert.info:before {
-    color: #2C80FF;
+    color: #2c80ff;
   }
 .alert.info .description {
     color: rgba(44, 128, 255, 0.6);
   }
 .alert.info .close .icon path {
-        fill: #667eea;
+        fill: #8549b9;
       }
 .alert.info .close .icon circle {
-        stroke: #667eea;
+        stroke: #8549b9;
         stroke-width: 1;
       }
 .alert.warning {
@@ -124,13 +130,13 @@
 .alert.error {
   background: rgba(249, 56, 56, 0.05);
   border-color: rgba(249, 56, 56, 0.5);
-  color: #F93838
+  color: #f93838
 }
 .alert.error .close .icon path {
-        fill: #F93838;
+        fill: #f93838;
       }
 .alert.error .close .icon circle {
-        stroke: #F93838;
+        stroke: #f93838;
         stroke-width: 1;
       }
 .alert.error .description {
@@ -139,16 +145,16 @@
 .alert.success {
   background: rgba(13, 194, 34, 0.05);
   border-color: rgba(13, 194, 34, 0.1);
-  color: #0DC222
+  color: #0dc222
 }
 .alert.success .close {
     border-color: transparent
   }
 .alert.success .close .icon path {
-        fill: #0DC222;
+        fill: #0dc222;
       }
 .alert.success .close .icon circle {
-        stroke: #0DC222;
+        stroke: #0dc222;
         stroke-width: 1;
       }
 .alert.success .description {
@@ -167,7 +173,7 @@
 
 /* Placeholder */
 .placeholder {
-  border: 2px dashed #f1f1f1;
+  border: 2px dashed #f0f0f0;
   background: rgba(255, 255, 255, 0.15);
 }
 
