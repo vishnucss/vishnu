@@ -1,14 +1,12 @@
 Package.describe({
-	name: 'vishnucss:chips',
-	version: '1.1.0',
-	summary: 'Chips toolkit with modern css.',
-	git: 'https://github.com/vishnucss/vishnu.git',
-	documentation: 'README.md'
-})
+  name: "vishnucss:toggle",
+  version: "1.1.0",
+  summary: "Toggle toolkit with modern css.",
+  git: "https://github.com/vishnucss/vishnu.git",
+  documentation: "README.md",
+});
 
 Package.onUse((api) => {
-	api.versionsFrom('METEOR@1.0')
-	api.addFiles([
-		'dist/vishnu.chips.css'
-	], 'client')
-})
+  api.versionsFrom("METEOR@1.0");
+  api.addFiles(["dist/vishnu.toggle.css"], "client");
+});

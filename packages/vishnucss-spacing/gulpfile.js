@@ -8,7 +8,6 @@ const gulp = require('gulp'),
   pkg = require('./package.json'),
   postcss = require('gulp-postcss'),
   cssnano = require('cssnano'),
-  autoprefixer = require('autoprefixer'),
   selector = require('postcss-custom-selectors'),
   nesting = require('postcss-nesting'),
   customMedia = require('postcss-custom-media'),
@@ -23,14 +22,13 @@ const gulp = require('gulp'),
 /*
 * Spacing build task
 */
-gulp.task('build', function () {
+gulp.task('build', () => {
   let plugins = [
     cssvariables(),
     selector(),
     nesting(),
     customMedia(),
     colorMod(),
-    autoprefixer({ browsers: ['last 1 version'] })
   ];
   return gulp
     .src([
@@ -49,7 +47,7 @@ gulp.task('build', function () {
 /*
 * Minify in build spacing
 */
-gulp.task('minify', ['build'], function () {
+gulp.task('minify', ['build'], () => {
   let plugins = [
     cssvariables(),
     selector(),
@@ -57,7 +55,6 @@ gulp.task('minify', ['build'], function () {
     nesting(),
     customMedia(),
     colorMod(),
-    autoprefixer({ browsers: ['last 1 version'] })
   ];
   return gulp
     .src(['./dist/vishnu.spacing.css'])
@@ -78,7 +75,7 @@ gulp.task('minify', ['build'], function () {
 /*
 * Watch tasks
 */
-gulp.task('watch', function () {
+gulp.task('watch', () => {
   gulp.watch(['src/*.css'], ['default']);
 });
 

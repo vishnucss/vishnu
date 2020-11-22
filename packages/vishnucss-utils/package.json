@@ -44,8 +44,10 @@
       "vishnu.utils.css"
     ]
   },
+  "browserslist": [
+    "defaults"
+  ],
   "devDependencies": {
-    "autoprefixer": "^9.1.5",
     "browser-sync": "^2.18.13",
     "cssnano": "^3.10.0",
     "gulp": "^3.9.1",

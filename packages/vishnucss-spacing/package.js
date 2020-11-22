@@ -1,7 +1,7 @@
 Package.describe({
   name: 'vishnucss:spacing',
   version: '1.1.0',
-  summary: 'Utils toolkit with modern css.',
+  summary: 'Spacing toolkit with modern css.',
   git: 'https://github.com/vishnucss/vishnu.git',
   documentation: 'README.md'
 })
