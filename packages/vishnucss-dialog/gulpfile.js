@@ -8,7 +8,6 @@ const gulp = require("gulp"),
   pkg = require("./package.json"),
   postcss = require("gulp-postcss"),
   cssnano = require("cssnano"),
-  autoprefixer = require("autoprefixer"),
   selector = require("postcss-custom-selectors"),
   nesting = require("postcss-nesting"),
   customMedia = require("postcss-custom-media"),
@@ -23,14 +22,13 @@ const gulp = require("gulp"),
 /*
  * dialog build task
  */
-gulp.task("build", function() {
+gulp.task("build", () => {
   let plugins = [
     cssvariables(),
     selector(),
     nesting(),
     customMedia(),
-    colorMod(),
-    autoprefixer({ browsers: ["last 1 version"] })
+    colorMod()
   ];
   return gulp
     .src(["./src/variables.css", "./src/customs.css", "./src/dialog.css"])
@@ -46,15 +44,14 @@ gulp.task("build", function() {
 /*
  * Minify in build dialog
  */
-gulp.task("minify", ["build"], function() {
+gulp.task("minify", ["build"], () => {
   let plugins = [
     cssvariables(),
     selector(),
     cssnano(),
     nesting(),
     customMedia(),
-    colorMod(),
-    autoprefixer({ browsers: ["last 1 version"] })
+    colorMod()
   ];
   return gulp
     .src(["./dist/vishnu.dialog.css"])
@@ -75,7 +72,7 @@ gulp.task("minify", ["build"], function() {
 /*
  * Watch tasks
  */
-gulp.task("watch", function() {
+gulp.task("watch", () => {
   gulp.watch(["src/*.css"], ["default"]);
 });
 
