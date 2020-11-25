@@ -578,8 +578,7 @@
 
 .collapse input:checked ~ label .icon.right,
     .collapse input:checked ~ label .icon.left {
-      -webkit-transform: rotate(-180deg);
-              transform: rotate(-180deg);
+      transform: rotate(-180deg);
     }
 
 .icon.right {
@@ -737,10 +736,7 @@
   text-indent: -9999px;
   clip: rect(0 0 0 0);
   color: transparent;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none
+  user-select: none
 }
 
 .toggle-label:before, .toggle-label:after {

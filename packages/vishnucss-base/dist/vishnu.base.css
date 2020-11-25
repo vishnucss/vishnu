@@ -51,11 +51,6 @@
  * Reset
 */
 
-::-moz-selection {
-  color: #8549b9;
-  background: #fff;
-}
-
 ::selection {
   color: #8549b9;
   background: #fff;
@@ -134,38 +129,40 @@ p {
   font-size: 1.6rem;
 }
 
+@media only screen and (max-width: 25em) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+
+  h4 {
+    font-size: 2.6rem;
+  }
+
+  h5 {
+    font-size: 2.2rem;
+  }
+
+  h6 {
+    font-size: 1.8rem;
+  }
+}
+
 /*
  * Links
 */
-
-:-webkit-any-link {
-  color: #8549b9;
-  -webkit-transition: color 0.1s ease;
-  transition: color 0.1s ease
-}
-
-:-moz-any-link {
-  color: #8549b9;
-  -moz-transition: color 0.1s ease;
-  transition: color 0.1s ease
-}
 
 :any-link {
   color: #8549b9;
   transition: color 0.1s ease
 }
-
-:-webkit-any-link:hover {
-    cursor: pointer;
-    color: rgba(133, 73, 185, 0.8);
-    text-decoration: none;
-  }
-
-:-moz-any-link:hover {
-    cursor: pointer;
-    color: rgba(133, 73, 185, 0.8);
-    text-decoration: none;
-  }
 
 :any-link:hover {
     cursor: pointer;
@@ -173,24 +170,8 @@ p {
     text-decoration: none;
   }
 
-:-webkit-any-link:focus {
-    outline: thin dotted;
-  }
-
-:-moz-any-link:focus {
-    outline: thin dotted;
-  }
-
 :any-link:focus {
     outline: thin dotted;
-  }
-
-:-webkit-any-link:active, :-webkit-any-link:hover {
-    outline: 0;
-  }
-
-:-moz-any-link:active, :-moz-any-link:hover {
-    outline: 0;
   }
 
 :any-link:active, :any-link:hover {
@@ -567,10 +548,7 @@ select {
   cursor: pointer;
   font-size: 1.6rem;
   line-height: 1.5;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
   align-items: center;
   border-radius: 4px
 }
@@ -597,8 +575,7 @@ select {
   height: 10px;
   border: solid white;
   border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 /* Radio Button */
@@ -609,10 +586,7 @@ select {
   cursor: pointer;
   font-size: 1.6rem;
   line-height: 1.5;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none
+  user-select: none
 }
 .radio .radiomark {
     position: absolute;
@@ -720,6 +694,48 @@ table thead, .table thead {
   }
 
 /* responsive table */
+@media only screen and (max-width: 48em) {
+    table.responsive, .table.responsive {
+      position: relative;
+      display: block
+    }
+      table.responsive th, table.responsive td, .table.responsive th, .table.responsive td {
+        margin: 0
+      }
+      table.responsive thead, .table.responsive thead {
+        display: block;
+        float: left;
+        border: 0
+      }
+        table.responsive thead tr, .table.responsive thead tr {
+          display: block;
+          padding: 0 10px 0 0;
+          border-right: 1px solid #cfcfcf;
+        }
+        table.responsive thead th, .table.responsive thead th {
+          text-align: left;
+        }
+      table.responsive th, .table.responsive th {
+        display: block;
+        text-align: right;
+      }
+      table.responsive tbody, .table.responsive tbody {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap
+      }
+        table.responsive tbody tr, .table.responsive tbody tr {
+          display: inline-block;
+        }
+      table.responsive td, .table.responsive td {
+        display: block;
+        min-height: 16px;
+        text-align: left;
+      }
+      table.responsive tr, .table.responsive tr {
+        padding: 0 10px;
+      }
+}
 
 /*
  * Images
@@ -776,5 +792,29 @@ pre > code {
 * --xl-viewport only screen and (max-width: 75em);
 *
 */
+
+@media only screen and (max-width: 25em) {
+  .hide-sm {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  .hide-md {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 62em) {
+  .hide-lg {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  .hide-xl {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=vishnu.base.css.map */
