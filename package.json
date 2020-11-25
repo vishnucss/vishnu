@@ -50,7 +50,9 @@
     ]
   },
   "browserslist": [
-    "defaults"
+    "last 1 version",
+    "> 1%",
+    "IE 10"
   ],
   "devDependencies": {
     "browser-sync": "^2.18.13",
