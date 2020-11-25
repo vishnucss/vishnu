@@ -11,7 +11,6 @@ const gulp = require('gulp'),
   selector = require('postcss-custom-selectors'),
   nesting = require('postcss-nesting'),
   customMedia = require('postcss-custom-media'),
-  cssvariables = require('postcss-css-variables'),
   colorMod = require('postcss-color-mod-function'),
   copyright = `/**
 * vishnucss toggle - v${pkg.version}
@@ -24,7 +23,6 @@ const gulp = require('gulp'),
 */
 gulp.task('build', () => {
   let plugins = [
-    cssvariables(),
     selector(),
     nesting(),
     customMedia(),
@@ -50,7 +48,6 @@ gulp.task('build', () => {
 */
 gulp.task('minify', ['build'], () => {
   let plugins = [
-    cssvariables(),
     selector(),
     cssnano(),
     nesting(),
