@@ -416,7 +416,7 @@
     order: 1;
   }
 }
-@media (--lg-large-viewport) {
+@media (--lg-viewport) {
   :--all-cols-lg {
     box-sizing: border-box;
     flex: 0 0 auto;

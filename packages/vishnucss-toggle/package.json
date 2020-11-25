@@ -1,7 +1,7 @@
 {
   "name": "@vishnucss/toggle",
   "filename": "vishnu.toggle.min.css",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Toggle toolkit with modern css",
   "main": "./dist/vishnu.toggle.min.css",
   "keywords": [
@@ -49,8 +49,12 @@
       "vishnu.toggle.css"
     ]
   },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "IE 10"
+  ],
   "devDependencies": {
-    "autoprefixer": "^9.1.5",
     "browser-sync": "^2.18.13",
     "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
@@ -65,7 +69,6 @@
     "gulp-sourcemaps": "^2.6.1",
     "gulp-symdest": "^1.1.0",
     "gulp-util": "~2.2.9",
-    "postcss-css-variables": "^0.9.0",
     "postcss-preset-env": "^5.3.0"
   }
 }
