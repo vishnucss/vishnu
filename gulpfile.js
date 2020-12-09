@@ -9,11 +9,9 @@ const gulp = require("gulp"),
   symdest = require("gulp-symdest"),
   postcss = require("gulp-postcss"),
   cssnano = require("cssnano"),
-  autoprefixer = require("autoprefixer"),
   selector = require("postcss-custom-selectors"),
   nesting = require("postcss-nesting"),
   customMedia = require("postcss-custom-media"),
-  cssvariables = require("postcss-css-variables"),
   colorMod = require("postcss-color-mod-function"),
   copyright = `/**
 * vishnucss - v${pkg.version}
@@ -24,14 +22,12 @@ const gulp = require("gulp"),
 /*
  * Base build task
  */
-gulp.task("build", function () {
+gulp.task("build", () => {
   let plugins = [
-    cssvariables(),
     selector(),
     nesting(),
     customMedia(),
     colorMod(),
-    autoprefixer({ browsers: ["last 1 version"] })
   ];
   return gulp
     .src([
@@ -72,15 +68,13 @@ gulp.task("build", function () {
 /*
  * Minify in build base
  */
-gulp.task("minify", ["build"], function () {
+gulp.task("minify", ["build"], () => {
   let plugins = [
-    cssvariables(),
     selector(),
     cssnano(),
     nesting(),
     customMedia(),
     colorMod(),
-    autoprefixer({ browsers: ["last 1 version"] })
   ];
   return gulp
     .src(["./dist/vishnu.css"])
@@ -98,7 +92,7 @@ gulp.task("minify", ["build"], function () {
 /*
  * Watch tasks
  */
-gulp.task("watch", function () {
+gulp.task("watch", () => {
   gulp.watch(["src/*.css"], ["default"]);
 });
 

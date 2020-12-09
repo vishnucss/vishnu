@@ -8,6 +8,9 @@
   },
   "author": "",
   "license": "ISC",
+  "resolutions": {
+    "graceful-fs": "^4.2.4"
+  },
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",

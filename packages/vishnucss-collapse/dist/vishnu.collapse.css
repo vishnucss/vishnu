@@ -9,20 +9,69 @@
 
 :root {
   /* Typography */
+  --base-font-family: -apple-system, BlinkMacSystemFont, Avenir, "Avenir Next",
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  --base-font-size: 1.6rem;
+  --base-line-height: 1.5;
+  --base-space-size: 16px;
 
   /* Colours */
+  --primary-color: #8549b9;
+  --secondary-color: #a460e8;
+  --base-color: #fff;
+  --base-dark-color: #282828;
+  --base-info-color: #2c80ff;
+  --base-error-color: #f93838;
+  --base-success-color: #0dc222;
+  --base-warning-color: #f2ad00;
+  --base-light-color: #f0f0f0;
+  --base-border-color: #cfcfcf;
+  --base-text-color: #4c4c4c;
+  --base-label-color: #6f6f6f;
 
   /* Transitions */
+  --transition: all 0.2s ease-in-out;
 
   /* Shadows */
+  --base-box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.0325);
 
   /* Utils */
+  --base-radius: 4px;
+  --base-rounded-radius: 50%;
 
   /* Toogle */
+  --toggle-transition-duration: 0.25s;
+  --toggle-transition-timing-function: ease;
+  --toggle-label-width: 48px;
+  --toggle-label-height: 24px;
+  --toggle-rail-width: 100%;
+  --toggle-rail-height: 100%;
+  --toggle-rail-background-color: var(--base-light-color);
+  --toggle-rail-border-radius: 9999em;
+  --toggle-rail-checked-background-color: var(--base-success-color);
+  --toggle-width: 24px;
+  --toggle-height: 24px;
+  --toggle-border-radius: 50%;
+  --toggle-background-color: #fff;
+  --toggle-box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.0525);
+  --toggle-checked-left: 25px;
 
   /* Spacing */
+--spacing-xxs:  calc(16px / 6);
+--spacing-xs: calc(16px / 4);
+--spacing-sm: calc(16px / 2);
+--spacing-md: 16px;
+--spacing-lg: calc(16px + 8);
+--spacing-xl: calc(16px * 2);
+--spacing-xxl: calc(16px * 2 + 8);
+--spacing-xxxl: calc(16px * 4);
 
 /* Responsive breakpoints */
+--responsive-sm: 25em;
+--responsive-md: 48em;
+--responsive-lg: 62em;
+--responsive-xl: 75em;
 
 }
 
@@ -55,14 +104,14 @@
     position: relative;
     margin-bottom: 2px;
     width: 100%;
-    color: #282828;
+    color: var(--base-dark-color);
     overflow: hidden;
-    border: 1px solid #f0f0f0;
-    transition: all 0.2s ease-in-out
+    border: 1px solid var(--base-light-color);
+    transition: var(--transition)
   }
 
 .collapse .collapse-item:hover {
-      border-color: #8549b9;
+      border-color: var(--primary-color);
     }
 
 .collapse input {
@@ -73,22 +122,15 @@
 
 .collapse input:checked ~ label .icon.right,
     .collapse input:checked ~ label .icon.left {
-      -webkit-transform: rotate(-180deg);
-              transform: rotate(-180deg);
+      transform: rotate(-180deg);
     }
 
-.icon.right {
-  width: 22px;
-  height: 22px;
-  stroke: #282828;
-  transition: all 0.2s ease-in-out;
-}
-
+.icon.right,
 .icon.left {
   width: 22px;
   height: 22px;
-  stroke: #282828;
-  transition: all 0.2s ease-in-out;
+  stroke: var(--base-dark-color);
+  transition: var(--transition);
 }
 
 .collapse label {

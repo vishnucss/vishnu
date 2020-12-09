@@ -60,13 +60,13 @@
 
 /* Size */
 :--button:--small {
-  font-size: calc(var(--base-font-size) - 0.2rem);
+  font-size: calc(1.6rem - 0.2rem);
   min-height: 36px;
   font-weight: 700;
   line-height: 1.2rem;
 }
 :--button:--large {
-  font-size: calc(var(--base-font-size) + 0.4rem);
+  font-size: calc(1.6rem + 0.4rem);
   min-height: 58px;
   padding: 1.4rem 3.2rem;
   line-height: 1.4rem;

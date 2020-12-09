@@ -1,5 +1,5 @@
 /**
-* vishnucss alert - v1.1.0
+* vishnucss alert - v1.1.1
 * https://vishnucss.github.io/vishnu#alert
 */
 
@@ -9,20 +9,69 @@
 
 :root {
   /* Typography */
+  --base-font-family: -apple-system, BlinkMacSystemFont, Avenir, "Avenir Next",
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  --base-font-size: 1.6rem;
+  --base-line-height: 1.5;
+  --base-space-size: 16px;
 
   /* Colours */
+  --primary-color: #8549b9;
+  --secondary-color: #a460e8;
+  --base-color: #fff;
+  --base-dark-color: #282828;
+  --base-info-color: #2c80ff;
+  --base-error-color: #f93838;
+  --base-success-color: #0dc222;
+  --base-warning-color: #f2ad00;
+  --base-light-color: #f0f0f0;
+  --base-border-color: #cfcfcf;
+  --base-text-color: #4c4c4c;
+  --base-label-color: #6f6f6f;
 
   /* Transitions */
+  --transition: all 0.2s ease-in-out;
 
   /* Shadows */
+  --base-box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.0325);
 
   /* Utils */
+  --base-radius: 4px;
+  --base-rounded-radius: 50%;
 
   /* Toogle */
+  --toggle-transition-duration: 0.25s;
+  --toggle-transition-timing-function: ease;
+  --toggle-label-width: 48px;
+  --toggle-label-height: 24px;
+  --toggle-rail-width: 100%;
+  --toggle-rail-height: 100%;
+  --toggle-rail-background-color: var(--base-light-color);
+  --toggle-rail-border-radius: 9999em;
+  --toggle-rail-checked-background-color: var(--base-success-color);
+  --toggle-width: 24px;
+  --toggle-height: 24px;
+  --toggle-border-radius: 50%;
+  --toggle-background-color: #fff;
+  --toggle-box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.0525);
+  --toggle-checked-left: 25px;
 
   /* Spacing */
+--spacing-xxs:  calc(16px / 6);
+--spacing-xs: calc(16px / 4);
+--spacing-sm: calc(16px / 2);
+--spacing-md: 16px;
+--spacing-lg: calc(16px + 8);
+--spacing-xl: calc(16px * 2);
+--spacing-xxl: calc(16px * 2 + 8);
+--spacing-xxxl: calc(16px * 4);
 
 /* Responsive breakpoints */
+--responsive-sm: 25em;
+--responsive-md: 48em;
+--responsive-lg: 62em;
+--responsive-xl: 75em;
 
 }
 
@@ -50,10 +99,10 @@
   padding: 8px 20px;
   margin-bottom: 15px;
   background: transparent;
-  color: #4c4c4c;
-  border-radius: 4px;
-  transition: all 0.2s ease-in-out;
-  border: 1px solid #cfcfcf;
+  color: var(--base-text-color);
+  border-radius: var(--base-radius);
+  transition: var(--transition);
+  border: 1px solid var(--base-border-color);
   display: flex;
   justify-content: flex-start;
   flex-direction: column
@@ -79,45 +128,45 @@
   min-height: 28px;
   font-size: 1.3rem;
   background: transparent;
-  border-radius: 50%;
-  color: #282828
+  border-radius: var(--base-rounded-radius);
+  color: var(--base-dark-color)
 }
 .alert .close .icon {
     width: 24px;
     height: 24px
   }
 .alert .close .icon path {
-      fill: #4c4c4c;
+      fill: var(--base-text-color);
     }
 .alert .close .icon circle {
-      stroke: #4c4c4c;
+      stroke: var(--base-text-color);
       stroke-width: 1;
     }
 .alert.info {
   background: rgba(44, 128, 255, 0.05);
   border-color: rgba(44, 128, 255, 0.5);
-  color: #2c80ff
+  color: var(--base-info-color)
 }
 .alert.info:before {
-    color: #2c80ff;
+    color: var(--base-info-color);
   }
 .alert.info .description {
     color: rgba(44, 128, 255, 0.6);
   }
 .alert.info .close .icon path {
-        fill: #8549b9;
+        fill: var(--primary-color);
       }
 .alert.info .close .icon circle {
-        stroke: #8549b9;
+        stroke: var(--primary-color);
         stroke-width: 1;
       }
 .alert.warning {
   background: rgba(242, 173, 0, 0.05);
   border-color: rgba(242, 173, 0, 0.5);
-  color: #f2ad00
+  color: var(--base-warning-color)
 }
 .alert.warning:before {
-    color: #f2ad00;
+    color: var(--base-warning-color);
   }
 .alert.warning .description {
     color: rgba(242, 173, 0, 0.6);
@@ -130,13 +179,13 @@
 .alert.error {
   background: rgba(249, 56, 56, 0.05);
   border-color: rgba(249, 56, 56, 0.5);
-  color: #f93838
+  color: var(--base-error-color)
 }
 .alert.error .close .icon path {
-        fill: #f93838;
+        fill: var(--base-error-color);
       }
 .alert.error .close .icon circle {
-        stroke: #f93838;
+        stroke: var(--base-error-color);
         stroke-width: 1;
       }
 .alert.error .description {
@@ -145,16 +194,16 @@
 .alert.success {
   background: rgba(13, 194, 34, 0.05);
   border-color: rgba(13, 194, 34, 0.1);
-  color: #0dc222
+  color: var(--base-success-color)
 }
 .alert.success .close {
     border-color: transparent
   }
 .alert.success .close .icon path {
-        fill: #0dc222;
+        fill: var(--base-success-color);
       }
 .alert.success .close .icon circle {
-        stroke: #0dc222;
+        stroke: var(--base-success-color);
         stroke-width: 1;
       }
 .alert.success .description {
@@ -173,7 +222,7 @@
 
 /* Placeholder */
 .placeholder {
-  border: 2px dashed #f0f0f0;
+  border: 2px dashed var(--base-light-color);
   background: rgba(255, 255, 255, 0.15);
 }
 
