@@ -1,7 +1,7 @@
 {
   "name": "@vishnucss/grid",
   "filename": "vishnu.grid.min.css",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Grid system toolkit with modern css",
   "main": "./dist/vishnu.grid.min.css",
   "keywords": [
