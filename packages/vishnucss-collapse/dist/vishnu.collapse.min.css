@@ -1,6 +1,115 @@
 /**
-* vishnucss collapse - v1.1.0
+* vishnucss collapse - v1.1.1
 * https://vishnucss.github.io/vishnu#collapse
 */
-:root{--base-font-family:-apple-system,BlinkMacSystemFont,Avenir,"Avenir Next","Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;--base-font-size:1.6rem;--base-line-height:1.5;--base-space-size:16px;--primary-color:#8549b9;--secondary-color:#a460e8;--base-color:#fff;--base-dark-color:#282828;--base-info-color:#2c80ff;--base-error-color:#f93838;--base-success-color:#0dc222;--base-warning-color:#f2ad00;--base-light-color:#f0f0f0;--base-border-color:#cfcfcf;--base-text-color:#4c4c4c;--base-label-color:#6f6f6f;--transition:all 0.2s ease-in-out;--base-box-shadow:0 0 5px 3px rgba(0,0,0,.0325);--base-radius:4px;--base-rounded-radius:50%;--toggle-transition-duration:0.25s;--toggle-transition-timing-function:ease;--toggle-label-width:48px;--toggle-label-height:24px;--toggle-rail-width:100%;--toggle-rail-height:100%;--toggle-rail-background-color:var(--base-light-color);--toggle-rail-border-radius:9999em;--toggle-rail-checked-background-color:var(--base-success-color);--toggle-width:24px;--toggle-height:24px;--toggle-border-radius:50%;--toggle-background-color:#fff;--toggle-box-shadow:1px 1px 4px 2px rgba(0,0,0,.0525);--toggle-checked-left:25px;--spacing-xxs:2.66667px;--spacing-xs:4px;--spacing-sm:8px;--spacing-md:16px;--spacing-lg:24px;--spacing-xl:32px;--spacing-xxl:40px;--spacing-xxxl:64px;--responsive-sm:25em;--responsive-md:48em;--responsive-lg:62em;--responsive-xl:75em}.collapse{width:100%}.collapse .collapse-item{position:relative;margin-bottom:2px;width:100%;color:var(--base-dark-color);overflow:hidden;border:1px solid var(--base-light-color);transition:var(--transition)}.collapse .collapse-item:hover{border-color:var(--primary-color)}.collapse input{position:absolute;opacity:0;z-index:-1}.collapse input:checked~label .icon.left,.collapse input:checked~label .icon.right{transform:rotate(-180deg)}.icon.left,.icon.right{width:22px;height:22px;stroke:var(--base-dark-color);transition:var(--transition)}.collapse label{position:relative;display:flex;justify-content:space-between;align-items:center;padding:6px 15px;font-weight:500;line-height:3;cursor:pointer}.collapse label:hover{background:transparent}.collapse-content{max-height:0;padding:0 15px;overflow:hidden;background:#fff;transition:max-height .25s}.collapse-content p{font-size:14px;line-height:16px;margin:10px 0}.collapse input:checked~.collapse-content{max-height:10em}
+:root {
+  --base-font-family: -apple-system, BlinkMacSystemFont, Avenir, "Avenir Next",
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  --base-font-size: 1.6rem;
+  --base-line-height: 1.5;
+  --base-space-size: 16px;
+  --primary-color: #8549b9;
+  --secondary-color: #a460e8;
+  --base-color: #fff;
+  --base-dark-color: #282828;
+  --base-info-color: #2c80ff;
+  --base-error-color: #f93838;
+  --base-success-color: #0dc222;
+  --base-warning-color: #f2ad00;
+  --base-light-color: #f0f0f0;
+  --base-border-color: #cfcfcf;
+  --base-text-color: #4c4c4c;
+  --base-label-color: #6f6f6f;
+  --transition: all 0.2s ease-in-out;
+  --base-box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.0325);
+  --base-radius: 4px;
+  --base-rounded-radius: 50%;
+  --toggle-transition-duration: 0.25s;
+  --toggle-transition-timing-function: ease;
+  --toggle-label-width: 48px;
+  --toggle-label-height: 24px;
+  --toggle-rail-width: 100%;
+  --toggle-rail-height: 100%;
+  --toggle-rail-background-color: var(--base-light-color);
+  --toggle-rail-border-radius: 9999em;
+  --toggle-rail-checked-background-color: var(--base-success-color);
+  --toggle-width: 24px;
+  --toggle-height: 24px;
+  --toggle-border-radius: 50%;
+  --toggle-background-color: #fff;
+  --toggle-box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.0525);
+  --toggle-checked-left: 25px;
+  --spacing-xxs: 2.66667px;
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 40px;
+  --spacing-xxxl: 64px;
+  --responsive-sm: 25em;
+  --responsive-md: 48em;
+  --responsive-lg: 62em;
+  --responsive-xl: 75em;
+}
+.collapse {
+  width: 100%;
+}
+.collapse .collapse-item {
+  position: relative;
+  margin-bottom: 2px;
+  width: 100%;
+  color: var(--base-dark-color);
+  overflow: hidden;
+  border: 1px solid var(--base-light-color);
+  transition: var(--transition);
+}
+.collapse .collapse-item:hover {
+  border-color: var(--primary-color);
+}
+.collapse input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.collapse input:checked ~ label .icon.left,
+.collapse input:checked ~ label .icon.right {
+  transform: rotate(-180deg);
+}
+.icon.left,
+.icon.right {
+  width: 22px;
+  height: 22px;
+  stroke: var(--base-dark-color);
+  transition: var(--transition);
+}
+.collapse label {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 15px;
+  font-weight: 500;
+  line-height: 3;
+  cursor: pointer;
+}
+.collapse label:hover {
+  background: transparent;
+}
+.collapse-content {
+  max-height: 0;
+  padding: 0 15px;
+  overflow: hidden;
+  background: #fff;
+  transition: max-height 0.25s;
+}
+.collapse-content p {
+  font-size: 14px;
+  line-height: 16px;
+  margin: 10px 0;
+}
+.collapse input:checked ~ .collapse-content {
+  max-height: 10em;
+}
 /*# sourceMappingURL=vishnu.collapse.min.css.map */

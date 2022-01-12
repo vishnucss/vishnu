@@ -1,5 +1,5 @@
 /**
-* vishnucss collapse - v1.1.0
+* vishnucss collapse - v1.1.1
 * https://vishnucss.github.io/vishnu#collapse
 */
 
@@ -58,21 +58,20 @@
   --toggle-checked-left: 25px;
 
   /* Spacing */
---spacing-xxs:  calc(16px / 6);
---spacing-xs: calc(16px / 4);
---spacing-sm: calc(16px / 2);
---spacing-md: 16px;
---spacing-lg: calc(16px + 8);
---spacing-xl: calc(16px * 2);
---spacing-xxl: calc(16px * 2 + 8);
---spacing-xxxl: calc(16px * 4);
+  --spacing-xxs: calc(16px / 6);
+  --spacing-xs: calc(16px / 4);
+  --spacing-sm: calc(16px / 2);
+  --spacing-md: 16px;
+  --spacing-lg: calc(16px + 8);
+  --spacing-xl: calc(16px * 2);
+  --spacing-xxl: calc(16px * 2 + 8);
+  --spacing-xxxl: calc(16px * 4);
 
-/* Responsive breakpoints */
---responsive-sm: 25em;
---responsive-md: 48em;
---responsive-lg: 62em;
---responsive-xl: 75em;
-
+  /* Responsive breakpoints */
+  --responsive-sm: 25em;
+  --responsive-md: 48em;
+  --responsive-lg: 62em;
+  --responsive-xl: 75em;
 }
 
 /*
@@ -97,33 +96,33 @@
 */
 
 .collapse {
-  width: 100%
+  width: 100%;
 }
 
 .collapse .collapse-item {
-    position: relative;
-    margin-bottom: 2px;
-    width: 100%;
-    color: var(--base-dark-color);
-    overflow: hidden;
-    border: 1px solid var(--base-light-color);
-    transition: var(--transition)
-  }
+  position: relative;
+  margin-bottom: 2px;
+  width: 100%;
+  color: var(--base-dark-color);
+  overflow: hidden;
+  border: 1px solid var(--base-light-color);
+  transition: var(--transition);
+}
 
 .collapse .collapse-item:hover {
-      border-color: var(--primary-color);
-    }
+  border-color: var(--primary-color);
+}
 
 .collapse input {
   position: absolute;
   opacity: 0;
-  z-index: -1
+  z-index: -1;
 }
 
 .collapse input:checked ~ label .icon.right,
-    .collapse input:checked ~ label .icon.left {
-      transform: rotate(-180deg);
-    }
+.collapse input:checked ~ label .icon.left {
+  transform: rotate(-180deg);
+}
 
 .icon.right,
 .icon.left {
@@ -141,24 +140,24 @@
   padding: 6px 15px;
   font-weight: 500;
   line-height: 3;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .collapse label:hover {
-    background: transparent;
-  }
+  background: transparent;
+}
 .collapse-content {
   max-height: 0;
   padding: 0 15px;
   overflow: hidden;
   background: rgba(255, 255, 255, 1);
-  transition: max-height .25s
+  transition: max-height 0.25s;
 }
 .collapse-content p {
-    font-size: 14px;
-    line-height: 16px;
-    margin: 10px 0;
-  }
+  font-size: 14px;
+  line-height: 16px;
+  margin: 10px 0;
+}
 .collapse input:checked ~ .collapse-content {
   max-height: 10em;
 }

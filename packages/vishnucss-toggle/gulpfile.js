@@ -13,7 +13,7 @@ const gulp = require('gulp'),
   customMedia = require('postcss-custom-media'),
   colorMod = require('postcss-color-mod-function'),
   copyright = `/**
-* vishnucss toggle - v${pkg.version}
+* vishnucss toggleeee - v${pkg.version}
 * https://vishnucss.github.io/vishnu#toggle
 */\r\n`,
   $ = require('gulp-load-plugins')();

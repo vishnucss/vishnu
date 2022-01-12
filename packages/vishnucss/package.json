@@ -1,0 +1,79 @@
+{
+  "name": "@vishnucss/vishnu",
+  "filename": "vishnu.min.css",
+  "version": "1.1.1",
+  "description": "A simple and minimalist toolkit with modern css",
+  "main": "./dist/vishnu.min.css",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "keywords": [
+    "bootstrap",
+    "cssnext",
+    "css3",
+    "flexbox",
+    "toolkit",
+    "front-end",
+    "css-framework",
+    "postcss",
+    "responsive",
+    "mobile",
+    "mobile-first"
+  ],
+  "ignore": [
+    ".editorconfig",
+    ".gitignore",
+    "package.json",
+    "src"
+  ],
+  "resolutions": {
+    "graceful-fs": "^4.2.4"
+  },
+  "scripts": {
+    "test": "echo \"Testing\"",
+    "build": "gulp",
+    "dev": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vishnucss/vishnu.git"
+  },
+  "author": "Allan Alexandre",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vishnucss/vishnucss/issues"
+  },
+  "homepage": "https://vishnucss.github.io",
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/vishnucss/vishnu.git",
+    "basePath": "dist",
+    "files": [
+      "vishnu.min.css",
+      "vishnu.css"
+    ]
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "IE 10"
+  ],
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "cssnano": "^3.10.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "latest",
+    "gulp-cli": "^1.2.1",
+    "gulp-concat": "latest",
+    "gulp-git": "^1.9.0",
+    "gulp-header": "^1.8.2",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-postcss": "^7.0.0",
+    "gulp-size": "^2.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-symdest": "^1.1.0",
+    "gulp-util": "~2.2.9",
+    "postcss-preset-env": "^5.3.0"
+  }
+}

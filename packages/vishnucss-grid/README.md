@@ -11,7 +11,7 @@ $ npm install --save @vishnucss/grid
 **Using directly link**
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@vishnucss/grid"/>
+<link rel="stylesheet" href="https://unpkg.com/@vishnucss/grid" />
 ```
 
 ## Bug?

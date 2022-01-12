@@ -1,6 +1,6 @@
 ---
 title: Collapse
-description: 
+description:
 position: 4
 category: Extensions
 ---
@@ -12,16 +12,16 @@ Add `@vishnucss/collapse` dependency to your project:
 <code-group>
   <code-block label="YARN" active>
 
-  ```bash
-  yarn add @vishnucss/collapse
-  ```
+```bash
+yarn add @vishnucss/collapse
+```
 
   </code-block>
   <code-block label="CDN">
 
-  ```html
-<link rel="stylesheet" href="https://unpkg.com/@vishnucss/collapse"/>
-  ```
+```html
+<link rel="stylesheet" href="https://unpkg.com/@vishnucss/collapse" />
+```
 
   </code-block>
 </code-group>

@@ -11,7 +11,7 @@ $ npm install --save @vishnucss/card
 **Using directly link**
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@vishnucss/card"/>
+<link rel="stylesheet" href="https://unpkg.com/@vishnucss/card" />
 ```
 
 ## Bug?

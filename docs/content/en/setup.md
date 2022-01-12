@@ -1,6 +1,6 @@
 ---
 title: Setup
-description: 
+description:
 position: 2
 category: Guide
 ---
@@ -14,16 +14,16 @@ Add `@vishnucss/vishnu` dependency to your project:
 <code-group>
   <code-block label="YARN" active>
 
-  ```bash
-  yarn add @vishnucss/vishnu
-  ```
+```bash
+yarn add @vishnucss/vishnu
+```
 
   </code-block>
   <code-block label="CDN">
 
-  ```html
-<link rel="stylesheet" href="https://unpkg.com/@vishnucss/vishnu"/>
-  ```
+```html
+<link rel="stylesheet" href="https://unpkg.com/@vishnucss/vishnu" />
+```
 
   </code-block>
 </code-group>

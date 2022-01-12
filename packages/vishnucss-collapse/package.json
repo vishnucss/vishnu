@@ -28,7 +28,8 @@
   ],
   "scripts": {
     "test": "echo \"Testing\"",
-    "build": "gulp"
+    "build": "gulp",
+    "dev": "gulp watch"
   },
   "repository": {
     "type": "git",

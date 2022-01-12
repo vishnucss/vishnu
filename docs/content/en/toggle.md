@@ -1,6 +1,6 @@
 ---
 title: Toggle
-description: 
+description:
 position: 4
 category: Extensions
 ---
@@ -12,16 +12,16 @@ Add `@vishnucss/toggle` dependency to your project:
 <code-group>
   <code-block label="YARN" active>
 
-  ```bash
-  yarn add @vishnucss/toggle
-  ```
+```bash
+yarn add @vishnucss/toggle
+```
 
   </code-block>
   <code-block label="CDN">
 
-  ```html
-<link rel="stylesheet" href="https://unpkg.com/@vishnucss/toggle"/>
-  ```
+```html
+<link rel="stylesheet" href="https://unpkg.com/@vishnucss/toggle" />
+```
 
   </code-block>
 </code-group>
