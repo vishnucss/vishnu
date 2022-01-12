@@ -35,6 +35,8 @@
     "build": "turbo run build",
     "initialize": "lerna init",
     "bootstrap": "lerna bootstrap",
+    "release": "lerna version",
+    "changed": "lerna changed",
     "dev": "turbo run dev --no-cache --parallel --continue",
     "clean": "turbo run clean && rm -rf node_modules",
     "format": "prettier --write \"**/src/*.{ts,tsx,css}\""

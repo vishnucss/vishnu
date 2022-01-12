@@ -1,6 +1,17 @@
 {
+  "npmClient": "yarn",
   "packages": [
     "packages/*"
   ],
-  "version": "0.0.0"
+  "useWorkspaces": true,
+  "version": "independent",
+  "command": {
+    "publish": {
+      "npmClient": "npm",
+      "allowBranch": [
+        "master"
+      ],
+      "registry": "https://registry.npmjs.org/"
+    }
+  }
 }
