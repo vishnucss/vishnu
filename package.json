@@ -1,7 +1,7 @@
 {
   "name": "@vishnucss/vishnu",
   "filename": "vishnu.min.css",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A simple and minimalist toolkit with modern css",
   "main": "./packages/vishnucss/dist/vishnu.min.css",
   "private": true,
@@ -36,6 +36,7 @@
     "initialize": "lerna init",
     "bootstrap": "lerna bootstrap",
     "release": "lerna version",
+    "publish": "lerna publish",
     "changed": "lerna changed",
     "dev": "turbo run dev --no-cache --parallel --continue",
     "clean": "turbo run clean && rm -rf node_modules",

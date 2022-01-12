@@ -1,0 +1,12 @@
+[32m@vishnucss/base:build: [0mcache hit, replaying output [2m223ced9fcb46583b[0m
+[32m@vishnucss/base:build: [0m$ gulp
+[32m@vishnucss/base:build: [0m[01:44:52] Using gulpfile ~/Code/personal/projects/vishnu/packages/vishnucss-base/gulpfile.js
+[32m@vishnucss/base:build: [0m[01:44:52] Starting 'build'...
+[32m@vishnucss/base:build: [0m[01:44:53] all files 16.79 kB
+[32m@vishnucss/base:build: [0m[01:44:53] Finished 'build' after 582 ms
+[32m@vishnucss/base:build: [0m[01:44:53] Starting 'minify'...
+[32m@vishnucss/base:build: [0m[01:44:54] all files 12.02 kB
+[32m@vishnucss/base:build: [0m[01:44:54] all files 2.75 kB (gzipped)
+[32m@vishnucss/base:build: [0m[01:44:54] Finished 'minify' after 785 ms
+[32m@vishnucss/base:build: [0m[01:44:54] Starting 'default'...
+[32m@vishnucss/base:build: [0m[01:44:54] Finished 'default' after 26 μs

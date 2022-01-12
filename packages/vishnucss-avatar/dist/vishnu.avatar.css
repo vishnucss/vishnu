@@ -1,5 +1,5 @@
 /**
-* vishnucss avatar - v1.1.1
+* vishnucss avatar - v1.1.2
 * https://vishnucss.github.io/vishnu#avatar
 */
 
@@ -111,13 +111,13 @@
 }
 .avatar.primary {
   background: var(--primary-color);
-  color: #fff;
+  color: #fff
 }
 .avatar.primary.outline {
-  background: transparent;
-  border-color: var(--primary-color);
-  color: var(--primary-color);
-}
+    background: transparent;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+  }
 .avatar.outline {
   background: transparent;
   border: 1px solid var(--base-dark-color);

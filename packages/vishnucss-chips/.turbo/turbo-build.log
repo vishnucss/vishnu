@@ -1,0 +1,12 @@
+[35m@vishnucss/chips:build: [0mcache hit, replaying output [2m532145d06602a1fd[0m
+[35m@vishnucss/chips:build: [0m$ gulp
+[35m@vishnucss/chips:build: [0m[01:44:55] Using gulpfile ~/Code/personal/projects/vishnu/packages/vishnucss-chips/gulpfile.js
+[35m@vishnucss/chips:build: [0m[01:44:55] Starting 'build'...
+[35m@vishnucss/chips:build: [0m[01:44:55] all files 5.23 kB
+[35m@vishnucss/chips:build: [0m[01:44:55] Finished 'build' after 179 ms
+[35m@vishnucss/chips:build: [0m[01:44:55] Starting 'minify'...
+[35m@vishnucss/chips:build: [0m[01:44:55] all files 3.79 kB
+[35m@vishnucss/chips:build: [0m[01:44:55] all files 1.09 kB (gzipped)
+[35m@vishnucss/chips:build: [0m[01:44:55] Finished 'minify' after 165 ms
+[35m@vishnucss/chips:build: [0m[01:44:55] Starting 'default'...
+[35m@vishnucss/chips:build: [0m[01:44:55] Finished 'default' after 22 μs

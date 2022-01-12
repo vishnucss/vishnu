@@ -1,5 +1,5 @@
 /**
-* vishnucss alert - v1.1.1
+* vishnucss alert - v1.1.2
 * https://vishnucss.github.io/vishnu#alert
 */
 
@@ -77,6 +77,7 @@
 /*
 * Alert
 */
+
 /*
 * Alert
 */
@@ -104,16 +105,16 @@
   border: 1px solid var(--base-border-color);
   display: flex;
   justify-content: flex-start;
-  flex-direction: column;
+  flex-direction: column
 }
 .alert .title,
-.alert .description {
-  margin: 0;
-}
+  .alert .description {
+    margin: 0;
+  }
 .alert .title {
-  padding-right: 20px;
-  font-weight: 500;
-}
+    padding-right: 20px;
+    font-weight: 500;
+  }
 .alert .close {
   position: absolute;
   right: 5px;
@@ -128,96 +129,96 @@
   font-size: 1.3rem;
   background: transparent;
   border-radius: var(--base-rounded-radius);
-  color: var(--base-dark-color);
+  color: var(--base-dark-color)
 }
 .alert .close .icon {
-  width: 24px;
-  height: 24px;
-}
+    width: 24px;
+    height: 24px
+  }
 .alert .close .icon path {
-  fill: var(--base-text-color);
-}
+      fill: var(--base-text-color);
+    }
 .alert .close .icon circle {
-  stroke: var(--base-text-color);
-  stroke-width: 1;
-}
+      stroke: var(--base-text-color);
+      stroke-width: 1;
+    }
 .alert.info {
   background: rgba(44, 128, 255, 0.05);
   border-color: rgba(44, 128, 255, 0.5);
-  color: var(--base-info-color);
+  color: var(--base-info-color)
 }
 .alert.info:before {
-  color: var(--base-info-color);
-}
+    color: var(--base-info-color);
+  }
 .alert.info .description {
-  color: rgba(44, 128, 255, 0.6);
-}
+    color: rgba(44, 128, 255, 0.6);
+  }
 .alert.info .close .icon path {
-  fill: var(--primary-color);
-}
+        fill: var(--primary-color);
+      }
 .alert.info .close .icon circle {
-  stroke: var(--primary-color);
-  stroke-width: 1;
-}
+        stroke: var(--primary-color);
+        stroke-width: 1;
+      }
 .alert.warning {
   background: rgba(242, 173, 0, 0.05);
   border-color: rgba(242, 173, 0, 0.5);
-  color: var(--base-warning-color);
+  color: var(--base-warning-color)
 }
 .alert.warning:before {
-  color: var(--base-warning-color);
-}
+    color: var(--base-warning-color);
+  }
 .alert.warning .description {
-  color: rgba(242, 173, 0, 0.6);
-}
+    color: rgba(242, 173, 0, 0.6);
+  }
 .alert.warning .close {
-  border-color: transparent;
-  background: rgba(242, 173, 0, 0.5);
-  color: #fff;
-}
+    border-color: transparent;
+    background: rgba(242, 173, 0, 0.5);
+    color: #fff;
+  }
 .alert.error {
   background: rgba(249, 56, 56, 0.05);
   border-color: rgba(249, 56, 56, 0.5);
-  color: var(--base-error-color);
+  color: var(--base-error-color)
 }
 .alert.error .close .icon path {
-  fill: var(--base-error-color);
-}
+        fill: var(--base-error-color);
+      }
 .alert.error .close .icon circle {
-  stroke: var(--base-error-color);
-  stroke-width: 1;
-}
+        stroke: var(--base-error-color);
+        stroke-width: 1;
+      }
 .alert.error .description {
-  color: rgba(249, 56, 56, 0.6);
-}
+    color: rgba(249, 56, 56, 0.6);
+  }
 .alert.success {
   background: rgba(13, 194, 34, 0.05);
   border-color: rgba(13, 194, 34, 0.1);
-  color: var(--base-success-color);
+  color: var(--base-success-color)
 }
 .alert.success .close {
-  border-color: transparent;
-}
+    border-color: transparent
+  }
 .alert.success .close .icon path {
-  fill: var(--base-success-color);
-}
+        fill: var(--base-success-color);
+      }
 .alert.success .close .icon circle {
-  stroke: var(--base-success-color);
-  stroke-width: 1;
-}
+        stroke: var(--base-success-color);
+        stroke-width: 1;
+      }
 .alert.success .description {
-  color: rgba(13, 194, 34, 0.6);
-}
+    color: rgba(13, 194, 34, 0.6);
+  }
 .alert.rounded {
   border-radius: 4rem;
   padding-left: 30px;
-  padding-right: 30px;
+  padding-right: 30px
 }
 .alert.rounded .close {
-  top: 50%;
-  margin-top: -16px;
-  right: 14px;
-}
+    top: 50%;
+    margin-top: -16px;
+    right: 14px;
+  }
 
 /* Placeholder */
 .placeholder {

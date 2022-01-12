@@ -1,0 +1,12 @@
+[34m@vishnucss/grid:build: [0mcache hit, replaying output [2mf3513f5c77f695eb[0m
+[34m@vishnucss/grid:build: [0m$ gulp
+[34m@vishnucss/grid:build: [0m[01:44:56] Using gulpfile ~/Code/personal/projects/vishnu/packages/vishnucss-grid/gulpfile.js
+[34m@vishnucss/grid:build: [0m[01:44:56] Starting 'build'...
+[34m@vishnucss/grid:build: [0m[01:44:56] all files 9.88 kB
+[34m@vishnucss/grid:build: [0m[01:44:56] Finished 'build' after 147 ms
+[34m@vishnucss/grid:build: [0m[01:44:56] Starting 'minify'...
+[34m@vishnucss/grid:build: [0m[01:44:56] all files 6.73 kB
+[34m@vishnucss/grid:build: [0m[01:44:56] all files 1.2 kB (gzipped)
+[34m@vishnucss/grid:build: [0m[01:44:56] Finished 'minify' after 138 ms
+[34m@vishnucss/grid:build: [0m[01:44:56] Starting 'default'...
+[34m@vishnucss/grid:build: [0m[01:44:56] Finished 'default' after 29 μs

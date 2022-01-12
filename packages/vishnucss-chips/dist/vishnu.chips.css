@@ -1,5 +1,5 @@
 /**
-* vishnucss chips - v1.1.1
+* vishnucss chips - v1.1.2
 * https://vishnucss.github.io/vishnu#chips
 */
 
@@ -105,194 +105,195 @@
   padding: 0;
   height: 28px;
   border-radius: 50px;
-  background: #f2f2f2;
+  background: #f2f2f2
 }
 
 .chips .image {
-  border-radius: 50%;
-}
+    border-radius: 50%;
+  }
 
 .chips .icon {
-  width: 22px;
-  height: 22px;
-  margin-left: 8px;
-  margin-right: -8px;
-}
+    width: 22px;
+    height: 22px;
+    margin-left: 8px;
+    margin-right: -8px
+  }
 
 .chips .icon.right {
-  margin-right: 8px;
-  margin-left: -8px;
-}
+      margin-right: 8px;
+      margin-left: -8px;
+    }
 
 .chips .label {
-  font-size: 13px;
-  font-weight: 500;
-  padding: 0 12px;
-}
+    font-size: 13px;
+    font-weight: 500;
+    padding: 0 12px;
+  }
 
 .chips.small {
-  height: 20px;
+  height: 20px
 }
 
 .chips.small img {
-  max-height: 20px;
-}
+    max-height: 20px;
+  }
 
 .chips.small .label {
-  font-size: 12px;
-}
+    font-size: 12px;
+  }
 
 .chips.large {
   height: 42px;
-  padding: 0 16px;
+  padding: 0 16px
 }
 
 .chips.large img {
-  max-height: 42px;
-}
+    max-height: 42px;
+  }
 
 .chips.large .label {
-  font-size: 16px;
-}
+    font-size: 16px;
+  }
 
 .chips.primary {
-  background: var(--primary-color);
+  background: var(--primary-color)
 }
 
 .chips.primary .label {
-  color: #fff;
-}
+    color: #fff;
+  }
 
 .chips.primary .icon {
-  stroke: #fff;
-}
+    stroke: #fff;
+  }
 
 .chips.error {
-  background: var(--base-error-color);
+  background: var(--base-error-color)
 }
 
 .chips.error .label {
-  color: #fff;
-}
+    color: #fff;
+  }
 
 .chips.error .icon {
-  stroke: #fff;
-}
+    stroke: #fff;
+  }
 
 .chips.success {
-  background: var(--base-success-color);
+  background: var(--base-success-color)
 }
 
 .chips.success .label {
-  color: #fff;
-}
+    color: #fff;
+  }
 
 .chips.success .icon {
-  stroke: #fff;
-}
+    stroke: #fff;
+  }
 
 .chips.info {
-  background: var(--base-info-color);
+  background: var(--base-info-color)
 }
 
 .chips.info .label {
-  color: #fff;
-}
+    color: #fff;
+  }
 
 .chips.info .icon {
-  stroke: #fff;
-}
+    stroke: #fff;
+  }
 
 .chips.warning {
-  background: var(--base-warning-color);
+  background: var(--base-warning-color)
 }
 
 .chips.warning .label {
-  color: #fff;
-}
+    color: #fff;
+  }
 
 .chips.warning .icon {
-  stroke: #fff;
-}
+    stroke: #fff;
+  }
 
 .chips.dark {
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.45)
 }
 
 .chips.dark .label {
-  color: #fff;
-}
+    color: #fff;
+  }
 
 .chips.dark .icon {
-  stroke: #fff;
-}
+    stroke: #fff;
+  }
 
 .chips.outline {
   background: transparent;
-  box-shadow: 0 0 0 1px var(--base-border-color);
+  box-shadow: 0 0 0 1px var(--base-border-color)
 }
 
 .chips.outline.icon {
-  stroke: var(--base-text-color);
-}
+    stroke: var(--base-text-color);
+  }
 
 .chips.outline.primary {
-  box-shadow: 0 0 0 1px var(--primary-color);
-}
+    box-shadow: 0 0 0 1px var(--primary-color)
+  }
 
 .chips.outline.primary .icon {
-  stroke: var(--primary-color);
-}
+      stroke: var(--primary-color);
+    }
 
 .chips.outline.primary .label {
-  color: var(--primary-color);
-}
+      color: var(--primary-color);
+    }
 
 .chips.outline.error {
-  box-shadow: 0 0 0 1px var(--base-error-color);
-}
+    box-shadow: 0 0 0 1px var(--base-error-color)
+  }
 
 .chips.outline.error .icon {
-  stroke: var(--base-error-color);
-}
+      stroke: var(--base-error-color);
+    }
 
 .chips.outline.error .label {
-  color: var(--base-error-color);
-}
+      color: var(--base-error-color);
+    }
 
 .chips.outline.success {
-  box-shadow: 0 0 0 1px var(--base-success-color);
-}
+    box-shadow: 0 0 0 1px var(--base-success-color)
+  }
 
 .chips.outline.success .icon {
-  stroke: var(--base-success-color);
-}
+      stroke: var(--base-success-color);
+    }
 
 .chips.outline.success .label {
-  color: var(--base-success-color);
-}
+      color: var(--base-success-color);
+    }
 
 .chips.outline.info {
-  box-shadow: 0 0 0 1px var(--base-info-color);
-}
+    box-shadow: 0 0 0 1px var(--base-info-color)
+  }
 
 .chips.outline.info .icon {
-  stroke: var(--base-info-color);
-}
+      stroke: var(--base-info-color);
+    }
 
 .chips.outline.info .label {
-  color: var(--base-info-color);
-}
+      color: var(--base-info-color);
+    }
 
 .chips.outline.warning {
-  box-shadow: 0 0 0 1px var(--base-warning-color);
-}
+    box-shadow: 0 0 0 1px var(--base-warning-color)
+  }
 
 .chips.outline.warning .icon {
-  stroke: var(--base-warning-color);
-}
+      stroke: var(--base-warning-color);
+    }
 
 .chips.outline.warning .label {
-  color: var(--base-warning-color);
-}
+      color: var(--base-warning-color);
+    }
+
 /*# sourceMappingURL=vishnu.chips.css.map */

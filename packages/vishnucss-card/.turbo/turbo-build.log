@@ -1,12 +1,12 @@
-[36m@vishnucss/card:build: [0mcache hit, replaying output [2ma319964233f54c30[0m
-[36m@vishnucss/card:build: [0m$ gulp
-[36m@vishnucss/card:build: [0m[00:34:34] Using gulpfile ~/Code/personal/projects/vishnu/packages/vishnucss-card/gulpfile.js
-[36m@vishnucss/card:build: [0m[00:34:34] Starting 'build'...
-[36m@vishnucss/card:build: [0m[00:34:34] all files 2.65 kB
-[36m@vishnucss/card:build: [0m[00:34:34] Finished 'build' after 256 ms
-[36m@vishnucss/card:build: [0m[00:34:34] Starting 'minify'...
-[36m@vishnucss/card:build: [0m[00:34:34] all files 1.92 kB
-[36m@vishnucss/card:build: [0m[00:34:34] all files 800 B (gzipped)
-[36m@vishnucss/card:build: [0m[00:34:34] Finished 'minify' after 303 ms
-[36m@vishnucss/card:build: [0m[00:34:34] Starting 'default'...
-[36m@vishnucss/card:build: [0m[00:34:34] Finished 'default' after 23 μs
+[35m@vishnucss/card:build: [0mcache hit, replaying output [2ma0be5fbfa2659b83[0m
+[35m@vishnucss/card:build: [0m$ gulp
+[35m@vishnucss/card:build: [0m[01:44:51] Using gulpfile ~/Code/personal/projects/vishnu/packages/vishnucss-card/gulpfile.js
+[35m@vishnucss/card:build: [0m[01:44:51] Starting 'build'...
+[35m@vishnucss/card:build: [0m[01:44:52] all files 2.67 kB
+[35m@vishnucss/card:build: [0m[01:44:52] Finished 'build' after 325 ms
+[35m@vishnucss/card:build: [0m[01:44:52] Starting 'minify'...
+[35m@vishnucss/card:build: [0m[01:44:52] all files 1.92 kB
+[35m@vishnucss/card:build: [0m[01:44:52] all files 801 B (gzipped)
+[35m@vishnucss/card:build: [0m[01:44:52] Finished 'minify' after 354 ms
+[35m@vishnucss/card:build: [0m[01:44:52] Starting 'default'...
+[35m@vishnucss/card:build: [0m[01:44:52] Finished 'default' after 22 μs

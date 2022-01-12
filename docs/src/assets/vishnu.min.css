@@ -1,5 +1,5 @@
 /**
-* vishnucss - v1.1.1
+* vishnucss - v1.1.2
 * https://vishnucss.github.io/vishnu
 */
 :root {
@@ -132,22 +132,6 @@ p {
   h6 {
     font-size: 1.8rem;
   }
-}
-:any-link {
-  color: var(--primary-color);
-  transition: color 0.1s ease;
-}
-:any-link:hover {
-  cursor: pointer;
-  color: rgba(133, 73, 185, 0.8);
-  text-decoration: none;
-}
-:any-link:focus {
-  outline: thin dotted;
-}
-:any-link:active,
-:any-link:hover {
-  outline: 0;
 }
 .button,
 [type="submit"],

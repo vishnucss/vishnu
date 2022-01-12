@@ -1,5 +1,5 @@
 /**
-* vishnucss toggle - v1.1.1
+* vishnucss toggleeee - v1.1.2
 * https://vishnucss.github.io/vishnu#toggle
 */
 
@@ -119,103 +119,103 @@
   text-indent: -9999px;
   clip: rect(0 0 0 0);
   color: transparent;
-  user-select: none;
+  user-select: none
 }
 
 .toggle-label:before,
-.toggle-label:after {
-  content: "";
-  display: block;
-  position: absolute;
-  cursor: pointer;
-}
+  .toggle-label:after {
+    content: "";
+    display: block;
+    position: absolute;
+    cursor: pointer;
+  }
 
 .toggle-label:before {
-  width: var(--toggle-rail-width);
-  height: var(--toggle-rail-height);
-  background-color: var(--toggle-rail-background-color);
-  border-radius: var(--toggle-rail-border-radius);
-  transition: background-color var(--toggle-transition-duration)
-    var(--toggle-transition-timing-function);
-}
+    width: var(--toggle-rail-width);
+    height: var(--toggle-rail-height);
+    background-color: var(--toggle-rail-background-color);
+    border-radius: var(--toggle-rail-border-radius);
+    transition: background-color var(--toggle-transition-duration)
+      var(--toggle-transition-timing-function);
+  }
 
 .toggle-label:after {
-  top: 0;
-  left: 0;
-  width: var(--toggle-width);
-  height: var(--toggle-height);
-  border-radius: var(--toggle-border-radius);
-  background-color: var(--toggle-background-color);
-  transition: left var(--toggle-transition-duration)
-    var(--toggle-transition-timing-function);
-  box-shadow: var(--toggle-box-shadow);
-}
+    top: 0;
+    left: 0;
+    width: var(--toggle-width);
+    height: var(--toggle-height);
+    border-radius: var(--toggle-border-radius);
+    background-color: var(--toggle-background-color);
+    transition: left var(--toggle-transition-duration)
+      var(--toggle-transition-timing-function);
+    box-shadow: var(--toggle-box-shadow);
+  }
 
 /*
 * Toggle checked
 */
 
 .toggle-input:checked + .toggle-label:before {
-  background-color: var(--toggle-rail-checked-background-color);
-}
+    background-color: var(--toggle-rail-checked-background-color);
+  }
 
 .toggle-input:checked + .toggle-label:after {
-  left: var(--toggle-checked-left);
-}
+    left: var(--toggle-checked-left);
+  }
 
 /*
 * Toggle activated
 */
 .toggle.activated .toggle-label {
-  opacity: 1;
-}
+    opacity: 1
+  }
 .toggle.activated .toggle-label:before {
-  background-color: var(--base-success-color);
-}
+      background-color: var(--base-success-color);
+    }
 .toggle.activated .toggle-label:after {
-  left: 24px;
-}
+      left: 24px;
+    }
 .toggle.activated .toggle-input:checked + .toggle-label:before {
-  background-color: var(--toggle-rail-background-color);
-}
+      background-color: var(--toggle-rail-background-color);
+    }
 .toggle.activated .toggle-input:checked + .toggle-label:after {
-  left: 0 !important;
-}
+      left: 0 !important;
+    }
 
 /*
 * Toggle disabled
 */
 
 .toggle.disabled {
-  cursor: default;
+  cursor: default
 }
 
 .toggle.disabled .toggle-input:checked + .toggle-label {
-  opacity: 0.7;
-}
+    opacity: 0.7
+  }
 
 .toggle.disabled .toggle-input:checked + .toggle-label:before {
-  background-color: var(--toggle-rail-background-color);
-}
+      background-color: var(--toggle-rail-background-color);
+    }
 
 .toggle.disabled .toggle-input:checked + .toggle-label:after {
-  left: var(--toggle-checked-left);
-}
+      left: var(--toggle-checked-left);
+    }
 
 .toggle.disabled .toggle-label {
-  opacity: 0.7;
-  cursor: default;
-}
+    opacity: 0.7;
+    cursor: default
+  }
 
 .toggle.disabled .toggle-label:before {
-  background-color: var(--toggle-rail-background-color);
-  cursor: default;
-}
+      background-color: var(--toggle-rail-background-color);
+      cursor: default;
+    }
 
 .toggle.disabled .toggle-label:after {
-  top: 0;
-  left: 0 !important;
-  box-shadow: var(--toggle-box-shadow);
-}
+      top: 0;
+      left: 0 !important;
+      box-shadow: var(--toggle-box-shadow);
+    }
 
 /*# sourceMappingURL=vishnu.toggle.css.map */
