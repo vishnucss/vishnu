@@ -11,7 +11,7 @@ $ npm install --save @vishnucss/extensions
 **Using directly link**
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@vishnucss/extensions"/>
+<link rel="stylesheet" href="https://unpkg.com/@vishnucss/extensions" />
 ```
 
 ## Bug?

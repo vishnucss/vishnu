@@ -11,7 +11,7 @@ $ npm install --save @vishnucss/spacing
 **Using directly link**
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@vishnucss/spacing"/>
+<link rel="stylesheet" href="https://unpkg.com/@vishnucss/spacing" />
 ```
 
 ## Bug?

@@ -1,0 +1,12 @@
+[36m@vishnucss/spacing:build: [0mcache hit, replaying output [2m3af7a95efaa4b508[0m
+[36m@vishnucss/spacing:build: [0m$ gulp
+[36m@vishnucss/spacing:build: [0m[01:44:53] Using gulpfile ~/Code/personal/projects/vishnu/packages/vishnucss-spacing/gulpfile.js
+[36m@vishnucss/spacing:build: [0m[01:44:53] Starting 'build'...
+[36m@vishnucss/spacing:build: [0m[01:44:53] all files 5.58 kB
+[36m@vishnucss/spacing:build: [0m[01:44:53] Finished 'build' after 413 ms
+[36m@vishnucss/spacing:build: [0m[01:44:53] Starting 'minify'...
+[36m@vishnucss/spacing:build: [0m[01:44:53] all files 4.37 kB
+[36m@vishnucss/spacing:build: [0m[01:44:53] all files 1.2 kB (gzipped)
+[36m@vishnucss/spacing:build: [0m[01:44:53] Finished 'minify' after 382 ms
+[36m@vishnucss/spacing:build: [0m[01:44:53] Starting 'default'...
+[36m@vishnucss/spacing:build: [0m[01:44:53] Finished 'default' after 23 μs

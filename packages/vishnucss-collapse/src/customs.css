@@ -4,7 +4,8 @@
 
 @custom-selector :--collapse .collapse;
 @custom-selector :--collapse-content .collapse-content;
-@custom-selector :--collapse-content-checked .collapse input:checked ~ .collapse-content;
+@custom-selector :--collapse-content-checked
+  .collapse input:checked ~ .collapse-content;
 @custom-selector :--collapse-item .collapse-item;
 @custom-selector :--collapse-input .collapse input;
 @custom-selector :--collapse-label .collapse label;

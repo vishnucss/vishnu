@@ -53,19 +53,18 @@
   --toggle-checked-left: 25px;
 
   /* Spacing */
---spacing-xxs:  var(--base-space-size / 6);
---spacing-xs: var(--base-space-size / 4);
---spacing-sm: var(--base-space-size / 2);
---spacing-md: var(--base-space-size);
---spacing-lg: var(--base-space-size + 4);
---spacing-xl: var(--base-space-size + 6);
---spacing-xxl: var(--base-space-size * 2);
---spacing-xxxl: var(--base-space-size * 2 + 8);
+  --spacing-xxs: var(--base-space-size / 6);
+  --spacing-xs: var(--base-space-size / 4);
+  --spacing-sm: var(--base-space-size / 2);
+  --spacing-md: var(--base-space-size);
+  --spacing-lg: var(--base-space-size + 4);
+  --spacing-xl: var(--base-space-size + 6);
+  --spacing-xxl: var(--base-space-size * 2);
+  --spacing-xxxl: var(--base-space-size * 2 + 8);
 
-/* Responsive breakpoints */
---responsive-sm: 25em;
---responsive-md: 48em;
---responsive-lg: 62em;
---responsive-xl: 75em;
-
+  /* Responsive breakpoints */
+  --responsive-sm: 25em;
+  --responsive-md: 48em;
+  --responsive-lg: 62em;
+  --responsive-xl: 75em;
 }

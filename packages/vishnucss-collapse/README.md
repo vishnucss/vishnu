@@ -11,7 +11,7 @@ $ npm install --save @vishnucss/avatar
 **Using directly link**
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@vishnucss/avatar"/>
+<link rel="stylesheet" href="https://unpkg.com/@vishnucss/avatar" />
 ```
 
 ## Bug?

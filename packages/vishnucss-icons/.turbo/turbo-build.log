@@ -1,0 +1,12 @@
+[34m@vishnucss/icons:build: [0mcache hit, replaying output [2mc3b7b2bb276a6b93[0m
+[34m@vishnucss/icons:build: [0m$ gulp
+[34m@vishnucss/icons:build: [0m[01:44:52] Using gulpfile ~/Code/personal/projects/vishnu/packages/vishnucss-icons/gulpfile.js
+[34m@vishnucss/icons:build: [0m[01:44:52] Starting 'build'...
+[34m@vishnucss/icons:build: [0m[01:44:52] all files 2.5 kB
+[34m@vishnucss/icons:build: [0m[01:44:52] Finished 'build' after 317 ms
+[34m@vishnucss/icons:build: [0m[01:44:52] Starting 'minify'...
+[34m@vishnucss/icons:build: [0m[01:44:52] all files 1.9 kB
+[34m@vishnucss/icons:build: [0m[01:44:52] all files 762 B (gzipped)
+[34m@vishnucss/icons:build: [0m[01:44:52] Finished 'minify' after 364 ms
+[34m@vishnucss/icons:build: [0m[01:44:52] Starting 'default'...
+[34m@vishnucss/icons:build: [0m[01:44:52] Finished 'default' after 94 μs

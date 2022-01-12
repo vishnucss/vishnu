@@ -58,26 +58,26 @@
   --toggle-checked-left: 25px;
 
   /* Spacing */
---spacing-xxs:  calc(16px / 6);
---spacing-xs: calc(16px / 4);
---spacing-sm: calc(16px / 2);
---spacing-md: 16px;
---spacing-lg: calc(16px + 8);
---spacing-xl: calc(16px * 2);
---spacing-xxl: calc(16px * 2 + 8);
---spacing-xxxl: calc(16px * 4);
+  --spacing-xxs: calc(16px / 6);
+  --spacing-xs: calc(16px / 4);
+  --spacing-sm: calc(16px / 2);
+  --spacing-md: 16px;
+  --spacing-lg: calc(16px + 8);
+  --spacing-xl: calc(16px * 2);
+  --spacing-xxl: calc(16px * 2 + 8);
+  --spacing-xxxl: calc(16px * 4);
 
-/* Responsive breakpoints */
---responsive-sm: 25em;
---responsive-md: 48em;
---responsive-lg: 62em;
---responsive-xl: 75em;
-
+  /* Responsive breakpoints */
+  --responsive-sm: 25em;
+  --responsive-md: 48em;
+  --responsive-lg: 62em;
+  --responsive-xl: 75em;
 }
 
 /*
 * Collapse
 */
+
 /*
 * Collapse
 */
@@ -152,7 +152,7 @@
   padding: 0 15px;
   overflow: hidden;
   background: rgba(255, 255, 255, 1);
-  transition: max-height .25s
+  transition: max-height 0.25s
 }
 .collapse-content p {
     font-size: 14px;

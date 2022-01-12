@@ -11,7 +11,7 @@ $ npm install --save @vishnucss/icons
 **Using directly link**
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@vishnucss/icons"/>
+<link rel="stylesheet" href="https://unpkg.com/@vishnucss/icons" />
 ```
 
 ## Bug?

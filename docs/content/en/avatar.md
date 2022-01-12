@@ -1,6 +1,6 @@
 ---
 title: Avatar
-description: 
+description:
 position: 4
 category: Extensions
 ---
@@ -14,16 +14,16 @@ Add `@vishnucss/avatar` dependency to your project:
 <code-group>
   <code-block label="YARN" active>
 
-  ```bash
-  yarn add @vishnucss/avatar
-  ```
+```bash
+yarn add @vishnucss/avatar
+```
 
   </code-block>
   <code-block label="CDN">
 
-  ```html
-<link rel="stylesheet" href="https://unpkg.com/@vishnucss/avatar"/>
-  ```
+```html
+<link rel="stylesheet" href="https://unpkg.com/@vishnucss/avatar" />
+```
 
   </code-block>
 </code-group>

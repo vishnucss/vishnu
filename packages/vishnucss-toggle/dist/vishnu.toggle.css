@@ -1,5 +1,5 @@
 /**
-* vishnucss toggle - v1.1.2
+* vishnucss toggleeee - v1.1.2
 * https://vishnucss.github.io/vishnu#toggle
 */
 
@@ -58,26 +58,26 @@
   --toggle-checked-left: 25px;
 
   /* Spacing */
---spacing-xxs:  calc(16px / 6);
---spacing-xs: calc(16px / 4);
---spacing-sm: calc(16px / 2);
---spacing-md: 16px;
---spacing-lg: calc(16px + 8);
---spacing-xl: calc(16px * 2);
---spacing-xxl: calc(16px * 2 + 8);
---spacing-xxxl: calc(16px * 4);
+  --spacing-xxs: calc(16px / 6);
+  --spacing-xs: calc(16px / 4);
+  --spacing-sm: calc(16px / 2);
+  --spacing-md: 16px;
+  --spacing-lg: calc(16px + 8);
+  --spacing-xl: calc(16px * 2);
+  --spacing-xxl: calc(16px * 2 + 8);
+  --spacing-xxxl: calc(16px * 4);
 
-/* Responsive breakpoints */
---responsive-sm: 25em;
---responsive-md: 48em;
---responsive-lg: 62em;
---responsive-xl: 75em;
-
+  /* Responsive breakpoints */
+  --responsive-sm: 25em;
+  --responsive-md: 48em;
+  --responsive-lg: 62em;
+  --responsive-xl: 75em;
 }
 
 /*
 * Toggle
 */
+
 /*
 * Toggle
 */
@@ -100,7 +100,6 @@
   display: inline-block;
 }
 
-
 /*
 * Hide input
 */
@@ -108,7 +107,6 @@
 .toggle-input {
   display: none;
 }
-
 
 /*
 * Toggle Label
@@ -124,7 +122,8 @@
   user-select: none
 }
 
-.toggle-label:before, .toggle-label:after {
+.toggle-label:before,
+  .toggle-label:after {
     content: "";
     display: block;
     position: absolute;
@@ -136,7 +135,8 @@
     height: var(--toggle-rail-height);
     background-color: var(--toggle-rail-background-color);
     border-radius: var(--toggle-rail-border-radius);
-    transition: background-color var(--toggle-transition-duration) var(--toggle-transition-timing-function);
+    transition: background-color var(--toggle-transition-duration)
+      var(--toggle-transition-timing-function);
   }
 
 .toggle-label:after {
@@ -146,7 +146,8 @@
     height: var(--toggle-height);
     border-radius: var(--toggle-border-radius);
     background-color: var(--toggle-background-color);
-    transition: left var(--toggle-transition-duration) var(--toggle-transition-timing-function);
+    transition: left var(--toggle-transition-duration)
+      var(--toggle-transition-timing-function);
     box-shadow: var(--toggle-box-shadow);
   }
 
@@ -161,7 +162,6 @@
 .toggle-input:checked + .toggle-label:after {
     left: var(--toggle-checked-left);
   }
-
 
 /*
 * Toggle activated
@@ -179,7 +179,7 @@
       background-color: var(--toggle-rail-background-color);
     }
 .toggle.activated .toggle-input:checked + .toggle-label:after {
-      left: 0!important;
+      left: 0 !important;
     }
 
 /*
@@ -214,7 +214,7 @@
 
 .toggle.disabled .toggle-label:after {
       top: 0;
-      left: 0!important;
+      left: 0 !important;
       box-shadow: var(--toggle-box-shadow);
     }
 
