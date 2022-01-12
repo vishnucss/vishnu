@@ -1,12 +1,12 @@
-[36m@vishnucss/spacing:build: [0mcache hit, replaying output [2m3af7a95efaa4b508[0m
+[36m@vishnucss/spacing:build: [0mcache hit, replaying output [2m59e8cec1982710d9[0m
 [36m@vishnucss/spacing:build: [0m$ gulp
-[36m@vishnucss/spacing:build: [0m[01:44:53] Using gulpfile ~/Code/personal/projects/vishnu/packages/vishnucss-spacing/gulpfile.js
-[36m@vishnucss/spacing:build: [0m[01:44:53] Starting 'build'...
-[36m@vishnucss/spacing:build: [0m[01:44:53] all files 5.58 kB
-[36m@vishnucss/spacing:build: [0m[01:44:53] Finished 'build' after 413 ms
-[36m@vishnucss/spacing:build: [0m[01:44:53] Starting 'minify'...
-[36m@vishnucss/spacing:build: [0m[01:44:53] all files 4.37 kB
-[36m@vishnucss/spacing:build: [0m[01:44:53] all files 1.2 kB (gzipped)
-[36m@vishnucss/spacing:build: [0m[01:44:53] Finished 'minify' after 382 ms
-[36m@vishnucss/spacing:build: [0m[01:44:53] Starting 'default'...
-[36m@vishnucss/spacing:build: [0m[01:44:53] Finished 'default' after 23 μs
+[36m@vishnucss/spacing:build: [0m[01:57:31] Using gulpfile ~/Code/personal/projects/vishnu/packages/vishnucss-spacing/gulpfile.js
+[36m@vishnucss/spacing:build: [0m[01:57:31] Starting 'build'...
+[36m@vishnucss/spacing:build: [0m[01:57:32] all files 5.58 kB
+[36m@vishnucss/spacing:build: [0m[01:57:32] Finished 'build' after 497 ms
+[36m@vishnucss/spacing:build: [0m[01:57:32] Starting 'minify'...
+[36m@vishnucss/spacing:build: [0m[01:57:32] all files 4.37 kB
+[36m@vishnucss/spacing:build: [0m[01:57:32] all files 1.2 kB (gzipped)
+[36m@vishnucss/spacing:build: [0m[01:57:32] Finished 'minify' after 309 ms
+[36m@vishnucss/spacing:build: [0m[01:57:32] Starting 'default'...
+[36m@vishnucss/spacing:build: [0m[01:57:32] Finished 'default' after 25 μs
