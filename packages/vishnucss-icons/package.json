@@ -1,7 +1,7 @@
 {
   "name": "@vishnucss/icons",
   "filename": "vishnu.icons.min.css",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "Icons package for Vishnucss toolkit with modern css.",
   "main": "./dist/vishnu.icons.min.css",
   "keywords": [

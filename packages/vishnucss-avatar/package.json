@@ -1,7 +1,7 @@
 {
   "name": "@vishnucss/avatar",
   "filename": "vishnu.avatar.min.css",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "Avatar package for Vishnucss toolkit with modern css.",
   "main": "./dist/vishnu.avatar.min.css",
   "keywords": [

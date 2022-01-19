@@ -36,6 +36,7 @@
     "initialize": "lerna init",
     "bootstrap": "lerna bootstrap",
     "release": "lerna version",
+    "diff": "lerna diff",
     "publish": "lerna publish",
     "changed": "lerna changed",
     "dev": "turbo run dev --no-cache --parallel --continue",

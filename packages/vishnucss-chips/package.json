@@ -1,7 +1,7 @@
 {
   "name": "@vishnucss/chips",
   "filename": "vishnu.chips.min.css",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "Chips toolkit with modern css",
   "main": "./dist/vishnu.chips.min.css",
   "keywords": [
