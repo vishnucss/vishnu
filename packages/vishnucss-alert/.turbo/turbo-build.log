@@ -1,12 +1,12 @@
-[32m@vishnucss/alert:build: [0mcache hit, replaying output [2m8283b7ad4c8103d9[0m
-[32m@vishnucss/alert:build: [0m$ gulp
-[32m@vishnucss/alert:build: [0m[21:55:14] Using gulpfile ~/Code/personal/vishnu/packages/vishnucss-alert/gulpfile.js
-[32m@vishnucss/alert:build: [0m[21:55:14] Starting 'build'...
-[32m@vishnucss/alert:build: [0m[21:55:14] all files 5.15 kB
-[32m@vishnucss/alert:build: [0m[21:55:14] Finished 'build' after 116 ms
-[32m@vishnucss/alert:build: [0m[21:55:14] Starting 'minify'...
-[32m@vishnucss/alert:build: [0m[21:55:14] all files 3.8 kB
-[32m@vishnucss/alert:build: [0m[21:55:14] all files 1.25 kB (gzipped)
-[32m@vishnucss/alert:build: [0m[21:55:14] Finished 'minify' after 140 ms
-[32m@vishnucss/alert:build: [0m[21:55:14] Starting 'default'...
-[32m@vishnucss/alert:build: [0m[21:55:14] Finished 'default' after 24 μs
+[34m@vishnucss/alert:build: [0mcache hit, replaying output [2mff3a3d1d8e46e5f7[0m
+[34m@vishnucss/alert:build: [0m$ gulp
+[34m@vishnucss/alert:build: [0m[22:16:55] Using gulpfile ~/Code/personal/vishnu/packages/vishnucss-alert/gulpfile.js
+[34m@vishnucss/alert:build: [0m[22:16:55] Starting 'build'...
+[34m@vishnucss/alert:build: [0m[22:16:55] all files 5.15 kB
+[34m@vishnucss/alert:build: [0m[22:16:55] Finished 'build' after 141 ms
+[34m@vishnucss/alert:build: [0m[22:16:55] Starting 'minify'...
+[34m@vishnucss/alert:build: [0m[22:16:55] all files 3.8 kB
+[34m@vishnucss/alert:build: [0m[22:16:55] all files 1.25 kB (gzipped)
+[34m@vishnucss/alert:build: [0m[22:16:55] Finished 'minify' after 113 ms
+[34m@vishnucss/alert:build: [0m[22:16:55] Starting 'default'...
+[34m@vishnucss/alert:build: [0m[22:16:55] Finished 'default' after 27 μs

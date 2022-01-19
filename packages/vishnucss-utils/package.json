@@ -1,7 +1,7 @@
 {
   "name": "@vishnucss/utils",
   "filename": "vishnu.utils.min.css",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "Utils toolkit with modern css",
   "main": "./dist/vishnu.utils.min.css",
   "keywords": [

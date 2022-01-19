@@ -1,12 +1,12 @@
-[32m@vishnucss/avatar:build: [0mcache hit, replaying output [2mb07a809b9c4ace2b[0m
-[32m@vishnucss/avatar:build: [0m$ gulp
-[32m@vishnucss/avatar:build: [0m[21:55:11] Using gulpfile ~/Code/personal/vishnu/packages/vishnucss-avatar/gulpfile.js
-[32m@vishnucss/avatar:build: [0m[21:55:11] Starting 'build'...
-[32m@vishnucss/avatar:build: [0m[21:55:12] all files 3.03 kB
-[32m@vishnucss/avatar:build: [0m[21:55:12] Finished 'build' after 341 ms
-[32m@vishnucss/avatar:build: [0m[21:55:12] Starting 'minify'...
-[32m@vishnucss/avatar:build: [0m[21:55:12] all files 2.18 kB
-[32m@vishnucss/avatar:build: [0m[21:55:12] all files 872 B (gzipped)
-[32m@vishnucss/avatar:build: [0m[21:55:12] Finished 'minify' after 451 ms
-[32m@vishnucss/avatar:build: [0m[21:55:12] Starting 'default'...
-[32m@vishnucss/avatar:build: [0m[21:55:12] Finished 'default' after 23 μs
+[35m@vishnucss/avatar:build: [0mcache hit, replaying output [2m37dd6c47ff787d00[0m
+[35m@vishnucss/avatar:build: [0m$ gulp
+[35m@vishnucss/avatar:build: [0m[22:16:55] Using gulpfile ~/Code/personal/vishnu/packages/vishnucss-avatar/gulpfile.js
+[35m@vishnucss/avatar:build: [0m[22:16:55] Starting 'build'...
+[35m@vishnucss/avatar:build: [0m[22:16:55] all files 3.03 kB
+[35m@vishnucss/avatar:build: [0m[22:16:55] Finished 'build' after 103 ms
+[35m@vishnucss/avatar:build: [0m[22:16:55] Starting 'minify'...
+[35m@vishnucss/avatar:build: [0m[22:16:55] all files 2.18 kB
+[35m@vishnucss/avatar:build: [0m[22:16:55] all files 872 B (gzipped)
+[35m@vishnucss/avatar:build: [0m[22:16:55] Finished 'minify' after 107 ms
+[35m@vishnucss/avatar:build: [0m[22:16:55] Starting 'default'...
+[35m@vishnucss/avatar:build: [0m[22:16:55] Finished 'default' after 22 μs

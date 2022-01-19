@@ -1,7 +1,7 @@
 {
   "name": "@vishnucss/toggle",
   "filename": "vishnu.toggle.min.css",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "Toggle toolkit with modern css",
   "main": "./dist/vishnu.toggle.min.css",
   "keywords": [
