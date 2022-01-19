@@ -1,12 +1,12 @@
-[35m@vishnucss/grid:build: [0mcache hit, replaying output [2m5486ca020c16ec87[0m
-[35m@vishnucss/grid:build: [0m$ gulp
-[35m@vishnucss/grid:build: [0m[21:44:36] Using gulpfile ~/Code/personal/vishnu/packages/vishnucss-grid/gulpfile.js
-[35m@vishnucss/grid:build: [0m[21:44:36] Starting 'build'...
-[35m@vishnucss/grid:build: [0m[21:44:37] all files 9.88 kB
-[35m@vishnucss/grid:build: [0m[21:44:37] Finished 'build' after 373 ms
-[35m@vishnucss/grid:build: [0m[21:44:37] Starting 'minify'...
-[35m@vishnucss/grid:build: [0m[21:44:37] all files 6.73 kB
-[35m@vishnucss/grid:build: [0m[21:44:37] all files 1.2 kB (gzipped)
-[35m@vishnucss/grid:build: [0m[21:44:37] Finished 'minify' after 326 ms
-[35m@vishnucss/grid:build: [0m[21:44:37] Starting 'default'...
-[35m@vishnucss/grid:build: [0m[21:44:37] Finished 'default' after 20 μs
+[34m@vishnucss/grid:build: [0mcache hit, replaying output [2m58ce003157cf26d7[0m
+[34m@vishnucss/grid:build: [0m$ gulp
+[34m@vishnucss/grid:build: [0m[21:50:01] Using gulpfile ~/Code/personal/vishnu/packages/vishnucss-grid/gulpfile.js
+[34m@vishnucss/grid:build: [0m[21:50:01] Starting 'build'...
+[34m@vishnucss/grid:build: [0m[21:50:01] all files 9.88 kB
+[34m@vishnucss/grid:build: [0m[21:50:01] Finished 'build' after 468 ms
+[34m@vishnucss/grid:build: [0m[21:50:01] Starting 'minify'...
+[34m@vishnucss/grid:build: [0m[21:50:02] all files 6.73 kB
+[34m@vishnucss/grid:build: [0m[21:50:02] all files 1.2 kB (gzipped)
+[34m@vishnucss/grid:build: [0m[21:50:02] Finished 'minify' after 385 ms
+[34m@vishnucss/grid:build: [0m[21:50:02] Starting 'default'...
+[34m@vishnucss/grid:build: [0m[21:50:02] Finished 'default' after 22 μs
