@@ -1,12 +1,12 @@
-[32m@vishnucss/toggle:build: [0mcache hit, replaying output [2mc3e515c98569c8e4[0m
+[32m@vishnucss/toggle:build: [0mcache hit, replaying output [2m7d17589700bc05e2[0m
 [32m@vishnucss/toggle:build: [0m$ gulp
-[32m@vishnucss/toggle:build: [0m[02:00:25] Using gulpfile ~/Code/personal/projects/vishnu/packages/vishnucss-toggle/gulpfile.js
-[32m@vishnucss/toggle:build: [0m[02:00:25] Starting 'build'...
-[32m@vishnucss/toggle:build: [0m[02:00:25] all files 4.9 kB
-[32m@vishnucss/toggle:build: [0m[02:00:25] Finished 'build' after 143 ms
-[32m@vishnucss/toggle:build: [0m[02:00:25] Starting 'minify'...
-[32m@vishnucss/toggle:build: [0m[02:00:25] all files 3.56 kB
-[32m@vishnucss/toggle:build: [0m[02:00:25] all files 1.04 kB (gzipped)
-[32m@vishnucss/toggle:build: [0m[02:00:25] Finished 'minify' after 136 ms
-[32m@vishnucss/toggle:build: [0m[02:00:25] Starting 'default'...
-[32m@vishnucss/toggle:build: [0m[02:00:25] Finished 'default' after 40 μs
+[32m@vishnucss/toggle:build: [0m[21:44:39] Using gulpfile ~/Code/personal/vishnu/packages/vishnucss-toggle/gulpfile.js
+[32m@vishnucss/toggle:build: [0m[21:44:39] Starting 'build'...
+[32m@vishnucss/toggle:build: [0m[21:44:39] all files 4.9 kB
+[32m@vishnucss/toggle:build: [0m[21:44:39] Finished 'build' after 117 ms
+[32m@vishnucss/toggle:build: [0m[21:44:39] Starting 'minify'...
+[32m@vishnucss/toggle:build: [0m[21:44:39] all files 3.56 kB
+[32m@vishnucss/toggle:build: [0m[21:44:39] all files 1.04 kB (gzipped)
+[32m@vishnucss/toggle:build: [0m[21:44:39] Finished 'minify' after 136 ms
+[32m@vishnucss/toggle:build: [0m[21:44:39] Starting 'default'...
+[32m@vishnucss/toggle:build: [0m[21:44:39] Finished 'default' after 24 μs

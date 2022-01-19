@@ -1,0 +1,12 @@
+[36m@vishnucss/dialog:build: [0mcache hit, replaying output [2m351c61c56dc880a9[0m
+[36m@vishnucss/dialog:build: [0m$ gulp
+[36m@vishnucss/dialog:build: [0m[21:44:37] Using gulpfile ~/Code/personal/vishnu/packages/vishnucss-dialog/gulpfile.js
+[36m@vishnucss/dialog:build: [0m[21:44:37] Starting 'build'...
+[36m@vishnucss/dialog:build: [0m[21:44:37] all files 3.09 kB
+[36m@vishnucss/dialog:build: [0m[21:44:37] Finished 'build' after 199 ms
+[36m@vishnucss/dialog:build: [0m[21:44:37] Starting 'minify'...
+[36m@vishnucss/dialog:build: [0m[21:44:37] all files 2.24 kB
+[36m@vishnucss/dialog:build: [0m[21:44:37] all files 948 B (gzipped)
+[36m@vishnucss/dialog:build: [0m[21:44:37] Finished 'minify' after 209 ms
+[36m@vishnucss/dialog:build: [0m[21:44:37] Starting 'default'...
+[36m@vishnucss/dialog:build: [0m[21:44:37] Finished 'default' after 29 μs

@@ -1,0 +1,12 @@
+[33m@vishnucss/collapse:build: [0mcache hit, replaying output [2m51e98601ca9543a0[0m
+[33m@vishnucss/collapse:build: [0m$ gulp
+[33m@vishnucss/collapse:build: [0m[21:44:36] Using gulpfile ~/Code/personal/vishnu/packages/vishnucss-collapse/gulpfile.js
+[33m@vishnucss/collapse:build: [0m[21:44:36] Starting 'build'...
+[33m@vishnucss/collapse:build: [0m[21:44:36] all files 3.61 kB
+[33m@vishnucss/collapse:build: [0m[21:44:36] Finished 'build' after 268 ms
+[33m@vishnucss/collapse:build: [0m[21:44:36] Starting 'minify'...
+[33m@vishnucss/collapse:build: [0m[21:44:37] all files 2.5 kB
+[33m@vishnucss/collapse:build: [0m[21:44:37] all files 1 kB (gzipped)
+[33m@vishnucss/collapse:build: [0m[21:44:37] Finished 'minify' after 213 ms
+[33m@vishnucss/collapse:build: [0m[21:44:37] Starting 'default'...
+[33m@vishnucss/collapse:build: [0m[21:44:37] Finished 'default' after 21 μs
