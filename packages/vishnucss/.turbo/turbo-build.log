@@ -1,12 +1,12 @@
-[35m@vishnucss/vishnu:build: [0mcache hit, replaying output [2m9e88604ebcf6bb34[0m
-[35m@vishnucss/vishnu:build: [0m$ gulp
-[35m@vishnucss/vishnu:build: [0m[21:50:02] Using gulpfile ~/Code/personal/vishnu/packages/vishnucss/gulpfile.js
-[35m@vishnucss/vishnu:build: [0m[21:50:02] Starting 'build'...
-[35m@vishnucss/vishnu:build: [0m[21:50:02] all files 44.92 kB
-[35m@vishnucss/vishnu:build: [0m[21:50:02] Finished 'build' after 821 ms
-[35m@vishnucss/vishnu:build: [0m[21:50:02] Starting 'minify'...
-[35m@vishnucss/vishnu:build: [0m[21:50:03] all files 31.49 kB
-[35m@vishnucss/vishnu:build: [0m[21:50:03] all files 6.06 kB (gzipped)
-[35m@vishnucss/vishnu:build: [0m[21:50:03] Finished 'minify' after 627 ms
-[35m@vishnucss/vishnu:build: [0m[21:50:03] Starting 'default'...
-[35m@vishnucss/vishnu:build: [0m[21:50:03] Finished 'default' after 22 μs
+[33m@vishnucss/vishnu:build: [0mcache hit, replaying output [2m97d9f5244db7a0a6[0m
+[33m@vishnucss/vishnu:build: [0m$ gulp
+[33m@vishnucss/vishnu:build: [0m[21:55:14] Using gulpfile ~/Code/personal/vishnu/packages/vishnucss/gulpfile.js
+[33m@vishnucss/vishnu:build: [0m[21:55:14] Starting 'build'...
+[33m@vishnucss/vishnu:build: [0m[21:55:15] all files 44.92 kB
+[33m@vishnucss/vishnu:build: [0m[21:55:15] Finished 'build' after 311 ms
+[33m@vishnucss/vishnu:build: [0m[21:55:15] Starting 'minify'...
+[33m@vishnucss/vishnu:build: [0m[21:55:15] all files 31.49 kB
+[33m@vishnucss/vishnu:build: [0m[21:55:15] all files 6.06 kB (gzipped)
+[33m@vishnucss/vishnu:build: [0m[21:55:15] Finished 'minify' after 347 ms
+[33m@vishnucss/vishnu:build: [0m[21:55:15] Starting 'default'...
+[33m@vishnucss/vishnu:build: [0m[21:55:15] Finished 'default' after 63 μs

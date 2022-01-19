@@ -1,12 +1,12 @@
-[33m@vishnucss/dialog:build: [0mcache hit, replaying output [2mdb7a27cbbd6f23ee[0m
+[33m@vishnucss/dialog:build: [0mcache hit, replaying output [2mb6467b3b476775fc[0m
 [33m@vishnucss/dialog:build: [0m$ gulp
-[33m@vishnucss/dialog:build: [0m[21:50:02] Using gulpfile ~/Code/personal/vishnu/packages/vishnucss-dialog/gulpfile.js
-[33m@vishnucss/dialog:build: [0m[21:50:02] Starting 'build'...
-[33m@vishnucss/dialog:build: [0m[21:50:02] all files 3.09 kB
-[33m@vishnucss/dialog:build: [0m[21:50:02] Finished 'build' after 328 ms
-[33m@vishnucss/dialog:build: [0m[21:50:02] Starting 'minify'...
-[33m@vishnucss/dialog:build: [0m[21:50:03] all files 2.24 kB
-[33m@vishnucss/dialog:build: [0m[21:50:03] all files 948 B (gzipped)
-[33m@vishnucss/dialog:build: [0m[21:50:03] Finished 'minify' after 237 ms
-[33m@vishnucss/dialog:build: [0m[21:50:03] Starting 'default'...
-[33m@vishnucss/dialog:build: [0m[21:50:03] Finished 'default' after 27 μs
+[33m@vishnucss/dialog:build: [0m[21:55:13] Using gulpfile ~/Code/personal/vishnu/packages/vishnucss-dialog/gulpfile.js
+[33m@vishnucss/dialog:build: [0m[21:55:13] Starting 'build'...
+[33m@vishnucss/dialog:build: [0m[21:55:13] all files 3.09 kB
+[33m@vishnucss/dialog:build: [0m[21:55:13] Finished 'build' after 255 ms
+[33m@vishnucss/dialog:build: [0m[21:55:13] Starting 'minify'...
+[33m@vishnucss/dialog:build: [0m[21:55:14] all files 2.24 kB
+[33m@vishnucss/dialog:build: [0m[21:55:14] all files 948 B (gzipped)
+[33m@vishnucss/dialog:build: [0m[21:55:14] Finished 'minify' after 275 ms
+[33m@vishnucss/dialog:build: [0m[21:55:14] Starting 'default'...
+[33m@vishnucss/dialog:build: [0m[21:55:14] Finished 'default' after 22 μs
