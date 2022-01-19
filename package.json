@@ -4,7 +4,6 @@
   "version": "1.2.0",
   "description": "A simple and minimalist toolkit with modern css",
   "main": "./packages/vishnucss/dist/vishnu.min.css",
-  "private": true,
   "workspaces": [
     "packages/*"
   ],
