@@ -27,3 +27,19 @@ yarn add @vishnucss/avatar
 
   </code-block>
 </code-group>
+
+## Usage
+
+<code-group>
+  <code-block label="HTML" active>
+
+```html
+<!-- Avatar default -->
+<span class="avatar">Zf</span>
+<!-- Avatar primary -->
+<span class="avatar avatar-primary">Aa</span>
+```
+
+  </code-block>
+</code-group>
+

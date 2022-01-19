@@ -27,3 +27,19 @@ yarn add @vishnucss/alert
 
   </code-block>
 </code-group>
+
+
+## Usage
+
+<code-group>
+  <code-block label="HTML" active>
+
+```html
+<!-- Basic Alert default -->
+<div class="alert">
+  <strong class="alert-title">Alert title</strong>
+</div>
+```
+
+  </code-block>
+</code-group>

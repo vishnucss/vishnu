@@ -4,5 +4,6 @@ export default theme({
   router: {
     base: '/vishnu/'
   },
+  // css: ['../../../../src/assets/vishnu.css'],
   loading: { color: '#8549b9' }
 })
