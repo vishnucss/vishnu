@@ -11,7 +11,7 @@ $ npm install --save @vishnucss/chips
 **Using directly link**
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@vishnucss/chips"/>
+<link rel="stylesheet" href="https://unpkg.com/@vishnucss/chips" />
 ```
 
 ## Bug?

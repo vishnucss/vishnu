@@ -1,10 +1,9 @@
 ---
 title: Introduction
-description: 
+description:
 position: 1
-category: ''
+category: ""
 features:
-
   - Zero config solution to start quick prototypes.
   - Use in a modular way, just what you want.
   - Useful extensions only with CSS.

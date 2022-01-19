@@ -17,7 +17,8 @@
   background: #fff;
   border-radius: var(--base-radius);
 }
-:--card :--header, :--card :--footer {
+:--card :--header,
+:--card :--footer {
   position: relative;
   background: transparent;
   padding: 15px;

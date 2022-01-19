@@ -118,7 +118,7 @@
 }
 
 :--chips-dark {
-  background: rgba(0,0,0, .45);
+  background: rgba(0, 0, 0, 0.45);
   & .label {
     color: #fff;
   }

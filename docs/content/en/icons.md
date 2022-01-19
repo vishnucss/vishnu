@@ -1,6 +1,6 @@
 ---
 title: Icons
-description: 
+description:
 position: 4
 category: Extensions
 ---
@@ -16,16 +16,16 @@ Add `@vishnucss/icons` dependency to your project:
 <code-group>
   <code-block label="YARN" active>
 
-  ```bash
-  yarn add @vishnucss/icons
-  ```
+```bash
+yarn add @vishnucss/icons
+```
 
   </code-block>
   <code-block label="CDN">
 
-  ```html
-<link rel="stylesheet" href="https://unpkg.com/@vishnucss/icons"/>
-  ```
+```html
+<link rel="stylesheet" href="https://unpkg.com/@vishnucss/icons" />
+```
 
   </code-block>
 </code-group>

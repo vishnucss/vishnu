@@ -1,6 +1,6 @@
 ---
 title: Dialog
-description: 
+description:
 position: 4
 category: Extensions
 ---
@@ -14,16 +14,16 @@ Add `@vishnucss/dialog` dependency to your project:
 <code-group>
   <code-block label="YARN" active>
 
-  ```bash
-  yarn add @vishnucss/dialog
-  ```
+```bash
+yarn add @vishnucss/dialog
+```
 
   </code-block>
   <code-block label="CDN">
 
-  ```html
-<link rel="stylesheet" href="https://unpkg.com/@vishnucss/dialog"/>
-  ```
+```html
+<link rel="stylesheet" href="https://unpkg.com/@vishnucss/dialog" />
+```
 
   </code-block>
 </code-group>

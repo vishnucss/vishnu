@@ -20,7 +20,6 @@
   display: inline-block;
 }
 
-
 /*
 * Hide input
 */
@@ -28,7 +27,6 @@
 :--toggle-input {
   display: none;
 }
-
 
 /*
 * Toggle Label
@@ -42,7 +40,8 @@
   clip: rect(0 0 0 0);
   color: transparent;
   user-select: none;
-  &:before, &:after {
+  &:before,
+  &:after {
     content: "";
     display: block;
     position: absolute;
@@ -53,7 +52,8 @@
     height: var(--toggle-rail-height);
     background-color: var(--toggle-rail-background-color);
     border-radius: var(--toggle-rail-border-radius);
-    transition: background-color var(--toggle-transition-duration) var(--toggle-transition-timing-function);
+    transition: background-color var(--toggle-transition-duration)
+      var(--toggle-transition-timing-function);
   }
   &:after {
     top: 0;
@@ -62,7 +62,8 @@
     height: var(--toggle-height);
     border-radius: var(--toggle-border-radius);
     background-color: var(--toggle-background-color);
-    transition: left var(--toggle-transition-duration) var(--toggle-transition-timing-function);
+    transition: left var(--toggle-transition-duration)
+      var(--toggle-transition-timing-function);
     box-shadow: var(--toggle-box-shadow);
   }
 }
@@ -79,7 +80,6 @@
     left: var(--toggle-checked-left);
   }
 }
-
 
 /*
 * Toggle activated
@@ -99,7 +99,7 @@
       background-color: var(--toggle-rail-background-color);
     }
     &:after {
-      left: 0!important;
+      left: 0 !important;
     }
   }
 }
@@ -128,7 +128,7 @@
     }
     &:after {
       top: 0;
-      left: 0!important;
+      left: 0 !important;
       box-shadow: var(--toggle-box-shadow);
     }
   }

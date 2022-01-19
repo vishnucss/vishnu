@@ -1,6 +1,6 @@
 ---
 title: Boilerplates
-description: 
+description:
 position: 4
 category: Examples
 ---

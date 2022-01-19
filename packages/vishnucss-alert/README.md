@@ -11,7 +11,7 @@ $ npm install --save @vishnucss/alert
 **Using directly link**
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@vishnucss/alert"/>
+<link rel="stylesheet" href="https://unpkg.com/@vishnucss/alert" />
 ```
 
 ## Bug?

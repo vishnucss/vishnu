@@ -119,20 +119,24 @@ select {
 }
 
 /* Checkbox and Radio Button */
-.checkbox:hover input ~ .checkmark, .radio:hover input ~ .radiomark {
+.checkbox:hover input ~ .checkmark,
+.radio:hover input ~ .radiomark {
   border-color: color-mod(var(--primary-color) alpha(80%));
 }
 
-.checkbox input:checked ~ .checkmark, .radio input:checked ~ .radiomark {
+.checkbox input:checked ~ .checkmark,
+.radio input:checked ~ .radiomark {
   background-color: var(--primary-color);
   border-color: var(--primary-color);
   box-shadow: 0 0 0 2px color-mod(var(--primary-color) alpha(20%));
 }
-.checkbox .checkmark:after, .radio .radiomark:after {
+.checkbox .checkmark:after,
+.radio .radiomark:after {
   content: "";
   position: absolute;
   display: none;
 }
-.checkbox input:checked ~ .checkmark:after, .radio input:checked ~ .radiomark:after {
+.checkbox input:checked ~ .checkmark:after,
+.radio input:checked ~ .radiomark:after {
   display: block;
 }

@@ -15,7 +15,7 @@ $ npm install --save @vishnucss/base
 **Using directly link**
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@vishnucss/base"/>
+<link rel="stylesheet" href="https://unpkg.com/@vishnucss/base" />
 ```
 
 ## Bug?

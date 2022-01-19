@@ -1,6 +1,6 @@
 ---
 title: Utils
-description: 
+description:
 position: 5
 category: Extensions
 ---
@@ -14,16 +14,16 @@ Add `@vishnucss/utils` dependency to your project:
 <code-group>
   <code-block label="YARN" active>
 
-  ```bash
-  yarn add @vishnucss/utils
-  ```
+```bash
+yarn add @vishnucss/utils
+```
 
   </code-block>
   <code-block label="CDN">
 
-  ```html
-<link rel="stylesheet" href="https://unpkg.com/@vishnucss/utils"/>
-  ```
+```html
+<link rel="stylesheet" href="https://unpkg.com/@vishnucss/utils" />
+```
 
   </code-block>
 </code-group>
