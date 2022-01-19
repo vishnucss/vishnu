@@ -17,7 +17,8 @@
   background: #fff;
   border-radius: var(--base-radius);
 }
-:--card :--header, :--card :--footer {
+:--card :--header,
+:--card :--footer {
   position: relative;
   background: color-mod(var(--base-color) alpha(30%));
   padding: 10px;

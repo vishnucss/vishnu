@@ -37,13 +37,15 @@
   opacity: 0;
   z-index: -1;
   &:checked ~ label {
-    & :--collapse-icon-right, & :--collapse-icon-left {
+    & :--collapse-icon-right,
+    & :--collapse-icon-left {
       transform: rotate(-180deg);
     }
   }
 }
 
-:--collapse-icon-right, :--collapse-icon-left {
+:--collapse-icon-right,
+:--collapse-icon-left {
   width: 22px;
   height: 22px;
   stroke: var(--base-dark-color);
@@ -68,7 +70,7 @@
   padding: 0 15px;
   overflow: hidden;
   background: rgba(255, 255, 255, 1);
-  transition: max-height .25s;
+  transition: max-height 0.25s;
   & p {
     font-size: 14px;
     line-height: 16px;

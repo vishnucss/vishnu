@@ -17,15 +17,33 @@
 * Buttons
 */
 
-@custom-selector :--button button, .button, [type='submit'];
-@custom-selector :--button-outline button.outline, .button.outline, [type='submit'].outline;
-@custom-selector :--button-flat button.flat, .button.flat, [type='submit'].flat;
-@custom-selector :--button-primary button.primary, .button.primary, [type='submit'].primary;
-@custom-selector :--button-rounded button.rounded, .button.rounded, [type='submit'].rounded;
-@custom-selector :--button-success button.success, .button.success, [type='submit'].success;
-@custom-selector :--button-info button.info, .button.info, [type='submit'].info;
-@custom-selector :--button-warning button.warning, .button.warning, [type='submit'].warning;
-@custom-selector :--button-error button.error, .button.error, [type='submit'].error;
+@custom-selector :--button button, .button, [type="submit"];
+@custom-selector :--button-outline
+  button.outline,
+  .button.outline,
+  [type="submit"].outline;
+@custom-selector :--button-flat button.flat, .button.flat, [type="submit"].flat;
+@custom-selector :--button-primary
+  button.primary,
+  .button.primary,
+  [type="submit"].primary;
+@custom-selector :--button-rounded
+  button.rounded,
+  .button.rounded,
+  [type="submit"].rounded;
+@custom-selector :--button-success
+  button.success,
+  .button.success,
+  [type="submit"].success;
+@custom-selector :--button-info button.info, .button.info, [type="submit"].info;
+@custom-selector :--button-warning
+  button.warning,
+  .button.warning,
+  [type="submit"].warning;
+@custom-selector :--button-error
+  button.error,
+  .button.error,
+  [type="submit"].error;
 @custom-selector :--hovered :hover;
 @custom-selector :--pressed :focus;
 @custom-selector :--large .large;
@@ -35,10 +53,20 @@
 * Forms
 */
 
-@custom-selector :--fields input[type='text'], input[type='password'], input[type='email'], input[type='search'], input[type='number'], input[type='file'], input[type='tel'], input[type='url'], select, textarea;
+@custom-selector :--fields
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="search"],
+  input[type="number"],
+  input[type="file"],
+  input[type="tel"],
+  input[type="url"],
+  select,
+  textarea;
 @custom-selector :--textarea textarea;
-@custom-selector :--checkbox input[type='checkbox'];
-@custom-selector :--radio input[type='radio'];
+@custom-selector :--checkbox input[type="checkbox"];
+@custom-selector :--radio input[type="radio"];
 @custom-selector :--hovered :hover;
 @custom-selector :--pressed :focus;
 
@@ -88,7 +116,6 @@
 @custom-selector :--close .close;
 @custom-selector :--overlay .overlay;
 
-
 /*
 * Avatar
 */
@@ -111,10 +138,62 @@
  * Grid
 */
 
-@custom-selector :--all-cols-xs .col-xs, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12;
-@custom-selector :--all-cols-sm .col-sm, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12;
-@custom-selector :--all-cols-md .col-md, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12;
-@custom-selector :--all-cols-lg .col-lg, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12;
+@custom-selector :--all-cols-xs
+  .col-xs,
+  .col-xs-1,
+  .col-xs-2,
+  .col-xs-3,
+  .col-xs-4,
+  .col-xs-5,
+  .col-xs-6,
+  .col-xs-7,
+  .col-xs-8,
+  .col-xs-9,
+  .col-xs-10,
+  .col-xs-11,
+  .col-xs-12;
+@custom-selector :--all-cols-sm
+  .col-sm,
+  .col-sm-1,
+  .col-sm-2,
+  .col-sm-3,
+  .col-sm-4,
+  .col-sm-5,
+  .col-sm-6,
+  .col-sm-7,
+  .col-sm-8,
+  .col-sm-9,
+  .col-sm-10,
+  .col-sm-11,
+  .col-sm-12;
+@custom-selector :--all-cols-md
+  .col-md,
+  .col-md-1,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9,
+  .col-md-10,
+  .col-md-11,
+  .col-md-12;
+@custom-selector :--all-cols-lg
+  .col-lg,
+  .col-lg-1,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9,
+  .col-lg-10,
+  .col-lg-11,
+  .col-lg-12;
 
 /*
 * Toggle
@@ -134,7 +213,8 @@
 
 @custom-selector :--collapse .collapse;
 @custom-selector :--collapse-content .collapse-content;
-@custom-selector :--collapse-content-checked .collapse input:checked ~ .collapse-content;
+@custom-selector :--collapse-content-checked
+  .collapse input:checked ~ .collapse-content;
 @custom-selector :--collapse-item .collapse-item;
 @custom-selector :--collapse-input .collapse input;
 @custom-selector :--collapse-label .collapse label;

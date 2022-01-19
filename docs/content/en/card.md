@@ -1,6 +1,6 @@
 ---
 title: Card
-description: 
+description:
 position: 4
 category: Extensions
 ---
@@ -14,16 +14,16 @@ Add `@vishnucss/card` dependency to your project:
 <code-group>
   <code-block label="YARN" active>
 
-  ```bash
-  yarn add @vishnucss/card
-  ```
+```bash
+yarn add @vishnucss/card
+```
 
   </code-block>
   <code-block label="CDN">
 
-  ```html
-<link rel="stylesheet" href="https://unpkg.com/@vishnucss/card"/>
-  ```
+```html
+<link rel="stylesheet" href="https://unpkg.com/@vishnucss/card" />
+```
 
   </code-block>
 </code-group>
